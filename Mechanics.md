@@ -72,6 +72,24 @@ Teams alternate sides taking hero turns. Each side activates their heroes one at
 - A player may pass their remaining AP at any time, ending that hero's turn early.
 - AP does not carry over between rounds.
 
+### Reactions
+When an active hero targets your hero with an attack or ability, you may **React** before the effect resolves. Reactions interrupt the active hero's turn, are resolved immediately, and then the active hero continues.
+
+**Rules:**
+- A hero may only **react once** per opposing hero's turn (not once per round — once per activation).
+- Reactions are **always paid from the reacting hero's next turn AP**. The cost is deducted at the start of that hero's next turn — they simply have that many fewer AP to spend.
+- Only the **targeted hero** may react, not teammates.
+
+**Reaction Types:**
+
+| Reaction | AP Cost (from next turn) | Effect |
+|---|---|---|
+| **Flee** | 2 AP | Move 1 hex in any direction before the attack or ability resolves. If the attacker required adjacency or LoS, the attack misses entirely. |
+| **Activate Defensive Item** | 1 AP | Immediately trigger a held defensive Item Card (e.g. BKB equivalent) before damage is applied. The item's effect takes place before resolution. |
+| **Deny** | 1 AP | Contest an allied creep's last hit to deny the enemy gold and XP. See §8 for full rules. |
+
+> **Example:** Juggernaut (4 AP) attacks Crystal Maiden. She reacts with **Flee** (costs 2 AP from her next turn), moving 1 hex away. Juggernaut is melee — he no longer has adjacency — so the attack misses. On Crystal Maiden's next turn she has 2 fewer AP to spend.
+
 ### Round End Phase
 After all heroes on both sides have completed their turns, the following occur in order:
 
@@ -142,7 +160,7 @@ Each hero has a fixed AP value printed on their Hero Card. All AP is refreshed a
 | **Move** | 1 | Move the hero token to one adjacent area on the board. |
 | **Attack** | 1 | Initiate combat against a Creep, Tower, or Enemy Hero in range. |
 | **Farm** | 1 | Secure gold and XP from a creep wave or neutral camp in the hero's current area. |
-| **Deny** | Reaction | Spend AP from your *next* turn to contest an enemy Farm action. Requires a die roll. |
+| **Deny** | Reaction | Spend 1 AP from your *next* turn to contest an enemy Farm action. Requires a die roll. See §8. |
 | **Use Item** | Varies | Activate an Item Card's effect. Cost listed on the card. |
 | **Use Ability** | Varies | Activate a hero Ability Card. Costs Mana and any AP listed on the card. |
 
@@ -205,7 +223,7 @@ In Dota 2, only the hero landing the killing blow earns gold. How this is adjudi
 Every hero receives a flat gold amount at the **Round End Phase**, regardless of farming activity.
 
 ### Deny
-An opposing hero may spend AP from their **next turn** as a Reaction to a friendly Farm action to attempt a Deny — contesting the last hit on an allied creep to deprive the enemy of gold and XP.
+Deny is a **Reaction** (see §3) costing **1 AP from the reacting hero's next turn**. An opposing hero may react to a friendly Farm action to attempt to contest the last hit on an allied creep, depriving the enemy of gold and XP.
 
 - Resolved with a **die roll challenge** between the denying hero and the farming hero.
 - **Deny succeeds:** The farming hero gains no gold or XP from that unit.
