@@ -66,9 +66,20 @@ All heroes begin with **3× their normal AP** for the first round only. This rep
 The game is played in **Rounds**. Each Round has two phases.
 
 ### Turn Phase
-Teams alternate sides taking hero turns. Each side activates their heroes one at a time, spending AP until all AP is used or the player passes.
+Heroes activate one at a time within a round. Each hero spends all their AP before the next hero activates.
 
-- Turn order within a round: **Dire → Radiant → Dire → Radiant …** until all heroes on both sides have acted.
+**Turn Order — Pendulum Rotation:**
+The **Round Start Token** determines who goes first each round, then players activate in alternating team order. The direction (forward or backward through the player sequence) alternates each round, creating a "pendulum" pattern.
+
+- **Round 1:** Player with the Round Start Token goes first. Play proceeds forward (e.g., Player 1 → Player 2 → Player 3 → Player 4 → Player 5 → Player 6).
+- **Round 2:** The last player to act in Round 1 goes first. Play proceeds backward (e.g., Player 6 → Player 5 → Player 4 → Player 3 → Player 2 → Player 1).
+- **Round 3:** The Round Start Token moves to the next player in sequence (e.g., Player 2). Play proceeds forward (e.g., Player 2 → Player 3 → Player 4 → Player 5 → Player 6 → Player 1, wrapping around).
+- **Round 4:** The last player to act in Round 3 goes first. Play proceeds backward (e.g., Player 1 → Player 6 → Player 5 → Player 4 → Player 3 → Player 2).
+- **Round 5:** The Round Start Token moves to the next player in sequence (e.g., Player 3), and so on.
+
+This ensures positional fairness over time — no player is always first or always last.
+
+**General Rules:**
 - A player may pass their remaining AP at any time, ending that hero's turn early.
 - AP does not carry over between rounds.
 
@@ -178,9 +189,6 @@ Each hero has a fixed AP value printed on their Hero Card. All AP is refreshed a
 ---
 
 ## 7. Combat
-
-### Initiative
-When combat occurs in an area with multiple heroes, action order is resolved by **Move Speed** (printed on the Hero Card). Ties are broken by the active player's choice.
 
 ### Damage Resolution
 All combat uses the formula:
