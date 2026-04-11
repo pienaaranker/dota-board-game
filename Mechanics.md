@@ -14,17 +14,47 @@ Destroy the enemy team's **Ancient**, located inside their base. To reach the An
 
 ## 2. Game Setup & Draft
 
-### Hero Pool
-All Hero Cards are laid face-up and available for selection.
+### Hero Classes
+Heroes are divided into two stat-based classes: **Agility** and **Strength** and **Intelligence**. **Universal heroes are not included in this game.**
 
 ### Coin Flip
-A coin is flipped between the two teams. The winner chooses to either **pick a hero first** or **take the first turn**; the loser receives the other option.
+Before drafting, a coin is flipped between the two teams. The winner chooses to either **pick a hero first** or **take the first turn**; the loser receives the other option.
 
-### Pick Order
-Heroes are picked in alternating fashion — one hero per team per pick — until each player has selected their hero.
+### Draft Modes
+Three draft modes are available. Players agree on a mode before setup.
 
-### Ban Phase 🔄 Pending Discussion
-A ban phase before picks (Captain's Mode style) is a candidate for inclusion. See §B.
+---
+
+#### All Pick (Default)
+All Hero Cards are laid face-up. Each team takes turns **banning** heroes before any picks are made.
+
+**Ban Phase:**
+1. Teams alternate banning one hero at a time — **3 bans per team**, 6 bans total.
+2. Banned hero cards are removed from the pool face-down for the duration of the game.
+3. Bans alternate starting with the team that **did not** win the coin flip.
+
+**Pick Phase:**
+After all bans are resolved, teams alternate picking heroes from the remaining pool — one hero per team per pick — until each player has selected their hero.
+
+---
+
+#### Single Draft
+Hero Cards are separated into three face-down piles by class: **Agility**, **Strength**, and **Intelligence**. Each pile is shuffled.
+
+1. One card is drawn from **each pile** for every player on both teams.
+2. Each player is presented with their 3 drawn cards (one of each class) and chooses one.
+3. Unchosen cards are returned to the bottom of their respective piles.
+4. There is no ban phase in Single Draft.
+
+---
+
+#### All Random
+All Hero Cards are shuffled together into a single face-down deck.
+
+1. Each player is dealt **one card** at random — that is their hero for the game.
+2. No picks, no bans. Players must play the hero they receive.
+
+---
 
 ### Game Start — Bonus AP
 All heroes begin with **3× their normal AP** for the first round only. This represents the run-out-of-fountain period. Creeps do not spawn during Round 1, so available actions are limited to **Move** and level-1 fights.
@@ -63,7 +93,8 @@ Three lanes run between the two bases: **Top**, **Mid**, and **Bottom**. Each la
 Each team has a base containing:
 - The **Fountain** — restores full Health and Mana to any hero that enters.
 - The **Ancient** — the win condition structure.
-- **Tier 4 Towers** — guarding the Ancient directly.
+- **Tier 4 Towers** — two towers guarding the Ancient directly.
+- **Barracks** — three buildings inside the base, one corresponding to each lane. Barracks can be sieged once the Tier 3 Tower in their lane has been destroyed.
 
 ### River
 The central horizontal strip of the map. The **Power Rune** spawns here. Used as a travel and gank corridor.
@@ -183,6 +214,20 @@ Creep waves spawn at the Round End Phase from each team's base and meet at the *
 - Lane creeps may only be Farmed at the Meeting Point.
 - A creep wave persists until Farmed or replaced by the next wave.
 
+### Lane Creep States
+Lane creep strength scales based on how many enemy Barracks have been destroyed. When a team's Barracks falls, the **opposing team's** creeps in that lane become stronger.
+
+| State | Trigger | AP to Farm a Wave | Health Cost to Farm | Gold Awarded |
+|---|---|---|---|---|
+| **Normal** | Barracks standing | Standard | None | Full |
+| **Enhanced** | That lane's Barracks has been destroyed | +2 AP | None | Reduced |
+| **Mega Creeps** | All 3 Barracks destroyed | +4 AP | Yes — same as Neutral Camps | Reduced further |
+
+- Enhanced and Mega creep states apply **per lane** until all 3 Barracks fall, at which point Mega Creeps replace Enhanced everywhere.
+- Reduced gold reflects the difficulty of farming tougher creeps — you spend more resources for a worse return.
+- Passive Income is unaffected by creep state.
+- Barracks cannot be rebuilt once destroyed.
+
 ### Neutral Camps
 Located in the Jungle. Contain neutral creeps that belong to neither team.
 
@@ -202,20 +247,28 @@ Stronger neutral camps found deep in the Jungle.
 ## 11. Towers & Siege
 
 ### Tower Tier Progression
-Towers must be destroyed in strict order per lane:
+Structures must be destroyed in the following order per lane:
 
-> **Tier 1 → Tier 2 → Tier 3 → Tier 4 → Ancient**
+> **Tier 1 → Tier 2 → Tier 3 → Barracks / Tier 4 Towers → Ancient**
 
-A higher-tier tower cannot be attacked until all lower-tier towers in that lane are destroyed.
+- A higher-tier tower cannot be attacked until all lower-tier towers in that lane are destroyed.
+- Once the Tier 3 Tower in a lane falls, heroes gain access to the **base interior** for that lane. Both the **Barracks** for that lane and the **Tier 4 Towers** may then be sieged.
+- The **Ancient** cannot be attacked until both Tier 4 Towers are destroyed.
+
+### Barracks
+Each team has three Barracks buildings, one per lane, located in the base interior behind the Tier 3 Tower.
+
+- Barracks use the same **Siege Requirement** as towers: the allied creep wave in that lane must be exhausted before heroes can attack.
+- Barracks have a fixed HP value and do **not** deal retaliation damage to attackers (unlike towers).
+- When a Barracks is destroyed, place a **Fallen Barracks token** on that lane. The opposing team's creeps immediately become **Enhanced** in that lane (see §10).
+- If all 3 Barracks fall, replace all lane tokens with a **Mega Creeps token**. All lane creeps for the opposing team immediately become **Mega Creeps** (see §10).
+- Destroying a Barracks awards a **gold bonus** to all heroes on the attacking team.
 
 ### Siege Requirement
 A Tower may only be attacked if the **enemy creep wave in that lane has been exhausted** for the current round. Creeps must be cleared before heroes can deal damage to a tower.
 
 ### Tower Attack Damage
 When a hero attacks a tower, the tower deals a **Health penalty** back to the attacker. This penalty is **reduced** (or nullified) by the number of allied lane creeps present in the area — creep bodies absorb tower aggro.
-
-### High Ground Advantage 🔄 Pending Discussion
-Attacking Tier 3+ towers and the Ancient from low ground may incur a miss chance. Specific ruling pending. See §C.
 
 ---
 
@@ -338,11 +391,11 @@ The following mechanics are confirmed for inclusion but need specific rulings be
 ### §A — Last Hit & the Farm Action
 The Farm action awards gold and XP, but the exact requirement — whether a die roll or challenge must be passed to "earn" the last hit, and how Deny integrates — needs a ruling.
 
-### §B — Ban Phase in Draft
-A hero ban phase before picks is a candidate for inclusion. Needs ruling on number of bans per team, simultaneous vs. alternating structure, and whether it is the default mode or a variant.
+### §B — Ban Phase in Draft ✅ Resolved
+**All Pick** is the default mode and includes a ban phase: 3 bans per team, alternating, starting with the team that lost the coin flip. Two additional modes — **Single Draft** and **All Random** — are included as variants. See §2 for full rules.
 
-### §C — High Ground Advantage
-Tier 3+ towers and the Ancient sit on high ground. A ~25% miss chance for attacking heroes coming from low ground is confirmed thematically. Ruling needed on exact die roll implementation and which board zones qualify as high ground.
+### §C — High Ground Advantage ❌ Not Included
+**Decision:** Excluded. A miss-chance mechanic risks making late-game defence too strong and could stall games. Not included for now; may be revisited if playtesting shows pushes are too easy.
 
 ### §D — Observer Wards
 Wards providing persistent vision of a board zone — flagging enemy movement without grant of detection. Ruling needed on how "vision" is mechanically useful on the board, ward duration, placement limits, and interaction with Smoke of Deceit.
