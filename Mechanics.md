@@ -86,6 +86,32 @@ After all heroes on both sides have completed their turns, the following occur i
 
 The board represents the battlefield, divided into named areas. Heroes, creeps, and tokens occupy these areas.
 
+### Hex Grid & Terrain
+The entire map is built on a **hex grid**. Every hex is one of three terrain types:
+
+| Terrain Type | Movement | Line of Sight | Notes |
+|---|---|---|---|
+| **Open** | Passable | Clear | Default hex — no restrictions. |
+| **Tree** | **Blocked** | **Blocked** | Impassable unless an ability says otherwise; blocks LoS; can be destroyed. |
+| **Impassable** | **Blocked** | **Blocked** | Permanent walls, cliffs, and water. Cannot be entered or seen through under any circumstances. |
+
+The key difference between **Tree** and **Impassable**: trees can be destroyed and converted to Open hexes; impassable terrain is permanent.
+
+Tree clusters contain **Open hexes that wind through them** — these are juke paths. A hero on an Open hex inside a tree cluster is hard to chase because surrounding tree hexes block the enemy's Line of Sight, even though the hero is not inside a tree themselves.
+
+**Named areas** (Jungle Camps, Creep Meeting Points, Roshan's Pit, etc.) are clusters of hexes identified on the board art. When rules reference "being in an area," the hero's token must be on any **Open hex** within that area.
+
+### Tree Destruction
+Trees are **mutable terrain** — specific Ability Cards and Item Cards can remove them.
+
+- When a tree hex is destroyed it immediately becomes an **Open hex**.
+- Destroyed trees **regrow** at the end of the 4th Round End Phase after their destruction, unless an ability states otherwise.
+- **Tangos** (Item Card): A hero consumes a Tango charge while **adjacent to** a tree hex — that tree is destroyed and the hero restores a fixed amount of Health.
+- Other tree-removing effects (e.g., Whirling Death) specify their area of destruction on the Ability Card.
+- An ability that allows a hero to **pass through** tree hexes must explicitly state it on the card.
+
+---
+
 ### Lanes
 Three lanes run between the two bases: **Top**, **Mid**, and **Bottom**. Each lane has a series of Tower positions and Creep Meeting Points.
 
@@ -124,10 +150,12 @@ Each hero has a fixed AP value printed on their Hero Card. All AP is refreshed a
 
 ## 6. Movement
 
-- Each **Move** action costs 1 AP and moves the hero to one **adjacent area**.
+- Each **Move** action costs 1 AP and moves the hero **1 hex** to any of the 6 adjacent hexes.
 - Heroes may take multiple Move actions in a turn to travel farther.
-- Melee and Ranged heroes move identically; range only affects attack reach.
-- The **Haste Rune** doubles move efficiency — 1 AP moves the hero **2 areas** — for its duration.
+- **Tree hexes and Impassable hexes** cannot be entered. Heroes must navigate around them or through Open juke paths within tree clusters.
+- Certain Ability Cards explicitly allow a hero to blink or pass through tree hexes — this must be stated on the card.
+- Melee and Ranged heroes move identically; hero type only affects attack range and Line of Sight requirements.
+- The **Haste Rune** doubles move efficiency — 1 AP moves the hero **2 hexes** — for its duration.
 
 ---
 
@@ -143,9 +171,15 @@ All combat uses the formula:
 
 The attacker's Damage and the defender's Defense are taken from their Hero Cards, modified by any active items and abilities.
 
+### Line of Sight (LoS)
+- **Melee Attacks** target an adjacent hex and do **not** require clear LoS.
+- **Ranged Attacks and targeted Abilities** require an unobstructed line between the attacker's hex and the target's hex.
+- To check LoS: draw a straight line between the two hex centres. If that line passes through any **Tree hex** or **Impassable hex**, LoS is blocked and the attack or ability cannot be used from that position.
+- **AoE abilities** apply the same check per hex — only hexes with clear LoS from the caster are affected, unless the Ability Card states otherwise.
+
 ### Attack Range
-- **Melee** heroes must be in the **same area** as their target to attack.
-- **Ranged** heroes may attack from **one adjacent area** away.
+- **Melee** heroes must be on a hex **adjacent** to their target to attack. No LoS required.
+- **Ranged** heroes may attack a target up to **2 hexes** away but require **clear Line of Sight** (see above).
 
 ### Crowd Control (CC)
 | Status Effect | Mechanical Effect |
