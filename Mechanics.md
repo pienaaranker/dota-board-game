@@ -105,7 +105,7 @@ Tree clusters contain **Open hexes that wind through them** — these are juke p
 Trees are **mutable terrain** — specific Ability Cards and Item Cards can remove them.
 
 - When a tree hex is destroyed it immediately becomes an **Open hex**.
-- Destroyed trees **regrow** at the end of the 4th Round End Phase after their destruction, unless an ability states otherwise.
+- **All** destroyed trees regrow simultaneously at the end of every **4th Round** (Rounds 4, 8, 12, …), regardless of when they were destroyed during that interval.
 - **Tangos** (Item Card): A hero consumes a Tango charge while **adjacent to** a tree hex — that tree is destroyed and the hero restores a fixed amount of Health.
 - Other tree-removing effects (e.g., Whirling Death) specify their area of destruction on the Ability Card.
 - An ability that allows a hero to **pass through** tree hexes must explicitly state it on the card.
