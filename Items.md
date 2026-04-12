@@ -95,14 +95,21 @@ Sentry Wards do **not** provide the tactical reaction advantage that Observer Wa
 ---
 
 #### Smoke of Deceit *(50 Gold)*
-**Type:** Consumable | **Status:** 🔲 TODO
+**Type:** Consumable | **Status:** ✅ Confirmed
 
-Apply Invisible tokens to yourself and all allied heroes within 1 hex. Invisibility is removed from an affected hero when an enemy hero moves within 2 hexes of them, or when they attack or use a damaging ability. See Mechanics.md §13 for full Smoke rules.
+When activated, all affected heroes (the user and all allied heroes within **2 hexes**) move together under a single **Smoke Cloud** token for group invisibility. The hero who activates Smoke **cannot attack or use offensive abilities for the remainder of that turn**. Heroes under Smoke are **invisible to Observer Wards** and do not trigger the tactical reaction advantage. When a Smoke hero attacks or uses an offensive ability, the targeted hero **cannot use reactions** — the attack resolves uncontested — and Smoke immediately dispels from the attacker.
+
+**Smoke dispels from all affected heroes when any one of them:**
+- Moves within **3 hexes** of an enemy hero.
+- Enters a Tower's area of control.
+- Attacks or uses an offensive ability.
+
+See Mechanics.md §14 for full Smoke rules.
 
 ---
 
 #### Tango *(90 Gold)*
-**Type:** Consumable | **Status:** 🔲 TODO
+**Type:** Consumable | **Status:** ✅ Confirmed
 
 Target an adjacent Tree hex — it is destroyed (becomes Open). Restore X HP to the using hero over 2 rounds. The destroyed Tree follows standard regrowth rules.
 
@@ -111,7 +118,7 @@ Target an adjacent Tree hex — it is destroyed (becomes Open). Restore X HP to 
 #### Town Portal Scroll *(100 Gold)*
 **Type:** Consumable (Channeled) | **Status:** 🔲 TODO
 
-Channel: spend 2 AP. At the start of your next turn, teleport to any friendly structure (Tower, Barracks, or Fountain). Cancelled if the hero takes damage while channeling. Consumed on use.
+Channel: spend 2 AP. At the start of your next turn, teleport to any friendly structure (Tower, Barracks, or Fountain). Cancelled only if the hero is Stunned or Rooted while channeling. Consumed on use.
 
 ---
 
