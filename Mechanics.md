@@ -530,33 +530,6 @@ Ability Cards use different targeting and activation methods. This section defin
 
 ---
 
-## ── PENDING DISCUSSIONS ──
-
-The following mechanics are confirmed for inclusion but need specific rulings before the design is final. Discuss one at a time.
-
-### §A — Last Hit & the Farm Action ✅ Resolved
-**Decision:** No die roll is required to farm. Spending 1 AP to Farm removes a creep counter and awards gold and XP automatically. The only contest mechanic is the **Deny reaction**, which (if successful) reduces the farming hero's reward to reduced XP and no gold. See §8 for full rules.
-
-### §B — Ban Phase in Draft ✅ Resolved
-**All Pick** is the default mode and includes a ban phase: 3 bans per team, alternating, starting with the team that lost the coin flip. Two additional modes — **Single Draft** and **All Random** — are included as variants. See §2 for full rules.
-
-### §C — High Ground Advantage ❌ Not Included
-**Decision:** Excluded. A miss-chance mechanic risks making late-game defence too strong and could stall games. Not included for now; may be revisited if playtesting shows pushes are too easy.
-
-### §D — Observer Wards ✅ Resolved
-**Decision:** Observer Wards provide a **tactical reaction advantage** rather than traditional vision. When an enemy hero attacks from within a warded area, defending heroes may use **two reactions** instead of one during that activation. Wards cover a fixed radius, last a set number of rounds, and can be destroyed by enemies. Smoke of Deceit breaks when entering warded areas. See §14 for full rules.
-
-### §E — Smoke of Deceit ✅ Resolved
-**Decision:** Smoke is a consumable that grants **group Invisibility** to all allied heroes within a fixed radius (typically 2 hexes). Heroes under Smoke are **invisible to Observer Wards** (no tactical reaction advantage for defenders) and targets **cannot react** when attacked from Smoke. Smoke dispels when any affected hero moves within 3 hexes of an enemy hero, enters a Tower's area, or attacks. Single-use consumable. See §14 for full rules.
-
-### §F — Aghanim's Scepter & Aghanim's Shard ✅ Resolved
-**Decision:** **Aghanim's Shard is not included** in the board game. **Aghanim's Scepter** is a high-cost item that permanently upgrades one hero ability. Each hero has exactly one ability that can be upgraded, and the upgrade text is **printed directly on the Ability Card** in an "Aghanim's Upgrade" section. No separate cards or overlays needed. See §15 for full rules.
-
-### §G — Respawn Timer Scaling ✅ Resolved
-**Decision:** Respawn timer is calculated as **turns (not rounds) = hero level**. A Level 8 hero waits 8 turns before respawning. This automatically scales death punishment with game progression. Buyback cost also scales with hero level and prevents re-use for 5 rounds after activation. See §16 for full rules.
-
----
-
 ## ── EXCLUDED MECHANICS ──
 
 The following were considered and deliberately excluded to avoid bloat. Candidates for expansion or variant rules.
