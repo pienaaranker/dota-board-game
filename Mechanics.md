@@ -108,7 +108,7 @@ After all heroes on both sides have completed their turns, the following occur i
 
 1. **Creep Spawning** — A new creep wave appears at the Creep Meeting Point in each lane (skipped during Round 1).
 2. **Passive Income** — Every hero receives a fixed amount of gold regardless of activity.
-3. **Power Rune Spawn** — On every 4th round, a Power Rune spawns at the River rune location (see §11).
+3. **Power Rune Spawn** — On every 4th round, any player rolls the custom Rune Die and flips a coin simultaneously to determine the rune type and which river position it spawns at. See §13.
 4. **Neutral Respawns** — On every even-numbered round, all cleared jungle camps are replenished.
 
 ---
@@ -367,7 +367,7 @@ Roshan occupies **Roshan's Pit**, a fixed area on the board.
 
 ## 13. Power Runes
 
-A Power Rune spawns at the **River rune position** every **4th round**. Runes cycle in a fixed, predictable order — both teams can anticipate the next rune.
+Every **4th round**, a Power Rune spawns at one of two designated **River rune positions** — one on the Radiant side, one on the Dire side. At the **start of that round**, any player simultaneously rolls the **custom Rune Die** (determines rune type) and flips a **coin** (determines which side receives it). Both results are resolved together and immediately known to both teams. Only one rune exists on the board at a time.
 
 | Rune | Effect |
 |---|---|

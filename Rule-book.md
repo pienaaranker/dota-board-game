@@ -65,7 +65,7 @@ Jungle areas that provide XP and Gold at the cost of Health. Ancient camps requi
 Home to Roshan. Defeating him drops the **Aegis of the Immortal**. If both teams are present at his death, a die roll determines who claims the item.
 
 ### Runes
-Power runes spawn every 4th round at the top or bottom position next to the middle lane. Runes rotate in a predictable order:
+Two rune spawn points sit on opposite sides of the river. Every 4th round, any player simultaneously rolls the **custom Rune Die** (determines rune type) and flips a **coin** (determines which side spawns it). Both results are resolved together and immediately visible to both teams. Rune types:
 
 | Rune | Effect |
 |------|--------|

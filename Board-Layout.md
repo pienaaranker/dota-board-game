@@ -74,19 +74,16 @@ One Barracks per lane, printed on the board. Each Barracks is a single-hex struc
 
 ---
 
-## River 🔲 TODO
+## River ✅ Resolved
 
 The central strip dividing the map between Radiant and Dire territory. Path and shape are defined on the visual board artwork.
 
-**Pending decisions:**
-- Terrain type: are river hexes plain **Open** hexes (no special rules), or does the river have a distinct terrain type with movement implications?
-- Mechanical effects: does moving through the river have any effect (e.g., slower movement), or is it purely cosmetic?
+River hexes are plain **Open** hexes — no movement penalties or special rules. The river is a cosmetic feature that visually separates the two halves of the map and provides a travel corridor.
 
-### Rune Spawn Points
-Power Runes spawn at designated river locations. Spawn point(s) are printed on the board.
+### Rune Spawn Points ✅ Resolved
+Two rune spawn points are printed on the board — one on the Radiant side of the river, one on the Dire side.
 
-**Pending decision:**
-- How many rune spawn points? Dota 2 has two (one each side of the river). Simplify to **one central point**, or keep two to create a contest over which side claims it?
+At the **start of every 4th round**, any player simultaneously rolls the **custom Rune Die** (determines rune type) and flips a **coin** (determines which side spawns it). Both results are resolved together. Only one rune is on the board at a time.
 
 ---
 
