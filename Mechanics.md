@@ -98,6 +98,7 @@ When an active hero targets your hero with an attack or ability, you may **React
 | **Flee** | 2 AP | Move 1 hex in any direction before the attack or ability resolves. If the attacker required adjacency or LoS, the attack misses entirely. |
 | **Activate Defensive Item** | 1 AP | Immediately trigger a held defensive Item Card (e.g. BKB equivalent) before damage is applied. The item's effect takes place before resolution. |
 | **Deny** | 1 AP | Contest an allied creep's last hit to deny the enemy gold and XP. See §8 for full rules. |
+| **Dodge Skillshot** | 2 AP | Roll a die to attempt to dodge an incoming Skillshot ability. On success, the ability misses. On failure, the ability hits normally. Regardless of outcome, the hero must immediately move to an adjacent hex. Only usable against abilities marked as Skillshot. |
 
 > **Example:** Juggernaut (4 AP) attacks Crystal Maiden. She reacts with **Flee** (costs 2 AP from her next turn), moving 1 hex away. Juggernaut is melee — he no longer has adjacency — so the attack misses. On Crystal Maiden's next turn she has 2 fewer AP to spend.
 
@@ -458,17 +459,17 @@ Ability Cards use different targeting and activation methods. This section defin
 
 **Channeled** — Can be **activated** during the hero's own turn (costs Mana and AP as printed). Once active, the hero must remain stationary and the effect persists across subsequent turns until interrupted or cancelled. **Interrupted by:** Stun, Silence, forced movement, or the target moving out of range. The casting player may **cancel the channel at any time** (like a toggle). Examples: Freezing Field, Black Hole.
 
-### Targeting Types ⬜ To Do
+### Targeting Types
 
 **No Target (Self-Cast)** — Instant effect centered on or affecting only the caster. No targeting step required. Examples: God's Strength, Battle Hunger.
 
 **Unit Target (Single Target)** — Targets a specific unit (ally, enemy, creep, or structure) within range and LoS. Must declare target before resolving.
 
-**Point Target** ⬜ To Do — Player declares a specific hex as the target location. Needs ruling on whether abilities fire instantly or have a "travel time" mechanic.
+**Point Target** — Player declares a specific hex within range as the target location. The effect occurs at that hex. Whether the effect is instant or has travel time is specified on the Ability Card. Examples: Light Strike Array, Ice Path.
 
-**Direction/Vector Target** ⬜ To Do — Player aims a line or direction from the caster. Examples: Swashbuckle, Macropyre. Needs board game representation (e.g., placing a ruler or token line).
+**Direction/Vector Target** — Player declares a direction or line from the caster by specifying a target hex. How the ability resolves along that direction (instant movement, projectile, persistent zone, etc.) is specified on the Ability Card. Examples: Swashbuckle (movement + attack along direction), Macropyre (line of fire).
 
-### Effect Shapes ⬜ To Do
+### Effect Shapes
 
 **Circular AoE** — Affects all units within a fixed radius (measured in hexes) from the center point.
 
@@ -476,11 +477,11 @@ Ability Cards use different targeting and activation methods. This section defin
 
 **Cone** — Wedge-shaped area in front of the caster. Hits all units in the cone.
 
-**Global** ⬜ To Do — Affects all enemy or allied heroes on the entire map. Examples: Thundergod's Wrath, Nature's Call. Needs ruling on whether "global" is allowed or too strong for board game balance.
+**Global** — Affects all enemy or allied heroes (as specified on the card) on the entire board, regardless of range or Line of Sight. No targeting step required — all valid targets are affected simultaneously. Balance is handled through the ability's damage values, mana cost, cooldown, and other printed parameters. Examples: Thundergod's Wrath, Nature's Call.
 
-### Special Mechanics ⬜ To Do
+### Special Mechanics
 
-**Skillshot** ⬜ To Do — Abilities that can miss if the target moves. Needs die roll or prediction mechanic. Examples: Sacred Arrow, Meat Hook.
+**Skillshot** — Abilities that travel in a line from the caster to a target location and can be dodged. **Whether an ability is a skillshot must be explicitly marked on the Ability Card.** Only abilities marked as Skillshot may be dodged using the Dodge Skillshot reaction — all other abilities resolve instantly and too quickly to dodge. The caster declares a direction by specifying a target hex (using Direction/Vector targeting). The ability creates a line effect from the caster's hex toward the target hex. Any hero in the path of the skillshot (including at the end position) may use the **Dodge Skillshot** reaction (see §3) to attempt to avoid being hit. The dodge reaction costs 2 AP from the hero's next turn, requires a die roll to determine success, and forces the hero to immediately move to an adjacent hex regardless of the roll's outcome. Examples: Sacred Arrow, Meat Hook.
 
 **Ground-Targeted AoE** — Combination of Point Target + Circular AoE. Player picks a hex; all units within the radius are affected.
 
