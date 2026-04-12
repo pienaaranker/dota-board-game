@@ -118,7 +118,7 @@ After all heroes on both sides have completed their turns, the following occur i
 The board represents the battlefield, divided into named areas. Heroes, creeps, and tokens occupy these areas.
 
 ### Hex Grid & Terrain
-The entire map is built on a **hex grid**. Every hex is one of three terrain types:
+The entire map is built on a **hex grid**. Every hex is one of three terrain types, and some hexes contain structures that further restrict movement:
 
 | Terrain Type | Movement | Line of Sight | Notes |
 |---|---|---|---|
@@ -127,6 +127,18 @@ The entire map is built on a **hex grid**. Every hex is one of three terrain typ
 | **Impassable** | **Blocked** | **Blocked** | Permanent walls, cliffs, and water. Cannot be entered or seen through under any circumstances. |
 
 The key difference between **Tree** and **Impassable**: trees can be destroyed and converted to Open hexes; impassable terrain is permanent.
+
+### Buildings & Obstacles
+Some hexes contain **structures** that block movement but **do not block Line of Sight**. Heroes can see through them but cannot enter them.
+
+| Structure Type | Movement | Line of Sight | Notes |
+|---|---|---|---|
+| **Building** | **Blocked** | Clear | Blocks movement; does **not** block LoS. Can be destroyed — once destroyed the hex becomes Open. Examples: base interior walls, reinforcing structures near objectives. |
+| **Obstacle** | **Blocked** | Clear | Blocks movement; does **not** block LoS. **Permanent** — cannot be destroyed or removed under any circumstances. Examples: rock formations, fountain pillars, decorative terrain features. |
+
+The key difference between **Building** and **Obstacle**: Buildings can be destroyed through combat (removing the movement block permanently); Obstacles are fixed features of the map.
+
+Neither Buildings nor Obstacles affect LoS — ranged attacks and abilities can target units on the far side of them freely.
 
 Tree clusters contain **Open hexes that wind through them** — these are juke paths. A hero on an Open hex inside a tree cluster is hard to chase because surrounding tree hexes block the enemy's Line of Sight, even though the hero is not inside a tree themselves.
 

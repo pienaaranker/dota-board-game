@@ -61,13 +61,13 @@ Two towers inside each base, guarding the Ancient. Both must be destroyed before
 
 ---
 
-## Bases 🔲 TODO
+## Bases ✅ Resolved
 
 Each team has a fortified base containing the Fountain, Ancient, Barracks, and Tier 4 Towers. Exact positions of all structures are defined on the visual board artwork.
 
-**Pending decisions:**
-- Entry points: how many lane openings lead into the base, and are they wide enough for multiple heroes to enter simultaneously or are they choke points?
-- Interior layout: open space (large area heroes can freely maneuver) or deliberate structure placement limiting movement paths?
+**Entry Points:** Three openings — one per lane — each **3 hexes wide**. Wide enough for multiple heroes to push or defend simultaneously without creating a single-file choke point.
+
+**Interior Layout:** The base interior is not open space — **Buildings and Obstacles** are placed throughout to create deliberate movement paths, protect key structures, and reward positional play. Heroes cannot freely maneuver to any hex; they must navigate around these structures to reach the Barracks, Tier 4 Towers, and Ancient.
 
 ### Barracks
 One Barracks per lane, printed on the board. Each Barracks is a single-hex structure with a clear icon linking it to its lane.
@@ -153,6 +153,8 @@ The overall character of the map determined by how Open, Tree, and Impassable he
 - Map feel: dense and tactical (heavy tree coverage, many choke points) or open and aggressive (wide lanes, sparse jungle)?
 - Tree cluster style: large continuous forests with winding paths, or scattered smaller groves throughout?
 - Impassable terrain use: primarily for base walls and river banks, or also used to create cliff features and broken terrain across the map?
+- Buildings: used sparingly as destroyable movement blockers in key strategic areas (base interiors, chokepoints near objectives), or more broadly across the map?
+- Obstacles: used for permanent decorative/structural features like rock formations, pillars, and fountain walls that block pathing but maintain open sight lines?
 
 ### Juke Paths
 Open hexes winding through tree clusters. Named juke paths and their locations are labeled on the visual board artwork.

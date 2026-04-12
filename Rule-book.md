@@ -85,6 +85,22 @@ Power runes spawn every 4th round at the top or bottom position next to the midd
 
 ---
 
+## Terrain and Structures
+
+Hexes on the board have different properties that affect movement and line of sight:
+
+| Type | Movement | Line of Sight | Notes |
+|------|----------|---------------|-------|
+| **Open** | Passable | Clear | No restrictions. |
+| **Tree** | Blocked | Blocked | Cannot enter; blocks LoS; can be destroyed by abilities/items. Regrows every 4th round. |
+| **Impassable** | Blocked | Blocked | Permanent walls, cliffs, water. Cannot enter or see through. |
+| **Building** | Blocked | **Clear** | Cannot enter; does **not** block LoS. Destroyable — becomes Open when destroyed. |
+| **Obstacle** | Blocked | **Clear** | Cannot enter; does **not** block LoS. Permanent — cannot be destroyed. |
+
+Buildings and Obstacles allow heroes to see (and target) enemies on the other side, but physically block the path — heroes must go around them.
+
+---
+
 ## Combat and Hero Fights
 
 - **Initiative** — When multiple heroes are in the same area, action order is determined by Move Speed.
