@@ -49,232 +49,159 @@ The midpoint between standing towers where creep waves spawn and meet.
 
 ---
 
-## Towers 🔲 TODO
+## Towers ✅ Resolved
 
 ### Tower Positions
 Each lane has a sequence of towers: **Tier 1 → Tier 2 → Tier 3**.
 
-**Pending decisions:**
-- Exact hex positions for each tower in each lane
-- Spacing between tower tiers (how many hexes apart?)
-- Tower "zone of control" radius (for siege requirement and Smoke dispel)
-- Line of sight from towers (do towers provide vision advantage like Observer Wards?)
-- Whether towers are single-hex tokens or multi-hex structures
+Tower positions, spacing, health, range, and zone of control are defined on the visual map design and in the dedicated Towers rules document. On the board, each tower occupies a single printed hex with a clear tower icon indicating its tier and team.
 
 ### Tier 4 Towers
-Two towers inside each base, guarding the Ancient.
-
-**Pending decisions:**
-- Placement relative to Ancient (flanking positions, distance in hexes)
-- Coverage radius
-- Whether both must be destroyed or only one to access Ancient
+Two towers inside each base, guarding the Ancient. Both must be destroyed before the Ancient can be attacked. Positions are defined on the board artwork.
 
 ---
 
 ## Bases 🔲 TODO
 
-Each team has a fortified base containing the Fountain, Ancient, Barracks, and Tier 4 Towers.
+Each team has a fortified base containing the Fountain, Ancient, Barracks, and Tier 4 Towers. Exact positions of all structures are defined on the visual board artwork.
 
 **Pending decisions:**
-- Total base size in hexes
-- Entry points (how many hexes wide are the openings from each lane?)
-- Fountain position and radius (healing area size)
-- Ancient position (center of base, or offset?)
-- Interior layout (open space vs. maze-like with tree clusters)
-- Impassable terrain forming base walls
+- Entry points: how many lane openings lead into the base, and are they wide enough for multiple heroes to enter simultaneously or are they choke points?
+- Interior layout: open space (large area heroes can freely maneuver) or deliberate structure placement limiting movement paths?
 
-### Barracks Placement
-One Barracks per lane, located inside the base behind the Tier 3 Tower.
-
-**Pending decisions:**
-- Exact hex position relative to Tier 3 Tower
-- Whether Barracks are single-hex or multi-hex structures
-- Separation distance between Top/Mid/Bot Barracks buildings
-- Visual distinction on board (icons, tokens, or printed)
+### Barracks
+One Barracks per lane, printed on the board. Each Barracks is a single-hex structure with a clear icon linking it to its lane.
 
 ---
 
 ## River 🔲 TODO
 
-The central horizontal strip dividing the map.
+The central strip dividing the map between Radiant and Dire territory. Path and shape are defined on the visual board artwork.
 
 **Pending decisions:**
-- River width in hexes
-- River terrain type (Open hexes, or special "Water" terrain with movement rules?)
-- Whether river provides any mechanical effects (movement speed, vision, etc.)
-- Exact path (straight horizontal, or curved/diagonal?)
+- Terrain type: are river hexes plain **Open** hexes (no special rules), or does the river have a distinct terrain type with movement implications?
+- Mechanical effects: does moving through the river have any effect (e.g., slower movement), or is it purely cosmetic?
 
 ### Rune Spawn Points
-Power Runes spawn at designated river locations.
+Power Runes spawn at designated river locations. Spawn point(s) are printed on the board.
 
-**Pending decisions:**
-- How many rune spawn points? (Dota 2 has two; simplify to one for board game?)
-- Exact hex coordinates for spawn point(s)
-- Whether rune locations alternate or use fixed position
-- Visual marker (printed icon, or token placement zone)
+**Pending decision:**
+- How many rune spawn points? Dota 2 has two (one each side of the river). Simplify to **one central point**, or keep two to create a contest over which side claims it?
 
 ---
 
 ## Jungle 🔲 TODO
 
-Wilderness areas on each side of the map, between lanes.
+Wilderness areas on each side of the map, between lanes. Terrain distribution and entry points are defined on the visual board artwork; the asymmetry between Radiant and Dire jungles is intentional.
 
 **Pending decisions:**
-- Total jungle area size per team (how many hexes?)
-- Jungle terrain distribution (ratio of Open hexes to Tree hexes to Impassable)
-- Entrances/exits connecting jungle to lanes
-- Symmetry enforcement (must both jungles mirror each other exactly?)
+- Terrain feel: should the jungle be dense (mostly Trees with narrow Open paths, high juke potential) or open (more Open hexes with scattered tree clusters, easier to navigate)?
+- Entrances: how many distinct entry/exit paths connect the jungle to each adjacent lane?
 
 ### Neutral Camps
-Camps containing neutral creeps that can be farmed.
+Camps containing neutral creeps, printed on the board. A hero is "in a camp" when on any hex within the camp's marked area.
 
 **Pending decisions:**
-- Total number of camps per team's jungle
-- Camp difficulty distribution (how many Easy / Medium / Hard camps per side?)
-- Exact hex positions for each camp
-- Camp radius (how many hexes define "being in the camp area"?)
-- Respawn marker visibility (printed on board, or separate token?)
+- How many neutral camps per team's jungle?
+- Difficulty distribution: how many Easy, Medium, and Hard camps per side?
 
 ### Ancient Camps
-High-value neutral camps located deeper in the jungle.
+High-value neutral camps located deep in the jungle, printed on the board with a distinct icon.
 
-**Pending decisions:**
-- How many Ancient camps per team? (Dota 2 has 2 per side; simplify to 1?)
-- Exact hex positions
-- Proximity to lanes vs. deep jungle placement (risk/reward balance)
-- Visual distinction from regular neutral camps
+**Pending decision:**
+- How many Ancient camps per team? Dota 2 has 2 per side — keep both, or simplify to 1 for a cleaner jungle layout?
 
 ---
 
 ## Roshan's Pit 🔲 TODO
 
-Dedicated area in the river-jungle border region.
+Dedicated area in the river-jungle border region. Exact position and size are defined on the visual board artwork.
 
 **Pending decisions:**
-- Exact hex position (closer to Radiant or Dire, or centered?)
-- Pit size in hexes
-- Entry points (how many hexes wide? single choke point or multiple entrances?)
-- Interior layout (open area or tree clusters for juking?)
-- Whether the pit is elevated/depressed terrain (visual only, or mechanical impact?)
-- Aegis drop location (center of pit, or specific hex?)
+- Positioning: closer to Radiant, closer to Dire, or perfectly centered? (Dota 2 traditionally favors Radiant-side, creating a minor strategic asymmetry.)
+- Entry points: single choke point entrance (high-stakes, easy to contest) or multiple entrances (more dynamic fights, harder to defend)?
+- Interior layout: open pit (straightforward fight) or tree clusters inside (juking possible, adds chaos to Roshan fights)?
 
 ---
 
 ## Secret Shops 🔲 TODO
 
-Hidden shops located in the jungle, allowing item purchases without returning to Fountain.
+Hidden shops located in the jungle allowing forward item purchases without returning to the Fountain. One per team in Dota 2.
 
 **Pending decisions:**
-- Include Secret Shops at all, or exclude for simplicity? (candidates for exclusion)
-- If included: how many per side? (Dota 2 has 1 per team)
-- Exact hex positions
-- Proximity to lanes vs. deep jungle (risk entering enemy territory to shop)
-- Purchasing rules (instant like Fountain, or requires Courier delivery?)
-- Limited item pool vs. full shop access
+- Include or exclude? Forward purchasing adds strategic depth (jungling heroes can buy without recalling) but adds board complexity.
+- If included: placement in own jungle only, or accessible from enemy territory too (high-risk reward)?
+- If included: same full item pool as Fountain, or limited to a subset of items? (Purchasing rules would be defined in the Items document.)
 
 ---
 
 ## Outposts 🔲 TODO
 
-Capture points located in the jungle that grant XP and provide a forward teleport destination.
+Capture points in the jungle that grant XP and act as forward teleport destinations. One per side in Dota 2.
 
 **Pending decisions:**
-- Include Outposts at all, or exclude for simplicity? (candidates for exclusion; teleport mechanics not yet defined)
-- If included: how many per side? (Dota 2 has 2 total, 1 per jungle)
-- Exact hex positions
-- Capture mechanics (AP cost, can enemies contest?)
-- XP reward structure (per-round passive, or one-time capture bonus?)
-- Whether Outposts replace Secret Shops or coexist
+- Include or exclude? Teleport mechanics are not yet defined — if teleportation doesn't exist in this game, Outposts lose their main purpose and should be excluded.
+- If teleportation is added: do Outposts coexist with Secret Shops, or replace them as the key mid-jungle objective?
 
 ---
 
 ## Terrain Distribution 🔲 TODO
 
-Hex-by-hex allocation of terrain types across the map.
+The overall character of the map determined by how Open, Tree, and Impassable hexes are distributed. Exact hex-by-hex placement is defined on the visual board artwork.
 
 **Pending decisions:**
-- Overall ratio of Open : Tree : Impassable hexes
-- Tree cluster patterns (large continuous forests vs. scattered groves?)
-- Juke path design (how many Open hexes wind through tree clusters? how wide?)
-- Impassable terrain distribution (bases, cliffs, river boundaries, decorative features)
-- Symmetry enforcement (must terrain mirror perfectly for balance?)
+- Map feel: dense and tactical (heavy tree coverage, many choke points) or open and aggressive (wide lanes, sparse jungle)?
+- Tree cluster style: large continuous forests with winding paths, or scattered smaller groves throughout?
+- Impassable terrain use: primarily for base walls and river banks, or also used to create cliff features and broken terrain across the map?
 
 ### Juke Paths
-Open hexes winding through tree clusters, used for escapes and vision-blocking maneuvers.
+Open hexes winding through tree clusters. Named juke paths and their locations are labeled on the visual board artwork.
 
-**Pending decisions:**
-- Named juke path locations (e.g., "Top Lane Treeline," "River Juke")
-- Path width (1 hex, or 2+ hexes wide?)
-- Path length and complexity (simple shortcuts vs. labyrinthine)
-- Whether juke paths connect multiple areas (lane to jungle, jungle to river, etc.)
+**Pending decision:**
+- Path width: single-hex paths (narrow, harder to chase through) or 2-hex wide paths (more forgiving, easier to navigate)?
 
 ---
 
 ## Ward Spots 🔲 TODO
 
-Optimal hexes for placing Observer Wards and Sentry Wards.
+Optimal hexes for placing Observer and Sentry Wards. Specific high-value positions emerge naturally from the board layout.
 
-**Pending decisions:**
-- Designate "premium" ward spots on the board (printed markers, or player discovery?)
-- Coverage overlap analysis (which ward spots cover multiple key areas?)
-- Offensive vs. defensive ward zones (deep enemy territory vs. your own jungle)
-- Counter-warding hotspots (common Sentry Ward placement to deward enemy Observers)
-- Whether ward spot designation is a teaching tool or affects mechanics
+**Pending decision:**
+- Should premium ward spots be **printed on the board** as visual guides (teaching tool for new players, no mechanical effect), or left entirely to player discovery?
 
 ---
 
 ## Elevation & High Ground 🔲 TODO
 
-Dota 2 features high ground / low ground elevation that affects vision and combat. **High ground advantage was excluded in Mechanics.md**, but elevation may still exist for thematic/visual purposes.
+High ground advantage was excluded in Mechanics.md. However, elevation can still exist as a visual layer on the board.
 
-**Pending decisions:**
-- Include elevation as visual-only (no mechanical impact), or exclude entirely?
-- If visual-only: mark high ground hexes with color/shading for thematic flavor
-- River banks as low-to-high transitions
-- Base interiors as elevated platforms
-- Roshan pit as depressed terrain
+**Pending decision:**
+- Visual elevation only (bases shaded as elevated, river as low ground, Roshan's Pit as depressed — no mechanical effect), or exclude elevation entirely from the artwork to keep the board cleaner?
 
 ---
 
-## Distances & Measurements 🔲 TODO
+## Distances & Measurements
 
-Key distance relationships that affect gameplay pacing.
-
-**Pending decisions:**
-- Fountain to Tier 1 Tower (how many hexes/Move actions to reach lane from spawn?)
-- Tier 1 to Tier 2 Tower spacing
-- Tier 2 to Tier 3 Tower spacing
-- Lane to nearest Jungle Camp (farming rotation efficiency)
-- Jungle Camp to Jungle Camp (neutral farming paths)
-- Rune spawn to lane (contest timing)
-- Roshan Pit to nearest lane (gank escape routes)
-- Ancient to Ancient (total map traversal for global abilities and respawn-to-frontline timing)
+All key distances (Fountain to lane, tower spacing, jungle camp proximity, rune timing) are determined by the visual board design. No separate specification needed — distances emerge from structure placement on the 46×46 grid and are validated during playtesting.
 
 ---
 
-## Visual Design 🔲 TODO
+## Visual Design
 
-How the board is physically produced and presented.
+Already established in Map Overview: single-piece illustrated board with printed hex grid overlay. Terrain color-coded, named areas labeled on board art, tokens for dynamic elements.
 
-**Pending decisions:**
-- Illustrated single-piece board vs. modular hex tiles
-- Art style (top-down Dota 2 map aesthetic, or stylized/abstract?)
-- Hex size (large enough for tokens + readable terrain icons)
-- Color coding (Radiant side green/gold, Dire side red/purple?)
-- Iconography for terrain types (tree symbol, impassable ×, open blank)
-- Whether named areas are printed on board or referenced in rulebook only
+Art direction decisions (style, color palette, iconography, hex size) are outside the scope of this rules/layout document and belong to the production design phase.
 
 ---
 
 ## Design Priorities 🔲 TODO
 
-Strategic goals for the board layout.
+Strategic goals that guide all remaining layout decisions.
 
 **Pending decisions:**
-- Emphasize lane dominance (shorter lanes, closer towers) or jungle control (larger jungle with more camps)?
-- Roshan contest frequency (central location for constant fights, or offset to create strategic windows?)
-- Juke/escape potential (many tree clusters for tactical plays, or open terrain for brawling?)
-- Symmetry strictness (perfect mirror for competitive fairness, or asymmetric features for variety?)
+- Balance emphasis: lane dominance (tighter lanes, towers closer together) or jungle control (larger jungle with more camps to contest)?
+- Roshan: centrally located for frequent early contests, or offset to create deliberate strategic windows?
+- Tactical texture: many tree clusters and choke points for high juke/escape potential, or more open terrain favoring direct brawling?
 
 ---
 
