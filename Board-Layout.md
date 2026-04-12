@@ -2,11 +2,9 @@
 
 This document defines the physical board layout, named areas, and spatial relationships between game elements. It translates the Dota 2 map into a playable hex-grid board game format.
 
-All entries marked **🔲 TODO** are pending design decisions. Once resolved, the marker is replaced with ✅.
-
 ---
 
-## Map Overview ✅ Resolved
+## Map Overview
 
 **Board Dimensions:** 46 hexes × 46 hexes (2,116 total hexes)
 
@@ -33,14 +31,14 @@ This provides a large playable area with room for:
 
 ---
 
-## Lanes ✅ Resolved
+## Lanes
 
 ### Lane Structure
 Three lanes connect the two bases: **Top**, **Mid**, and **Bottom**.
 
 **Lane paths are defined visually on the board artwork.** Exact distances, widths, and curves are intuitive from the illustrated map. How lanes interact with terrain (tree clusters alongside lanes, choke points, open areas) is determined by the overall terrain distribution design — not specified separately.
 
-### Creep Meeting Points ✅ Resolved
+### Creep Meeting Points
 The midpoint between standing towers where creep waves spawn and meet.
 
 **Visual Markers:** Each lane has **multiple pre-defined meeting point hexes** printed directly on the board. These hexes are clearly marked with visual indicators (icons, special coloring, or labeled zones).
@@ -49,7 +47,7 @@ The midpoint between standing towers where creep waves spawn and meet.
 
 ---
 
-## Towers ✅ Resolved
+## Towers
 
 ### Tower Positions
 Each lane has a sequence of towers: **Tier 1 → Tier 2 → Tier 3**.
@@ -61,7 +59,7 @@ Two towers inside each base, guarding the Ancient. Both must be destroyed before
 
 ---
 
-## Bases ✅ Resolved
+## Bases
 
 Each team has a fortified base containing the Fountain, Ancient, Barracks, and Tier 4 Towers. Exact positions of all structures are defined on the visual board artwork.
 
@@ -74,24 +72,24 @@ One Barracks per lane, printed on the board. Each Barracks is a single-hex struc
 
 ---
 
-## River ✅ Resolved
+## River
 
 The central strip dividing the map between Radiant and Dire territory. Path and shape are defined on the visual board artwork.
 
 River hexes are plain **Open** hexes — no movement penalties or special rules. The river is a cosmetic feature that visually separates the two halves of the map and provides a travel corridor.
 
-### Rune Spawn Points ✅ Resolved
+### Rune Spawn Points
 Two rune spawn points are printed on the board — one on the Radiant side of the river, one on the Dire side.
 
 At the **start of every 4th round**, any player simultaneously rolls the **custom Rune Die** (determines rune type) and flips a **coin** (determines which side spawns it). Both results are resolved together. Only one rune is on the board at a time.
 
 ---
 
-## Jungle ✅ Resolved
+## Jungle
 
 Wilderness areas on each side of the map, between lanes. Terrain distribution and entry points are defined on the visual board artwork; the asymmetry between Radiant and Dire jungles is intentional.
 
-### Neutral Camps ✅ Resolved
+### Neutral Camps
 Camps containing neutral creeps, printed on the board. A hero is "in a camp" when on any hex within the camp's marked area.
 
 Each team's jungle is divided into two sections by lane proximity:
@@ -105,12 +103,12 @@ Each team's jungle is divided into two sections by lane proximity:
 - 1 Medium Camp
 - 1 Ancient Camp
 
-### Ancient Camps ✅ Resolved
+### Ancient Camps
 One Ancient Camp per team, located in the off lane jungle. Printed on the board with a distinct icon to distinguish it from regular neutral camps.
 
 ---
 
-## Roshan's Pit ✅ Resolved
+## Roshan's Pit
 
 Dedicated area in the river-jungle border region, positioned on the **Dire side** between the Dire mid lane and off lane — mirroring the traditional Dota 2 placement. Exact position and size are defined on the visual board artwork.
 
@@ -122,7 +120,7 @@ Dedicated area in the river-jungle border region, positioned on the **Dire side*
 
 ---
 
-## Secret Shops ✅ Resolved
+## Secret Shops
 
 One Secret Shop per side, printed on the board. Positioned near the **off lane Ancient Camp** in each team's jungle.
 
@@ -132,7 +130,7 @@ One Secret Shop per side, printed on the board. Positioned near the **off lane A
 
 ---
 
-## Terrain Distribution ✅ Resolved
+## Terrain Distribution
 
 The overall character of the map determined by how Open, Tree, and Impassable hexes are distributed. Exact hex-by-hex placement is defined on the visual board artwork.
 
@@ -145,13 +143,13 @@ Open hexes winding through tree clusters, created organically by tree positionin
 
 ---
 
-## Ward Spots ✅ Resolved
+## Ward Spots
 
 Observer Wards always affect their full printed radius regardless of placement — there is no vision obscuring to work around. No premium ward spots are marked on the board. Players place wards wherever they choose; optimal placement is purely a tactical decision.
 
 ---
 
-## Elevation & High Ground ✅ Resolved
+## Elevation & High Ground
 
 Elevation exists as a **visual-only** layer in the board artwork — no mechanical effect. Bases are shaded as elevated platforms, the river sits at low ground, and Roshan's Pit is depicted as a depressed area. This adds thematic depth and visual readability without introducing any gameplay rules.
 
