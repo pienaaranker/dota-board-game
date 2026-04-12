@@ -453,8 +453,15 @@ A shared team token that delivers items from the Fountain stash to heroes in the
 - The Courier can be killed by enemy heroes; any items being carried are **lost**.
 - Each team has one Courier.
 
-### Aghanim's Scepter & Aghanim's Shard 🔄 Pending Discussion
-Special items that modify hero abilities in unique, hero-specific ways. Pending discussion. See §F.
+### Aghanim's Scepter
+A high-cost luxury item purchased at the Fountain. When a hero acquires Aghanim's Scepter, one of their abilities receives a permanent upgrade.
+
+**Rules:**
+- Each hero has **one ability** that can be upgraded by Aghanim's Scepter. This is clearly marked on the Ability Card.
+- The upgrade effect is **printed directly on the Ability Card** in a dedicated "Aghanim's Upgrade" section.
+- The Scepter provides the upgrade immediately upon purchase — no additional activation required.
+- Scepter upgrades are permanent as long as the item is held by the player.
+- **Aghanim's Shard is not included in this board game.**
 
 ---
 
@@ -463,15 +470,17 @@ Special items that modify hero abilities in unique, hero-specific ways. Pending 
 ### Respawn
 When a hero is killed they are removed from the board and placed in a respawn queue.
 
-- Respawn takes a number of rounds that increases as the game progresses — deaths are more punishing late game.
-- The specific round-count table is **pending discussion** (see §G).
-- On their designated respawn round, the hero returns to the **Fountain** with full Health and Mana.
+- **Respawn Timer:** A dead hero respawns after a number of **turns** equal to their **current level**. For example, a Level 8 hero waits 8 turns before respawning.
+- Turns are counted individually across all players, not rounds. If killed during an opponent's turn, the timer begins counting with the next player's turn.
+- On their designated respawn turn, the hero returns to the **Fountain** with full Health and Mana.
+- Death timers scale automatically with level progression — higher-level heroes are out of the game longer when killed, making late-game deaths more punishing.
 
 ### Buyback
 A dead hero may pay a **Gold fee** at any point during their respawn wait to return to the Fountain immediately.
 
-- Buyback cost scales upward as the game progresses.
-- A hero who uses Buyback cannot Buyback again for a set number of rounds.
+- **Buyback Cost:** Scales with hero level. The exact gold cost is specified on reference cards or the game board.
+- A hero who uses Buyback cannot Buyback again for a set number of rounds (typically 5 rounds).
+- Buyback bypasses the respawn timer entirely — the hero returns to the Fountain at the start of their next turn.
 
 ---
 
@@ -540,11 +549,11 @@ The following mechanics are confirmed for inclusion but need specific rulings be
 ### §E — Smoke of Deceit ✅ Resolved
 **Decision:** Smoke is a consumable that grants **group Invisibility** to all allied heroes within a fixed radius (typically 2 hexes). Heroes under Smoke are **invisible to Observer Wards** (no tactical reaction advantage for defenders) and targets **cannot react** when attacked from Smoke. Smoke dispels when any affected hero moves within 3 hexes of an enemy hero, enters a Tower's area, or attacks. Single-use consumable. See §14 for full rules.
 
-### §F — Aghanim's Scepter & Aghanim's Shard
-Two items that upgrade hero abilities in hero-specific ways rather than giving generic stat bonuses. Ruling needed on card format (attached upgrade card vs. overlay vs. printed secondary box on Ability Card), and handling of Scepters that grant entirely new abilities.
+### §F — Aghanim's Scepter & Aghanim's Shard ✅ Resolved
+**Decision:** **Aghanim's Shard is not included** in the board game. **Aghanim's Scepter** is a high-cost item that permanently upgrades one hero ability. Each hero has exactly one ability that can be upgraded, and the upgrade text is **printed directly on the Ability Card** in an "Aghanim's Upgrade" section. No separate cards or overlays needed. See §15 for full rules.
 
-### §G — Respawn Timer Scaling
-Deaths should cost more rounds as the game progresses. Ruling needed on a specific table (e.g. Early / Mid / Late game thresholds and their corresponding round costs) and how Buyback cost scales alongside it.
+### §G — Respawn Timer Scaling ✅ Resolved
+**Decision:** Respawn timer is calculated as **turns (not rounds) = hero level**. A Level 8 hero waits 8 turns before respawning. This automatically scales death punishment with game progression. Buyback cost also scales with hero level and prevents re-use for 5 rounds after activation. See §16 for full rules.
 
 ---
 
@@ -561,4 +570,5 @@ The following were considered and deliberately excluded to avoid bloat. Candidat
 | **Day / Night Cycle** | Touches vision, hero stats, and towers simultaneously; high complexity for limited return. |
 | **Hero Roles / Position Priority** | Left to player strategy; no mechanical enforcement needed. |
 | **Comeback Gold** | Bookkeeping overhead; revisit as variant rule if snowballing proves a problem in playtesting. |
-| **Tormentor** | Reward (Aghanim's Shard) is pending §F; revisit if §F is resolved. |
+| **Aghanim's Shard** | Scepter provides sufficient ability upgrade depth; Shard would require separate upgrade tier and additional card complexity. |
+| **Tormentor** | Reward (Aghanim's Shard) excluded in §F; no longer needed. |
