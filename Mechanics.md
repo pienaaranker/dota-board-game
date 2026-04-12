@@ -227,6 +227,24 @@ The attacker's Damage and the defender's Defense are taken from their Hero Cards
 | **Stun** | Target loses AP equal to the stun value from their *next* turn. |
 | **Silence** | Target cannot use Ability Cards for the remainder of the current round and their next turn. |
 | **Slow** | Defined per card — typically reduces effective movement areas per AP. |
+| **DoT (Damage over Time)** | See below. |
+
+### Damage over Time (DoT)
+
+A DoT is a debuff token placed on a hero. At the **start of that hero's turn**, the DoT deals its damage and decrements its duration by 1. When the duration reaches 0, the token is removed.
+
+**DoT rules:**
+- Each DoT token specifies: damage per tick, tick frequency (every turn or every round), and total duration.
+- Multiple different DoT tokens can be active on a hero simultaneously; each ticks independently.
+- The same DoT type does **not** stack — applying it again refreshes the duration instead.
+- Most DoTs are **dispellable**: they can be removed by items or abilities that cleanse debuffs (e.g. Eul's Scepter of Divinity, Guardian Greaves). The item or ability card will state if it dispels debuffs.
+- Some DoTs are marked **undispellable** on the card or item entry — these cannot be removed early.
+
+**Named DoT types used in this game:**
+
+| DoT Type | Damage | Frequency | Notes |
+|---|---|---|---|
+| **Bleed** | X physical damage | Once per turn | Applied by Blood Grenade. Dispellable. |
 
 ### Death
 When a hero's Health reaches 0 they are removed from the board and enter a respawn countdown (see §15).

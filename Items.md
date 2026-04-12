@@ -27,58 +27,70 @@ Stat shorthand used throughout:
 Single-use items. Once activated, the item card is discarded.
 
 #### Blood Grenade *(50 Gold)*
-**Type:** Consumable | **Status:** 🔲 TODO
+**Type:** Consumable | **Status:** ✅ Confirmed
 
-Thrown at a target hex within range. Removes Invisible tokens from all units on the target hex and all adjacent hexes. If an enemy hero is on the target hex, apply a Bleed token — they take X damage at the start of their next turn.
+Thrown at a target hex within range. Apply a **Bleed** token to all enemy heroes within a **1-hex radius** of the target hex (the target hex and all 6 adjacent hexes). Bleed deals X physical damage at the start of each of the affected hero's turns for Y turns. Bleed is dispellable. See Mechanics.md §7 for DoT rules.
 
 ---
 
 #### Bottle *(675 Gold)*
-**Type:** Consumable / Active | **Status:** 🔲 TODO
+**Type:** Consumable / Active | **Status:** ✅ Confirmed
 
-Can store one Rune token or be used empty. **Empty use:** Restore X HP and Y Mana over 2 turns. **Stored Rune:** Consume the stored Rune for its full effect. Refilled at the Fountain. One Bottle per hero maximum.
+Can store one Rune token or be used if full. **Use:** Restore X HP and Y Mana over 4 turns. **Stored Rune:** Consume the stored Rune for its full effect. Refilled at the Fountain. One Bottle per hero maximum.
 
 ---
 
 #### Clarity *(60 Gold)*
-**Type:** Consumable | **Status:** 🔲 TODO
+**Type:** Consumable | **Status:** ✅ Confirmed
 
-Restore X Mana over 2 rounds. Interrupted if the user takes damage before regen completes.
+Restore X Mana over 2 rounds. Interrupted if the user takes damage from an enemy hero before regen completes.
 
 ---
 
 #### Dust of Appearance *(80 Gold)*
-**Type:** Consumable | **Status:** 🔲 TODO
+**Type:** Consumable | **Status:** ✅ Confirmed
 
 Use during your turn (1 AP). Remove Invisible tokens from all enemy heroes within 2 hexes. Affected heroes cannot regain Invisibility for 1 round.
 
 ---
 
 #### Enchanted Mango *(65 Gold)*
-**Type:** Consumable | **Status:** 🔲 TODO
+**Type:** Consumable | **Status:** ✅ Confirmed
 
 Instantly restore X Mana. Can be used on an allied hero within 1 hex instead of self.
 
 ---
 
 #### Healing Salve *(100 Gold)*
-**Type:** Consumable | **Status:** 🔲 TODO
+**Type:** Consumable | **Status:** ✅ Confirmed
 
-Restore X HP over 2 rounds. Interrupted if the user takes damage before regen completes.
+Restore X HP over 2 rounds. Interrupted if the user takes damage from an enemy hero before regen completes.
 
 ---
 
-#### Observer Ward *(0 Gold)*
-**Type:** Consumable (Placeable) | **Status:** 🔲 TODO
+#### Observer Ward *(50 Gold)*
+**Type:** Consumable (Placeable) | **Status:** ✅ Confirmed
 
-Place on any accessible hex (1 AP). Reveals all enemy hero tokens within its printed radius. Always affects full radius — no premium placement spots. Lasts until destroyed by a Sentry Ward or removed by an enemy hero action.
+Place on any Open hex (1 AP). The ward token remains on the board until destroyed and covers a fixed radius of hexes as printed on the item card.
+
+**Tactical Advantage:** While an enemy hero is standing within a warded area, any allied hero they target may use **two reactions** instead of the normal one. This represents the awareness and intel that vision provides. Heroes attacking from under **Smoke of Deceit** bypass this advantage entirely.
+
+Observer Wards do **not** grant invisibility detection — they only provide the reaction advantage. Use Sentry Wards or Dust of Appearance for that.
+
+**Destroying a Ward:** Observer Wards are invisible to the enemy team and cannot be targeted or destroyed unless first revealed by **true sight**. A ward is revealed if it falls within the radius of an enemy **Sentry Ward**, or within range of an enemy hero carrying a **Gem of True Sight**. Once revealed, an adjacent hero may spend 1 AP to destroy it. See Mechanics.md §14 for full ward rules.
 
 ---
 
 #### Sentry Ward *(50 Gold)*
-**Type:** Consumable (Placeable) | **Status:** 🔲 TODO
+**Type:** Consumable (Placeable) | **Status:** ✅ Confirmed
 
-Place on any accessible hex (1 AP). Reveals all Invisible units within its printed radius. Also destroys any enemy Observer Wards within that radius.
+Place on any Open hex (1 AP). The ward token remains on the board until destroyed and provides **true sight** within its printed radius.
+
+**True Sight:** All enemy units with Invisibility tokens and all enemy Observer Wards within the radius are revealed for as long as the Sentry Ward remains active. Revealed Observer Wards may be destroyed by an adjacent hero spending 1 AP.
+
+**Invisible by default:** Like Observer Wards, Sentry Wards are invisible to the enemy team. They can only be revealed and destroyed if the enemy has a true sight source of their own covering the ward's hex.
+
+Sentry Wards do **not** provide the tactical reaction advantage that Observer Wards do — they are purely a detection tool. See Mechanics.md §14 for full ward rules.
 
 ---
 
@@ -122,9 +134,11 @@ Spend 1 AP. Instantly teleport up to X hexes in any direction, ignoring all terr
 ---
 
 #### Gem of True Sight *(900 Gold)*
-**Type:** Passive | **Status:** 🔲 TODO
+**Type:** Passive | **Status:** ✅ Confirmed
 
-All Invisible enemy heroes and enemy Observer Wards within this hero's vision radius are revealed. Drops onto the hex on death — any hero may pick it up.
+While carried, grants the hero **true sight** in a radius around them at all times: all enemy units with Invisibility tokens and all enemy Observer Wards within range are revealed.
+
+**On death:** The Gem drops onto the hero's hex as a token. Any hero — from either team — may pick it up by moving onto that hex. The Gem is never destroyed.
 
 ---
 
