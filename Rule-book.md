@@ -56,6 +56,8 @@ Located in the base. Instantly restores all Health and Mana to heroes in this ar
 ### Creep Meeting Points
 Locations halfway between the closest standing towers in a lane. Lane creeps can only be farmed here. (Each possible location is marked on the map.)
 
+When a tower is destroyed, the meeting point in that lane shifts forward (toward the enemy base) during the Round End Phase when new creeps spawn. This causes the next wave to appear at the advanced position, creating immediate lane pressure.
+
 ### Neutrals and Ancients
 Jungle areas that provide XP and Gold at the cost of Health. Ancient camps require extra AP and cost more health.
 

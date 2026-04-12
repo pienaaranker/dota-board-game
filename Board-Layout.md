@@ -18,7 +18,11 @@ This provides a large playable area with room for:
 - Roshan's Pit
 - Adequate tree clusters for juke paths and tactical positioning
 
-**Symmetry:** The map is **mirrored diagonally** for Radiant/Dire balance. The diagonal runs from bottom-left (Radiant Ancient) to top-right (Dire Ancient). Lanes, jungle camps, tower positions, and terrain features mirror across this axis to ensure competitive fairness.
+**Symmetry:** The map is **largely mirrored diagonally** for Radiant/Dire balance, but **not perfectly symmetrical**. The diagonal runs from bottom-left (Radiant Ancient) to top-right (Dire Ancient). Core strategic elements (lane lengths, tower positions, jungle camp counts, major area sizes) mirror across this axis to ensure competitive fairness. However, **asymmetric features** create the nuance and charm of Dota 2:
+- Wall placements and Impassable terrain patterns differ between sides
+- Entry points to jungles, bases, and neutral camps vary in position and width
+- Tree cluster shapes and juke path geometry are unique per side
+- Minor terrain variations create side-specific advantages and disadvantages that balance out over full games
 
 **Orientation:**
 - **Radiant (bottom-left corner)** — Player sitting on south/west side of the board
@@ -29,24 +33,19 @@ This provides a large playable area with room for:
 
 ---
 
-## Lanes 🔲 TODO
+## Lanes ✅ Resolved
 
 ### Lane Structure
 Three lanes connect the two bases: **Top**, **Mid**, and **Bottom**.
 
-**Pending decisions:**
-- Exact hex distance from Ancient to Ancient per lane
-- Lane width in hexes (single file vs. 2–3 hex wide corridor)
-- Curve vs. straight path geometry
-- How lanes interact with terrain (tree clusters alongside, or integrated into lane hex pattern?)
+**Lane paths are defined visually on the board artwork.** Exact distances, widths, and curves are intuitive from the illustrated map. How lanes interact with terrain (tree clusters alongside lanes, choke points, open areas) is determined by the overall terrain distribution design — not specified separately.
 
-### Creep Meeting Points
+### Creep Meeting Points ✅ Resolved
 The midpoint between standing towers where creep waves spawn and meet.
 
-**Pending decisions:**
-- Initial meeting point positions (Round 1+)
-- How meeting point shifts when towers fall (fixed distance or percentage-based?)
-- Visual markers (tokens vs. printed on board)
+**Visual Markers:** Each lane has **multiple pre-defined meeting point hexes** printed directly on the board. These hexes are clearly marked with visual indicators (icons, special coloring, or labeled zones).
+
+**Shifting Rule:** When a tower is destroyed, the meeting point for that lane shifts forward (toward the enemy base) to the next pre-marked hex. **The shift takes effect during the Round End Phase** when new creep waves spawn. This ensures creeps spawn at the new, advanced position after a tower falls, creating lane pressure. Since towers can only be attacked after the lane's creep wave is exhausted (siege requirement), the meeting point naturally updates between waves.
 
 ---
 

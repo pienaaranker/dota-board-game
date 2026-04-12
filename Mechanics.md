@@ -275,9 +275,10 @@ All other level-ups provide stat increases as printed on the Hero Card.
 ### Lane Creeps
 Creep waves spawn at the Round End Phase from each team's base and meet at the **Creep Meeting Point** — the midpoint between the two nearest standing towers on opposite sides of a lane.
 
-- The Meeting Point shifts **toward the enemy** whenever a tower on that side is destroyed.
+- The Meeting Point shifts **toward the enemy during Round End Phase** when a tower on that side has been destroyed. The shift takes effect when the new creep wave spawns, causing creeps to appear at the advanced position and creating immediate lane pressure.
 - Lane creeps may only be Farmed at the Meeting Point.
 - A creep wave persists until Farmed or replaced by the next wave.
+- Each lane's meeting point hexes are pre-marked on the board with visual indicators.
 
 ### Lane Creep States
 Lane creep strength scales based on how many enemy Barracks have been destroyed. When a team's Barracks falls, the **opposing team's** creeps in that lane become stronger.
