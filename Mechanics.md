@@ -444,6 +444,52 @@ A dead hero may pay a **Gold fee** at any point during their respawn wait to ret
 
 ---
 
+## 17. Ability Types & Targeting
+
+Ability Cards use different targeting and activation methods. This section defines how each type works in the board game context. All entries are pending design discussion.
+
+### Activation Methods
+
+**Passive** — Always active; no mana cost or activation required. Effect is continuous as long as the hero is alive.
+
+**Active** — Manually cast during a hero's turn. Costs Mana and AP as printed on the card.
+
+**Toggle** — Can only be **activated** during the hero's own turn (costs Mana and AP as printed). Once active, can be **toggled off at any time** — even during another player's turn — unless the hero is Silenced. While active, may drain Mana or Health per round. Examples: Rot, Mana Shield.
+
+**Channeled** — Can be **activated** during the hero's own turn (costs Mana and AP as printed). Once active, the hero must remain stationary and the effect persists across subsequent turns until interrupted or cancelled. **Interrupted by:** Stun, Silence, forced movement, or the target moving out of range. The casting player may **cancel the channel at any time** (like a toggle). Examples: Freezing Field, Black Hole.
+
+### Targeting Types ⬜ To Do
+
+**No Target (Self-Cast)** — Instant effect centered on or affecting only the caster. No targeting step required. Examples: God's Strength, Battle Hunger.
+
+**Unit Target (Single Target)** — Targets a specific unit (ally, enemy, creep, or structure) within range and LoS. Must declare target before resolving.
+
+**Point Target** ⬜ To Do — Player declares a specific hex as the target location. Needs ruling on whether abilities fire instantly or have a "travel time" mechanic.
+
+**Direction/Vector Target** ⬜ To Do — Player aims a line or direction from the caster. Examples: Swashbuckle, Macropyre. Needs board game representation (e.g., placing a ruler or token line).
+
+### Effect Shapes ⬜ To Do
+
+**Circular AoE** — Affects all units within a fixed radius (measured in hexes) from the center point.
+
+**Linear/Line** — Straight line from caster extending outward. Hits all units along the path.
+
+**Cone** — Wedge-shaped area in front of the caster. Hits all units in the cone.
+
+**Global** ⬜ To Do — Affects all enemy or allied heroes on the entire map. Examples: Thundergod's Wrath, Nature's Call. Needs ruling on whether "global" is allowed or too strong for board game balance.
+
+### Special Mechanics ⬜ To Do
+
+**Skillshot** ⬜ To Do — Abilities that can miss if the target moves. Needs die roll or prediction mechanic. Examples: Sacred Arrow, Meat Hook.
+
+**Ground-Targeted AoE** — Combination of Point Target + Circular AoE. Player picks a hex; all units within the radius are affected.
+
+**Unit-Targeted AoE** — Targets a unit; effect radiates from that unit to nearby hexes. Examples: Poison Nova, Thundergod's Wrath (per-hero basis).
+
+**Aura** ⬜ To Do — Passive effect that radiates to all allied (or enemy) units within a fixed range. Needs ruling on whether aura effects are too bookkeeping-heavy. Examples: Precision Aura, Vampiric Aura.
+
+---
+
 ## ── PENDING DISCUSSIONS ──
 
 The following mechanics are confirmed for inclusion but need specific rulings before the design is final. Discuss one at a time.
