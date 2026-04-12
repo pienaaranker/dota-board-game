@@ -145,21 +145,15 @@ Open hexes winding through tree clusters, created organically by tree positionin
 
 ---
 
-## Ward Spots 🔲 TODO
+## Ward Spots ✅ Resolved
 
-Optimal hexes for placing Observer and Sentry Wards. Specific high-value positions emerge naturally from the board layout.
-
-**Pending decision:**
-- Should premium ward spots be **printed on the board** as visual guides (teaching tool for new players, no mechanical effect), or left entirely to player discovery?
+Observer Wards always affect their full printed radius regardless of placement — there is no vision obscuring to work around. No premium ward spots are marked on the board. Players place wards wherever they choose; optimal placement is purely a tactical decision.
 
 ---
 
-## Elevation & High Ground 🔲 TODO
+## Elevation & High Ground ✅ Resolved
 
-High ground advantage was excluded in Mechanics.md. However, elevation can still exist as a visual layer on the board.
-
-**Pending decision:**
-- Visual elevation only (bases shaded as elevated, river as low ground, Roshan's Pit as depressed — no mechanical effect), or exclude elevation entirely from the artwork to keep the board cleaner?
+Elevation exists as a **visual-only** layer in the board artwork — no mechanical effect. Bases are shaded as elevated platforms, the river sits at low ground, and Roshan's Pit is depicted as a depressed area. This adds thematic depth and visual readability without introducing any gameplay rules.
 
 ---
 
@@ -174,17 +168,6 @@ All key distances (Fountain to lane, tower spacing, jungle camp proximity, rune 
 Already established in Map Overview: single-piece illustrated board with printed hex grid overlay. Terrain color-coded, named areas labeled on board art, tokens for dynamic elements.
 
 Art direction decisions (style, color palette, iconography, hex size) are outside the scope of this rules/layout document and belong to the production design phase.
-
----
-
-## Design Priorities 🔲 TODO
-
-Strategic goals that guide all remaining layout decisions.
-
-**Pending decisions:**
-- Balance emphasis: lane dominance (tighter lanes, towers closer together) or jungle control (larger jungle with more camps to contest)?
-- Roshan: centrally located for frequent early contests, or offset to create deliberate strategic windows?
-- Tactical texture: many tree clusters and choke points for high juke/escape potential, or more open terrain favoring direct brawling?
 
 ---
 
