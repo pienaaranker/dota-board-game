@@ -88,6 +88,7 @@ When an active hero targets your hero with an attack or ability, you may **React
 
 **Rules:**
 - A hero may only **react once** per opposing hero's turn (not once per round — once per activation).
+- **Exception — Observer Ward Coverage:** If the attacking hero is standing in an area covered by an enemy **Observer Ward**, the defending team's heroes may react **twice** during that hero's activation instead of once. This represents the tactical advantage of having vision and awareness of enemy positioning.
 - Reactions are **always paid from the reacting hero's next turn AP**. The cost is deducted at the start of that hero's next turn — they simply have that many fewer AP to spend.
 - Only the **targeted hero** may react, not teammates.
 
@@ -223,20 +224,23 @@ When a hero's Health reaches 0 they are removed from the board and enter a respa
 ## 8. Farming & Economy
 
 ### Farm Action
-A hero in the same area as a creep wave or neutral camp spends 1 AP to **Farm**. Successful farming awards **gold and XP**.
+A hero in the same area as a creep wave or neutral camp spends 1 AP to **Farm**.
 
-### Last Hit & Gold Source 🔄 Pending Discussion
-In Dota 2, only the hero landing the killing blow earns gold. How this is adjudicated in the Farm action — whether a die roll is required and how the Deny mechanic integrates — is pending discussion. See §A.
+- **Lane Creeps:** Remove 1 creep counter from the wave. The hero receives **gold and XP** for that creep.
+- **Neutral/Ancient Camps:** Remove 1 creep counter from the camp. The hero receives **gold and XP** but also loses **Health** (neutrals fight back).
+- **If Denied:** An enemy hero may use the Deny reaction (see below). If the Deny succeeds, the farming hero receives **reduced XP and no gold**.
+
+No die roll is required to farm — spending the AP secures the last hit unless interrupted by a Deny reaction.
 
 ### Passive Income
 Every hero receives a flat gold amount at the **Round End Phase**, regardless of farming activity.
 
 ### Deny
-Deny is a **Reaction** (see §3) costing **1 AP from the reacting hero's next turn**. An opposing hero may react to a friendly Farm action to attempt to contest the last hit on an allied creep, depriving the enemy of gold and XP.
+Deny is a **Reaction** (see §3) costing **1 AP from the reacting hero's next turn**. An allied hero may react to an enemy's Farm action targeting an allied creep wave to attempt to deny the last hit, depriving the enemy of gold.
 
 - Resolved with a **die roll challenge** between the denying hero and the farming hero.
-- **Deny succeeds:** The farming hero gains no gold or XP from that unit.
-- **Deny fails:** Farm proceeds normally.
+- **Deny succeeds:** The farming hero gains **reduced XP and no gold** from that creep.
+- **Deny fails:** Farm proceeds normally — the enemy receives full gold and XP.
 
 ### Gold Uses
 Gold is spent to:
@@ -374,7 +378,7 @@ All units are **visible** to both teams unless they have the Invisibility status
 Invisibility is granted by:
 - The **Invisibility Rune** (see §13).
 - Certain **Ability Cards** and **Item Cards**.
-- **Smoke of Deceit** (pending — see §E).
+- **Smoke of Deceit** — grants group invisibility that bypasses Observer Wards (see below).
 
 ### Invisibility Mechanics
 When a hero becomes invisible:
@@ -384,6 +388,9 @@ When a hero becomes invisible:
 4. The cloud moves as a single unit. The player may silently rearrange which tile the hero is under when the cloud moves.
 5. The cloud **cannot** be targeted by single-target attacks or abilities.
 6. **AoE abilities** may target individual cloud tiles. If the tile containing the hero is hit, the hero is **revealed**.
+
+**Attacking from Invisibility:**
+When an invisible hero attacks or uses an offensive ability, the targeted hero **cannot use reactions** — the attack resolves without the defender being able to Flee, Dodge, or use Defensive Items. The invisible hero is then revealed immediately after the attack resolves.
 
 ### Breaking Invisibility
 The hero is revealed when:
@@ -400,8 +407,31 @@ A purchased consumable token placed by a hero in any area.
 ### Dust of Appearance
 A consumable item. When used, creates a **Reveal radius** centred on the using hero for the current round. Functions identically to Sentry Wards but moves with the hero and is single-use.
 
-### Observer Wards 🔄 Pending Discussion
-A ward type for persistent general vision of a board area (not detection). Pending discussion. See §D.
+### Observer Wards
+A purchased consumable token placed by a hero on any Open hex.
+
+- Observer Wards cover a fixed radius of hexes (typically 3–4 hexes, specified on the Item Card).
+- **Tactical Advantage:** When an enemy hero standing in a warded area attacks or uses an ability on an allied hero, that allied hero (and any other allied heroes targeted during that same activation) may use **two reactions** instead of the normal one. This represents superior awareness and positioning intel.
+- Observer Wards remain active for a set number of rounds before expiring.
+- Observer Wards do **not** grant detection — they only provide the reaction advantage. Use Sentry Wards or Dust for invisibility detection.
+- Observer Wards can be destroyed by enemy heroes who locate them (costs 1 AP while adjacent to the ward token).
+- **Smoke of Deceit bypasses Observer Wards** — heroes under Smoke are invisible to wards and do not trigger the tactical advantage (see below).
+
+### Smoke of Deceit
+A consumable item purchased at the Fountain. When used, Smoke grants **Invisibility** to the using hero and all allied heroes within a fixed radius (typically 2 hexes, specified on the Item Card).
+
+**Rules:**
+- All affected heroes move together as a group under a single **Smoke Cloud** token (similar to Invisibility Clouds, but covering multiple heroes).
+- **Activation Restriction:** The hero who activates Smoke **cannot attack or use offensive abilities for the remainder of that turn**. This prevents immediate exploitation of the Smoke buff.
+- Heroes under Smoke are **invisible to Observer Wards** — they do not trigger the tactical reaction advantage when attacking from a warded area.
+- **Attacking from Smoke:** When a hero under Smoke attacks or uses an offensive ability, the targeted hero **cannot use reactions** — the attack resolves without the defender being able to Flee, Dodge, or use Defensive Items. The Smoke dispels from the attacking hero immediately after the attack resolves.
+
+**Smoke Dispels When:**
+- Any affected hero moves within **3 hexes** of an enemy hero.
+- Any affected hero enters a **Tower's area of control**.
+- Any affected hero attacks or uses an offensive ability.
+
+Once Smoke dispels, all affected heroes are immediately revealed and return to normal visibility. Smoke is a single-use consumable.
 
 ---
 
@@ -414,7 +444,7 @@ Heroes buy Item Cards at the **Fountain** shop. A hero must be **physically at t
 Items provide:
 - **Passive stat bonuses** — added directly to the hero's Damage, Defense, Health, Mana, or Move Speed.
 - **Active abilities** — cost AP and/or Mana when activated.
-- **Consumable effects** — single-use items (e.g. Sentry Ward, Dust, Smoke of Deceit).
+- **Consumable effects** — single-use items (e.g. Sentry Ward, Observer Ward, Dust, Smoke of Deceit).
 
 ### The Courier
 A shared team token that delivers items from the Fountain stash to heroes in the field.
@@ -487,7 +517,7 @@ Ability Cards use different targeting and activation methods. This section defin
 
 **Unit-Targeted AoE** — Targets a unit; effect radiates from that unit to nearby hexes. Examples: Poison Nova, Thundergod's Wrath (per-hero basis).
 
-**Aura** ⬜ To Do — Passive effect that radiates to all allied (or enemy) units within a fixed range. Needs ruling on whether aura effects are too bookkeeping-heavy. Examples: Precision Aura, Vampiric Aura.
+**Aura** — Passive effect that continuously radiates from the hero to all allied or enemy units (as specified on the card) within a fixed range measured in hexes. The aura's radius, which units are affected (allies/enemies/both), and the specific effect are all printed on the Ability Card. Auras are always active while the hero is alive and do not require activation. Examples: Precision Aura, Vampiric Aura.
 
 ---
 
@@ -495,8 +525,8 @@ Ability Cards use different targeting and activation methods. This section defin
 
 The following mechanics are confirmed for inclusion but need specific rulings before the design is final. Discuss one at a time.
 
-### §A — Last Hit & the Farm Action
-The Farm action awards gold and XP, but the exact requirement — whether a die roll or challenge must be passed to "earn" the last hit, and how Deny integrates — needs a ruling.
+### §A — Last Hit & the Farm Action ✅ Resolved
+**Decision:** No die roll is required to farm. Spending 1 AP to Farm removes a creep counter and awards gold and XP automatically. The only contest mechanic is the **Deny reaction**, which (if successful) reduces the farming hero's reward to reduced XP and no gold. See §8 for full rules.
 
 ### §B — Ban Phase in Draft ✅ Resolved
 **All Pick** is the default mode and includes a ban phase: 3 bans per team, alternating, starting with the team that lost the coin flip. Two additional modes — **Single Draft** and **All Random** — are included as variants. See §2 for full rules.
@@ -504,11 +534,11 @@ The Farm action awards gold and XP, but the exact requirement — whether a die 
 ### §C — High Ground Advantage ❌ Not Included
 **Decision:** Excluded. A miss-chance mechanic risks making late-game defence too strong and could stall games. Not included for now; may be revisited if playtesting shows pushes are too easy.
 
-### §D — Observer Wards
-Wards providing persistent vision of a board zone — flagging enemy movement without grant of detection. Ruling needed on how "vision" is mechanically useful on the board, ward duration, placement limits, and interaction with Smoke of Deceit.
+### §D — Observer Wards ✅ Resolved
+**Decision:** Observer Wards provide a **tactical reaction advantage** rather than traditional vision. When an enemy hero attacks from within a warded area, defending heroes may use **two reactions** instead of one during that activation. Wards cover a fixed radius, last a set number of rounds, and can be destroyed by enemies. Smoke of Deceit breaks when entering warded areas. See §14 for full rules.
 
-### §E — Smoke of Deceit
-A consumable that covers a group of allied heroes in Invisibility for coordinated movement. Ruling needed on how many heroes can share one Smoke, what breaks the effect (entering a tower zone? enemy detection range?), and number of charges.
+### §E — Smoke of Deceit ✅ Resolved
+**Decision:** Smoke is a consumable that grants **group Invisibility** to all allied heroes within a fixed radius (typically 2 hexes). Heroes under Smoke are **invisible to Observer Wards** (no tactical reaction advantage for defenders) and targets **cannot react** when attacked from Smoke. Smoke dispels when any affected hero moves within 3 hexes of an enemy hero, enters a Tower's area, or attacks. Single-use consumable. See §14 for full rules.
 
 ### §F — Aghanim's Scepter & Aghanim's Shard
 Two items that upgrade hero abilities in hero-specific ways rather than giving generic stat bonuses. Ruling needed on card format (attached upgrade card vs. overlay vs. printed secondary box on Ability Card), and handling of Scepters that grant entirely new abilities.
