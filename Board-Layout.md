@@ -87,77 +87,61 @@ At the **start of every 4th round**, any player simultaneously rolls the **custo
 
 ---
 
-## Jungle 🔲 TODO
+## Jungle ✅ Resolved
 
 Wilderness areas on each side of the map, between lanes. Terrain distribution and entry points are defined on the visual board artwork; the asymmetry between Radiant and Dire jungles is intentional.
 
-**Pending decisions:**
-- Terrain feel: should the jungle be dense (mostly Trees with narrow Open paths, high juke potential) or open (more Open hexes with scattered tree clusters, easier to navigate)?
-- Entrances: how many distinct entry/exit paths connect the jungle to each adjacent lane?
-
-### Neutral Camps
+### Neutral Camps ✅ Resolved
 Camps containing neutral creeps, printed on the board. A hero is "in a camp" when on any hex within the camp's marked area.
 
-**Pending decisions:**
-- How many neutral camps per team's jungle?
-- Difficulty distribution: how many Easy, Medium, and Hard camps per side?
+Each team's jungle is divided into two sections by lane proximity:
 
-### Ancient Camps
-High-value neutral camps located deep in the jungle, printed on the board with a distinct icon.
+**Safe Lane Jungle** — 3 camps, one of each difficulty:
+- 1 Easy Camp
+- 1 Medium Camp
+- 1 Hard Camp
 
-**Pending decision:**
-- How many Ancient camps per team? Dota 2 has 2 per side — keep both, or simplify to 1 for a cleaner jungle layout?
+**Off Lane Jungle** — 2 camps:
+- 1 Medium Camp
+- 1 Ancient Camp
 
----
-
-## Roshan's Pit 🔲 TODO
-
-Dedicated area in the river-jungle border region. Exact position and size are defined on the visual board artwork.
-
-**Pending decisions:**
-- Positioning: closer to Radiant, closer to Dire, or perfectly centered? (Dota 2 traditionally favors Radiant-side, creating a minor strategic asymmetry.)
-- Entry points: single choke point entrance (high-stakes, easy to contest) or multiple entrances (more dynamic fights, harder to defend)?
-- Interior layout: open pit (straightforward fight) or tree clusters inside (juking possible, adds chaos to Roshan fights)?
+### Ancient Camps ✅ Resolved
+One Ancient Camp per team, located in the off lane jungle. Printed on the board with a distinct icon to distinguish it from regular neutral camps.
 
 ---
 
-## Secret Shops 🔲 TODO
+## Roshan's Pit ✅ Resolved
 
-Hidden shops located in the jungle allowing forward item purchases without returning to the Fountain. One per team in Dota 2.
+Dedicated area in the river-jungle border region, positioned on the **Dire side** between the Dire mid lane and off lane — mirroring the traditional Dota 2 placement. Exact position and size are defined on the visual board artwork.
 
-**Pending decisions:**
-- Include or exclude? Forward purchasing adds strategic depth (jungling heroes can buy without recalling) but adds board complexity.
-- If included: placement in own jungle only, or accessible from enemy territory too (high-risk reward)?
-- If included: same full item pool as Fountain, or limited to a subset of items? (Purchasing rules would be defined in the Items document.)
+**Positioning:** Nudged into Dire territory, creating a minor asymmetry — slightly easier for Dire to defend and slightly riskier for Radiant to contest.
 
----
+**Entry Point:** Single entrance, mouth **facing the Radiant side**. One way in, one way out — creating a high-stakes choke point for both attacking and defending teams.
 
-## Outposts 🔲 TODO
-
-Capture points in the jungle that grant XP and act as forward teleport destinations. One per side in Dota 2.
-
-**Pending decisions:**
-- Include or exclude? Teleport mechanics are not yet defined — if teleportation doesn't exist in this game, Outposts lose their main purpose and should be excluded.
-- If teleportation is added: do Outposts coexist with Secret Shops, or replace them as the key mid-jungle objective?
+**Interior:** Small, fully open space. No trees, buildings, or obstacles inside. The pit is compact enough that the fight plays out in the open with no positional complexity inside — the strategic tension comes entirely from controlling the entrance.
 
 ---
 
-## Terrain Distribution 🔲 TODO
+## Secret Shops ✅ Resolved
+
+One Secret Shop per side, printed on the board. Positioned near the **off lane Ancient Camp** in each team's jungle.
+
+**Access:** Any hero — from either team — may purchase from either Secret Shop by moving into its area. Entering enemy jungle to shop carries inherent risk.
+
+**Item Pool:** A limited subset of items is available at Secret Shops; not the full Fountain catalogue. The exact item list is defined in the Items document.
+
+---
+
+## Terrain Distribution ✅ Resolved
 
 The overall character of the map determined by how Open, Tree, and Impassable hexes are distributed. Exact hex-by-hex placement is defined on the visual board artwork.
 
-**Pending decisions:**
-- Map feel: dense and tactical (heavy tree coverage, many choke points) or open and aggressive (wide lanes, sparse jungle)?
-- Tree cluster style: large continuous forests with winding paths, or scattered smaller groves throughout?
-- Impassable terrain use: primarily for base walls and river banks, or also used to create cliff features and broken terrain across the map?
-- Buildings: used sparingly as destroyable movement blockers in key strategic areas (base interiors, chokepoints near objectives), or more broadly across the map?
-- Obstacles: used for permanent decorative/structural features like rock formations, pillars, and fountain walls that block pathing but maintain open sight lines?
+**Buildings** appear exclusively inside the two bases, creating deliberate interior movement paths around key structures (Barracks, Tier 4 Towers, Ancient). Destroyable — once cleared, the path becomes open.
+
+**Obstacles** are scattered across the map, concentrated in jungle areas. They serve as permanent decorative and structural features (rock formations, ruins, pillars) that create non-linear movement paths, interesting positional decisions, and visual character without blocking sight lines.
 
 ### Juke Paths
-Open hexes winding through tree clusters. Named juke paths and their locations are labeled on the visual board artwork.
-
-**Pending decision:**
-- Path width: single-hex paths (narrow, harder to chase through) or 2-hex wide paths (more forgiving, easier to navigate)?
+Open hexes winding through tree clusters, created organically by tree positioning on the board. Juke paths are not labeled or named — players discover and exploit them through play.
 
 ---
 
@@ -216,3 +200,4 @@ The following Dota 2 map elements are **not included** in the board game, either
 | **Scan Mechanic** | Not a physical location; global ability not suited to board game. |
 | **Shrines** | Removed from Dota 2 in recent patches; outdated mechanic. |
 | **Side Shops** | Removed from Dota 2 in recent patches; Secret Shops cover forward purchasing. |
+| **Outposts** | Teleport mechanics not included in this game; without teleportation, Outposts serve no purpose. |}
