@@ -13,81 +13,78 @@ For hero selection and draft rules, see `Mechanics.md §2`. For ability mechanic
 
 | Stat | Value |
 |------|-------|
-| **Health (HP)** | TBD |
-| **Mana** | TBD |
-| **Attack** | TBD |
-| **Defense** | TBD |
-| **Move Speed** | TBD hexes per Move action |
-| **Action Points (AP)** | TBD |
+| **Health (HP)** | 100 |
+| **Mana** | 30 |
+| **Attack** | 10 |
+| **Defense** | 3 |
+| **Move Speed** | 1 |
+| **Action Points (AP)** | 10 |
 
 ### Stat Scaling
-- **Per Level:** +X HP, +Y Mana, +Z Attack, +W Defense
+- **Per Level:** +10 HP, +10 Mana, +5 Attack, +1 Defense
 
 ### Abilities
 
 ---
 
-#### Q — Great Cleave
+#### Storm Hammer
+**Type:** Active | **Targeting:** Unit Target | **Unlock:** Level 1
+
+**Mana Cost:** 3 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 2 hexes
+
+**Effect:**  
+Hurl a magical hammer at target unit, dealing damage and stunning all enemy units within 1 hex of the target. Can be disjointed by Blink and similar displacement effects using a reaction.
+
+**Level Progression:**
+- **Level 1-5:** 20 damage, stun (10 AP loss)
+- **Level 6-11:** 30 damage, stun (15 AP loss)
+- **Level 12+:** 40 damage, stun (20 AP loss)
+
+**Aghanim's Scepter Upgrade:**  
+Sven may choose to travel with the hammer, arriving at the impact location. Impact damage increased to 60.
+
+---
+
+#### Great Cleave
 **Type:** Passive | **Unlock:** Level 1
 
 **Effect:**  
-TBD — Passive cleave damage in an area when attacking. Define area shape (cone/adjacent hexes), damage percentage, interaction with towers/creeps.
+Sven's attacks cleave in a 2-hex cone in front of him, dealing damage to all units in the area. When Sven uses Farm on a creep wave, he only needs to farm twice to clear the entire wave and receives the gold and XP for all creeps.
 
 **Level Progression:**
-- **Level 1-5:** TBD
-- **Level 6-11:** TBD  
-- **Level 12+:** TBD
+- **Level 1-5:** 2 cleave damage
+- **Level 6-11:** 4 cleave damage  
+- **Level 12+:** 6 cleave damage
 
 ---
 
-#### W — Storm Hammer
-**Type:** Active | **Targeting:** Unit Target / Skillshot (TBD) | **Unlock:** Level 1
-
-**Mana Cost:** TBD | **AP Cost:** TBD | **Cooldown:** TBD rounds | **Range:** TBD hexes
-
-**Effect:**  
-TBD — Throws hammer at target, dealing damage and stunning. Define damage value, stun duration (AP loss), whether it hits AoE on impact, whether it's a skillshot or guaranteed hit.
-
-**Level Progression:**
-- **Level 1-5:** TBD damage, TBD stun duration
-- **Level 6-11:** TBD damage, TBD stun duration
-- **Level 12+:** TBD damage, TBD stun duration
-
-**Aghanim's Scepter Upgrade:**  
-TBD — Potential options: increased stun radius, bounces to additional targets, reduced cooldown, applies secondary debuff.
-
----
-
-#### E — Warcry
+#### Warcry
 **Type:** Active | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 1
 
-**Mana Cost:** TBD | **AP Cost:** TBD | **Cooldown:** TBD rounds | **Duration:** TBD rounds
+**Mana Cost:** 1 | **AP Cost:** 1 | **Cooldown:** 3 rounds | **Duration:** 1 round
 
 **Effect:**  
-TBD — Buffs Sven and nearby allied heroes. Define radius, armor bonus, movement bonus, whether it affects creeps.
+Sven and all allied heroes within 3 hexes gain bonus Defense and Move Speed for the duration. Does not affect creeps.
 
 **Level Progression:**
-- **Level 1-5:** TBD armor, TBD movement
-- **Level 6-11:** TBD armor, TBD movement
-- **Level 12+:** TBD armor, TBD movement
+- **Level 1-5:** +5 Defense, +1 Move Speed
+- **Level 6-11:** +10 Defense, +1 Move Speed
+- **Level 12+:** +10 Defense, +2 Move Speed
 
 ---
 
-#### R — God's Strength
+#### God's Strength
 **Type:** Active | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 6
 
-**Mana Cost:** TBD | **AP Cost:** TBD | **Cooldown:** TBD rounds | **Duration:** TBD rounds
+**Mana Cost:** 2 | **AP Cost:** 2 | **Cooldown:** 4 rounds | **Duration:** 1 round
 
 **Effect:**  
-TBD — Massively increases Sven's Attack value for duration. Define damage multiplier or flat bonus, whether cleave damage is also amplified.
+Sven channels his rogue knight's fury, gaining bonus Attack for the duration. Great Cleave damage is also increased by the same amount.
 
 **Level Progression:**
-- **Level 6-11:** TBD Attack bonus
-- **Level 12-17:** TBD Attack bonus
-- **Level 18+:** TBD Attack bonus
-
-**Aghanim's Scepter Upgrade:**  
-TBD — Potential options: extends duration, adds AoE damage burst on activation, grants armor/movement during ultimate, allows casting on allied hero.
+- **Level 6-11:** +10 Attack
+- **Level 12-17:** +20 Attack
+- **Level 18+:** +40 Attack
 
 ---
 
