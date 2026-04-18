@@ -7,7 +7,7 @@ For hero selection and draft rules, see `Mechanics.md §2`. For ability mechanic
 ---
 
 ## Sven
-**Class:** Strength | **Attack Type:** Melee | **Status:** 🔲 Design in Progress
+**Class:** Strength | **Attack Type:** Melee 
 
 ### Base Stats
 
@@ -111,7 +111,7 @@ Sven embodies the classic Strength hero archetype: tanky, hits hard, scales into
 ---
 
 ## Crystal Maiden
-**Class:** Intelligence | **Attack Type:** Ranged | **Status:** 🔲 Design in Progress
+**Class:** Intelligence | **Attack Type:** Ranged 
 
 ### Base Stats
 
@@ -214,7 +214,7 @@ Crystal Maiden is the quintessential Intelligence support: fragile, mana-efficie
 ---
 
 ## Mirana
-**Class:** Agility | **Attack Type:** Ranged | **Status:** 🔲 Design in Progress
+**Class:** Agility | **Attack Type:** Ranged 
 
 ### Base Stats
 
@@ -322,5 +322,124 @@ Grants Invisibility to Mirana and all allied heroes on the board, regardless of 
 
 **Thematic Identity:**
 Mirana embodies the high-skill-cap Agility hero: mobile, versatile, rewarding of precision (Arrow), and enabling for her team (Moonlight Shadow). Her design should reward mechanical skill (landing Arrows, positioning for Starfall procs), map awareness (roaming with Leap), and team coordination (using Moonlight Shadow for synchronized plays).
+
+---
+
+## Pudge
+**Class:** Strength | **Attack Type:** Melee | **Status:** 🔲 Design in Progress
+
+### Base Stats
+
+| Stat | Value |
+|------|-------|
+| **Health (HP)** | 115 |
+| **Mana** | 25 |
+| **Attack** | 7 |
+| **Attack Range** | 1 hex |
+| **Defense** | 3 |
+| **Move Speed** | 1 |
+| **Action Points (AP)** | 10 |
+
+### Stat Scaling
+- **Per Level:** +12 HP, +8 Mana, +4 Attack, +1 Defense
+
+### Abilities
+
+---
+
+#### Meat Hook
+**Type:** Active | **Targeting:** Direction/Vector | **Special:** Skillshot | **Unlock:** Level 1
+
+**Mana Cost:** 14 | **AP Cost:** 2 | **Cooldown:** 2.5 rounds | **Range:** 5 hexes max
+
+**Effect:**  
+Launches a bloody hook in a straight line in the chosen direction. The hook travels up to 5 hexes or until it hits an enemy hero or creep. The first unit struck takes damage and is pulled back to the hex adjacent to Pudge. Enemies may use the Dodge Skillshot reaction to attempt to avoid the hook.
+
+**Level Progression:**
+- **Level 1-5:** 15 damage
+- **Level 6-11:** 25 damage
+- **Level 12+:** 40 damage
+
+**Notes:**  
+The hooked unit is forcibly moved to a hex adjacent to Pudge along the line of the hook (if the direct hex is not available the player being hooked chooses which adjacent hex). If the target is a hero, this forced movement can be used to isolate enemies or pull them into dangerous positions.
+
+---
+
+#### Rot
+**Type:** Toggle | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 1
+
+**Mana Cost:** 0 | **AP Cost:** 1 to activate | **Cooldown:** None
+
+**Effect:**  
+Pudge releases toxic gases around himself, dealing damage per turn to all enemy units within 1 hex and to Pudge himself. Can be toggled on during Pudge's turn and toggled off at any time (even during other heroes' turns) unless Pudge is Silenced. While active, Rot damages all affected units (including Pudge) at the start of each hero's activation if they are within range.
+
+**Level Progression:**
+- **Level 1-5:** 2 damage per activation
+- **Level 6-11:** 3 damage per activation
+- **Level 12+:** 5 damage per activation
+
+**Notes:**  
+"Per activation" means the damage ticks at the start of every hero's turn (20 times per round total in a 10-hero game). This creates significant damage output over time but also drains Pudge's Health rapidly. Pudge takes the same damage as enemies.
+
+---
+
+#### Flesh Heap
+**Type:** Passive | **Unlock:** Level 1
+
+**Effect:**  
+Pudge gains permanent bonus HP whenever an enemy hero dies within 3 hexes of him. These bonuses stack indefinitely throughout the game and apply retroactively to his current Health total (if Pudge is at full HP when he gains a stack, his maximum and current HP both increase).
+
+**Level Progression:**
+- **Level 1-5:** +8 HP per enemy hero death
+- **Level 6-11:** +12 HP per enemy hero death
+- **Level 12+:** +16 HP per enemy hero death
+
+**Notes:**  
+Flesh Heap rewards aggressive positioning and kill participation. Stacks are permanent and persist through death — Pudge respawns with all accumulated Flesh Heap bonus HP intact.
+
+---
+
+#### Dismember
+**Type:** Channeled | **Targeting:** Unit Target | **Unlock:** Level 6
+
+**Mana Cost:** 30 | **AP Cost:** 2 | **Cooldown:** 4 rounds | **Duration:** Channeled (max 2 rounds)
+
+**Effect:**  
+Pudge channels his ultimate on target enemy hero within 1 hex, dealing damage per turn and disabling the target completely. The target cannot move, attack, or use abilities while Dismembered. Pudge must remain adjacent to the target while channeling. Interrupted by Stun, Silence, forced movement (Pudge or target), or if Pudge voluntarily cancels.
+
+**Level Progression:**
+- **Level 6-11:** 4 damage per activation (80 damage over full 2-round channel in 10-hero game)
+- **Level 12-17:** 6 damage per activation (120 damage over full 2-round channel)
+- **Level 18+:** 8 damage per activation (160 damage over full 2-round channel)
+
+**Notes:**  
+"Per activation" means damage is dealt at the start of each hero's turn while the channel is active (20 times per round in a 10-hero game). Pudge and the target are both effectively disabled for the duration — Pudge cannot take other actions or move (except to follow if target is forcibly moved), and the target is completely locked down.
+
+**Aghanim's Scepter Upgrade:**  
+Dismember can be cast on targets up to 2 hexes away (no longer requires adjacency). Pudge heals for 50% of damage dealt. Duration increased to 3 rounds maximum.
+
+---
+
+### Design Notes
+
+**Role:** Pudge is a Strength melee initiator and ganker who excels at isolating and eliminating priority targets. Meat Hook provides unparalleled pick-off potential, Rot deals sustained AoE damage at the cost of self-harm, Flesh Heap makes him progressively tankier, and Dismember locks down single targets for extended periods.
+
+**Playstyle Considerations:**
+- Extremely high HP pool (highest base HP + Flesh Heap scaling) makes Pudge one of the tankiest heroes
+- Meat Hook is game-defining — landing hooks on key targets can win fights instantly
+- Rot's self-damage creates interesting risk/reward decisions (high damage output vs. killing yourself)
+- Flesh Heap rewards aggressive roaming and kill participation — Pudge gets stronger as the game progresses
+- Dismember requires Pudge to commit fully to a target (can't act while channeling) but guarantees a long disable
+- Low mana pool means Pudge must carefully manage spell usage early game
+
+**Balance Considerations:**
+- Meat Hook range and damage must be balanced against its Skillshot nature and high skill requirement
+- Rot self-damage must be significant enough to prevent mindless toggle-on gameplay
+- Flesh Heap stacks should be meaningful but not allow infinite HP scaling to break the game
+- Dismember's long disable duration is balanced by Pudge being unable to take other actions and vulnerability to interruption
+- Low starting mana and moderate mana scaling ensure Pudge can't spam spells without itemization
+
+**Thematic Identity:**
+Pudge embodies the tanky Strength ganker archetype: high HP, high-risk/high-reward abilities (Hook + Rot self-damage), and brutal single-target lockdown (Dismember). His design rewards mechanical skill (landing Hooks), positioning (Rot radius, Flesh Heap proximity, Dismember adjacency), and calculated aggression (managing Rot self-damage, committing to Dismember channels).
 
 ---
