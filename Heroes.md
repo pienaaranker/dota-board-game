@@ -133,33 +133,30 @@ Sven embodies the classic Strength hero archetype: tanky, hits hard, scales into
 #### Crystal Nova
 **Type:** Active | **Targeting:** Ground-Targeted AoE | **Unlock:** Level 1
 
-**Mana Cost:** 15 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 2 hexes
+**Mana Cost:** 15 | **AP Cost:** 2 | **Cooldown:** 2 rounds | **Range:** 2 hexes
 
 **Effect:**  
 Blast an area with damaging frost, dealing damage to all enemy units within a 2-hex radius and applying a Slow debuff for the specified duration. Slowed enemies have their AP reduced when planning their next activation.
 
 **Level Progression:**
 - **Level 1-5:** 20 damage, -2 AP for 10 turns
-- **Level 6-11:** 30 damage, -2 AP for 1 round (20 turns)
-- **Level 12+:** 40 damage, -3 AP for 2 rounds (40 turns)
+- **Level 6-11:** 30 damage, -3 AP for 1 round (20 turns)
+- **Level 12+:** 40 damage, -4 AP for 2 rounds (40 turns)
 
 ---
 
 #### Frostbite
 **Type:** Active | **Targeting:** Unit Target | **Unlock:** Level 1
 
-**Mana Cost:** TBD | **AP Cost:** TBD | **Cooldown:** TBD rounds | **Range:** TBD hexes
+**Mana Cost:** 20 | **AP Cost:** 2 | **Cooldown:** 1.5 rounds | **Range:** 2 hexes
 
 **Effect:**  
-Encases target enemy unit in ice, rooting them in place and dealing damage over time. Rooted units cannot move but may still attack and use abilities.
+Encases target enemy unit in ice, rooting them in place and dealing damage over time. Rooted units cannot move but may still use abilities.
 
 **Level Progression:**
-- **Level 1-5:** 20 total damage, TBD duration (root + DoT ticks)
-- **Level 6-11:** TBD total damage, TBD duration
-- **Level 12+:** TBD total damage, TBD duration
-
-**Aghanim's Scepter Upgrade:**  
-TBD — Potential options: increased root duration, higher DoT damage, roots additional nearby enemy, applies attack speed slow.
+- **Level 1-5:** 20 total damage, 10 turns, 2 damage per turn.
+- **Level 6-11:** 40 total damage, 20 turns, 2 damage per turn.
+- **Level 12+:** 60 total damage, 20 turns, 3 damage per turn.
 
 ---
 
@@ -170,27 +167,24 @@ TBD — Potential options: increased root duration, higher DoT damage, roots add
 Crystal Maiden and all allied heroes within range passively regenerate Mana. This regeneration occurs during the Round End Phase (after all 20 turns are complete).
 
 **Level Progression:**
-- **Level 1-5:** TBD Mana per round, TBD hex radius
-- **Level 6-11:** TBD Mana per round, TBD hex radius
-- **Level 12+:** TBD Mana per round, TBD hex radius
+- **Level 1-5:** 10 Mana per round, global
+- **Level 6-11:** 20 Mana per round, global
+- **Level 12+:** 30 Mana per round, global
 
 ---
 
 #### Freezing Field
 **Type:** Channeled | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 6
 
-**Mana Cost:** TBD | **AP Cost:** TBD | **Cooldown:** TBD rounds | **Duration:** Channeled (TBD rounds max)
+**Mana Cost:** 40 | **AP Cost:** 1 | **Cooldown:** 5 rounds | **Duration:** Channeled (TBD rounds max)
 
 **Effect:**  
-Crystal Maiden channels a massive ice storm around her, dealing damage in pulses to all enemy units within range. Must remain stationary while channeling. Interrupted by Stun, Silence, forced movement, or voluntary cancellation.
+Crystal Maiden channels a massive ice storm around her, dealing damage in pulses to all enemy units within range and slowing them. Must remain stationary while channeling. Interrupted by Stun, Silence, forced movement, or voluntary cancellation.
 
 **Level Progression:**
-- **Level 6-11:** TBD damage per pulse, TBD pulses per round, TBD hex radius
-- **Level 12-17:** TBD damage per pulse, TBD pulses per round, TBD hex radius
-- **Level 18+:** TBD damage per pulse, TBD pulses per round, TBD hex radius
-
-**Aghanim's Scepter Upgrade:**  
-TBD — Potential options: increased radius, bonus pulse frequency, applies Slow to all enemies in area, Crystal Maiden can move slowly while channeling.
+- **Level 6-11:** 20 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -2 AP while in range
+- **Level 12-17:** 30 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -3 AP while in range
+- **Level 18+:** 40 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -5 AP while in range
 
 ---
 
