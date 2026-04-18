@@ -149,30 +149,48 @@ When a committed action cannot be executed, the following rules apply:
 - **Movement Blocked** — The destination hex is occupied or impassable due to game state changes.
 
 **Resolution:**
-- The failed action card is **returned to the player's deck** and can be played again in a future activation.
-- **No AP is spent** for failed actions — AP is only deducted when an action successfully executes.
-- The player **cannot replace** the failed action with a different action during the current turn — the activation simply proceeds to the next committed action.
-- Remaining action cards in the sequence are attempted in order.
+When a committed action is revealed during a hero's activation, the player declares the specific target or destination at that moment. If the action cannot be executed as originally intended, the player has two options:
 
-**Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack Hero X (1 AP) → Move (1 AP) → Farm (1 AP) → Move (1 AP). Hero X dies during another hero's activation before Sven's turn. 
+1. **Cancel the action** — The action card is returned to the player's deck and can be played again in a future activation. No AP is spent. The activation proceeds to the next committed action.
+2. **Retarget the action** — If a valid alternative target or destination exists, the player may choose to execute the action on that alternative instead. The action executes normally and AP is spent as usual.
+
+**Target Declaration Timing:**
+- Specific targets (which enemy hero to attack, which hex to move to, which unit to cast an ability on) are **not** committed during Planning Phase.
+- Only the **type** of action is committed (Move, Attack, Use Storm Hammer, etc.).
+- The specific target or destination is declared when the action card is revealed during execution.
+- This gives players flexibility to adapt to game state changes, but commits them to the action type itself.
+
+**When Retargeting is Not Possible:**
+Some actions cannot be retargeted because no valid alternative exists:
+
+- **Stunned Hero** — Hero has AP reduced below the cost of the action due to stun effects. Action cannot execute at all.
+- **Silenced Hero** — Hero cannot use Ability Cards while Silenced. Ability actions cannot execute at all.
+- **Insufficient Resources** — Hero lacks the Mana to cast a committed ability. Action cannot execute at all.
+- **No Valid Targets** — All potential targets are out of range, dead, or otherwise invalid. Action cannot execute.
+
+In these cases, the action is automatically cancelled (returned to deck, no AP spent).
+
+**Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack (1 AP) → Move (1 AP) → Farm (1 AP) → Move (1 AP). He intended to attack Hero X, but Hero X dies during another hero's activation before Sven's turn. 
 - First Move executes: 1 AP spent (9 AP remaining).
-- Attack Hero X fails: returned to deck, 0 AP spent (9 AP remaining).
-- Second Move executes: 1 AP spent (8 AP remaining).
-- Farm executes: 1 AP spent (7 AP remaining).
-- Third Move executes: 1 AP spent (6 AP remaining).
-- Sven's turn ends with 6 unused AP (which is lost).
+**Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack (1 AP) → Move (1 AP) → Farm (1 AP) → Move (1 AP). He intended to attack Hero X, but Hero X dies during another hero's activation before Sven's turn.
+- First Move executes: 1 AP spent (9 AP remaining).
+- Attack action revealed: Hero X is dead. Sven may either (a) cancel the Attack (returned to deck, 0 AP spent) or (b) attack a different valid target in range (Hero Y). He chooses to attack Hero Y: 1 AP spent (8 AP remaining).
+- Second Move executes: 1 AP spent (7 AP remaining).
+- Farm executes: 1 AP spent (6 AP remaining).
+- Third Move executes: 1 AP spent (5 AP remaining).
+- Sven's turn ends with 5 unused AP (which is lost).
 
 **Example:** Crystal Maiden commits: Move (1 AP) → Use Ability: Crystal Nova (1 AP, 15 Mana) → Move (1 AP). She currently has 10 Mana.
-- First Move executes normally.
-- Crystal Nova fails (insufficient Mana): returned to deck, 0 AP spent.
-- Second Move executes normally.
+- First Move executes normally: 1 AP spent.
+- Crystal Nova revealed: insufficient Mana (needs 15, has 10). No valid alternative exists — she cannot retarget this to make it work. Action automatically cancelled and returned to deck, 0 AP spent.
+- Second Move executes normally: 1 AP spent.
 - The Crystal Nova card can be played in her next activation if she has enough Mana.
 
 **Strategic Considerations:**
-- Failed actions don't waste AP, but they do waste the opportunity to commit a different action that turn.
-- Committing high-risk actions (targeted attacks, abilities requiring resources) means potentially having unused AP if they fail.
-- Players must anticipate enemy actions and game state changes when planning their activation.
-- Generic actions (Move, Farm) are more reliable than targeted actions (Attack specific hero, Use targeted Ability).
+- Committing action types gives you strategic flexibility at execution time — you can adapt targets based on the actual game state when your turn arrives.
+- Actions that require specific resources (Mana, AP, non-Silenced status) carry risk — if you don't meet the requirements, the action fails entirely regardless of what targets are available.
+- Earlier heroes in turn order have more uncertainty about what the board state will be, but also more actual flexibility when their turn arrives since fewer actions have resolved.
+- Later heroes can commit actions more confidently knowing more of the game state, but have less ability to adapt since more enemy actions have already resolved.
 
 ### Reactions
 When an active hero targets your hero with an attack or ability, you may **React** before the effect resolves. Reactions interrupt the active hero's turn, are resolved immediately, and then the active hero continues.
