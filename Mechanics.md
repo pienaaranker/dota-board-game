@@ -63,33 +63,81 @@ All heroes begin with **3× their normal AP** for the first round only. This rep
 
 ## 3. Game Loop
 
-The game is played in **Rounds**. Each Round has two phases.
+The game is played in **Rounds**. Each Round consists of **20 turns** — all heroes activate twice using pendulum rotation. Each Round has three phases: Planning, Turn Phase, and Round End Phase.
+
+**Terminology:**
+- **Turn** — One hero's activation, during which they execute their committed actions.
+- **Round** — 20 turns total. Each hero activates twice (once in each half-round of 10 turns).
+- **Activation** — When a specific hero executes their committed action cards during their turn.
+- **Duration:** When an ability or buff specifies a duration, it can be measured in:
+  - **Rounds** — Lasts until the end of X complete rounds (all 20 turns).
+  - **Turns** — Lasts for X total player turns (counted across all players).
+  - Ability cards will specify which measurement is used.
+
+### Planning Phase
+Before the Turn Phase begins, all players simultaneously select their actions for the upcoming half-round (10 turns):
+
+1. Each player selects **Action Cards** for each hero they control, representing the actions that hero will take during their next activation.
+2. Players place these cards **face-down** in front of them (one set per hero if controlling multiple heroes).
+3. Once all players have committed their action cards, **all cards are revealed simultaneously**.
+4. The Turn Phase then proceeds with heroes activating one at a time in pendulum order.
+5. After the first 10 turns complete, players repeat the Planning Phase for the second half of the round.
+
+**Planning Rules:**
+- Action Cards include: Move, Attack, Farm, Use Ability, Use Item, and Pass.
+- Players may select up to their hero's AP worth of actions.
+- Once revealed, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
+- Reactions are **not** included in Planning Phase — reactions are declared in real-time during the Turn Phase when triggered.
 
 ### Turn Phase
-Heroes activate one at a time within a round. Each hero spends all their AP before the next hero activates.
+Heroes activate one at a time within a round, executing their committed actions. Each hero spends all their AP before the next hero activates.
 
 **Turn Order — Pendulum Rotation:**
-The **Round Start Token** determines who goes first each round, then players activate in alternating team order. The direction (forward or backward through the player sequence) alternates each round, creating a "pendulum" pattern.
+The **Round Start Token** determines which hero goes first each round. The token follows a **circular rotation** — it moves to the next hero in the alternating sequence at the start of each new round, wrapping around after the last hero.
 
-- **Round 1:** Player with the Round Start Token goes first. Play proceeds forward (e.g., Player 1 → Player 2 → Player 3 → Player 4 → Player 5 → Player 6).
-- **Round 2:** The last player to act in Round 1 goes first. Play proceeds backward (e.g., Player 6 → Player 5 → Player 4 → Player 3 → Player 2 → Player 1).
-- **Round 3:** The Round Start Token moves to the next player in sequence (e.g., Player 2). Play proceeds forward (e.g., Player 2 → Player 3 → Player 4 → Player 5 → Player 6 → Player 1, wrapping around).
-- **Round 4:** The last player to act in Round 3 goes first. Play proceeds backward (e.g., Player 1 → Player 6 → Player 5 → Player 4 → Player 3 → Player 2).
-- **Round 5:** The Round Start Token moves to the next player in sequence (e.g., Player 3), and so on.
+Once the starting hero is determined, heroes activate in **alternating team order** (one Radiant hero, then one Dire hero, then one Radiant hero, etc.). The direction (forward or backward through the hero sequence) alternates every 10 turns, creating a "pendulum" pattern within the round.
 
-This ensures positional fairness over time — no player is always first or always last.
+**Important:** Turn order alternates by **hero**, not by player. If a player controls multiple heroes, those heroes are interspersed with enemy heroes in the rotation — a player does not activate all their heroes in succession.
+
+**Example with 10 heroes (5v5):**
+- Team Radiant: Hero A, Hero B, Hero C, Hero D, Hero E
+- Team Dire: Hero V, Hero W, Hero X, Hero Y, Hero Z
+- Rotation sequence: A → V → B → W → C → X → D → Y → E → Z (alternating teams)
+
+**Round 1 (20 turns total):**
+- Round Start Token is on Hero A.
+- **Turns 1-10 (First Half):** Play proceeds forward (e.g., Hero A → Hero V → Hero B → Hero W → Hero C → Hero X → Hero D → Hero Y → Hero E → Hero Z).
+- **Turns 11-20 (Second Half):** Play proceeds backward (e.g., Hero Z → Hero E → Hero Y → Hero D → Hero X → Hero C → Hero W → Hero B → Hero V → Hero A).
+
+**Round 2 (20 turns total):**
+- Round Start Token moves to next hero in circular sequence (Hero V).
+- **Turns 1-10 (First Half):** Play proceeds forward (e.g., Hero V → Hero B → Hero W → Hero C → Hero X → Hero D → Hero Y → Hero E → Hero Z → Hero A, wrapping around).
+- **Turns 11-20 (Second Half):** Play proceeds backward (e.g., Hero A → Hero Z → Hero E → Hero Y → Hero D → Hero X → Hero C → Hero W → Hero B → Hero V).
+
+**Round 3 (20 turns total):**
+- Round Start Token moves to next hero in circular sequence (Hero B).
+- **Turns 1-10 (First Half):** Play proceeds forward from Hero B.
+- **Turns 11-20 (Second Half):** Play proceeds backward.
+
+**Round 4 (20 turns total):**
+- Round Start Token moves to next hero in circular sequence (Hero W).
+- Pattern continues with the token cycling through: A → V → B → W → C → X → D → Y → E → Z → A (circular).
+
+This ensures positional fairness over time — no hero is always first or always last.
 
 **General Rules:**
-- A player may pass their remaining AP at any time, ending that hero's turn early.
-- AP does not carry over between rounds.
+- Each hero activates twice per round (once in each half).
+- A player may commit fewer actions than their total AP allows, effectively passing early.
+- AP does not carry over between activations or rounds.
+- Committed actions must be attempted in order, but may fail or be prevented by game state (e.g., target no longer valid, hero stunned).
 
 ### Reactions
 When an active hero targets your hero with an attack or ability, you may **React** before the effect resolves. Reactions interrupt the active hero's turn, are resolved immediately, and then the active hero continues.
 
 **Rules:**
-- A hero may only **react once** per opposing hero's turn (not once per round — once per activation).
+- A hero may only **react once** per opposing hero's activation (not once per round — once per turn when that specific enemy hero is acting).
 - **Exception — Observer Ward Coverage:** If the attacking hero is standing in an area covered by an enemy **Observer Ward**, the defending team's heroes may react **twice** during that hero's activation instead of once. This represents the tactical advantage of having vision and awareness of enemy positioning.
-- Reactions are **always paid from the reacting hero's next turn AP**. The cost is deducted at the start of that hero's next turn — they simply have that many fewer AP to spend.
+- Reactions are **always paid from the reacting hero's next activation AP**. The cost is deducted at the start of that hero's next turn during Planning Phase — they simply have that many fewer AP to commit to actions.
 - Only the **targeted hero** may react, not teammates.
 
 **Reaction Types:**
@@ -231,10 +279,12 @@ The attacker's Damage and the defender's Defense are taken from their Hero Cards
 
 ### Damage over Time (DoT)
 
-A DoT is a debuff token placed on a hero. At the **start of that hero's turn**, the DoT deals its damage and decrements its duration by 1. When the duration reaches 0, the token is removed.
+A DoT is a debuff token placed on a hero. At the **start of that hero's activation** (when their turn begins), the DoT deals its damage and decrements its duration by 1. When the duration reaches 0, the token is removed.
 
 **DoT rules:**
-- Each DoT token specifies: damage per tick, tick frequency (every turn or every round), and total duration.
+- Each DoT token specifies: damage per tick, tick frequency (every activation or every round), and total duration.
+- Most DoTs tick **once per activation** — meaning twice per round since each hero activates twice.
+- Some DoTs may tick **once per round** instead — this will be clearly marked on the ability or item card.
 - Multiple different DoT tokens can be active on a hero simultaneously; each ticks independently.
 - The same DoT type does **not** stack — applying it again refreshes the duration instead.
 - Most DoTs are **dispellable**: they can be removed by items or abilities that cleanse debuffs (e.g. Eul's Scepter of Divinity, Guardian Greaves). The item or ability card will state if it dispels debuffs.
@@ -244,7 +294,7 @@ A DoT is a debuff token placed on a hero. At the **start of that hero's turn**, 
 
 | DoT Type | Damage | Frequency | Notes |
 |---|---|---|---|
-| **Bleed** | X physical damage | Once per turn | Applied by Blood Grenade. Dispellable. |
+| **Bleed** | X physical damage | Once per activation | Applied by Blood Grenade. Dispellable. |
 
 ### Death
 When a hero's Health reaches 0 they are removed from the board and enter a respawn countdown (see §15).
@@ -502,8 +552,9 @@ A high-cost luxury item purchased at the Fountain. When a hero acquires Aghanim'
 When a hero is killed they are removed from the board and placed in a respawn queue.
 
 - **Respawn Timer:** A dead hero respawns after a number of **turns** equal to their **current level**. For example, a Level 8 hero waits 8 turns before respawning.
-- Turns are counted individually across all players, not rounds. If killed during an opponent's turn, the timer begins counting with the next player's turn.
-- On their designated respawn turn, the hero returns to the **Fountain** with full Health and Mana.
+- **Clarification:** "Turns" are counted across all players — not just the dead hero's own activations. If there are 6 players and a Level 8 hero dies, they will respawn after 8 total player turns have passed (which could be less than one complete round).
+- Turns are counted individually as each hero activates during the Turn Phase. If killed during an opponent's turn, the timer begins counting with the next player's turn.
+- On their designated respawn turn, the hero returns to the **Fountain** with full Health and Mana at the start of that turn (before committing action cards).
 - Death timers scale automatically with level progression — higher-level heroes are out of the game longer when killed, making late-game deaths more punishing.
 
 ### Buyback
@@ -511,7 +562,8 @@ A dead hero may pay a **Gold fee** at any point during their respawn wait to ret
 
 - **Buyback Cost:** Scales with hero level. The exact gold cost is specified on reference cards or the game board.
 - A hero who uses Buyback cannot Buyback again for a set number of rounds (typically 5 rounds).
-- Buyback bypasses the respawn timer entirely — the hero returns to the Fountain at the start of their next turn.
+- Buyback bypasses the respawn timer entirely — the hero returns to the Fountain at the start of their next scheduled activation (during the Planning Phase for that half-round).
+- If a hero buybacks during the first half of a round and hasn't activated yet that half, they return immediately and can participate in Planning Phase. If they've already activated that half, they return for the second half Planning Phase.
 
 ---
 

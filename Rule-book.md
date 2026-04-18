@@ -15,7 +15,7 @@ Destroy the enemy team's Ancient, located within their base. To reach the Ancien
 ---
 
 ## Game Loop
-The game is played in Rounds, consisting of individual player Turns.
+The game is played in Rounds. Each Round consists of 20 turns — every hero activates twice.
 
 ### Picking Phase
 A coin is flipped between the two teams. The winner chooses to either pick a hero first or play first; the loser gets the other option. Heroes are picked in alternating fashion by each team.
@@ -23,14 +23,22 @@ A coin is flipped between the two teams. The winner chooses to either pick a her
 ### Game Start
 All heroes start with 3× the AP at the start of the game to get out onto the map. Creeps only spawn after the first round, so the only actions available during this time are movement and level 1 fights.
 
+### Planning Phase
+Before each half-round (10 turns), all players simultaneously:
+1. Select Action Cards (Move, Attack, Farm, Use Ability, etc.) for each hero they control
+2. Place cards face-down in front of them (one set per hero if controlling multiple)
+3. Once all players are ready, all cards are revealed simultaneously
+4. Heroes then activate one at a time in alternating team order (pendulum pattern), executing their committed actions
+
 ### Turn Phase
-Players take turns spending Action Points (AP) per hero. A turn ends when a player spends all AP or chooses to pass. Player turns alternate sides (Dire → Radiant → Dire, etc.).
+Heroes execute their committed actions one at a time. Each hero activates twice per round (once per half-round). Heroes alternate between teams in a pendulum pattern to ensure fairness — if a player controls multiple heroes, those heroes do not all activate in succession.
 
 ### Round End Phase
-After all players conclude their turns:
+After all heroes have completed both activations (20 turns total):
 - **Creep Spawning** — New waves spawn at the Creep Meeting Point in each lane.
 - **Passive Income** — All heroes receive a set amount of passive gold.
 - **Neutral Respawns** — Every even-numbered round, neutral creeps in jungle camps are replenished.
+- **Rune Spawns** — Every 4th round, a Power Rune spawns at one of the river positions.
 
 ---
 
