@@ -27,8 +27,8 @@ All heroes start with 3× the AP at the start of the game to get out onto the ma
 Before each half-round (10 turns), all players simultaneously:
 1. Select Action Cards (Move, Attack, Farm, Use Ability, etc.) for each hero they control
 2. Place cards face-down in front of them (one set per hero if controlling multiple)
-3. Once all players are ready, all cards are revealed simultaneously
-4. Heroes then activate one at a time in alternating team order (pendulum pattern), executing their committed actions
+3. Once all players are ready, the Turn Phase begins
+4. Each hero's cards remain face-down until that hero's activation, when they are revealed and executed
 
 ### Turn Phase
 Heroes execute their committed actions one at a time. Each hero activates twice per round (once per half-round). Heroes alternate between teams in a pendulum pattern to ensure fairness — if a player controls multiple heroes, those heroes do not all activate in succession.

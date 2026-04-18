@@ -79,15 +79,22 @@ Before the Turn Phase begins, all players simultaneously select their actions fo
 
 1. Each player selects **Action Cards** for each hero they control, representing the actions that hero will take during their next activation.
 2. Players place these cards **face-down** in front of them (one set per hero if controlling multiple heroes).
-3. Once all players have committed their action cards, **all cards are revealed simultaneously**.
-4. The Turn Phase then proceeds with heroes activating one at a time in pendulum order.
+3. Once all players have committed their action cards and are ready, the Turn Phase begins.
+4. Action cards remain **face-down** until that specific hero's activation, at which point the player reveals their committed actions.
 5. After the first 10 turns complete, players repeat the Planning Phase for the second half of the round.
 
 **Planning Rules:**
 - Action Cards include: Move, Attack, Farm, Use Ability, Use Item, and Pass.
 - Players may select up to their hero's AP worth of actions.
-- Once revealed, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
+- Cards remain hidden until activation — players commit actions without knowing what enemies have planned.
+- Once a hero's cards are revealed at the start of their activation, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
 - Reactions are **not** included in Planning Phase — reactions are declared in real-time during the Turn Phase when triggered.
+
+**Strategic Implications:**
+- Players must predict enemy positions and actions when committing their cards.
+- Targeted actions (Attack specific hero, single-target abilities) carry risk if targets move or die before your activation.
+- Revealing your actions only when you activate prevents enemies from adjusting their later-activating heroes' targets based on your plans.
+- Earlier heroes in turn order have more uncertainty but also more flexibility in responding to the actual game state.
 
 ### Turn Phase
 Heroes activate one at a time within a round, executing their committed actions. Each hero spends all their AP before the next hero activates.
@@ -130,6 +137,42 @@ This ensures positional fairness over time — no hero is always first or always
 - A player may commit fewer actions than their total AP allows, effectively passing early.
 - AP does not carry over between activations or rounds.
 - Committed actions must be attempted in order, but may fail or be prevented by game state (e.g., target no longer valid, hero stunned).
+
+### Failed Actions
+When a committed action cannot be executed, the following rules apply:
+
+**Example Action Failure Causes:**
+- **Invalid Target** — The target unit has moved, died, or is no longer in range/LoS.
+- **Stunned Hero** — Hero has AP reduced below the cost of the action due to stun effects.
+- **Silenced Hero** — Hero cannot use Ability Cards while Silenced.
+- **Insufficient Resources** — Hero lacks the Mana to cast a committed ability.
+- **Movement Blocked** — The destination hex is occupied or impassable due to game state changes.
+
+**Resolution:**
+- The failed action card is **returned to the player's deck** and can be played again in a future activation.
+- **No AP is spent** for failed actions — AP is only deducted when an action successfully executes.
+- The player **cannot replace** the failed action with a different action during the current turn — the activation simply proceeds to the next committed action.
+- Remaining action cards in the sequence are attempted in order.
+
+**Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack Hero X (1 AP) → Move (1 AP) → Farm (1 AP) → Move (1 AP). Hero X dies during another hero's activation before Sven's turn. 
+- First Move executes: 1 AP spent (9 AP remaining).
+- Attack Hero X fails: returned to deck, 0 AP spent (9 AP remaining).
+- Second Move executes: 1 AP spent (8 AP remaining).
+- Farm executes: 1 AP spent (7 AP remaining).
+- Third Move executes: 1 AP spent (6 AP remaining).
+- Sven's turn ends with 6 unused AP (which is lost).
+
+**Example:** Crystal Maiden commits: Move (1 AP) → Use Ability: Crystal Nova (1 AP, 15 Mana) → Move (1 AP). She currently has 10 Mana.
+- First Move executes normally.
+- Crystal Nova fails (insufficient Mana): returned to deck, 0 AP spent.
+- Second Move executes normally.
+- The Crystal Nova card can be played in her next activation if she has enough Mana.
+
+**Strategic Considerations:**
+- Failed actions don't waste AP, but they do waste the opportunity to commit a different action that turn.
+- Committing high-risk actions (targeted attacks, abilities requiring resources) means potentially having unused AP if they fail.
+- Players must anticipate enemy actions and game state changes when planning their activation.
+- Generic actions (Move, Farm) are more reliable than targeted actions (Attack specific hero, Use targeted Ability).
 
 ### Reactions
 When an active hero targets your hero with an attack or ability, you may **React** before the effect resolves. Reactions interrupt the active hero's turn, are resolved immediately, and then the active hero continues.
