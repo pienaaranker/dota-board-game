@@ -10,21 +10,21 @@ Each player receives a **Hero Board** — a large printed cardboard mat (approxi
 
 ### Zone 1: Base Stats & Resources
 
-Located at the top of the mat. Uses **dual-track sliders** for current/max values.
+Located at the top of the mat. Uses **3D-printed number trackers** for HP, Mana, and Level tracking.
 
 #### HP Track
-- **Component:** Dual slider with two movable markers
-  - Inner track: Current HP (red marker)
-  - Outer track: Max HP (white marker, starts at hero's base HP)
-- **Scale:** 0–300 in increments of 5
-- **Usage:** Move red marker as damage is taken/healed. Move white marker when max HP increases via leveling or items.
+- **Component:** 3D-printed multi-digit number tracker ([Thingiverse #3458256](https://www.thingiverse.com/thing:3458256))
+  - Current HP tracker (red or primary color)
+  - Max HP tracker (white or secondary color, starts at hero's base HP)
+- **Scale:** 0–999 (adjustable digits)
+- **Usage:** Rotate digit wheels to display current HP and max HP. Update current HP as damage is taken/healed. Update max HP when it increases via leveling or items.
 
 #### Mana Track
-- **Component:** Dual slider with two movable markers
-  - Inner track: Current Mana (blue marker)
-  - Outer track: Max Mana (white marker)
-- **Scale:** 0–200 in increments of 5
-- **Usage:** Move blue marker as mana is spent/restored. Move white marker when max Mana increases via leveling or items.
+- **Component:** 3D-printed multi-digit number tracker ([Thingiverse #3458256](https://www.thingiverse.com/thing:3458256))
+  - Current Mana tracker (blue or primary color)
+  - Max Mana tracker (white or secondary color)
+- **Scale:** 0–999 (adjustable digits)
+- **Usage:** Rotate digit wheels to display current Mana and max Mana. Update current Mana as mana is spent/restored. Update max Mana when it increases via leveling or items.
 
 #### Static Stats Display
 - **Component:** Printed boxes with **stackable +1 tokens** for modifications
@@ -41,9 +41,9 @@ Located at the top of the mat. Uses **dual-track sliders** for current/max value
 Located in the upper-right corner.
 
 #### Level Track
-- **Component:** Vertical track with numbered circles (1–18)
-- **Marker:** Hero standee token placed on current level
-- **Special markers:** Stars printed at levels 6, 12, and 18 (ability unlock milestones)
+- **Component:** 3D-printed multi-digit number tracker ([Thingiverse #3458256](https://www.thingiverse.com/thing:3458256))
+- **Scale:** 1–18 (or up to 99 with two digits)
+- **Usage:** Rotate digit wheels to display current hero level. Check ability unlock milestones at levels 6, 12, and 18.
 
 #### XP Counter
 - **Component:** Printed XP threshold table + **6-sided die** placed next to it
@@ -59,28 +59,114 @@ Located in the upper-right corner.
 
 ---
 
-### Zone 3: Ability Cards (×4 slots)
+### Zone 3: Action Planning & Duration Tracking
 
-Located in the center-left of the mat. Four horizontal card slots, each with printed tracking beneath.
+Located in the center of the mat. This zone serves two purposes: staging action cards for the current turn and tracking all time-based effects.
 
-#### Ability Card Slot
-- **Component:** Standard card slot (fits Hero Ability Cards)
-- **Card displays:** Ability name, type, mana cost, effect description
+#### Action Card Staging Area
+Located at the top of Zone 3.
 
-#### Per-Ability Tracking (printed beneath each slot)
-- **Cooldown Track:**
-  - Printed circles: 0 ← 1 ← 2 ← 3 ← 4 ← 5 rounds
-  - Marker: Small cube token placed on current cooldown value
-  - Usage: After using ability, place token on cooldown length. Move one step toward 0 each round.
-  
-- **Channeling Indicator:**
-  - Printed checkbox: "⏳ Channeling"
-  - Marker: Hourglass token placed on checkbox when channeling active
+- **Component:** Rectangular zone labeled "Action Queue"
+- **Size:** Fits up to 10 Action Cards laid horizontally in sequence
+- **Usage:** During Planning Phase, place selected Action Cards face-down here in the order you want to execute them. During your activation, reveal and execute from left to right.
 
-- **Stack Counter (for stackable abilities):**
-  - Printed box: "Stacks: ___"
-  - Component: D20 die or small numbered dial (0–20)
-  - Usage: For abilities like Flesh Heap, Essence Shift — track permanent stacks per hero or global.
+---
+
+#### Dual Duration Tracking System
+
+Located below the Action Card area. Divided into two parallel sections for different time measurements.
+
+**Left Section: TURNS (10 compartments)** | **Right Section: ROUNDS (6 compartments)**
+
+Each section contains two rows of tracking compartments:
+
+**Design Constraint:** Maximum cooldown for any ability or item is **5 rounds**. Round values are tracked as: ½, 1, 2, 3, 4, 5.
+
+---
+
+##### Turn-Based Tracking (Left Section)
+
+**Status Durations Row (Top)**
+- **Component:** Horizontal strip with **10 vertical compartments**
+- **Marker:** Place status effect tokens (Stunned, Silenced, Rooted, etc.) in compartments with small numbered token showing turns remaining
+- **Usage:** For effects that expire after X turns (individual hero activations). Move token forward or decrement counter each time this hero activates.
+- **Maximum Duration:** Up to 10 turns can be tracked simultaneously
+
+**Ability Cooldowns Row (Bottom)**
+- **Component:** Horizontal strip with **10 vertical compartments**
+- **Marker:** Place small ability identifier tokens with numbered token showing turns remaining
+- **Usage:** For abilities with cooldowns measured in turns. Decrement each time this hero activates.
+- **Maximum Duration:** Up to 10 turns can be tracked simultaneously
+
+---
+
+##### Round-Based Tracking (Right Section)
+
+**Status Durations Row (Top)**
+- **Component:** Horizontal strip with **6 vertical compartments**
+- **Values Tracked:** ½ round, 1, 2, 3, 4, 5 rounds
+- **Marker:** Place status effect tokens (BKB Active, Ethereal, etc.) in compartments with small numbered token showing rounds remaining
+- **Usage:** For effects that expire after X rounds (all 20 hero activations). Decrement at Round End Phase.
+- **Maximum Duration:** 5 rounds (design constraint)
+
+**Ability Cooldowns Row (Bottom)**
+- **Component:** Horizontal strip with **6 vertical compartments**
+- **Values Tracked:** ½ round, 1, 2, 3, 4, 5 rounds
+- **Marker:** Place small ability identifier tokens (Q, W,─────────┐
+│              ACTION CARD STAGING AREA                            │
+│      [Card] [Card] [Card] [Card] [Card] ...                     │
+└──────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────┬──────────────────────────────────┐
+│    TURNS (10 compartments)    │   ROUNDS (6 compartments)        │
+├───────────────────────────────┼──────────────────────────────────┤
+│ Status Durations              │ Status Durations                 │
+│ ┌──┬──┬──┬──┬──┬──┬──┬──┬──┬─┐│ ┌──┬──┬──┬──┬──┬──┐             │
+│ │  │  │  │  │  │  │  │  │  │ ││ │½ │1 │2 │3 │4 │5 │             │
+│ └──┴──┴──┴──┴──┴──┴──┴──┴──┴─┘│ └──┴──┴──┴──┴──┴──┘             │
+├───────────────────────────────┼──────────────────────────────────┤
+│ Ability Cooldowns             │ Ability Cooldowns                │
+│ ┌──┬──┬──┬──┬──┬──┬──┬──┬──┬─┐│ ┌──┬──┬──┬──┬──┬──┐             │
+│ │  │  │  │  │  │  │  │  │  │ ││ │½ │1 │2 │3 │4 │5 │             │
+│ └──┴──┴──┴──┴──┴──┴──┴──┴──┴─┘│ └──┴──┴──┴──┴──┴──┘             │
+└───────────────────────────────┴──────────────────────────────────┘
+```
+
+**Section Distribution:**
+- **Turns Section:** 10 compartments (2 rows × 10 each) — tracks turn-by-turn effects and cooldowns
+- **Rounds Section:** 6 compartments (2 rows × 6 each) — tracks round-based effects: ½, 1, 2, 3, 4, 5 rounds
+- **Maximum Cooldown Constraint:** No ability or item cooldown exceeds 5 rounds
+
+**Design Notes:**
+- Most ability cooldowns use the **Rounds** section (right side)
+- Most status effects use the **Turns** section (left side) for precise control
+- Items with turn-based cooldowns (e.g., Phase Boots) use **Turns** section
+- Items with round-based cooldowns (e.g., Black King Bar) use **Rounds** section
+- The labeled round compartments (½, 1, 2, 3, 4, 5) make tracking explicit and prevent confusion
+```
+
+**Design Notes:**
+- Most ability cooldowns use the **Rounds** section (right side)
+- Most status effects use the **Turns** section (left side) for precise control
+- Items with turn-based cooldowns (e.g., Phase Boots) use **Turns** section
+- Items with round-based cooldowns (e.g., Black King Bar) use **Rounds** section
+- The 6 compartments per row provide ample space for simultaneous effects
+- Numbered tokens (D6 dice or small number markers) placed on status/ability tokens show remaining duration
+
+---
+
+#### Additional Ability Tracking (Optional)
+
+For heroes with abilities requiring special tracking (stacks, charges, channeling):
+
+**Ability Stacks**
+- **Component:** Small printed box at the bottom of Zone 3 labeled "Ability Stacks: ___"
+- **Marker:** D20 die or small numbered dial (0–20)
+- **Usage:** For abilities like Flesh Heap (Pudge), Essence Shift (Slark), Fervor (Ursa) — track permanent or temporary stacks.
+
+**Channeling Indicator**
+- **Component:** Hourglass token placed on relevant ability identifier in the Action Queue or Cooldown sections
+- **Usage:** Indicates ability is being channeled and can be interrupted.
 
 ---
 
@@ -191,17 +277,6 @@ Located near the ability cards.
 - **Component:** Printed checkbox "⭐ Aghanim's Scepter"
 - **Marker:** Star token placed when Scepter is purchased
 - **Upgraded Ability:** Small arrow token points to which ability is upgraded (if not obvious from card)
-
----
-
-### Zone 9: Action Planning Staging Area
-
-Located at the top-right corner, separate from other zones.
-
-#### Face-Down Action Cards
-- **Component:** Designated rectangle "Action Queue (Face-Down)"
-- **Usage:** During Planning Phase, place selected Action Cards face-down here in order. Reveal and execute during activation.
-- **Size:** Fits up to 10 Action Cards (max AP)
 
 ---
 
