@@ -422,6 +422,112 @@ Negative constraints:
 
 ---
 
+## Example Image Prompt — Pudge Abilities Card
+
+Use the following prompt when generating a sample landscape Abilities Card image for Pudge:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Pudge Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of grotesque fleshcraft, chains, butcher tools, toxic gas, and brutal physical spell motifs. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, brutal grotesque butcher theme, strength-class visual identity, sickly green, rusted iron, dark leather, stained bone, and blood-red accents, clean dividers, grim toxic texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the hook silhouette, toxic vapor shapes, stitched-flesh motifs, metal textures, and brutal physical spell iconography visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: PUDGE
+- Small crest or portrait accent
+- Summary strip listing Meat Hook, Rot, Flesh Heap, Dismember
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Meat Hook
+- Type: Active
+- Target: Direction/Vector
+- Special: Skillshot
+- Unlock: Level 1
+- Mana Cost: 14
+- AP Cost: 2
+- Cooldown: 2.5 rounds
+- Range: 5 hexes max
+- Rules: Launch a bloody hook in a straight line in the chosen direction. The hook travels up to 5 hexes or until it hits an enemy hero or creep. The first unit struck takes damage and is pulled back to the hex adjacent to Pudge. Enemies may use the Dodge Skillshot reaction to attempt to avoid the hook.
+- Scaling: 1-5: 15 damage | 6-11: 25 damage | 12+: 40 damage
+- Notes: The hooked unit is forcibly moved to a hex adjacent to Pudge along the line of the hook. If the direct hex is not available, the player being hooked chooses which adjacent hex.
+
+2. Rot
+- Type: Toggle
+- Target: No Target (Self-Cast)
+- Unlock: Level 1
+- Mana Cost: 0
+- AP Cost: 1 to activate
+- Cooldown: None
+- Rules: Pudge releases toxic gases around himself, dealing damage per turn to all enemy units within 1 hex and to Pudge himself. Can be toggled on during Pudge's turn and toggled off at any time, even during other heroes' turns, unless Pudge is Silenced. While active, Rot damages all affected units, including Pudge, at the start of each hero's activation if they are within range.
+- Scaling: 1-5: 2 damage per activation | 6-11: 3 damage per activation | 12+: 5 damage per activation
+- Notes: Per activation means the damage ticks at the start of every hero's turn. Pudge takes the same damage as enemies.
+
+3. Flesh Heap
+- Type: Passive
+- Unlock: Level 1
+- Rules: Pudge gains permanent bonus HP whenever an enemy hero dies within 3 hexes of him. These bonuses stack indefinitely throughout the game and apply retroactively to his current Health total.
+- Scaling: 1-5: +8 HP per enemy hero death | 6-11: +12 HP per enemy hero death | 12+: +16 HP per enemy hero death
+- Notes: Flesh Heap stacks are permanent and persist through death.
+
+4. Dismember
+- Type: Channeled
+- Target: Unit Target
+- Unlock: Level 6
+- Mana Cost: 30
+- AP Cost: 2
+- Cooldown: 4 rounds
+- Duration: Channeled (max 2 rounds)
+- Range: 1 hex
+- Rules: Pudge channels his ultimate on target enemy hero within 1 hex, dealing damage per turn and disabling the target completely. The target cannot move, attack, or use abilities while Dismembered. Pudge must remain adjacent to the target while channeling. Interrupted by Stun, Silence, forced movement, or voluntary cancellation.
+- Scaling: 6-11: 4 damage per activation | 12-17: 6 damage per activation | 18+: 8 damage per activation
+- Notes: Per activation means damage is dealt at the start of each hero's turn while the channel is active. Pudge and the target are both effectively locked into the channel.
+
+Upgrade / notes panel:
+- Aghanim's Scepter Upgrade: Dismember can be cast on targets up to 2 hexes away, Pudge heals for 50% of damage dealt, and the duration increases to 3 rounds maximum.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle chain motifs, butcher hooks, stitched seams, toxic vapor shapes, and rusted iron accents without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Meat Hook, Rot, Flesh Heap, and Dismember should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Heavy fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
 ## Example Image Prompt — Lion Hero Card
 
 Use the following prompt when generating a sample hero card image for Lion:
@@ -516,6 +622,118 @@ Negative constraints:
 
 ---
 
+## Example Image Prompt — Lion Abilities Card
+
+Use the following prompt when generating a sample landscape Abilities Card image for Lion:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Lion Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of demonic magic, infernal claws, occult glyphs, dark arcane energy, and sinister spell effects. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, sinister arcane controller theme, intelligence-class visual identity, deep purple, black, crimson, and arcane gold palette, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the spike eruptions, hex glyphs, mana siphon effects, infernal finger-beam language, and occult ornamental motifs visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: LION
+- Small crest or portrait accent
+- Summary strip listing Earth Spike, Hex, Mana Drain, Finger of Death
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Earth Spike
+- Type: Active
+- Target: Direction/Vector
+- Special: Skillshot
+- Unlock: Level 1
+- Mana Cost: 12
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Range: 4 hexes max
+- Rules: Send a column of spikes erupting along a line in the chosen direction. The spikes travel up to 4 hexes, stunning and damaging all enemy units in a 1-hex-wide path. Enemies may use the Dodge Skillshot reaction to attempt to avoid the spikes.
+- Scaling: 1-5: 15 damage, 8 AP stun | 6-11: 25 damage, 12 AP stun | 12+: 35 damage, 16 AP stun
+- Notes: Unlike Sacred Arrow, Earth Spike hits all units along its path, not just the first.
+
+2. Hex
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Mana Cost: 18
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Range: 3 hexes
+- Rules: Transform target enemy hero into a harmless critter, disabling them completely for the duration. Hexed heroes cannot move, attack, use abilities, or use items. The target's Defense is reduced to 0 while Hexed.
+- Scaling: 1-5: 10 turns duration | 6-11: 15 turns duration | 12+: 20 turns (1 round) duration
+- Notes: Hex is a full disable, not just an AP reduction effect.
+
+3. Mana Drain
+- Type: Channeled
+- Target: Unit Target
+- Unlock: Level 1
+- Mana Cost: 0
+- AP Cost: 1 to activate
+- Cooldown: 1 round
+- Rules: Lion channels on target enemy hero within range, draining their Mana and transferring it to himself. The drain continues at the start of each hero's activation while the channel is active. Lion must maintain Line of Sight to the target. Interrupted by Stun, Silence, forced movement, target moving out of range or LoS, or voluntary cancellation.
+- Scaling: 1-5: Drain 3 Mana per activation, max 1 round channel | 6-11: Drain 4 Mana per activation, max 1.5 rounds channel | 12+: Drain 5 Mana per activation, max 2 rounds channel
+- Notes: Per activation means Mana is drained at the start of every hero's turn while the channel is active. Lion cannot move or take other actions while channeling.
+
+4. Finger of Death
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 6
+- Mana Cost: 40
+- AP Cost: 2
+- Cooldown: 3 rounds
+- Range: 4 hexes
+- Rules: Lion channels dark magic to instantly deal massive damage to a single target enemy hero. This is Lion's signature burst damage ability, capable of eliminating low-HP heroes or finishing fleeing enemies.
+- Scaling: 6-11: 60 damage | 12-17: 90 damage | 18+: 120 damage
+- Notes: Finger of Death deals pure instant damage, not damage over time.
+
+Upgrade / notes panel:
+- Aghanim's Scepter Upgrade: Earth Spike erupts in a T-shape pattern, the original line plus perpendicular spikes extending 2 hexes to each side at the endpoint. All affected units are stunned and damaged.
+- Additional Scepter Note: Finger of Death cooldown is reduced to 2 rounds, damage increases by 30 at all levels, and if Finger of Death kills the target Lion gains a permanent stack granting +3 Mana and +2 Attack.
+- Additional Scepter Note: Mana Drain becomes an AoE channel affecting all enemy heroes within 3 hexes of Lion. Each affected hero is drained separately, and Lion receives Mana from all of them.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle infernal sigils, demonic claw shapes, dark magical veins, occult geometry, and arcane burst motifs without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Earth Spike, Hex, Mana Drain, and Finger of Death should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Elegant but threatening fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
 ## Example Image Prompt — Mirana Hero Card
 
 Use the following prompt when generating a sample hero card image for Mirana:
@@ -606,6 +824,115 @@ Negative constraints:
 - Do not make it look like a mobile game screenshot
 - Do not add extra abilities, extra stats, or extra decorative clutter
 - Do not place current HP, current Mana, gold, XP, cooldown trackers, or item slots on the card
+```
+
+---
+
+## Example Image Prompt — Mirana Abilities Card
+
+Use the following prompt when generating a sample landscape Abilities Card image for Mirana:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Mirana Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of moonlight, celestial motifs, archer iconography, feline elegance, and luminous magical spell effects. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, moonlit huntress theme, agility-class visual identity, midnight blue, silver, moon-white, and teal accents, elegant celestial motifs, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the arrow silhouette, moon sigils, starfall motifs, leap motion language, and invisibility iconography visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: MIRANA
+- Small crest or portrait accent
+- Summary strip listing Starfall, Sacred Arrow, Leap, Moonlight Shadow
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Starfall
+- Type: Active
+- Target: Unit-Targeted AoE
+- Unlock: Level 1
+- Mana Cost: 12
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Range: 3 hexes
+- Area: 2 hexes around the target
+- Rules: Summon a wave of meteors around target enemy unit, dealing damage to all enemy units within 2 hexes of the target. If Mirana is within 2 hexes of the primary target, that unit takes a second instance of Starfall damage.
+- Scaling: 1-5: 15 damage per instance | 6-11: 25 damage per instance | 12+: 35 damage per instance
+
+2. Sacred Arrow
+- Type: Active
+- Target: Direction/Vector
+- Special: Skillshot
+- Unlock: Level 1
+- Mana Cost: 15
+- AP Cost: 2
+- Cooldown: 2.5 rounds
+- Range: 5 hexes max
+- Rules: Fire an arrow in a straight line in the chosen direction. The arrow travels up to 5 hexes or until it hits an enemy hero. The first enemy hero struck takes damage and is stunned. Stun duration increases based on how far the arrow traveled before impact. Enemies may use the Dodge Skillshot reaction to attempt to avoid the arrow.
+- Scaling: 1-5: 20 damage, +3 AP stun per hex traveled | 6-11: 30 damage, +4 AP stun per hex traveled | 12+: 40 damage, +5 AP stun per hex traveled
+- Notes: At max range the stun reaches 15 AP at levels 1-5, 20 AP at levels 6-11, and 25 AP at levels 12+.
+
+3. Leap
+- Type: Active
+- Target: Direction/Vector
+- Unlock: Level 1
+- Mana Cost: 8
+- AP Cost: 1
+- Cooldown: 1.5 rounds
+- Rules: Mirana leaps forward up to 3 hexes in a straight line to an unoccupied hex, passing over obstacles, walls, and terrain. After landing, Mirana gains bonus Attack for a short duration.
+- Scaling: 1-5: +2 Attack for 10 turns | 6-11: +3 Attack for 1 round | 12+: +4 Attack for 1 round
+- Notes: Leap can pass over Tree hexes and Buildings but cannot pass through Impassable terrain. If the destination hex is occupied, Mirana lands on the nearest open hex on the path.
+
+4. Moonlight Shadow
+- Type: Active
+- Target: No Target (Global)
+- Unlock: Level 6
+- Mana Cost: 20
+- AP Cost: 2
+- Cooldown: 6 rounds
+- Duration: 20 turns (1 round)
+- Rules: Grant Invisibility to Mirana and all allied heroes on the board, regardless of position. Each hero receives their own Invisibility Cloud as per standard Invisibility rules. The invisibility lasts for the specified duration or until each hero attacks or uses a revealing ability.
+- Scaling: 6-11: 20 turns (1 round) duration | 12-17: 30 turns (1.5 rounds) duration | 18+: 40 turns (2 rounds) duration
+
+Upgrade / notes panel:
+- Aghanim's Scepter Upgrade: The current level of Starfall is applied to all enemy units along the path of Sacred Arrow and 1 hex adjacent.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle moon sigils, star patterns, celestial arcs, arrow-flight motifs, and wind-swept movement accents without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Starfall, Sacred Arrow, Leap, and Moonlight Shadow should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Elegant fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
 ```
 
 ---
@@ -876,4 +1203,106 @@ Negative constraints:
 - Do not make it look like a mobile game screenshot
 - Do not add extra abilities, extra stats, or extra decorative clutter
 - Do not place current HP, current Mana, gold, XP, cooldown trackers, or item slots on the card
+```
+
+---
+
+## Example Image Prompt — Sven Abilities Card
+
+Use the following prompt when generating a sample landscape Abilities Card image for Sven:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Sven Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of storm energy, knightly steel, heavy weapon silhouettes, martial buffs, and explosive impact effects. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, heavy knight-warrior theme, strength-class visual identity, steel blue, crimson, bronze, and storm-lit highlights, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the hammer silhouette, cleave arcs, war-banner buff motifs, storm glow, and heavy melee impact language visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: SVEN
+- Small crest or portrait accent
+- Summary strip listing Storm Hammer, Great Cleave, Warcry, God's Strength
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Storm Hammer
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Mana Cost: 10
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Range: 2 hexes
+- Rules: Hurl a magical hammer at target unit, dealing damage and stunning all enemy units within 1 hex of the target. Can be disjointed by Blink and similar displacement effects using a reaction.
+- Scaling: 1-5: 20 damage, stun (10 AP loss) | 6-11: 30 damage, stun (15 AP loss) | 12+: 40 damage, stun (20 AP loss)
+
+2. Great Cleave
+- Type: Passive
+- Unlock: Level 1
+- Rules: Sven's attacks cleave in a 2-hex cone in front of him, dealing damage to all units in the area. When Sven uses Farm on a creep wave, he only needs to farm twice to clear the entire wave and receives the gold and XP for all creeps.
+- Scaling: 1-5: 2 cleave damage | 6-11: 4 cleave damage | 12+: 6 cleave damage
+
+3. Warcry
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 1
+- Mana Cost: 1
+- AP Cost: 1
+- Cooldown: 3 rounds
+- Duration: 1 round
+- Range: 3 hex aura to allies
+- Rules: Sven and all allied heroes within 3 hexes gain bonus Defense and Move Speed for the duration. Does not affect creeps.
+- Scaling: 1-5: +5 Defense, +1 Move Speed | 6-11: +10 Defense, +1 Move Speed | 12+: +10 Defense, +2 Move Speed
+
+4. God's Strength
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 6
+- Mana Cost: 2
+- AP Cost: 2
+- Cooldown: 4 rounds
+- Duration: 1 round
+- Rules: Sven channels his rogue knight's fury, gaining bonus Attack for the duration. Great Cleave damage is also increased by the same amount.
+- Scaling: 6-11: +10 Attack | 12-17: +20 Attack | 18+: +40 Attack
+
+Upgrade / notes panel:
+- Aghanim's Scepter Upgrade: Sven may choose to travel with Storm Hammer, arriving at the impact location. Impact damage increases to 60.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle hammer motifs, storm arcs, knightly trim, cleave sweeps, and martial insignia without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Storm Hammer, Great Cleave, Warcry, and God's Strength should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Bold fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
 ```
