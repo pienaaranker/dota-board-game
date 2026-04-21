@@ -2,11 +2,13 @@
 
 This document specifies how all game variables are tracked using physical, offline components: cardboard mats, tokens, dice, sliders, and cards. No companion apps, no digital tracking — everything is tactile and visible.
 
+**Measurement Note:** Use the metric system for all physical component specifications in this project.
+
 ---
 
 ## Individual Hero Board (Player Mat)
 
-Each player receives a **Hero Board** — a large printed cardboard mat (approximately 12"×16") that holds all information for one hero. The board is divided into functional zones.
+Each player receives a **Hero Board** — a large printed cardboard mat (approximately 30 × 40 cm) that holds all information for one hero. The board is divided into functional zones.
 
 ### Zone 1: Base Stats & Resources
 
@@ -433,12 +435,12 @@ Players select cards face-down during Planning Phase and place them in the Actio
 
 ### Hero Board Material
 - **Material:** Thick laminated cardboard (2mm) with glossy finish for durability
-- **Size:** 12"×16" (large enough to hold all zones without crowding)
+- **Size:** 30 × 40 cm (large enough to hold all zones without crowding)
 - **Overlay Option:** Clear plastic sleeve allows dry-erase marker for dynamic values (gold, timers, ward locations)
 
 ### Action Cards
 - **Material:** Standard playing card stock with linen finish
-- **Size:** Poker-sized (2.5"×3.5")
+- **Size:** 6.3 × 8.8 cm
 - **Backs:** Uniform design (no information, face-down during Planning)
 
 ### Tokens
