@@ -1,7 +1,7 @@
 ---
 name: game-design
-description: "Board game design and rules editing for the Dota 2–inspired board game. Use when: designing or balancing mechanics; drafting hero cards, ability cards, or item cards; editing or expanding Rule-book.md; creating supporting documents (hero rosters, item lists, scenario guides); proposing new game modes; resolving rules inconsistencies; playtesting analysis or balance feedback."
-argument-hint: "Describe what you want to design, add, or balance (e.g. 'hero ability cards for a support hero', 'jungle camp rules', 'item shop economy')"
+description: "Board game design and rules editing for the Dota 2–inspired board game. Use when: designing or balancing mechanics; drafting hero cards, Abilities Cards, planning tokens, or item cards; editing or expanding Rule-book.md; creating supporting documents (hero rosters, item lists, scenario guides); proposing new game modes; resolving rules inconsistencies; playtesting analysis or balance feedback."
+argument-hint: "Describe what you want to design, add, or balance (e.g. 'hero Abilities Card for a support hero', 'jungle camp rules', 'item shop economy')"
 ---
 
 # Game Design Skill
@@ -11,7 +11,7 @@ Assist with all board game design tasks for the Dota 2–inspired board game. Th
 
 ## When to Use
 - Drafting or editing sections of `Rule-book.md`
-- Creating new hero cards, ability cards, or item cards
+- Creating new hero cards, Abilities Cards, planning tokens, or item cards
 - Designing new mechanics (e.g. Roshan, Runes, Buyback)
 - Writing supporting documents: hero rosters, item lists, scenario guides
 - Balancing stats, costs, and effects across heroes and items

@@ -159,7 +159,7 @@ Card structure:
 - Large central portrait of Crystal Maiden as an original fantasy frost sorceress: pale winter mage, blue hood and robes, ornate fur-lined mantle, glowing staff, swirling frost magic, composed but dangerous expression, arcane ice energy around her hands
 - Horizontal stat strip below portrait with large readable icons and numbers
 - Narrow progression strip
-- Bottom half contains four ability rows with compact chips for type, target, mana, AP, cooldown, range, and duration
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
 
 Base stats to show exactly:
 - HP 75
@@ -174,47 +174,31 @@ Progression strip:
 - Per Level: +10 HP | +10 Mana | +3 ATK | +1 DEF
 - Milestone icons for Level 6, Level 12, Level 18
 
-Ability rows to display:
+Ability summary rows to display:
 
 1. Crystal Nova
 - Type: Active
 - Target: Ground-Targeted AoE
 - Unlock: Level 1
-- Mana 15
-- AP 2
-- Cooldown 2 rounds
-- Range 2 hexes
-- Summary: Blast an area with frost, damaging enemies in a 2-hex radius and slowing them.
-- Scaling line: 1-5: 20 damage, -2 AP for 10 turns | 6-11: 30 damage, -3 AP for 1 round | 12+: 40 damage, -4 AP for 2 rounds
+- Summary: Blast an area with frost to damage and slow enemies.
 
 2. Frostbite
 - Type: Active
 - Target: Unit Target
 - Unlock: Level 1
-- Mana 20
-- AP 2
-- Cooldown 1.5 rounds
-- Range 2 hexes
-- Summary: Root target in ice and apply damage over time; rooted units cannot move.
-- Scaling line: 1-5: 20 total damage over 10 turns | 6-11: 40 total damage over 20 turns | 12+: 60 total damage over 20 turns
+- Summary: Root a target in ice and apply damage over time.
 
 3. Arcane Aura
 - Type: Passive (Aura)
 - Target: Global allied mana regeneration
 - Unlock: Level 1
-- Summary: Crystal Maiden and allied heroes regenerate mana at round end.
-- Scaling line: 1-5: 10 mana/round global | 6-11: 20 mana/round global | 12+: 30 mana/round global
+- Summary: Crystal Maiden and allied heroes regenerate mana over time.
 
 4. Freezing Field
 - Type: Channeled
 - Target: No Target (Self-Cast)
 - Unlock: Level 6
-- Mana 40
-- AP 1
-- Cooldown 5 rounds
-- Duration: Channeled
-- Summary: Channel a massive ice storm in a 2-hex radius; damages and slows enemies while Crystal Maiden remains stationary.
-- Scaling line: 6-11: 20 damage per pulse, -2 AP | 12-17: 30 damage per pulse, -3 AP | 18+: 40 damage per pulse, -5 AP
+- Summary: Channel a massive self-centered ice storm that damages and slows nearby enemies.
 
 Graphic direction:
 - The card should feel like a readable tabletop component first, illustration showcase second
@@ -234,6 +218,7 @@ Negative constraints:
 - Do not change the stat strip order, typography hierarchy, or four-row ability layout
 - Do not introduce new decorative badges, alternate UI systems, or extra card zones
 - Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -243,326 +228,94 @@ Negative constraints:
 
 ---
 
-## Example Image Prompt — Crystal Nova Ability Card
+## Example Image Prompt — Crystal Maiden Abilities Card
 
-Use the following prompt when generating a sample ability card image for Crystal Maiden's Crystal Nova:
+Use the following prompt when generating a sample landscape Abilities Card image for Crystal Maiden:
 
 ```text
-Create a polished fantasy board game ability card in portrait orientation, designed for a 6.3 × 8.8 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
-Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established Crystal Maiden ability-card template. Keep this visually part of the same manufactured ability-card product family.
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the Hero Cards while clearly functioning as a rules reference.
 
-Overall style: premium tabletop card design, rules-forward layout, highly readable at print size, elegant icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, sharp crystalline iconography, clean dividers, compact technical layout, collectible but practical.
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, elegant icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
 
-This is an Ability Card, not a Hero Card. The card should prioritize gameplay clarity and full rules readability over character portrait space.
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
 
 Locked layout instruction:
-- Preserve the exact outer frame shape, border treatment, top header position, secondary hero label position, ability icon slot position, slot marker position, unlock marker position, type chip position, target chip position, cost strip order, main effect text box position, level progression panel position, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all ability cards.
-- Only change the ability icon artwork, accent palette, and hero-specific atmospheric details inside the established ability-card frame.
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, four ability panel positions, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Only change the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details inside the established frame.
 
 Card structure:
-- Top header with the ability name: CRYSTAL NOVA
-- Small secondary label: Crystal Maiden
-- Ability icon featuring an icy burst or exploding frost sigil
-- Slot marker: Ability 1
-- Unlock marker: Level 1
-- Type chip: Active
-- Target chip: Ground-Targeted AoE
-- Cost strip with clearly labeled icons for Mana, AP, Cooldown, Range, and Area
-- Main effect text box
-- Level progression panel
-- Optional notes panel if needed for clarity
+- Hero header with the name: CRYSTAL MAIDEN
+- Small crest or portrait accent
+- Summary strip listing Crystal Nova, Frostbite, Arcane Aura, Freezing Field
+- Four clearly separated ability panels with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
 
 Ability data to show exactly:
-- Hero: Crystal Maiden
-- Ability Name: Crystal Nova
+
+1. Crystal Nova
 - Type: Active
-- Targeting: Ground-Targeted AoE
+- Target: Ground-Targeted AoE
 - Unlock: Level 1
 - Mana Cost: 15
 - AP Cost: 2
 - Cooldown: 2 rounds
 - Range: 2 hexes
 - Area: 2-hex radius
+- Rules: Blast an area with damaging frost, dealing damage to all enemy units within a 2-hex radius and applying a Slow debuff for the specified duration.
+- Scaling: 1-5: 20 damage, -2 AP for 10 turns | 6-11: 30 damage, -3 AP for 1 round | 12+: 40 damage, -4 AP for 2 rounds
 
-Rules text to communicate clearly:
-- Blast an area with damaging frost, dealing damage to all enemy units within a 2-hex radius and applying a Slow debuff for the specified duration.
-- Slowed enemies have their AP reduced when planning their next activation.
-
-Level progression panel:
-- 1-5: 20 damage, -2 AP for 10 turns
-- 6-11: 30 damage, -3 AP for 1 round (20 turns)
-- 12+: 40 damage, -4 AP for 2 rounds (40 turns)
-
-Graphic direction:
-- The card should feel like a technical tabletop ability reference first, fantasy illustration second
-- Use a frosted magical burst motif rather than a large character portrait
-- Show subtle radial ice patterns, snowflake geometry, crystalline shards, and cold vapor
-- Use a clear visual hierarchy: name first, type/target second, cost strip third, rules text fourth, scaling panel last
-- Include a small circular AoE icon and hex-based range icon language appropriate for a tactical board game
-- Present as a straight-on flat card render on a neutral background
-- Keep the text area bright and readable with minimal texture behind it
-
-Typography direction:
-- Elegant fantasy title for the ability name
-- Smaller but still clear label for Crystal Maiden
-- Compact, highly legible game UI font for rules text
-- Costs and timing information should be instantly scannable
-
-Negative constraints:
-- Do not redesign the frame or reposition any major card elements
-- Do not change the cost strip order, typography hierarchy, or effect-panel layout
-- Do not introduce new decorative badges, alternate UI systems, or extra card zones
-- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
-- Do not format this as a hero card
-- Do not use a large central portrait of Crystal Maiden
-- Do not copy official game splash art or spell icons
-- Do not use a trading card game frame style
-- Do not make it look like a mobile game screenshot
-- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
-- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
-```
-
----
-
-## Example Image Prompt — Frostbite Ability Card
-
-Use the following prompt when generating a sample ability card image for Crystal Maiden's Frostbite:
-
-```text
-Create a polished fantasy board game ability card in portrait orientation, designed for a 6.3 × 8.8 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
-
-Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established Crystal Maiden ability-card template. Keep this visually part of the same manufactured ability-card product family.
-
-Overall style: premium tabletop card design, rules-forward layout, highly readable at print size, elegant icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, sharp crystalline iconography, clean dividers, compact technical layout, collectible but practical.
-
-This is an Ability Card, not a Hero Card. The card should prioritize gameplay clarity and full rules readability over character portrait space.
-
-Locked layout instruction:
-- Preserve the exact outer frame shape, border treatment, top header position, secondary hero label position, ability icon slot position, slot marker position, unlock marker position, type chip position, target chip position, cost strip order, main effect text box position, level progression panel position, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all ability cards.
-- Only change the ability icon artwork, accent palette, and hero-specific atmospheric details inside the established ability-card frame.
-
-Card structure:
-- Top header with the ability name: FROSTBITE
-- Small secondary label: Crystal Maiden
-- Ability icon featuring frozen shackles, icy roots, or imprisoning frost around a target silhouette
-- Slot marker: Ability 2
-- Unlock marker: Level 1
-- Type chip: Active
-- Target chip: Unit Target
-- Cost strip with clearly labeled icons for Mana, AP, Cooldown, Range, and Duration
-- Main effect text box
-- Level progression panel
-- Optional notes panel if needed for clarity
-
-Ability data to show exactly:
-- Hero: Crystal Maiden
-- Ability Name: Frostbite
+2. Frostbite
 - Type: Active
-- Targeting: Unit Target
+- Target: Unit Target
 - Unlock: Level 1
 - Mana Cost: 20
 - AP Cost: 2
 - Cooldown: 1.5 rounds
 - Range: 2 hexes
+- Rules: Encase target enemy unit in ice, rooting them in place and dealing damage over time. Rooted units cannot move but may still use abilities.
+- Scaling: 1-5: 20 total damage over 10 turns | 6-11: 40 total damage over 20 turns | 12+: 60 total damage over 20 turns
 
-Rules text to communicate clearly:
-- Encase target enemy unit in ice, rooting them in place and dealing damage over time.
-- Rooted units cannot move but may still use abilities.
-
-Level progression panel:
-- 1-5: 20 total damage, 10 turns, 2 damage per turn
-- 6-11: 40 total damage, 20 turns, 2 damage per turn
-- 12+: 60 total damage, 20 turns, 3 damage per turn
-
-Graphic direction:
-- The card should feel like a technical tabletop ability reference first, fantasy illustration second
-- Use a focused single-target frost imprisonment motif rather than a large character portrait
-- Show jagged ice, frozen restraints, encased limbs, and cold mist around one trapped target silhouette
-- Use a clear visual hierarchy: name first, type/target second, cost strip third, rules text fourth, scaling panel last
-- Include a small single-target icon and duration icon language appropriate for a tactical board game
-- Present as a straight-on flat card render on a neutral background
-- Keep the text area bright and readable with minimal texture behind it
-
-Typography direction:
-- Elegant fantasy title for the ability name
-- Smaller but still clear label for Crystal Maiden
-- Compact, highly legible game UI font for rules text
-- Costs and timing information should be instantly scannable
-
-Negative constraints:
-- Do not redesign the frame or reposition any major card elements
-- Do not change the cost strip order, typography hierarchy, or effect-panel layout
-- Do not introduce new decorative badges, alternate UI systems, or extra card zones
-- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
-- Do not format this as a hero card
-- Do not use a large central portrait of Crystal Maiden
-- Do not copy official game splash art or spell icons
-- Do not use a trading card game frame style
-- Do not make it look like a mobile game screenshot
-- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
-- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
-```
-
----
-
-## Example Image Prompt — Arcane Aura Ability Card
-
-Use the following prompt when generating a sample ability card image for Crystal Maiden's Arcane Aura:
-
-```text
-Create a polished fantasy board game ability card in portrait orientation, designed for a 6.3 × 8.8 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
-
-Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established Crystal Maiden ability-card template. Keep this visually part of the same manufactured ability-card product family.
-
-Overall style: premium tabletop card design, rules-forward layout, highly readable at print size, elegant icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, subtle arcane glow, crisp iconography, clean dividers, compact technical layout, collectible but practical.
-
-This is an Ability Card, not a Hero Card. The card should prioritize gameplay clarity and full rules readability over character portrait space.
-
-Locked layout instruction:
-- Preserve the exact outer frame shape, border treatment, top header position, secondary hero label position, ability icon slot position, slot marker position, unlock marker position, type chip position, target chip position, cost strip order, main effect text box position, level progression panel position, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all ability cards.
-- Only change the ability icon artwork, accent palette, and hero-specific atmospheric details inside the established ability-card frame.
-
-Card structure:
-- Top header with the ability name: ARCANE AURA
-- Small secondary label: Crystal Maiden
-- Ability icon featuring a radiant frost sigil, circular mana aura, or glowing arcane snowflake
-- Slot marker: Ability 3
-- Unlock marker: Level 1
-- Type chip: Passive (Aura)
-- Target chip: Global allied mana regeneration
-- Cost strip should clearly show that this is passive and does not require normal activation costs
-- Main effect text box
-- Level progression panel
-- Optional notes panel if needed for clarity
-
-Ability data to show exactly:
-- Hero: Crystal Maiden
-- Ability Name: Arcane Aura
+3. Arcane Aura
 - Type: Passive (Aura)
+- Target: Global allied mana regeneration
 - Unlock: Level 1
-- Targeting / Effect Scope: Global allied mana regeneration
+- Rules: Crystal Maiden and all allied heroes passively regenerate Mana during the Round End Phase.
+- Scaling: 1-5: 10 Mana per round, global | 6-11: 20 Mana per round, global | 12+: 30 Mana per round, global
 
-Rules text to communicate clearly:
-- Crystal Maiden and all allied heroes within range passively regenerate Mana.
-- This regeneration occurs during the Round End Phase after all 20 turns are complete.
-
-Level progression panel:
-- 1-5: 10 Mana per round, global
-- 6-11: 20 Mana per round, global
-- 12+: 30 Mana per round, global
-
-Graphic direction:
-- The card should feel like a technical tabletop ability reference first, fantasy illustration second
-- Use a radiant aura motif rather than an attack or projectile image
-- Show concentric magical rings, frosted runes, gentle crystal light, mana flow, and calm supportive energy
-- Make the passive aura identity obvious at a glance
-- Use a clear visual hierarchy: name first, passive/aura label second, effect text third, scaling panel last
-- Include subtle global or aura icon language appropriate for a tactical board game
-- Present as a straight-on flat card render on a neutral background
-- Keep the text area bright and readable with minimal texture behind it
-
-Typography direction:
-- Elegant fantasy title for the ability name
-- Smaller but still clear label for Crystal Maiden
-- Compact, highly legible game UI font for rules text
-- Passive and aura labels should be especially easy to identify
-
-Negative constraints:
-- Do not redesign the frame or reposition any major card elements
-- Do not change the cost strip order, typography hierarchy, or effect-panel layout
-- Do not introduce new decorative badges, alternate UI systems, or extra card zones
-- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
-- Do not format this as a hero card
-- Do not use a large central portrait of Crystal Maiden
-- Do not copy official game splash art or spell icons
-- Do not use a trading card game frame style
-- Do not make it look like a mobile game screenshot
-- Do not invent mana costs, AP costs, or cooldowns if they do not exist
-- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
-- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
-```
-
----
-
-## Example Image Prompt — Freezing Field Ability Card
-
-Use the following prompt when generating a sample ability card image for Crystal Maiden's Freezing Field:
-
-```text
-Create a polished fantasy board game ability card in portrait orientation, designed for a 6.3 × 8.8 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
-
-Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established Crystal Maiden ability-card template. Keep this visually part of the same manufactured ability-card product family.
-
-Overall style: premium tabletop card design, rules-forward layout, highly readable at print size, elegant but dangerous icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, stormlike ice effects, sharp crystalline iconography, clean dividers, compact technical layout, collectible but practical.
-
-This is an Ability Card, not a Hero Card. The card should prioritize gameplay clarity and full rules readability over character portrait space.
-
-Locked layout instruction:
-- Preserve the exact outer frame shape, border treatment, top header position, secondary hero label position, ability icon slot position, slot marker position, unlock marker position, type chip position, target chip position, cost strip order, main effect text box position, level progression panel position, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all ability cards.
-- Only change the ability icon artwork, accent palette, and hero-specific atmospheric details inside the established ability-card frame.
-
-Card structure:
-- Top header with the ability name: FREEZING FIELD
-- Small secondary label: Crystal Maiden
-- Ability icon featuring a storm of ice shards, frozen blast ring, or magical snowstorm centered on a caster
-- Slot marker: Ultimate
-- Unlock marker: Level 6
-- Type chip: Channeled
-- Target chip: No Target (Self-Cast)
-- Cost strip with clearly labeled icons for Mana, AP, Cooldown, Duration, and Area
-- Main effect text box
-- Level progression panel
-- Optional notes panel if needed for clarity
-
-Ability data to show exactly:
-- Hero: Crystal Maiden
-- Ability Name: Freezing Field
+4. Freezing Field
 - Type: Channeled
-- Targeting: No Target (Self-Cast)
+- Target: No Target (Self-Cast)
 - Unlock: Level 6
 - Mana Cost: 40
 - AP Cost: 1
 - Cooldown: 5 rounds
-- Duration: Channeled (TBD rounds max)
+- Duration: Channeled
 - Area: 2 hex radius
-
-Rules text to communicate clearly:
-- Crystal Maiden channels a massive ice storm around her, dealing damage in pulses to all enemy units within range and slowing them.
-- Must remain stationary while channeling.
-- Interrupted by Stun, Silence, forced movement, or voluntary cancellation.
-
-Level progression panel:
-- 6-11: 20 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -2 AP while in range
-- 12-17: 30 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -3 AP while in range
-- 18+: 40 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -5 AP while in range
+- Rules: Crystal Maiden channels a massive ice storm around her, dealing damage in pulses to all enemy units within range and slowing them. Must remain stationary while channeling. Interrupted by Stun, Silence, forced movement, or voluntary cancellation.
+- Scaling: 6-11: 20 damage per pulse, -2 AP | 12-17: 30 damage per pulse, -3 AP | 18+: 40 damage per pulse, -5 AP
 
 Graphic direction:
-- The card should feel like a technical tabletop ability reference first, fantasy illustration second
-- Use a large circular storm motif centered on a magical focal point rather than a full character portrait
-- Show explosive frost pulses, swirling snow, radial shards, cold mist, and a dangerous zone-control identity
-- Make the Channeled status very obvious at a glance
-- Use a clear visual hierarchy: name first, type/target second, cost strip third, rules text fourth, scaling panel last
-- Include clear area-of-effect and duration icon language appropriate for a tactical board game
-- Present as a straight-on flat card render on a neutral background
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong panel separation and consistent icon chips
 - Keep the text area bright and readable with minimal texture behind it
+- Include subtle frost motifs, snowflake geometry, and crystalline accents without reducing clarity
+- Present as a straight-on flat card render on a neutral background
 
 Typography direction:
-- Elegant fantasy title for the ability name
-- Smaller but still clear label for Crystal Maiden
-- Compact, highly legible game UI font for rules text
-- Channeled status, cooldown, and area should be instantly scannable
+- Elegant fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
 
 Negative constraints:
 - Do not redesign the frame or reposition any major card elements
-- Do not change the cost strip order, typography hierarchy, or effect-panel layout
-- Do not introduce new decorative badges, alternate UI systems, or extra card zones
-- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
-- Do not format this as a hero card
-- Do not use a large central portrait of Crystal Maiden
+- Do not change the four-panel structure, typography hierarchy, or cost strip order
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
 - Do not copy official game splash art or spell icons
-- Do not use a trading card game frame style
-- Do not make it look like a mobile game screenshot
 - Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
 - Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
 ```
@@ -592,7 +345,7 @@ Card structure:
 - Large central portrait of Pudge as an original grotesque flesh golem butcher: massive bloated body, scarred skin, stitched flesh, iron hooks and chains, cleaver silhouette, toxic fumes, unsettling grin, hulking posture
 - Horizontal stat strip below portrait with large readable icons and numbers
 - Narrow progression strip
-- Bottom half contains four ability rows with compact chips for type, target, mana, AP, cooldown, range, and duration
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
 
 Base stats to show exactly:
 - HP 115
@@ -608,46 +361,31 @@ Progression strip:
 - Milestone icons for Level 6, Level 12, Level 18
 - Optional small status note: Design in Progress
 
-Ability rows to display:
+Ability summary rows to display:
 
 1. Meat Hook
 - Type: Active
 - Target: Direction/Vector
 - Special: Skillshot
 - Unlock: Level 1
-- Mana 14
-- AP 2
-- Cooldown 2.5 rounds
-- Range 5 hexes max
-- Summary: Launch a hook in a straight line; the first unit hit takes damage and is pulled adjacent to Pudge.
-- Scaling line: 1-5: 15 damage | 6-11: 25 damage | 12+: 40 damage
+- Summary: Launch a hook in a straight line to damage and drag the first unit hit.
 
 2. Rot
 - Type: Toggle
 - Target: No Target (Self-Cast)
 - Unlock: Level 1
-- Mana 0
-- AP 1 to activate
-- Cooldown: None
-- Summary: Release toxic gas that damages all enemy units within 1 hex and also damages Pudge.
-- Scaling line: 1-5: 2 damage per activation | 6-11: 3 damage per activation | 12+: 5 damage per activation
+- Summary: Release toxic gas that damages nearby enemies and Pudge himself.
 
 3. Flesh Heap
 - Type: Passive
 - Unlock: Level 1
-- Summary: Gain permanent bonus HP whenever an enemy hero dies within 3 hexes.
-- Scaling line: 1-5: +8 HP per death | 6-11: +12 HP per death | 12+: +16 HP per death
+- Summary: Gain permanent bonus HP when nearby enemy heroes die.
 
 4. Dismember
 - Type: Channeled
 - Target: Unit Target
 - Unlock: Level 6
-- Mana 30
-- AP 2
-- Cooldown 4 rounds
-- Duration: Channeled (max 2 rounds)
-- Summary: Channel on an adjacent enemy hero, dealing damage per activation and fully disabling the target.
-- Scaling line: 6-11: 4 damage per activation | 12-17: 6 damage per activation | 18+: 8 damage per activation
+- Summary: Channel on an adjacent enemy hero to damage and fully disable them.
 
 Graphic direction:
 - The card should feel like a readable tabletop component first, illustration showcase second
@@ -667,6 +405,7 @@ Negative constraints:
 - Do not change the stat strip order, typography hierarchy, or four-row ability layout
 - Do not introduce new decorative badges, alternate UI systems, or extra card zones
 - Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -699,7 +438,7 @@ Card structure:
 - Large central portrait of Lion as an original demonic spellcaster: gaunt body, horned silhouette, clawed hand, glowing occult eyes, jagged robes, dark magical aura, one hand crackling with lethal energy
 - Horizontal stat strip below portrait with large readable icons and numbers
 - Narrow progression strip
-- Bottom half contains four ability rows with compact chips for type, target, mana, AP, cooldown, range, and duration
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
 
 Base stats to show exactly:
 - HP 70
@@ -715,51 +454,32 @@ Progression strip:
 - Milestone icons for Level 6, Level 12, Level 18
 - Optional small status note: Design in Progress
 
-Ability rows to display:
+Ability summary rows to display:
 
 1. Earth Spike
 - Type: Active
 - Target: Direction/Vector
 - Special: Skillshot
 - Unlock: Level 1
-- Mana 12
-- AP 1
-- Cooldown 2 rounds
-- Range 4 hexes max
-- Summary: Send spikes along a line, damaging and stunning all enemy units in the path.
-- Scaling line: 1-5: 15 damage, 8 AP stun | 6-11: 25 damage, 12 AP stun | 12+: 35 damage, 16 AP stun
+- Summary: Send spikes in a line to damage and stun enemies in the path.
 
 2. Hex
 - Type: Active
 - Target: Unit Target
 - Unlock: Level 1
-- Mana 18
-- AP 1
-- Cooldown 2 rounds
-- Range 3 hexes
-- Summary: Transform target enemy hero into a helpless critter, fully disabling them and reducing Defense to 0.
-- Scaling line: 1-5: 10 turns | 6-11: 15 turns | 12+: 20 turns
+- Summary: Transform a target enemy into a helpless critter and fully disable them.
 
 3. Mana Drain
 - Type: Channeled
 - Target: Unit Target
 - Unlock: Level 1
-- Mana 0
-- AP 1 to activate
-- Cooldown 1 round
-- Summary: Channel on an enemy hero to drain their Mana and transfer it to Lion while line of sight is maintained.
-- Scaling line: 1-5: 3 Mana per activation, max 1 round | 6-11: 4 Mana per activation, max 1.5 rounds | 12+: 5 Mana per activation, max 2 rounds
+- Summary: Channel on an enemy hero to drain Mana while line of sight is maintained.
 
 4. Finger of Death
 - Type: Active
 - Target: Unit Target
 - Unlock: Level 6
-- Mana 40
-- AP 2
-- Cooldown 3 rounds
-- Range 4 hexes
-- Summary: Instantly blast a single enemy hero with massive dark magic damage.
-- Scaling line: 6-11: 60 damage | 12-17: 90 damage | 18+: 120 damage
+- Summary: Blast a single enemy hero with massive dark magic damage.
 
 Graphic direction:
 - The card should feel like a readable tabletop component first, illustration showcase second
@@ -779,6 +499,7 @@ Negative constraints:
 - Do not change the stat strip order, typography hierarchy, or four-row ability layout
 - Do not introduce new decorative badges, alternate UI systems, or extra card zones
 - Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -811,7 +532,7 @@ Card structure:
 - Large central portrait of Mirana as an original moon huntress: poised archer-priestess riding or posed with a sleek lunar beast, moonlit cloak, silver bow, starfall magic, agile and regal silhouette, wind-swept movement
 - Horizontal stat strip below portrait with large readable icons and numbers
 - Narrow progression strip
-- Bottom half contains four ability rows with compact chips for type, target, mana, AP, cooldown, range, and duration
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
 
 Base stats to show exactly:
 - HP 85
@@ -827,51 +548,32 @@ Progression strip:
 - Milestone icons for Level 6, Level 12, Level 18
 - Scepter badge reminder
 
-Ability rows to display:
+Ability summary rows to display:
 
 1. Starfall
 - Type: Active
 - Target: Unit-Targeted AoE
 - Unlock: Level 1
-- Mana 12
-- AP 1
-- Cooldown 2 rounds
-- Range 3 hexes
-- Summary: Call down meteors around a target enemy unit; if Mirana is close, the primary target takes a second hit.
-- Scaling line: 1-5: 15 damage per instance | 6-11: 25 damage per instance | 12+: 35 damage per instance
+- Summary: Call down meteors around a target enemy, with a stronger hit at close range.
 
 2. Sacred Arrow
 - Type: Active
 - Target: Direction/Vector
 - Special: Skillshot
 - Unlock: Level 1
-- Mana 15
-- AP 2
-- Cooldown 2.5 rounds
-- Range 5 hexes max
-- Summary: Fire a long-range arrow in a straight line; the first enemy hero hit takes damage and a distance-based stun.
-- Scaling line: 1-5: 20 damage, +3 AP stun per hex | 6-11: 30 damage, +4 AP stun per hex | 12+: 40 damage, +5 AP stun per hex
+- Summary: Fire a long-range arrow that damages and stuns based on travel distance.
 
 3. Leap
 - Type: Active
 - Target: Direction/Vector
 - Unlock: Level 1
-- Mana 8
-- AP 1
-- Cooldown 1.5 rounds
-- Summary: Leap up to 3 hexes in a straight line, passing over obstacles, then gain bonus Attack.
-- Scaling line: 1-5: +2 Attack for 10 turns | 6-11: +3 Attack for 1 round | 12+: +4 Attack for 1 round
+- Summary: Leap forward over obstacles and gain a temporary Attack boost.
 
 4. Moonlight Shadow
 - Type: Active
 - Target: No Target (Global)
 - Unlock: Level 6
-- Mana 20
-- AP 2
-- Cooldown 6 rounds
-- Duration: 20 turns (1 round)
 - Summary: Grant invisibility to Mirana and all allied heroes on the board.
-- Scaling line: 6-11: 20 turns | 12-17: 30 turns | 18+: 40 turns
 
 Graphic direction:
 - The card should feel like a readable tabletop component first, illustration showcase second
@@ -891,6 +593,7 @@ Negative constraints:
 - Do not change the stat strip order, typography hierarchy, or four-row ability layout
 - Do not introduce new decorative badges, alternate UI systems, or extra card zones
 - Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -1101,7 +804,7 @@ Card structure:
 - Large central portrait of Sven as an original armored rogue knight: imposing greatsword, heavy plate armor, horned helm or masked face, storm-charged atmosphere, broad stance, disciplined but brutal presence
 - Horizontal stat strip below portrait with large readable icons and numbers
 - Narrow progression strip
-- Bottom half contains four ability rows with compact chips for type, target, mana, AP, cooldown, range, and duration
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
 
 Base stats to show exactly:
 - HP 100
@@ -1117,46 +820,30 @@ Progression strip:
 - Milestone icons for Level 6, Level 12, Level 18
 - Scepter badge reminder
 
-Ability rows to display:
+Ability summary rows to display:
 
 1. Storm Hammer
 - Type: Active
 - Target: Unit Target
 - Unlock: Level 1
-- Mana 10
-- AP 1
-- Cooldown 2 rounds
-- Range 2 hexes
-- Summary: Hurl a magical hammer that damages the target and stuns nearby enemy units.
-- Scaling line: 1-5: 20 damage, stun 10 AP loss | 6-11: 30 damage, stun 15 AP loss | 12+: 40 damage, stun 20 AP loss
+- Summary: Hurl a magical hammer that damages the target and stuns nearby enemies.
 
 2. Great Cleave
 - Type: Passive
 - Unlock: Level 1
-- Summary: Sven's attacks cleave in a 2-hex cone; he farms creep waves more efficiently.
-- Scaling line: 1-5: 2 cleave damage | 6-11: 4 cleave damage | 12+: 6 cleave damage
+- Summary: Sven's attacks cleave in a cone for efficient wave damage.
 
 3. Warcry
 - Type: Active
 - Target: No Target (Self-Cast)
 - Unlock: Level 1
-- Mana 1
-- AP 1
-- Cooldown 3 rounds
-- Duration: 1 round
-- Summary: Grant Sven and nearby allied heroes bonus Defense and Move Speed.
-- Scaling line: 1-5: +5 DEF, +1 Move | 6-11: +10 DEF, +1 Move | 12+: +10 DEF, +2 Move
+- Summary: Grant Sven and nearby allies bonus Defense and Move Speed.
 
 4. God's Strength
 - Type: Active
 - Target: No Target (Self-Cast)
 - Unlock: Level 6
-- Mana 2
-- AP 2
-- Cooldown 4 rounds
-- Duration: 1 round
-- Summary: Gain a massive Attack boost; Great Cleave damage increases by the same amount.
-- Scaling line: 6-11: +10 Attack | 12-17: +20 Attack | 18+: +40 Attack
+- Summary: Gain a massive Attack boost that also increases Great Cleave damage.
 
 Graphic direction:
 - The card should feel like a readable tabletop component first, illustration showcase second
@@ -1176,6 +863,7 @@ Negative constraints:
 - Do not change the stat strip order, typography hierarchy, or four-row ability layout
 - Do not introduce new decorative badges, alternate UI systems, or extra card zones
 - Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot

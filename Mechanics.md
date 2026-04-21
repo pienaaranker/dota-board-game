@@ -68,30 +68,30 @@ The game is played in **Rounds**. Each Round consists of **20 turns** — all he
 **Terminology:**
 - **Turn** — One hero's activation, during which they execute their committed actions.
 - **Round** — 20 turns total. Each hero activates twice (once in each half-round of 10 turns).
-- **Activation** — When a specific hero executes their committed action cards during their turn.
+- **Activation** — When a specific hero executes their committed planning tokens during their turn.
 - **Duration:** When an ability or buff specifies a duration, it can be measured in:
   - **Rounds** — Lasts until the end of X complete rounds (all 20 turns).
   - **Turns** — Lasts for X total player turns (counted across all players).
-  - Ability cards will specify which measurement is used.
+  - The hero's Abilities Card or the relevant item entry will specify which measurement is used.
 
 ### Planning Phase
 Before the Turn Phase begins, all players simultaneously select their actions for the upcoming half-round (10 turns):
 
-1. Each player selects **Action Cards** for each hero they control, representing the actions that hero will take during their next activation.
-2. Players place these cards **face-down** in front of them (one set per hero if controlling multiple heroes).
-3. Once all players have committed their action cards and are ready, the Turn Phase begins.
-4. Action cards remain **face-down** until that specific hero's activation, at which point the player reveals their committed actions.
+1. Each player selects **Planning Tokens** for each hero they control, representing the actions that hero will take during their next activation.
+2. Players place these tokens **face-down** in front of them (one set per hero if controlling multiple heroes).
+3. Once all players have committed their planning tokens and are ready, the Turn Phase begins.
+4. Planning tokens remain **face-down** until that specific hero's activation, at which point the player reveals their committed actions.
 5. After the first 10 turns complete, players repeat the Planning Phase for the second half of the round.
 
 **Planning Rules:**
-- Action Cards include: Move, Attack, Farm, Use Ability, Use Item, and Pass.
+- Planning Tokens include: Move, Attack, Farm, Use Item, Pass, and hero-specific ability tokens.
 - Players may select up to their hero's AP worth of actions.
-- Cards remain hidden until activation — players commit actions without knowing what enemies have planned.
-- Once a hero's cards are revealed at the start of their activation, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
+- Tokens remain hidden until activation — players commit actions without knowing what enemies have planned.
+- Once a hero's tokens are revealed at the start of their activation, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
 - Reactions are **not** included in Planning Phase — reactions are declared in real-time during the Turn Phase when triggered.
 
 **Strategic Implications:**
-- Players must predict enemy positions and actions when committing their cards.
+- Players must predict enemy positions and actions when committing their tokens.
 - Targeted actions (Attack specific hero, single-target abilities) carry risk if targets move or die before your activation.
 - Revealing your actions only when you activate prevents enemies from adjusting their later-activating heroes' targets based on your plans.
 - Earlier heroes in turn order have more uncertainty but also more flexibility in responding to the actual game state.
@@ -144,31 +144,31 @@ When a committed action cannot be executed, the following rules apply:
 **Example Action Failure Causes:**
 - **Invalid Target** — The target unit has moved, died, or is no longer in range/LoS.
 - **Stunned Hero** — Hero has AP reduced below the cost of the action due to stun effects.
-- **Silenced Hero** — Hero cannot use Ability Cards while Silenced.
+- **Silenced Hero** — Hero cannot use abilities while Silenced.
 - **Insufficient Resources** — Hero lacks the Mana to cast a committed ability.
 - **Movement Blocked** — The destination hex is occupied or impassable due to game state changes.
 
 **Resolution:**
 When a committed action is revealed during a hero's activation, the player declares the specific target or destination at that moment. If the action cannot be executed as originally intended, the player has two options:
 
-1. **Cancel the action** — The action card is returned to the player's deck and can be played again in a future activation. No AP is spent. The activation proceeds to the next committed action.
+1. **Cancel the action** — The token is returned to the hero's available token pool and can be committed again in a future activation. No AP is spent. The activation proceeds to the next committed action.
 2. **Retarget the action** — If a valid alternative target or destination exists, the player may choose to execute the action on that alternative instead. The action executes normally and AP is spent as usual.
 
 **Target Declaration Timing:**
 - Specific targets (which enemy hero to attack, which hex to move to, which unit to cast an ability on) are **not** committed during Planning Phase.
-- Only the **type** of action is committed (Move, Attack, Use Storm Hammer, etc.).
-- The specific target or destination is declared when the action card is revealed during execution.
+- Only the **type** of action is committed (Move, Attack, Storm Hammer, etc.).
+- The specific target or destination is declared when the token is revealed during execution.
 - This gives players flexibility to adapt to game state changes, but commits them to the action type itself.
 
 **When Retargeting is Not Possible:**
 Some actions cannot be retargeted because no valid alternative exists:
 
 - **Stunned Hero** — Hero has AP reduced below the cost of the action due to stun effects. Action cannot execute at all.
-- **Silenced Hero** — Hero cannot use Ability Cards while Silenced. Ability actions cannot execute at all.
+- **Silenced Hero** — Hero cannot use abilities while Silenced. Ability actions cannot execute at all.
 - **Insufficient Resources** — Hero lacks the Mana to cast a committed ability. Action cannot execute at all.
 - **No Valid Targets** — All potential targets are out of range, dead, or otherwise invalid. Action cannot execute.
 
-In these cases, the action is automatically cancelled (returned to deck, no AP spent).
+In these cases, the action is automatically cancelled (returned to the hero's available token pool, no AP spent).
 
 **Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack (1 AP) → Move (1 AP) → Farm (1 AP) → Move (1 AP). He intended to attack Hero X, but Hero X dies during another hero's activation before Sven's turn. 
 - First Move executes: 1 AP spent (9 AP remaining).
@@ -180,11 +180,11 @@ In these cases, the action is automatically cancelled (returned to deck, no AP s
 - Third Move executes: 1 AP spent (5 AP remaining).
 - Sven's turn ends with 5 unused AP (which is lost).
 
-**Example:** Crystal Maiden commits: Move (1 AP) → Use Ability: Crystal Nova (1 AP, 15 Mana) → Move (1 AP). She currently has 10 Mana.
+**Example:** Crystal Maiden commits: Move (1 AP) → Crystal Nova (1 AP, 15 Mana) → Move (1 AP). She currently has 10 Mana.
 - First Move executes normally: 1 AP spent.
-- Crystal Nova revealed: insufficient Mana (needs 15, has 10). No valid alternative exists — she cannot retarget this to make it work. Action automatically cancelled and returned to deck, 0 AP spent.
+- Crystal Nova token revealed: insufficient Mana (needs 15, has 10). No valid alternative exists — she cannot retarget this to make it work. Action automatically cancelled and returned to her available token pool, 0 AP spent.
 - Second Move executes normally: 1 AP spent.
-- The Crystal Nova card can be played in her next activation if she has enough Mana.
+- The Crystal Nova token can be committed again in her next activation if she has enough Mana.
 
 **Strategic Considerations:**
 - Committing action types gives you strategic flexibility at execution time — you can adapt targets based on the actual game state when your turn arrives.
@@ -254,12 +254,12 @@ Tree clusters contain **Open hexes that wind through them** — these are juke p
 **Named areas** (Jungle Camps, Creep Meeting Points, Roshan's Pit, etc.) are clusters of hexes identified on the board art. When rules reference "being in an area," the hero's token must be on any **Open hex** within that area.
 
 ### Tree Destruction
-Trees are **mutable terrain** — specific Ability Cards and Item Cards can remove them.
+Trees are **mutable terrain** — specific hero abilities and Item Cards can remove them.
 
 - When a tree hex is destroyed it immediately becomes an **Open hex**.
 - **All** destroyed trees regrow simultaneously at the end of every **4th Round** (Rounds 4, 8, 12, …), regardless of when they were destroyed during that interval.
 - **Tangos** (Item Card): A hero consumes a Tango charge while **adjacent to** a tree hex — that tree is destroyed and the hero restores a fixed amount of Health.
-- Other tree-removing effects (e.g., Whirling Death) specify their area of destruction on the Ability Card.
+- Other tree-removing effects (e.g., Whirling Death) specify their area of destruction on the hero's Abilities Card.
 - An ability that allows a hero to **pass through** tree hexes must explicitly state it on the card.
 
 ---
@@ -296,7 +296,7 @@ Each hero has a fixed AP value printed on their Hero Card. All AP is refreshed a
 | **Farm** | 1 | Secure gold and XP from a creep wave or neutral camp in the hero's current area. |
 | **Deny** | Reaction | Spend 1 AP from your *next* turn to contest an enemy Farm action. Requires a die roll. See §8. |
 | **Use Item** | Varies | Activate an Item Card's effect. Cost listed on the card. |
-| **Use Ability** | Varies | Activate a hero Ability Card. Costs Mana and any AP listed on the card. |
+| **Use Ability** | Varies | Activate a hero ability using the matching hero-specific token. Costs Mana and any AP listed on the hero's Abilities Card. |
 
 ---
 
@@ -305,7 +305,7 @@ Each hero has a fixed AP value printed on their Hero Card. All AP is refreshed a
 - Each **Move** action costs 1 AP and moves the hero **1 hex** to any of the 6 adjacent hexes.
 - Heroes may take multiple Move actions in a turn to travel farther.
 - **Tree hexes and Impassable hexes** cannot be entered. Heroes must navigate around them or through Open juke paths within tree clusters.
-- Certain Ability Cards explicitly allow a hero to blink or pass through tree hexes — this must be stated on the card.
+- Certain hero abilities explicitly allow a hero to blink or pass through tree hexes — this must be stated on the hero's Abilities Card.
 - Melee and Ranged heroes move identically; hero type only affects attack range and Line of Sight requirements.
 - The **Haste Rune** doubles move efficiency — 1 AP moves the hero **2 hexes** — for its duration.
 
@@ -324,7 +324,7 @@ The attacker's Damage and the defender's Defense are taken from their Hero Cards
 - **Melee Attacks** target an adjacent hex and do **not** require clear LoS.
 - **Ranged Attacks and targeted Abilities** require an unobstructed line between the attacker's hex and the target's hex.
 - To check LoS: draw a straight line between the two hex centres. If that line passes through any **Tree hex** or **Impassable hex**, LoS is blocked and the attack or ability cannot be used from that position.
-- **AoE abilities** apply the same check per hex — only hexes with clear LoS from the caster are affected, unless the Ability Card states otherwise.
+- **AoE abilities** apply the same check per hex — only hexes with clear LoS from the caster are affected, unless the hero's Abilities Card states otherwise.
 
 ### Attack Range
 - **Melee** heroes must be on a hex **adjacent** to their target to attack. No LoS required.
@@ -334,7 +334,7 @@ The attacker's Damage and the defender's Defense are taken from their Hero Cards
 | Status Effect | Mechanical Effect |
 |---|---|
 | **Stun** | Target loses AP equal to the stun value from their *next* turn. |
-| **Silence** | Target cannot use Ability Cards for the remainder of the current round and their next turn. |
+| **Silence** | Target cannot use abilities for the remainder of the current round and their next turn. |
 | **Slow** | Defined per card — typically reduces effective movement areas per AP. |
 | **DoT (Damage over Time)** | See below. |
 
@@ -345,10 +345,10 @@ A DoT is a debuff token placed on a hero. At the **start of that hero's activati
 **DoT rules:**
 - Each DoT token specifies: damage per tick, tick frequency (every activation or every round), and total duration.
 - Most DoTs tick **once per activation** — meaning twice per round since each hero activates twice.
-- Some DoTs may tick **once per round** instead — this will be clearly marked on the ability or item card.
+- Some DoTs may tick **once per round** instead — this will be clearly marked on the hero's Abilities Card or the relevant item entry.
 - Multiple different DoT tokens can be active on a hero simultaneously; each ticks independently.
 - The same DoT type does **not** stack — applying it again refreshes the duration instead.
-- Most DoTs are **dispellable**: they can be removed by items or abilities that cleanse debuffs (e.g. Eul's Scepter of Divinity, Guardian Greaves). The item or ability card will state if it dispels debuffs.
+- Most DoTs are **dispellable**: they can be removed by items or abilities that cleanse debuffs (e.g. Eul's Scepter of Divinity, Guardian Greaves). The relevant item entry or hero's Abilities Card will state if it dispels debuffs.
 - Some DoTs are marked **undispellable** on the card or item entry — these cannot be removed early.
 
 **Named DoT types used in this game:**
@@ -403,9 +403,9 @@ Heroes level up when their XP track is filled. Milestones:
 
 | Level | Effect |
 |---|---|
-| **6** | Unlock a new Ability Card. |
-| **12** | Upgrade existing Ability Cards. |
-| **18** | Final Ability Card unlock or upgrade. |
+| **6** | Unlock a new ability section or breakpoint on the hero's Abilities Card. |
+| **12** | Upgrade existing ability values on the hero's Abilities Card. |
+| **18** | Final ability breakpoint or upgrade on the hero's Abilities Card. |
 
 All other level-ups provide stat increases as printed on the Hero Card.
 
@@ -519,7 +519,7 @@ All units are **visible** to both teams unless they have the Invisibility status
 ### Gaining Invisibility
 Invisibility is granted by:
 - The **Invisibility Rune** (see §13).
-- Certain **Ability Cards** and **Item Cards**.
+- Certain hero abilities and **Item Cards**.
 - **Smoke of Deceit** — grants group invisibility that bypasses Observer Wards (see below).
 
 ### Invisibility Mechanics
@@ -599,8 +599,8 @@ A shared team token that delivers items from the Fountain stash to heroes in the
 A high-cost luxury item purchased at the Fountain. When a hero acquires Aghanim's Scepter, one of their abilities receives a permanent upgrade.
 
 **Rules:**
-- Each hero has **one ability** that can be upgraded by Aghanim's Scepter. This is clearly marked on the Ability Card.
-- The upgrade effect is **printed directly on the Ability Card** in a dedicated "Aghanim's Upgrade" section.
+- Each hero has **one ability** that can be upgraded by Aghanim's Scepter. This is clearly marked on the hero's Abilities Card.
+- The upgrade effect is **printed directly on the Abilities Card** in a dedicated "Aghanim's Upgrade" section.
 - The Scepter provides the upgrade immediately upon purchase — no additional activation required.
 - Scepter upgrades are permanent as long as the item is held by the player.
 - **Aghanim's Shard is not included in this board game.**
@@ -615,7 +615,7 @@ When a hero is killed they are removed from the board and placed in a respawn qu
 - **Respawn Timer:** A dead hero respawns after a number of **turns** equal to their **current level**. For example, a Level 8 hero waits 8 turns before respawning.
 - **Clarification:** "Turns" are counted across all players — not just the dead hero's own activations. If there are 6 players and a Level 8 hero dies, they will respawn after 8 total player turns have passed (which could be less than one complete round).
 - Turns are counted individually as each hero activates during the Turn Phase. If killed during an opponent's turn, the timer begins counting with the next player's turn.
-- On their designated respawn turn, the hero returns to the **Fountain** with full Health and Mana at the start of that turn (before committing action cards).
+- On their designated respawn turn, the hero returns to the **Fountain** with full Health and Mana at the start of that turn (before committing planning tokens).
 - Death timers scale automatically with level progression — higher-level heroes are out of the game longer when killed, making late-game deaths more punishing.
 
 ### Buyback
@@ -630,17 +630,17 @@ A dead hero may pay a **Gold fee** at any point during their respawn wait to ret
 
 ## 17. Ability Types & Targeting
 
-Ability Cards use different targeting and activation methods. This section defines how each type works in the board game context. All entries are pending design discussion.
+Hero abilities use different targeting and activation methods. This section defines how each type works in the board game context. All entries are pending design discussion.
 
 ### Activation Methods
 
 **Passive** — Always active; no mana cost or activation required. Effect is continuous as long as the hero is alive.
 
-**Active** — Manually cast during a hero's turn. Costs Mana and AP as printed on the card.
+**Active** — Manually cast during a hero's turn. Costs Mana and AP as printed on the hero's Abilities Card.
 
 **Toggle** — Can only be **activated** during the hero's own turn (costs Mana and AP as printed). Once active, can be **toggled off at any time** — even during another player's turn — unless the hero is Silenced. While active, may drain Mana or Health per round. Examples: Rot, Mana Shield.
 
-**Channeled** — Can be **activated** during the hero's own turn (costs Mana and AP as printed). Once active, the hero must remain stationary and the effect persists across subsequent turns until interrupted or cancelled. **Interrupted by:** Stun, Silence, forced movement, or the target moving out of range. The casting player may **cancel the channel at any time** (like a toggle). Examples: Freezing Field, Black Hole.
+**Channeled** — Can be **activated** during the hero's own turn (costs Mana and AP as printed on the hero's Abilities Card). Once active, the hero must remain stationary and the effect persists across subsequent turns until interrupted or cancelled. **Interrupted by:** Stun, Silence, forced movement, or the target moving out of range. The casting player may **cancel the channel at any time** (like a toggle). Examples: Freezing Field, Black Hole.
 
 ### Targeting Types
 
@@ -648,9 +648,9 @@ Ability Cards use different targeting and activation methods. This section defin
 
 **Unit Target (Single Target)** — Targets a specific unit (ally, enemy, creep, or structure) within range and LoS. Must declare target before resolving.
 
-**Point Target** — Player declares a specific hex within range as the target location. The effect occurs at that hex. Whether the effect is instant or has travel time is specified on the Ability Card. Examples: Light Strike Array, Ice Path.
+**Point Target** — Player declares a specific hex within range as the target location. The effect occurs at that hex. Whether the effect is instant or has travel time is specified on the hero's Abilities Card. Examples: Light Strike Array, Ice Path.
 
-**Direction/Vector Target** — Player declares a direction or line from the caster by specifying a target hex. How the ability resolves along that direction (instant movement, projectile, persistent zone, etc.) is specified on the Ability Card. Examples: Swashbuckle (movement + attack along direction), Macropyre (line of fire).
+**Direction/Vector Target** — Player declares a direction or line from the caster by specifying a target hex. How the ability resolves along that direction (instant movement, projectile, persistent zone, etc.) is specified on the hero's Abilities Card. Examples: Swashbuckle (movement + attack along direction), Macropyre (line of fire).
 
 ### Effect Shapes
 
@@ -664,13 +664,13 @@ Ability Cards use different targeting and activation methods. This section defin
 
 ### Special Mechanics
 
-**Skillshot** — Abilities that travel in a line from the caster to a target location and can be dodged. **Whether an ability is a skillshot must be explicitly marked on the Ability Card.** Only abilities marked as Skillshot may be dodged using the Dodge Skillshot reaction — all other abilities resolve instantly and too quickly to dodge. The caster declares a direction by specifying a target hex (using Direction/Vector targeting). The ability creates a line effect from the caster's hex toward the target hex. Any hero in the path of the skillshot (including at the end position) may use the **Dodge Skillshot** reaction (see §3) to attempt to avoid being hit. The dodge reaction costs 2 AP from the hero's next turn, requires a die roll to determine success, and forces the hero to immediately move to an adjacent hex regardless of the roll's outcome. Examples: Sacred Arrow, Meat Hook.
+**Skillshot** — Abilities that travel in a line from the caster to a target location and can be dodged. **Whether an ability is a skillshot must be explicitly marked on the hero's Abilities Card.** Only abilities marked as Skillshot may be dodged using the Dodge Skillshot reaction — all other abilities resolve instantly and too quickly to dodge. The caster declares a direction by specifying a target hex (using Direction/Vector targeting). The ability creates a line effect from the caster's hex toward the target hex. Any hero in the path of the skillshot (including at the end position) may use the **Dodge Skillshot** reaction (see §3) to attempt to avoid being hit. The dodge reaction costs 2 AP from the hero's next turn, requires a die roll to determine success, and forces the hero to immediately move to an adjacent hex regardless of the roll's outcome. Examples: Sacred Arrow, Meat Hook.
 
 **Ground-Targeted AoE** — Combination of Point Target + Circular AoE. Player picks a hex; all units within the radius are affected.
 
 **Unit-Targeted AoE** — Targets a unit; effect radiates from that unit to nearby hexes. Examples: Poison Nova, Thundergod's Wrath (per-hero basis).
 
-**Aura** — Passive effect that continuously radiates from the hero to all allied or enemy units (as specified on the card) within a fixed range measured in hexes. The aura's radius, which units are affected (allies/enemies/both), and the specific effect are all printed on the Ability Card. Auras are always active while the hero is alive and do not require activation. Examples: Precision Aura, Vampiric Aura.
+**Aura** — Passive effect that continuously radiates from the hero to all allied or enemy units (as specified on the card) within a fixed range measured in hexes. The aura's radius, which units are affected (allies/enemies/both), and the specific effect are all printed on the hero's Abilities Card. Auras are always active while the hero is alive and do not require activation. Examples: Precision Aura, Vampiric Aura.
 
 ---
 

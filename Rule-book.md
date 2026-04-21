@@ -7,9 +7,9 @@ Destroy the enemy team's Ancient, located within their base. To reach the Ancien
 
 ## Game Components
 - **Hero Cards** — Statistics for Attack, Defense, Health, Mana, and Move Speed.
-- **Ability Cards** — Unique skills for each hero, unlocked and upgraded as the hero levels up.
+- **Abilities Cards** — One landscape reference card per hero containing the full rules text and numbers for all four hero abilities.
 - **The Board** — A map featuring three lanes (Top, Mid, Bottom), the River, the Jungle, and two Bases.
-- **Tokens** — Representations for Creeps, Towers, Gold/XP, and Invisibility markers.
+- **Tokens** — Representations for Creeps, Towers, Gold/XP, Invisibility markers, and face-down planned actions.
 - **Action Point (AP) Trackers** — Tools to manage resources available each turn.
 
 ---
@@ -25,10 +25,10 @@ All heroes start with 3× the AP at the start of the game to get out onto the ma
 
 ### Planning Phase
 Before each half-round (10 turns), all players simultaneously:
-1. Select Action Cards (Move, Attack, Farm, Use Ability, etc.) for each hero they control
-2. Place cards face-down in front of them (one set per hero if controlling multiple)
+1. Select face-down planning tokens (Move, Attack, Farm, Use Item, Pass, or a hero-specific ability token) for each hero they control
+2. Place tokens face-down in front of them (one set per hero if controlling multiple)
 3. Once all players are ready, the Turn Phase begins
-4. Each hero's cards remain face-down until that hero's activation, when they are revealed and executed
+4. Each hero's tokens remain face-down until that hero's activation, when they are revealed and executed
 
 ### Turn Phase
 Heroes execute their committed actions one at a time. Each hero activates twice per round (once per half-round). Heroes alternate between teams in a pendulum pattern to ensure fairness — if a player controls multiple heroes, those heroes do not all activate in succession.
@@ -52,7 +52,7 @@ Each hero has their own AP per turn to spend.
 | **Farm** | Spend AP to gain gold and XP from a creep wave or neutral camp. |
 | **Deny** | *(Reaction)* Use AP from your next turn to interrupt an opponent's Farm action. Requires a die roll challenge. |
 | **Use Item** | Activate an item card's effect. |
-| **Use Ability** | Activate a hero-specific ability card (requires Mana). |
+| **Use Ability** | Activate one of the hero's printed abilities using the matching hero-specific token (requires Mana). |
 
 ---
 
@@ -113,7 +113,7 @@ Buildings and Obstacles allow heroes to see (and target) enemies on the other si
 
 - **Initiative** — When multiple heroes are in the same area, action order is determined by Move Speed.
 - **Resolution** — `Damage − Defense = Health Lost`
-- **Crowd Control (CC)** — Stuns remove AP from the target's next turn. Silences prevent the use of Ability Cards for one round.
+- **Crowd Control (CC)** — Stuns remove AP from the target's next turn. Silences prevent the use of abilities for one round.
 - **Range** — Melee heroes must be in the same area to attack. Ranged heroes can attack from an adjacent area.
 
 ---
@@ -129,5 +129,5 @@ Buildings and Obstacles allow heroes to see (and target) enemies on the other si
 ## Economy and Progression
 
 - **The Courier** — A shared unit that delivers items from the Fountain to heroes. Delivery typically takes 1–2 rounds.
-- **Leveling** — Heroes gain levels via XP. At levels 6, 12, and 18, heroes unlock or upgrade their Ability cards.
+- **Leveling** — Heroes gain levels via XP. At levels 6, 12, and 18, heroes unlock or upgrade the relevant sections on their Abilities Card.
 - **Buybacks** — Dead heroes can spend a significant Gold fee to respawn immediately at the Fountain.

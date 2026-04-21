@@ -63,20 +63,20 @@ Located in the upper-right corner.
 
 ### Zone 3: Action Planning & Duration Tracking
 
-Located in the center of the mat. This zone serves two purposes: staging action cards for the current turn and tracking all time-based effects.
+Located in the center of the mat. This zone serves two purposes: staging face-down planning tokens for the current turn and tracking all time-based effects.
 
-#### Action Card Staging Area
+#### Planning Token Staging Area
 Located at the top of Zone 3.
 
 - **Component:** Rectangular zone labeled "Action Queue"
-- **Size:** Fits up to 10 Action Cards laid horizontally in sequence
-- **Usage:** During Planning Phase, place selected Action Cards face-down here in the order you want to execute them. During your activation, reveal and execute from left to right.
+- **Size:** Fits up to 10 planning tokens laid horizontally in sequence
+- **Usage:** During Planning Phase, place selected tokens face-down here in the order you want to execute them. During your activation, reveal and execute from left to right.
 
 ---
 
 #### Dual Duration Tracking System
 
-Located below the Action Card area. Divided into two parallel sections for different time measurements.
+Located below the planning area. Divided into two parallel sections for different time measurements.
 
 **Left Section: TURNS (10 compartments)** | **Right Section: ROUNDS (6 compartments)**
 
@@ -115,8 +115,8 @@ Each section contains two rows of tracking compartments:
 - **Component:** Horizontal strip with **6 vertical compartments**
 - **Values Tracked:** ½ round, 1, 2, 3, 4, 5 rounds
 - **Marker:** Place small ability identifier tokens (Q, W,─────────┐
-│              ACTION CARD STAGING AREA                            │
-│      [Card] [Card] [Card] [Card] [Card] ...                     │
+│             PLANNING TOKEN STAGING AREA                         │
+│    [Token] [Token] [Token] [Token] [Token] ...                 │
 └──────────────────────────────────────────────────────────────────┘
 
 ┌───────────────────────────────┬──────────────────────────────────┐
@@ -273,12 +273,12 @@ Located at the bottom-right of the mat.
 
 ### Zone 8: Aghanim's Scepter
 
-Located near the ability cards.
+Located near the hero's Abilities Card reference area.
 
 #### Scepter Acquired
 - **Component:** Printed checkbox "⭐ Aghanim's Scepter"
 - **Marker:** Star token placed when Scepter is purchased
-- **Upgraded Ability:** Small arrow token points to which ability is upgraded (if not obvious from card)
+- **Upgraded Ability:** Small arrow token points to which ability is upgraded (if not obvious from the Abilities Card)
 
 ---
 
@@ -398,16 +398,16 @@ Three lane sections (Top, Mid, Bottom), each with identical tracking.
 
 ## Additional Physical Components
 
-### Action Cards (Per Player)
-A deck of reusable Action Cards used during the Planning Phase:
-- **Move** (×10)
-- **Attack** (×10)
-- **Farm** (×5)
-- **Use Ability** (×10, labeled Ability 1–4 or generic "Use Ability")
-- **Use Item** (×10, labeled Slot 1–6 or generic "Use Item")
-- **Pass** (×5)
+### Planning Tokens (Per Player)
+A shared pool of reusable tokens used during the Planning Phase:
+- **Move** tokens
+- **Attack** tokens
+- **Farm** tokens
+- **Use Item** tokens
+- **Pass** tokens
+- **Hero Ability Tokens** (custom to each hero, one per named ability)
 
-Players select cards face-down during Planning Phase and place them in the Action Queue zone on their Hero Board.
+Players select tokens face-down during Planning Phase and place them in the Action Queue zone on their Hero Board.
 
 ---
 
@@ -428,6 +428,7 @@ Players select cards face-down during Planning Phase and place them in the Actio
 | Round Start Token | Large Star | 1 | Marks first player each round |
 | Courier Standee | Custom | 2 (1 per team) | Tracks Courier position on board |
 | Rune Die | Custom | 1 | Determines which Power Rune spawns |
+| Planning Tokens | Mixed | Per hero / per player set | Face-down action commitment during planning |
 
 ---
 
@@ -438,10 +439,10 @@ Players select cards face-down during Planning Phase and place them in the Actio
 - **Size:** 30 × 40 cm (large enough to hold all zones without crowding)
 - **Overlay Option:** Clear plastic sleeve allows dry-erase marker for dynamic values (gold, timers, ward locations)
 
-### Action Cards
-- **Material:** Standard playing card stock with linen finish
-- **Size:** 6.3 × 8.8 cm
-- **Backs:** Uniform design (no information, face-down during Planning)
+### Planning Tokens
+- **Material:** Thick cardboard punchboard or acrylic tokens
+- **Size:** 20-25 mm recommended for face-down handling
+- **Faces:** Uniform back; front face shows the action or hero ability icon
 
 ### Tokens
 - **Material:** Thick cardboard punchboard (1mm)
@@ -466,7 +467,7 @@ Players select cards face-down during Planning Phase and place them in the Actio
 
 - **XP Scaling:** If XP requirements vary significantly by level, consider a printed XP table with a sliding marker instead of a simple die.
 - **Charge Items:** Should charge counters be universal (D6 for all items) or item-specific (custom dials)?
-- **DoT Tracking:** Bleeding/DoT effects need both duration (ticks remaining) and damage value. Suggest a two-token system or small card placed in Status Effects zone.
+- **DoT Tracking:** Bleeding/DoT effects need both duration (ticks remaining) and damage value. Suggest a two-token system or small reference insert placed in Status Effects zone.
 - **High Gold Values:** If late-game gold exceeds 999, consider using poker chips (10/50/100 denominations) instead of dice.
 - **Ward Coordinates:** Hex notation (e.g., "D7") or descriptive locations (e.g., "Radiant jungle, near Ancient camp")? May need labeled hex grid on main board.
 

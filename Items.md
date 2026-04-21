@@ -372,7 +372,7 @@ Items focused on ability enhancement, crowd control, and magical effects.
 #### Aghanim's Scepter *(4200 Gold)*
 **Type:** Passive | **Status:** 🔲 TODO
 
-Upgrades this hero's ultimate ability as printed on the hero's ability card (Aghanim's Scepter upgrade column).
+Upgrades this hero's ultimate ability as printed on the hero's Abilities Card (Aghanim's Scepter upgrade section).
 
 ---
 
@@ -495,7 +495,7 @@ When this hero's HP drops to 20% or below, automatically gain an Aeon Shield tok
 #### Black King Bar *(4050 Gold)*
 **Type:** Active | **Status:** 🔲 TODO
 
-Spend 1 AP. Become Magic Immune for 1 round: immune to all magic damage and ability effects, except abilities explicitly marked "pierces BKB" on the ability card. Cooldown decreases with each use (first use: 3 rounds; subsequent uses: 2 rounds, minimum 1).
+Spend 1 AP. Become Magic Immune for 1 round: immune to all magic damage and ability effects, except abilities explicitly marked "pierces BKB" on the hero's Abilities Card. Cooldown decreases with each use (first use: 3 rounds; subsequent uses: 2 rounds, minimum 1).
 
 ---
 
