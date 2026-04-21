@@ -196,4 +196,241 @@ Use this structure when turning entries from `Heroes.md` into final print layout
 | Ability 1 | Name, unlock, type, target, costs, range, summary, scaling |
 | Ability 2 | Name, unlock, type, target, costs, range, summary, scaling |
 | Ability 3 | Name, unlock, type, target, costs, range, summary, scaling |
+
+---
+
+## Ability Cards
+
+Each hero also has a set of **Ability Cards**. These are the cards players actually use to resolve hero abilities during play. If the Hero Card answers "what does this hero generally do," the Ability Cards answer "how does this specific ability work right now, at the table, without needing the rulebook?"
+
+Ability Cards should contain the **full playable rules text** for a single ability, including targeting, costs, timing, restrictions, scaling, and any special interactions that matter during resolution.
+
+### Relationship To Hero Cards And Hero Boards
+
+The component split should remain strict:
+
+- **Hero Card:** condensed overview of the whole hero
+- **Ability Card:** full rules for one specific ability
+- **Hero Board:** tracks cooldowns, durations, unlock state, and temporary effects
+
+An Ability Card is a rules reference and play aid, not a tracker. It should not be covered in counters during normal use.
+
+### Ability Card Size & Orientation
+
+- **Format:** Standard portrait card
+- **Recommended Size:** 6.3 × 8.8 cm
+- **Material:** Standard playing card stock with linen finish
+- **Back:** Uniform within that hero's four-card ability set, or fully uniform across all Ability Cards if they may ever be shuffled together during setup or storage
+
+This size keeps ability text readable while still fitting cleanly in the Hero Board's ability area.
+
+### How Many Ability Cards Per Hero
+
+Each hero should have **4 Ability Cards**, one for each named ability.
+
+- 3 basic abilities available from level 1
+- 1 ultimate that unlocks at level 6
+
+The same physical Ability Card should usually handle all level-band scaling for that ability rather than creating separate level-up replacement cards, unless later testing shows that the text becomes too dense.
+
+### Information That Belongs On An Ability Card
+
+An Ability Card should contain all information needed to execute the ability correctly in play.
+
+- Hero name
+- Ability name
+- Ability icon
+- Ability slot marker or ordering marker
+- Unlock level
+- Activation type: Passive, Active, Toggle, Channeled
+- Targeting type: Self, Unit, Point, Direction/Vector, AoE, Global, Aura
+- Special markers: Skillshot, Aura, Channel, Scepter Upgrade, Toggle
+- Mana cost
+- AP cost
+- Cooldown
+- Range
+- Radius / line / cone / area shape when relevant
+- Duration when relevant
+- Full effect text
+- Level-band scaling text
+- Notes or restrictions required for correct use
+- Dedicated Aghanim's Scepter upgrade section if the ability has one
+
+### Information That Does Not Belong On An Ability Card
+
+The following should stay off the card face and be tracked elsewhere.
+
+- Current cooldown marker
+- Charges spent this round unless the ability itself uses printed charges as a core mechanic
+- Current remaining duration of active effects
+- Current mana pool
+- Current AP available
+- Current level tracker
+- Current stacks tracked physically on the Hero Board
+
+### Front Face Layout
+
+The Ability Card front should be divided into 6 functional zones.
+
+#### Zone A: Ability Header
+
+Located at the top of the card.
+
+- Large ability name
+- Small hero name above or below it
+- Ability icon
+- Small slot badge for Ability 1 / 2 / 3 / Ultimate
+- Unlock level marker
+
+**Purpose:** Lets players identify the card instantly when multiple hero components are on the table.
+
+#### Zone B: Type And Target Band
+
+Located directly below the header.
+
+- Activation type chip
+- Targeting type chip
+- Special rule chips where relevant
+	- Skillshot
+	- Aura
+	- Channeled
+	- Toggle
+	- Global
+
+This band should use standardized icons and vocabulary copied exactly from the rules language in `Mechanics.md §17`.
+
+#### Zone C: Cost And Range Strip
+
+Compact horizontal strip with large icons.
+
+- Mana cost
+- AP cost
+- Cooldown
+- Range
+- Duration
+- Area icon when relevant
+
+Not every field is required on every card, but the layout should reserve stable positions so players learn where to look.
+
+#### Zone D: Core Effect Text
+
+This is the main rules box.
+
+- Full effect text in plain playable language
+- Trigger timing when relevant
+- Restrictions and interrupt conditions when relevant
+
+This text should prioritize resolution clarity over flavor. If an ability has a complex edge case that players will encounter regularly, it belongs here rather than being hidden in supporting notes.
+
+#### Zone E: Level Progression Panel
+
+Located below the main rules box.
+
+- Printed scaling by level band
+- Use the same shorthand as the Hero Card for consistency:
+	- `1-5:`
+	- `6-11:`
+	- `12+:`
+	- `12-17:`
+	- `18+:`
+
+This area should be visually distinct from the main effect text so players can scan baseline function separately from level scaling.
+
+#### Zone F: Upgrade / Notes Panel
+
+Located at the bottom of the card.
+
+- Aghanim's Scepter upgrade text, if the ability has one
+- Rules notes that are too important to omit but too conditional to sit inside the main effect paragraph
+
+This panel should not be used for flavor text. It exists for gameplay clarity.
+
+### Visual Language
+
+Ability Cards should be more technical and rules-forward than Hero Cards.
+
+- The Hero Card sells identity
+- The Ability Card sells clarity
+
+Recommended visual approach:
+
+- Smaller portrait or no portrait at all; use an ability icon instead
+- Strong text hierarchy with clean dividers
+- Consistent chip system for type, target, costs, and keywords
+- A subtle hero-class color accent is acceptable, but the card should primarily be organized by readability rather than faction-color spectacle
+- Area-of-effect shapes should use tiny geometric icons when possible: circle, line, cone, self-burst, global
+
+### Readability Rules
+
+Because these are gameplay tools, the card should optimize for fast reading.
+
+- Use short paragraphs rather than dense text walls
+- Bold only the most important terms
+- Avoid decorative backgrounds behind rules text
+- Keep icon usage consistent across all heroes
+- If a card includes a Skillshot, mark that explicitly in a highly visible way
+- If a card is Channeled or Toggle, those states should be obvious from across the table
+- If a card has no Mana cost or no cooldown, print `0` or `None` explicitly instead of leaving the field blank
+
+### Passive, Toggle, And Channeled Cards
+
+These card types need special treatment so they read differently at a glance.
+
+#### Passive Abilities
+
+- Use a muted but clearly labeled Passive chip
+- No Mana or AP field is needed unless there is an exception
+- Focus the layout on persistent effect text and level scaling
+
+#### Toggle Abilities
+
+- Show `AP to activate` rather than a generic AP cost when relevant
+- Show `Cooldown: None` explicitly if it can be toggled freely
+- Include a reminder line describing when it can be toggled off
+
+#### Channeled Abilities
+
+- Use a prominent Channeled label
+- Include interrupt conditions in the main effect text or a clearly visible notes box
+- Include the maximum channel duration if one exists
+
+### Skillshot And Area Marking
+
+Some abilities require more spatial information than others. These should be marked clearly.
+
+- **Skillshot:** visibly labeled so players know the Dodge Skillshot reaction is allowed
+- **Line / Vector abilities:** use a line icon and maximum range field
+- **AoE abilities:** use a radius or shape icon
+- **Global abilities:** use a unique global marker rather than a numerical range
+- **Aura abilities:** indicate who is affected and whether the aura is local or global
+
+### Upgrade Philosophy
+
+Ability Cards should assume one-card longevity across the full game.
+
+- A player should not need a new copy of the card at level 12 or 18
+- Level scaling should already be printed on the card
+- Scepter upgrades should be printed directly on the affected card in a dedicated panel
+
+This matches the current rules in `Mechanics.md`, where Aghanim's Scepter upgrades are explicitly printed on the upgraded ability.
+
+### Recommended Ability Card Data Template
+
+Use this structure when converting hero abilities into final print layouts:
+
+| Section | Content |
+|---|---|
+| Header | Ability name, hero name, icon, slot, unlock level |
+| Type Band | Activation type, targeting type, special tags |
+| Cost Strip | Mana, AP, cooldown, range, duration, shape |
+| Effect Box | Full rules text, timing, interrupt conditions, restrictions |
+| Scaling Panel | Level-band progression |
+| Upgrade / Notes | Scepter upgrade and key reminders |
+
+### Design Notes
+
+- Ability Cards should feel like compact rules references, not splashy collectible cards.
+- The art can be minimal; icon clarity is more important than illustration space.
+- If text density becomes too high for specific heroes, split presentation problems locally rather than weakening the overall system.
+- The strongest test of a good Ability Card is whether a player can resolve the ability correctly without opening `Mechanics.md`.
 | Ability 4 | Name, unlock, type, target, costs, range, summary, scaling |
