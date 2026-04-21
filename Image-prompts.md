@@ -683,6 +683,172 @@ Negative constraints:
 
 ---
 
+## Reusable Prompt — Mirana-Style Hero Card Look
+
+Use the following prompt when you want to reproduce the overall hero-card layout and finish shown by the Mirana example, while changing the hero identity and data:
+
+```text
+Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. Use the exact same overall layout logic, spacing rhythm, readability standards, and premium finish as the Mirana example card style.
+
+This is a Dota-inspired board game component, but all artwork must be original and should not copy official Valve or Dota 2 art.
+
+Style target:
+- Premium tabletop card design with a clean, modern fantasy UI
+- Deep navy-blue outer frame with soft gradients and thin silver border lines
+- Rounded corners and elegant beveled panel dividers
+- Strong readability at print size
+- Straight-on flat card render, not a 3D mockup
+- Clear separation between portrait area, stat strip, progression strip, and four ability rows
+- Refined, slightly luminous fantasy finish rather than gritty realism
+- Consistent icon language across stats and abilities
+
+Match the Mirana example's layout structure:
+- Large top name banner spanning full width
+- Circular emblem space in the top left and top right corners
+- Small class ribbon below the name banner on the left
+- Small attack-type badge below that
+- Role tags aligned at the top of the portrait panel on the right
+- Large illustrated portrait window occupying the upper half of the card
+- Wide stat strip beneath the portrait with bold icon + number columns
+- Narrow progression strip beneath the stats showing per-level scaling and level milestones
+- Four horizontal ability panels stacked vertically in the lower half
+- Each ability panel uses a left-side ability icon medallion and a clean text box to the right
+
+Visual characteristics to preserve:
+- Crisp white or off-white text on dark blue headers
+- White rules text areas with subtle cool tinting
+- Blue ability panel headers and separators
+- Elegant serif or fantasy title font for hero name
+- Compact readable game UI font for rules text
+- Bright, high-contrast stat icons
+- Thin dividers and a premium board-game graphic design feel
+- Slight celestial / magical glow treatment without becoming noisy
+
+Composition rules:
+- The card should feel like a readable tabletop component first, illustration showcase second
+- Portrait art should be large and dramatic but must not overpower the rules layout
+- Text should be aligned cleanly and consistently with minimal clutter
+- Ability rows should be symmetrical and easy to scan quickly
+- Stats should read instantly from left to right
+
+Do preserve these specific style signals from the Mirana example:
+- Dark blue overall frame
+- Silver trim and panel outlines
+- Top banner with centered hero name
+- Class ribbon and role tags as compact badges
+- Portrait framed inside a soft-edged rectangular illustration window
+- White stat numbers paired with colorful icons on a dark stat bar
+- Slim progression bar with level milestone icons
+- Ability rows with icon on the left, key numbers on the top line, and summary/scaling below
+
+Do not preserve Mirana-specific content unless explicitly provided:
+- Do not keep Mirana's name, portrait, stats, class, or abilities by default
+- Do not keep moon symbols, lunar motifs, or her color storytelling unless requested
+- Replace all hero-specific art and text with the supplied hero data
+
+Negative constraints:
+- Do not use a trading card game frame style
+- Do not make it look like a mobile game screenshot
+- Do not create fake foil glare, lens flare, or heavy texture noise
+- Do not overdecorate the text areas
+- Do not add tracker dials, counters, or board-state tokens on the card
+- Do not copy the Mirana artwork directly; only match the design language and layout system
+```
+
+---
+
+## Reusable Prompt Template — Mirana-Style Hero Card Generation
+
+Use the following prompt to generate a blank hero card template in the same style as the Mirana example, with all hero-specific content areas intentionally left empty for later manual fill-in:
+
+```text
+Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. Use the same visual style, layout structure, spacing, and readability standard as the Mirana example hero card: premium navy-blue frame, silver trim, elegant fantasy UI, strong panel hierarchy, crisp icons, and flat straight-on presentation.
+
+This is a Dota-inspired board game component, but all artwork must be original and should not copy official Valve or Dota 2 art.
+
+Overall visual style:
+- Premium tabletop component first, fantasy illustration second
+- Dark navy frame with silver borders and clean panel separators
+- Centered hero name banner at top
+- Class ribbon, attack-type badge, and role tags in compact badge format
+- Large portrait window in the upper half
+- Dark stat strip with bright icon-and-number columns
+- Narrow progression strip with per-level scaling and milestone icons
+- Four stacked ability rows in the lower half, each with an icon medallion on the left and rules text to the right
+- High contrast, readable at print size, elegant but controlled magical finish
+
+Template requirement:
+- Do not fill in any hero-specific text or numbers
+- Leave all hero-specific information areas blank so they can be filled in later by hand or in a separate design pass
+- Preserve the full layout structure and visual hierarchy even when the fields are empty
+
+Leave these sections blank:
+- Hero name banner
+- Class ribbon text
+- Attack type badge text
+- Role tag text
+- Portrait window content
+- Base stat values
+- Per-level stat gain text
+- Scepter reminder area
+- All four ability names
+- Ability type, target, and special tags
+- Unlock values
+- Mana, AP, cooldown, range, and duration values
+- Ability summaries
+- Scaling lines
+
+Portrait direction:
+- Leave the portrait window empty or use a very subtle neutral placeholder frame with no character art
+- Do not insert a generic hero illustration
+- The portrait area should clearly remain reserved for future art
+
+Base stats area:
+- Keep the stat strip structure intact
+- Show the icon positions and panel divisions
+- Leave the numerical values blank
+- Do not substitute zeros, dashes, or fake sample numbers unless absolutely needed for layout readability
+
+Progression strip:
+- Keep the per-level text area blank
+- Keep milestone icons for Level 6, Level 12, and Level 18 visible as part of the template structure
+- Keep the Scepter badge space present but unlabeled or blank
+
+Ability rows:
+- Include four stacked ability panels
+- Keep the icon medallion space on the left of each row
+- Keep all text boxes and chip positions visible
+- Leave the ability names blank
+- Leave the type, target, unlock, and special-tag areas blank
+- Leave mana, AP, cooldown, range, and duration fields blank
+- Leave summary and scaling text areas blank
+- Do not populate the rows with fake ability names or lorem ipsum
+
+Graphic direction:
+- Preserve the Mirana example's overall card architecture exactly
+- Keep the card visually complete as a premium template, but content-empty
+- Use clear panel separation and consistent icon chips
+- Keep the card uncluttered and legible
+- Present as a straight-on flat card render on a neutral background
+- Include subtle tactical board game icon language such as hex motifs, range markers, and clean ability chips
+
+Typography direction:
+- Large elegant fantasy title for the hero name
+- Clean compact sans-serif or readable game UI font for rules text
+- Important values should be instantly scannable
+
+Negative constraints:
+- Do not copy official game splash art
+- Do not use a trading card game frame style
+- Do not make it look like a mobile game screenshot
+- Do not add extra abilities, extra stats, or extra decorative clutter
+- Do not place current HP, current Mana, gold, XP, cooldown trackers, or item slots on the card
+- Do not fill blank fields with sample values, placeholder names, lorem ipsum, or random symbols
+- Do not change the Mirana example's layout logic; only convert it into a clean blank template
+```
+
+---
+
 ## Example Image Prompt — Sven Hero Card
 
 Use the following prompt when generating a sample hero card image for Sven:
