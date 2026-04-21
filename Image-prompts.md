@@ -235,21 +235,24 @@ Use the following prompt when generating a sample landscape Abilities Card image
 ```text
 Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
-Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the Hero Cards while clearly functioning as a rules reference.
+Use the attached Crystal Maiden Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of frost magic, spell motifs, and ornamental details. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
 
 Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, elegant icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
 
 This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
 
 Locked layout instruction:
-- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, four ability panel positions, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
-- Only change the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details inside the established frame.
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the spell iconography, magical effect shapes, rune language, frost textures, and decorative motifs visually consistent with what appears on the attached Hero Card.
 
 Card structure:
 - Hero header with the name: CRYSTAL MAIDEN
 - Small crest or portrait accent
 - Summary strip listing Crystal Nova, Frostbite, Arcane Aura, Freezing Field
-- Four clearly separated ability panels with icon, type, target, costs, rules text, and scaling
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
 - Upgrade / notes panel for key reminders
 - Small footer legend for icon language if needed
 
@@ -299,9 +302,11 @@ Ability data to show exactly:
 
 Graphic direction:
 - The card should feel like a technical tabletop rules reference first, fantasy illustration second
-- Use a wide landscape layout with strong panel separation and consistent icon chips
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
 - Keep the text area bright and readable with minimal texture behind it
 - Include subtle frost motifs, snowflake geometry, and crystalline accents without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Crystal Nova, Frostbite, Arcane Aura, and Freezing Field should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
 - Present as a straight-on flat card render on a neutral background
 
 Typography direction:
@@ -312,9 +317,11 @@ Typography direction:
 
 Negative constraints:
 - Do not redesign the frame or reposition any major card elements
-- Do not change the four-panel structure, typography hierarchy, or cost strip order
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
 - Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
 - Do not copy official game splash art or spell icons
 - Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
 - Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
