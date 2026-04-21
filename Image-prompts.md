@@ -1,4 +1,141 @@
 
+
+---
+
+## Hero Card Style Control System
+
+To keep all generated hero cards consistent while still allowing strong hero identity, use a **3-layer prompt structure**:
+
+1. **Locked System Layer** — the parts that should never change between heroes
+2. **Controlled Flavor Layer** — the parts that can change to express the hero's identity
+3. **Anti-Drift Layer** — explicit instructions about what the model must not redesign
+
+If these three layers are always present in the prompt, the cards will behave more like a coherent set, similar to a trading card game's frame system, rather than four unrelated poster layouts.
+
+### 1. Locked System Layer
+
+These elements should stay effectively identical across all hero cards:
+
+- Card size and portrait orientation
+- Outer frame shape and border treatment
+- Name banner position and size
+- Class ribbon position
+- Attack-type badge position
+- Role tag position
+- Portrait window position and proportions
+- Stat strip position, icon order, and numeric hierarchy
+- Progression strip position and milestone icon treatment
+- Four-row ability grid structure
+- Ability row anatomy: icon medallion, top-line numbers, summary text, scaling line
+- Typography system: title font family, rules font family, number emphasis style
+- Icon set and icon order
+- Divider thickness, corner treatment, and panel spacing
+- Overall render angle: always straight-on, flat component view
+
+Think of this layer as the game's **frame template**. The model should not be invited to reinterpret it.
+
+### 2. Controlled Flavor Layer
+
+These elements may change per hero, but only inside the locked frame:
+
+- Portrait artwork
+- Accent color palette inside the established card structure
+- Hero-specific motif work in the portrait window and subtle background details
+- Class-appropriate emblem or hero-specific crest
+- Hero atmosphere: frost, moonlight, demonic fire, storm energy, poison, etc.
+- Weapon, companion, magic effect, armor style, and silhouette language
+
+This is where the hero gets identity. The layout should stay stable while the **art direction, palette accents, and icon motifs** do the differentiation work.
+
+### 3. Anti-Drift Layer
+
+Every reusable generation prompt should explicitly forbid these kinds of drift:
+
+- redesigning the card frame
+- moving major zones around
+- changing the stat strip order
+- changing the number of ability rows
+- replacing the established typography hierarchy
+- introducing new decorative badges or UI systems
+- changing the card into a poster, splash art, mobile UI, or TCG variant
+- turning the card into a 3D mockup or photographed object
+
+### What Should Be Fixed vs Variable
+
+Use this split consistently:
+
+| Fixed Across All Hero Cards | Variable Per Hero |
+|---|---|
+| Outer border and frame | Portrait art |
+| Banner, ribbon, badge, and tag positions | Accent palette |
+| Stat icon order | Character motif |
+| Progression bar layout | Hero emblem / symbol |
+| Ability row layout | Mood and atmosphere |
+| Typography system | Magic / weapon / companion visuals |
+| Divider style and spacing | Texture details inside portrait area |
+
+### Recommended Prompt Formula
+
+For the most consistent image generation, build hero card prompts in this order:
+
+1. **Base frame instruction**
+	- Tell the model to use the Mirana-style hero card system exactly
+2. **Locked layout instruction**
+	- List the unchanging structural zones
+3. **Hero data instruction**
+	- Provide stats, class, attack type, and abilities
+4. **Flavor instruction**
+	- Describe the hero's portrait direction, palette accents, mood, and emblem
+5. **Anti-drift instruction**
+	- Tell the model what not to redesign
+
+This order matters. If flavor comes too early, the model often starts redesigning the card. If the frame comes first, flavor tends to stay inside the system.
+
+### Recommended Flavor Budget
+
+To prevent hero identity from overwhelming layout consistency, keep the variable layer constrained:
+
+- **1 primary accent palette** per hero
+- **1 emblem / symbol family** per hero
+- **1 portrait mood** per hero
+- **1-2 subtle background motifs** at most
+
+That gives enough uniqueness without causing the frame to mutate.
+
+### Best Practice Prompt Language
+
+When writing hero prompts, prefer wording like:
+
+- `Use the same card architecture, typography, icon order, and panel system as the Mirana example.`
+- `Only change the portrait art, accent palette, emblem, and hero-specific flavor details.`
+- `Do not redesign the frame or reposition any major card elements.`
+- `Keep this visually part of the same manufactured card set.`
+
+Avoid wording like:
+
+- `Create a unique card layout for this hero.`
+- `Reimagine the frame to suit the hero.`
+- `Make the design match the hero however you think best.`
+
+Those phrases invite inconsistency.
+
+### Manufacturing Mindset
+
+The easiest way to keep the set cohesive is to think like a publisher, not like an illustrator.
+
+- The **card frame** is manufactured and standardized.
+- The **hero art and accent treatment** are customized.
+- The goal is not four beautiful one-offs.
+- The goal is one beautiful card system that many heroes can inhabit.
+
+### Short Master Constraint Block
+
+Add this short block near the end of any reusable hero prompt when consistency matters:
+
+```text
+Keep this card in the exact same product family as the Mirana example hero card. Preserve the frame, panel layout, typography hierarchy, icon order, spacing rhythm, and overall card architecture. Only vary the portrait artwork, accent palette, emblem, and hero-specific atmospheric details. Do not redesign the structure.
+```
+
 ## Example Image Prompt — Crystal Maiden Hero Card
 
 Use the following prompt when generating a sample hero card image for Crystal Maiden:
@@ -6,7 +143,13 @@ Use the following prompt when generating a sample hero card image for Crystal Ma
 ```text
 Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
 Overall style: premium tabletop card design, clean information hierarchy, readable at print size, elegant icy magical theme, intelligence-class visual identity, blue and silver palette with frosted glass accents, subtle snowflake patterns, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
 
 Card structure:
 - Top banner with the name: CRYSTAL MAIDEN
@@ -87,6 +230,10 @@ Typography direction:
 - Important values should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -103,9 +250,15 @@ Use the following prompt when generating a sample ability card image for Crystal
 ```text
 Create a polished fantasy board game ability card in portrait orientation, designed for a 6.3 × 8.8 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established Crystal Maiden ability-card template. Keep this visually part of the same manufactured ability-card product family.
+
 Overall style: premium tabletop card design, rules-forward layout, highly readable at print size, elegant icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, sharp crystalline iconography, clean dividers, compact technical layout, collectible but practical.
 
 This is an Ability Card, not a Hero Card. The card should prioritize gameplay clarity and full rules readability over character portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, top header position, secondary hero label position, ability icon slot position, slot marker position, unlock marker position, type chip position, target chip position, cost strip order, main effect text box position, level progression panel position, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all ability cards.
+- Only change the ability icon artwork, accent palette, and hero-specific atmospheric details inside the established ability-card frame.
 
 Card structure:
 - Top header with the ability name: CRYSTAL NOVA
@@ -157,6 +310,10 @@ Typography direction:
 - Costs and timing information should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the cost strip order, typography hierarchy, or effect-panel layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not format this as a hero card
 - Do not use a large central portrait of Crystal Maiden
 - Do not copy official game splash art or spell icons
@@ -175,9 +332,15 @@ Use the following prompt when generating a sample ability card image for Crystal
 ```text
 Create a polished fantasy board game ability card in portrait orientation, designed for a 6.3 × 8.8 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established Crystal Maiden ability-card template. Keep this visually part of the same manufactured ability-card product family.
+
 Overall style: premium tabletop card design, rules-forward layout, highly readable at print size, elegant icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, sharp crystalline iconography, clean dividers, compact technical layout, collectible but practical.
 
 This is an Ability Card, not a Hero Card. The card should prioritize gameplay clarity and full rules readability over character portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, top header position, secondary hero label position, ability icon slot position, slot marker position, unlock marker position, type chip position, target chip position, cost strip order, main effect text box position, level progression panel position, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all ability cards.
+- Only change the ability icon artwork, accent palette, and hero-specific atmospheric details inside the established ability-card frame.
 
 Card structure:
 - Top header with the ability name: FROSTBITE
@@ -228,6 +391,10 @@ Typography direction:
 - Costs and timing information should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the cost strip order, typography hierarchy, or effect-panel layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not format this as a hero card
 - Do not use a large central portrait of Crystal Maiden
 - Do not copy official game splash art or spell icons
@@ -246,9 +413,15 @@ Use the following prompt when generating a sample ability card image for Crystal
 ```text
 Create a polished fantasy board game ability card in portrait orientation, designed for a 6.3 × 8.8 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established Crystal Maiden ability-card template. Keep this visually part of the same manufactured ability-card product family.
+
 Overall style: premium tabletop card design, rules-forward layout, highly readable at print size, elegant icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, subtle arcane glow, crisp iconography, clean dividers, compact technical layout, collectible but practical.
 
 This is an Ability Card, not a Hero Card. The card should prioritize gameplay clarity and full rules readability over character portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, top header position, secondary hero label position, ability icon slot position, slot marker position, unlock marker position, type chip position, target chip position, cost strip order, main effect text box position, level progression panel position, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all ability cards.
+- Only change the ability icon artwork, accent palette, and hero-specific atmospheric details inside the established ability-card frame.
 
 Card structure:
 - Top header with the ability name: ARCANE AURA
@@ -296,6 +469,10 @@ Typography direction:
 - Passive and aura labels should be especially easy to identify
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the cost strip order, typography hierarchy, or effect-panel layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not format this as a hero card
 - Do not use a large central portrait of Crystal Maiden
 - Do not copy official game splash art or spell icons
@@ -315,9 +492,15 @@ Use the following prompt when generating a sample ability card image for Crystal
 ```text
 Create a polished fantasy board game ability card in portrait orientation, designed for a 6.3 × 8.8 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established Crystal Maiden ability-card template. Keep this visually part of the same manufactured ability-card product family.
+
 Overall style: premium tabletop card design, rules-forward layout, highly readable at print size, elegant but dangerous icy magical theme, intelligence-class visual identity, blue, silver, frost-white, and pale cyan palette, stormlike ice effects, sharp crystalline iconography, clean dividers, compact technical layout, collectible but practical.
 
 This is an Ability Card, not a Hero Card. The card should prioritize gameplay clarity and full rules readability over character portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, top header position, secondary hero label position, ability icon slot position, slot marker position, unlock marker position, type chip position, target chip position, cost strip order, main effect text box position, level progression panel position, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all ability cards.
+- Only change the ability icon artwork, accent palette, and hero-specific atmospheric details inside the established ability-card frame.
 
 Card structure:
 - Top header with the ability name: FREEZING FIELD
@@ -371,6 +554,10 @@ Typography direction:
 - Channeled status, cooldown, and area should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the cost strip order, typography hierarchy, or effect-panel layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not format this as a hero card
 - Do not use a large central portrait of Crystal Maiden
 - Do not copy official game splash art or spell icons
@@ -389,7 +576,13 @@ Use the following prompt when generating a sample hero card image for Pudge:
 ```text
 Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
 Overall style: premium tabletop card design, clean information hierarchy, readable at print size, brutal grotesque butcher theme, strength-class visual identity, sickly green, rusted iron, dark leather, and blood-red accents, grim but still functional as a board game component, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
 
 Card structure:
 - Top banner with the name: PUDGE
@@ -470,6 +663,10 @@ Typography direction:
 - Important values should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -486,7 +683,13 @@ Use the following prompt when generating a sample hero card image for Lion:
 ```text
 Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
 Overall style: premium tabletop card design, clean information hierarchy, readable at print size, sinister arcane controller theme, intelligence-class visual identity, deep purple, black, crimson, and arcane gold palette, sharp infernal magical details, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
 
 Card structure:
 - Top banner with the name: LION
@@ -572,6 +775,10 @@ Typography direction:
 - Important values should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -588,7 +795,13 @@ Use the following prompt when generating a sample hero card image for Mirana:
 ```text
 Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
 Overall style: premium tabletop card design, clean information hierarchy, readable at print size, moonlit huntress theme, agility-class visual identity, midnight blue, silver, moon-white, and teal accents, elegant celestial motifs, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by this Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
 
 Card structure:
 - Top banner with the name: MIRANA
@@ -674,6 +887,10 @@ Typography direction:
 - Important values should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -691,6 +908,8 @@ Use the following prompt when you want to reproduce the overall hero-card layout
 Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. Use the exact same overall layout logic, spacing rhythm, readability standards, and premium finish as the Mirana example card style.
 
 This is a Dota-inspired board game component, but all artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the Mirana example as the locked manufacturing template. Preserve the same card architecture, typography hierarchy, icon order, panel spacing, and straight-on flat component view. Only change portrait artwork, accent palette, emblem, and hero-specific atmospheric details.
 
 Style target:
 - Premium tabletop card design with a clean, modern fantasy UI
@@ -747,6 +966,10 @@ Do not preserve Mirana-specific content unless explicitly provided:
 - Replace all hero-specific art and text with the supplied hero data
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
 - Do not create fake foil glare, lens flare, or heavy texture noise
@@ -765,6 +988,8 @@ Use the following prompt to generate a blank hero card template in the same styl
 Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. Use the same visual style, layout structure, spacing, and readability standard as the Mirana example hero card: premium navy-blue frame, silver trim, elegant fantasy UI, strong panel hierarchy, crisp icons, and flat straight-on presentation.
 
 This is a Dota-inspired board game component, but all artwork must be original and should not copy official Valve or Dota 2 art.
+
+Treat the Mirana example as a locked manufacturing template. Preserve the frame, panel layout, typography hierarchy, icon order, spacing rhythm, and overall card architecture exactly while leaving hero-specific content blank.
 
 Overall visual style:
 - Premium tabletop component first, fantasy illustration second
@@ -838,6 +1063,10 @@ Typography direction:
 - Important values should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
@@ -856,7 +1085,13 @@ Use the following prompt when generating a sample hero card image for Sven:
 ```text
 Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
 
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
 Overall style: premium tabletop card design, clean information hierarchy, readable at print size, heavy knight-warrior theme, strength-class visual identity, steel blue, crimson, bronze, and storm-lit highlights, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
 
 Card structure:
 - Top banner with the name: SVEN
@@ -937,6 +1172,10 @@ Typography direction:
 - Important values should be instantly scannable
 
 Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
 - Do not copy official game splash art
 - Do not use a trading card game frame style
 - Do not make it look like a mobile game screenshot
