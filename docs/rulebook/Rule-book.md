@@ -114,7 +114,7 @@ Buildings and Obstacles allow heroes to see (and target) enemies on the other si
 - **Initiative** — When multiple heroes are in the same area, action order is determined by Move Speed.
 - **Resolution** — `Damage − Defense = Health Lost`
 - **Crowd Control (CC)** — Stuns remove AP from the target's next turn. Silences prevent the use of abilities for one round.
-- **Range** — Melee heroes must be in the same area to attack. Ranged heroes can attack from an adjacent area.
+- **Range** — Melee heroes attack adjacent hexes. Ranged heroes use the attack range printed on their Hero Card and still need clear Line of Sight.
 
 ---
 
