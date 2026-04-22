@@ -21,7 +21,8 @@ The attacker's Damage and the defender's Defense are taken from their Hero Cards
 
 ### Attack Range
 - **Melee** heroes must be on a hex **adjacent** to their target to attack. No LoS required.
-- **Ranged** heroes may attack a target up to **2 hexes** away but require **clear Line of Sight** (see above).
+- **Ranged** heroes use the **attack range printed on their Hero Card** and require **clear Line of Sight** (see above).
+- If a card effect changes a hero's attack range, use the modified value for as long as that effect applies.
 
 ### Crowd Control (CC)
 | Status Effect | Mechanical Effect |
