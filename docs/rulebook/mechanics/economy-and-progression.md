@@ -99,5 +99,6 @@ A dead hero may pay a **Gold fee** at any point during their respawn wait to ret
 
 - **Buyback Cost:** Scales with hero level. The exact gold cost is specified on reference cards or the game board.
 - A hero who uses Buyback cannot Buyback again for a set number of rounds (typically 5 rounds).
+- Each hero has a dedicated **Buyback token**. While Buyback is available, that token remains in the hero's ready area. When Buyback is used, place the token in the hero board's **round cooldown track** at the appropriate value and advance it toward 0 at each Round End. Buyback becomes available again when the token returns to the ready area.
 - Buyback bypasses the respawn timer entirely — the hero returns to the Fountain at the start of their next scheduled activation (during the Planning Phase for that half-round).
 - If a hero buybacks during the first half of a round and hasn't activated yet that half, they return immediately and can participate in Planning Phase. If they've already activated that half, they return for the second half Planning Phase.

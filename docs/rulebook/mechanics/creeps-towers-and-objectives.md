@@ -60,8 +60,9 @@ Each team has three Barracks buildings, one per lane, located in the base interi
 
 - Barracks use the same **Siege Requirement** as towers: the allied creep wave in that lane must be exhausted before heroes can attack.
 - Barracks have a fixed HP value and do **not** deal retaliation damage to attackers (unlike towers).
-- When a Barracks is destroyed, place a **Fallen Barracks token** on that lane. The opposing team's creeps immediately become **Enhanced** in that lane (see Creeps).
-- If all 3 Barracks fall, replace all lane tokens with a **Mega Creeps token**. All lane creeps for the opposing team immediately become **Mega Creeps** (see Creeps).
+- Each Barracks is represented by a removable **standing Barracks token** on its hex. When a Barracks is destroyed, remove that token. The printed board art beneath shows the broken Barracks state.
+- When a Barracks is destroyed, the opposing team's creeps immediately become **Enhanced** in that lane (see Creeps).
+- If all 3 Barracks fall, the lane-state tracker for that team shifts to **Mega Creeps** globally. No separate Mega Creeps token is required.
 - Destroying a Barracks awards a **gold bonus** to all heroes on the attacking team.
 
 ### Siege Requirement
@@ -80,6 +81,7 @@ Roshan occupies **Roshan's Pit**, a fixed area on the board.
 - Upon death, Roshan drops the **Aegis of the Immortal**.
 - If heroes from **both teams** are present when Roshan dies, a **die roll** determines which team claims the Aegis.
 - Roshan **respawns** after a fixed number of rounds.
+- Roshan HP is tracked on the printed Roshan track, not with a separate Roshan HP token.
 
 ### Aegis of the Immortal
 - The holding hero **revives in place** upon death with full Health and Mana, consuming the Aegis.

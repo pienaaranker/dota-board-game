@@ -6,7 +6,7 @@ This document collects rune rules, warding rules, and the hidden-information sys
 
 ## Power Runes
 
-Every **4th round**, a Power Rune spawns at one of two designated **River rune positions** — one on the Radiant side, one on the Dire side. At the **start of that round**, any player simultaneously rolls the **custom Rune Die** (determines rune type) and flips a **coin** (determines which side receives it). Both results are resolved together and immediately known to both teams. Only one rune exists on the board at a time.
+Every **4th round**, a Power Rune spawns at one of two designated **River rune positions** — one on the Radiant side, one on the Dire side. At the **start of that round**, determine the rune type, then flip a **coin** to determine which side receives it. Place the matching **Power Rune token** on that river position. Only one rune exists on the board at a time.
 
 | Rune | Effect |
 |---|---|
@@ -17,6 +17,7 @@ Every **4th round**, a Power Rune spawns at one of two designated **River rune p
 | **Double Damage** | All attacks deal double the hero's Damage value, for the duration. |
 
 - A hero claims the rune by moving into its area.
+- The specific rune is represented by its matching single-hex Power Rune token.
 - Only one rune exists on the board at a time. An unclaimed rune remains until picked up or replaced at the next spawn.
 
 ---
@@ -65,6 +66,7 @@ A purchased consumable token placed by a hero on any Open hex.
 - Observer Wards cover a fixed radius of hexes (typically 3–4 hexes, specified on the Item Card).
 - **Tactical Advantage:** When an enemy hero standing in a warded area attacks or uses an ability on an allied hero, that allied hero (and any other allied heroes targeted during that same activation) may use **two reactions** instead of the normal one. This represents superior awareness and positioning intel.
 - Observer Wards remain active for a set number of rounds before expiring.
+- Ward duration is tracked on the shared board's ward log using a die or generic number marker, not a dedicated ward-duration token.
 - Observer Wards do **not** grant detection — they only provide the reaction advantage. Use Sentry Wards or Dust for invisibility detection.
 - Observer Wards can be destroyed by enemy heroes who locate them (costs 1 AP while adjacent to the ward token).
 - **Smoke of Deceit bypasses Observer Wards** — heroes under Smoke are invisible to wards and do not trigger the tactical advantage (see below).

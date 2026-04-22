@@ -68,7 +68,7 @@ Each team has a fortified base containing the Fountain, Ancient, Barracks, and T
 **Interior Layout:** The base interior is not open space — **Buildings and Obstacles** are placed throughout to create deliberate movement paths, protect key structures, and reward positional play. Heroes cannot freely maneuver to any hex; they must navigate around these structures to reach the Barracks, Tier 4 Towers, and Ancient.
 
 ### Barracks
-One Barracks per lane, printed on the board. Each Barracks is a single-hex structure with a clear icon linking it to its lane.
+One Barracks per lane, represented by a **single-hex standing Barracks token** placed over printed broken-Barracks board art. When destroyed, the standing token is removed, exposing the ruined version beneath.
 
 ---
 
@@ -81,7 +81,7 @@ River hexes are plain **Open** hexes — no movement penalties or special rules.
 ### Rune Spawn Points
 Two rune spawn points are printed on the board — one on the Radiant side of the river, one on the Dire side.
 
-At the **start of every 4th round**, any player simultaneously rolls the **custom Rune Die** (determines rune type) and flips a **coin** (determines which side spawns it). Both results are resolved together. Only one rune is on the board at a time.
+At the **start of every 4th round**, determine the rune type, then flip a **coin** to determine which side spawns it. Place the matching **Power Rune token** on that rune point. Only one rune is on the board at a time.
 
 ---
 

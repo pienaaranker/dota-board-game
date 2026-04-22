@@ -189,7 +189,7 @@ Once per round, use during a Farm action on a neutral camp: gain double gold and
 #### Magic Wand *(460 Gold)*
 **Type:** Passive / Active | **Status:** 🔲 TODO
 
-**Passive:** Each time an enemy hero within 3 hexes uses an ability, place 1 Charge token on this item (max 15). **Active:** Spend all charges — restore HP and Mana equal to the number of charges spent.
+**Passive:** Each time an enemy hero within 3 hexes uses an ability, add 1 charge to this item (max 15), tracked with a die or generic counter. **Active:** Spend all charges — restore HP and Mana equal to the number of charges spent.
 
 ---
 
@@ -284,7 +284,7 @@ Spend 1 AP. Restore X Mana to all allied heroes within 2 hexes. Cooldown: 3 roun
 #### Drum of Endurance *(1625 Gold)*
 **Type:** Active (Charges) | **Status:** 🔲 TODO
 
-Comes with 5 Charge tokens. Spend 1 AP to consume 1 charge: grant +1 Movement and +Attack Speed to yourself and all allied heroes within 2 hexes for 1 round.
+Comes with 5 charges, tracked with a die or generic counter. Spend 1 AP to consume 1 charge: grant +1 Movement and +Attack Speed to yourself and all allied heroes within 2 hexes for 1 round.
 
 ---
 
@@ -340,7 +340,7 @@ Spend 1 AP. Target an allied hero within range: grant +Armor and Evasion chance 
 #### Spirit Vessel *(2725 Gold)*
 **Type:** Active (Charges) | **Status:** 🔲 TODO
 
-Gain 2 Charge tokens each time a nearby enemy hero dies. Spend 1 AP to use 2 charges: target enemy hero — deal X damage per round for 2 rounds and suppress their HP regen; or target allied hero — restore X HP per round for 2 rounds.
+Gain 2 charges each time a nearby enemy hero dies, tracked with a die or generic counter. Spend 1 AP to use 2 charges: target enemy hero — deal X damage per round for 2 rounds and suppress their HP regen; or target allied hero — restore X HP per round for 2 rounds.
 
 ---
 
@@ -354,7 +354,7 @@ Gain 2 Charge tokens each time a nearby enemy hero dies. Spend 1 AP to use 2 cha
 #### Urn of Shadows *(825 Gold)*
 **Type:** Active (Charges) | **Status:** 🔲 TODO
 
-Gain 2 Charge tokens each time a nearby enemy hero dies. Spend 1 AP to use 2 charges: heal target allied hero for X HP, or deal X damage per round for 2 rounds to target enemy hero within range.
+Gain 2 charges each time a nearby enemy hero dies, tracked with a die or generic counter. Spend 1 AP to use 2 charges: heal target allied hero for X HP, or deal X damage per round for 2 rounds to target enemy hero within range.
 
 ---
 

@@ -9,7 +9,7 @@ Destroy the enemy team's Ancient, located within their base. To reach the Ancien
 - **Hero Cards** — Statistics for Attack, Defense, Health, Mana, and Move Speed.
 - **Abilities Cards** — One landscape reference card per hero containing the full rules text and numbers for all four hero abilities.
 - **The Board** — A map featuring three lanes (Top, Mid, Bottom), the River, the Jungle, and two Bases.
-- **Tokens** — Representations for Creeps, Towers, Gold/XP, Invisibility markers, and face-down planned actions.
+- **Tokens** — Representations for Creeps, wards, runes, Barracks, invisibility markers, dropped items, and face-down planned actions.
 - **Action Point (AP) Trackers** — Tools to manage resources available each turn.
 
 ---
@@ -38,7 +38,7 @@ After all heroes have completed both activations (20 turns total):
 - **Creep Spawning** — New waves spawn at the Creep Meeting Point in each lane.
 - **Passive Income** — All heroes receive a set amount of passive gold.
 - **Neutral Respawns** — Every even-numbered round, neutral creeps in jungle camps are replenished.
-- **Rune Spawns** — Every 4th round, a Power Rune spawns at one of the river positions.
+- **Rune Spawns** — Every 4th round, a Power Rune token spawns at one of the river positions.
 
 ---
 
@@ -73,7 +73,7 @@ Jungle areas that provide XP and Gold at the cost of Health. Ancient camps requi
 Home to Roshan. Defeating him drops the **Aegis of the Immortal**. If both teams are present at his death, a die roll determines who claims the item.
 
 ### Runes
-Two rune spawn points sit on opposite sides of the river. Every 4th round, any player simultaneously rolls the **custom Rune Die** (determines rune type) and flips a **coin** (determines which side spawns it). Both results are resolved together and immediately visible to both teams. Rune types:
+Two rune spawn points sit on opposite sides of the river. Every 4th round, determine the rune type, then flip a **coin** to determine which side spawns it. Place the matching **Power Rune token** on that rune hex. Rune types:
 
 | Rune | Effect |
 |------|--------|
@@ -130,4 +130,4 @@ Buildings and Obstacles allow heroes to see (and target) enemies on the other si
 
 - **The Courier** — A shared unit that delivers items from the Fountain to heroes. Delivery typically takes 1–2 rounds.
 - **Leveling** — Heroes gain levels via XP. At levels 6, 12, and 18, heroes unlock or upgrade the relevant sections on their Abilities Card.
-- **Buybacks** — Dead heroes can spend a significant Gold fee to respawn immediately at the Fountain.
+- **Buybacks** — Dead heroes can spend a significant Gold fee to respawn immediately at the Fountain, then place their Buyback token onto their round cooldown track until it refreshes.

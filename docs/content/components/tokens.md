@@ -32,17 +32,11 @@ These are the tokens required to run the map, objectives, lane pressure, and boa
 | **Neutral Camp Tokens / Counters** | Represent remaining neutral creeps in a camp | Used for camp farming and respawn tracking. |
 | **Ancient Camp Tokens / Counters** | Represent remaining Ancient creeps in a camp | Visually distinct from regular neutral camps. |
 | **Camp Cleared / Populated Marker** | Shows whether a neutral camp is currently available | Can be a flip token or two-sided marker. |
-| **Tower HP Marker** | Tracks current HP on each tower | Used on the shared board or shared tracking area. |
 | **Tower Destroyed Marker** | Marks a destroyed tower | Large, obvious overlay marker. |
-| **Barracks Status Marker** | Shows whether each Barracks is standing or destroyed | One per lane, per team. |
-| **Fallen Barracks Token** | Marks a lane whose Barracks has fallen | Triggers Enhanced creeps in that lane. |
-| **Mega Creeps Token** | Marks that all three Barracks have fallen for a team | Replaces per-lane Fallen Barracks tracking once Mega Creeps are active. |
-| **Ancient HP Marker** | Tracks current HP on each Ancient | Shared objective tracking. |
-| **Roshan HP Marker** | Tracks Roshan's current HP during fights | Can live on shared objective mat or board edge. |
+| **Barracks Status Marker** | Represents a standing Barracks on its hex | Remove the token when the Barracks falls; the printed board art beneath shows the destroyed state. |
 | **Roshan Alive / Dead Marker** | Indicates whether Roshan is currently present | Useful between kill and respawn windows. |
 | **Aegis of the Immortal Token** | Indicates the hero holding Aegis, or its dropped position on the board | One premium token. |
-| **Power Rune Token** | Marks an unclaimed rune on the river | May be a generic rune token paired with rune-type determination. |
-| **Rune Type Token Set** | Shows which rune is currently active or stored | Illusion, Haste, Invisibility, Regeneration, Double Damage. |
+| **Power Rune Tokens** | Mark an unclaimed rune on the river | One single-hex token for each rune type: Illusion, Haste, Invisibility, Regeneration, Double Damage. |
 | **Courier Token** | Represents the shared team Courier on the board or tracking area | One per team. |
 | **Round Start Token** | Marks the first hero in the round order | Shared rotation token. |
 | **Half-Round Marker** | Marks first half vs second half of the round | Tracks forward/backward pendulum direction. |
@@ -57,12 +51,8 @@ These tokens support the game's vision war, hidden positioning, and reveal mecha
 |---|---|---|
 | **Observer Ward Token** | Placed vision token that grants the tactical reaction advantage | Needs team identity and hidden/enemy-facing handling. |
 | **Sentry Ward Token** | Placed true-sight token | Also hidden until revealed by enemy true sight. |
-| **Ward Duration Marker** | Tracks remaining rounds on wards | Generic numeric marker preferred. |
-| **Ward Revealed Marker** | Indicates a hidden ward has been exposed to the enemy | Optional helper marker if needed during playtests. |
 | **Invisibility Cloud Token** | Multi-tile token hiding a single invisible hero's true position | Must support secret placement under one tile. |
 | **Smoke Cloud Token** | Multi-hero hidden movement token for Smoke of Deceit | Distinct from standard invisibility cloud. |
-| **Reveal Marker** | Marks temporary reveal from Dust, Sentry, or Gem coverage if needed | Optional helper token for clarity in dense fights. |
-| **True Sight Aura Marker** | Optional radius helper for Gem or Sentry effects | Useful if range templates are not printed elsewhere. |
 
 ---
 
@@ -138,19 +128,11 @@ These tokens live primarily on each player's Hero Board and track changing state
 
 | Token | Purpose | Notes |
 |---|---|---|
-| **Duration Number Tokens** | Show remaining turns or rounds on statuses and cooldowns | Reusable numeric markers. |
-| **Cooldown Tokens** | Mark abilities or items on cooldown | Can be generic or slot-specific. |
 | **Ability Identifier Tokens** | Mark which hero ability is cooling down | May use Q/W/E/R style or ability icons. |
 | **Channeling Token** | Marks an ability currently being channeled | Hourglass-style marker. |
-| **Reaction AP Debt Token** | Tracks AP owed from reactions on the hero's next activation | Numeric marker preferred. |
-| **Turn AP Spent Marker** | Tracks how much AP has been spent in the current activation | Simple cube or slider marker. |
 | **Alive / Dead Flip Token** | Tracks whether the hero is alive | One per hero. |
-| **Respawn Marker** | Tracks turns remaining until respawn | Numeric marker preferred. |
-| **Buyback Available Marker** | Indicates whether buyback is currently available | One per hero. |
-| **Buyback Cooldown / Last Used Marker** | Tracks when buyback was last used | Shared numeric marker. |
-| **Level Milestone Marker** | Marks level 6, 12, and 18 unlock state | Small cube or badge marker. |
+| **Buyback Token** | Tracks whether buyback is available or cooling down | Place it on the hero board's cooldown track when used; it becomes available again when it reaches 0. |
 | **Scepter Acquired Token** | Marks that Aghanim's Scepter is active for the hero | One per hero. |
-| **Scepter Upgrade Pointer** | Indicates which ability is upgraded if not obvious on the card | Small arrow or badge marker. |
 
 ### Stat Modification Tokens
 
@@ -171,11 +153,8 @@ These tokens represent globally important rewards, drops, and economy-related st
 
 | Token | Purpose | Notes |
 |---|---|---|
-| **Gold Bonus Marker** | Marks teamwide gold rewards from major objectives if needed during resolution | Optional helper token. |
-| **Bottle Stored Rune Token** | Tracks which rune is currently stored in a Bottle | Uses the same rune type family where possible. |
 | **Gem of True Sight Drop Token** | Marks Gem on the board after carrier death | Shared single item-drop token. |
 | **Divine Rapier Drop Token** | Marks Divine Rapier on the board after carrier death | Needed if Rapier remains in final item pool. |
-| **Charge Tokens** | Track charges on items such as Magic Wand, Drum, Urn, or Vessel | Reusable charge family preferred. |
 
 ---
 
@@ -187,7 +166,6 @@ These tokens support temporary summoned units and rune-derived states.
 |---|---|---|
 | **Illusion Tokens** | Represent rune-, item-, or hero-generated illusions on the board | Should be visually distinct from true hero tokens. |
 | **Haste Marker** | Tracks Haste rune effect on a hero | Can be a buff token on Hero Board. |
-| **Invisibility Rune Marker** | Tracks Invisibility rune effect on a hero | Usually paired with cloud/invisible state handling. |
 | **Regeneration Marker** | Tracks active regeneration rune effect | Useful if regen can be interrupted. |
 | **Double Damage Marker** | Tracks active Double Damage buff | Strong visual priority recommended. |
 
@@ -238,11 +216,11 @@ To keep the token system manageable, token production should be split into five 
 
 | Family | Includes |
 |---|---|
-| **Board Presence Tokens** | Heroes, creeps, wards, rune token, courier, Roshan, dropped items |
-| **Objective Tokens** | Aegis, Fallen Barracks, Mega Creeps, tower destroyed markers |
+| **Board Presence Tokens** | Heroes, creeps, wards, rune tokens, courier, dropped items |
+| **Objective Tokens** | Aegis, Barracks standing markers, tower destroyed markers, Roshan alive/dead marker |
 | **Planning Tokens** | Move, Attack, Farm, Pass, item slot tokens, hero ability tokens |
-| **Status / Marker Tokens** | Stun, Silence, Root, Slow, DoT, cooldown, duration, AP debt, channeling |
-| **Special Effect Tokens** | Illusions, clouds, shields, barriers, charge tokens, future hero-specific summons |
+| **Status / Marker Tokens** | Stun, Silence, Root, Slow, DoT, buyback, channeling |
+| **Special Effect Tokens** | Illusions, clouds, shields, barriers, future hero-specific summons |
 
 ---
 
@@ -254,13 +232,11 @@ If producing a first playable prototype, the minimum token set should include:
 - lane creep counters
 - neutral and Ancient camp counters
 - camp cleared markers
-- tower HP and destroyed markers
+- tower destroyed markers
 - Barracks status markers
-- Fallen Barracks tokens
-- Mega Creeps token
-- Roshan HP marker
+- Roshan alive/dead marker
 - Aegis token
-- power rune token and rune-type set
+- five power rune tokens
 - Courier tokens
 - Observer Ward and Sentry Ward tokens
 - Invisibility Cloud and Smoke Cloud tokens
@@ -268,11 +244,10 @@ If producing a first playable prototype, the minimum token set should include:
 - six item slot tokens per hero
 - hero-specific ability tokens for any heroes currently in the test pool
 - core status tokens: Stunned, Silenced, Rooted, Slowed, DoT, Hexed, Ethereal, Disarmed
-- cooldown and duration number markers
-- reaction AP debt marker
+- ability identifier tokens
+- buyback token
 - alive / dead flip tokens
 - Scepter acquired marker
-- charge tokens
 - illusion tokens
 
 ---
@@ -285,7 +260,5 @@ These points should be resolved before final production art begins.
 |---|---|
 | Should creep representation use one wave token, multiple creep counters, or lane-specific mini-sets? | This changes both token count and board readability. |
 | Should wards use hidden backs, team-only identifiers, or a referee-honour system? | Vision gameplay depends on clean hidden information handling. |
-| Should rune handling use one generic rune token plus a rune die, or separate rune-face tokens? | Affects production count and usability with Bottle. |
-| Should Roshan, towers, and the Ancient track HP directly on the board or on a side mat? | Determines whether more large objective markers are needed. |
-| How many generic charge, duration, and cooldown markers are enough for full 5v5 play? | Necessary for punchboard planning. |
+| Should rune spawning be determined by a rune die, a draw bag, or another randomizer once the five rune tokens are finalized? | Affects setup speed and whether a custom die is still worth producing. |
 | Which future hero mechanics justify bespoke tokens instead of generic markers? | Prevents token bloat as the roster expands. |

@@ -57,7 +57,7 @@ Located in the upper-right corner.
   - ☐ Level 6 — Ultimate Unlocked
   - ☐ Level 12 — Ultimate Upgraded
   - ☐ Level 18 — Ultimate Max Level
-- **Marker:** Place small cube token on checked box when milestone is reached.
+- **Usage:** Check visually against the hero's current Level tracker; no dedicated milestone token is required.
 
 ---
 
@@ -260,9 +260,9 @@ Located at the bottom-right of the mat.
 - **Usage:** When dead, place die showing respawn countdown. Decrement each turn.
 
 #### Buyback Tracker
-- **Component:** Printed checkbox "💰 Buyback Available"
-- **Marker:** Cube token placed when buyback is available, removed when used
-- **Last Used:** Small number token placed in "Last Buyback: Round ___" box
+- **Component:** Dedicated Buyback token + printed ready space beside the hero board's round cooldown track
+- **Marker:** The Buyback token sits in its ready space while available.
+- **Usage:** When Buyback is used, move the Buyback token into the round cooldown track at its cooldown value. Advance it toward 0 during Round End updates, just like other round-based cooldown pieces. When it reaches 0, return it to the ready space.
 
 #### Aegis Held
 - **Component:** Printed checkbox "🛡️ Aegis of the Immortal"
@@ -278,7 +278,7 @@ Located near the hero's Abilities Card reference area.
 #### Scepter Acquired
 - **Component:** Printed checkbox "⭐ Aghanim's Scepter"
 - **Marker:** Star token placed when Scepter is purchased
-- **Upgraded Ability:** Small arrow token points to which ability is upgraded (if not obvious from the Abilities Card)
+- **Usage:** The item in the inventory slot already makes Scepter ownership visible, so this token functions only as a quick hero-board reminder. No separate upgrade pointer is needed because the upgraded ability is printed directly on the Abilities Card.
 
 ---
 
@@ -288,7 +288,7 @@ Located at the very top, spanning the width of the mat.
 
 #### AP Spent This Activation
 - **Component:** Horizontal track with circles (0–10)
-- **Marker:** Cube token tracking how many AP have been spent this turn
+- **Marker:** Generic cube token tracking how many AP have been spent this turn
 - **Usage:** Move token forward as actions are executed. Reset to 0 at start of each activation.
 
 #### Reaction AP Owed
@@ -345,8 +345,9 @@ Three lane sections (Top, Mid, Bottom), each with identical tracking.
 - **Destroyed:** Place large red X token over tower icon when destroyed.
 
 #### Barracks (per lane)
-- **Component:** Printed Barracks icon per lane
-- **Marker:** Flip token (Alive / Destroyed)
+- **Component:** Printed broken-barracks art on the board beneath the lane's Barracks hex
+- **Marker:** Removable standing Barracks token placed on top of that hex at game start
+- **Usage:** Remove the standing Barracks token when the Barracks is destroyed.
 
 ---
 
@@ -362,7 +363,7 @@ Three lane sections (Top, Mid, Bottom), each with identical tracking.
 - **Marker:** If dropped (not held by hero), place miniature Aegis token on the hex where it dropped. Include hex coordinates or descriptive location.
 
 #### Power Rune
-- **Type:** Custom Rune Die placed in designated box (shows which rune spawned)
+- **Type:** Place the matching Power Rune token in the designated box or on the rune hex
 - **Location:** Coin placed on "Radiant Side" or "Dire Side" box
 - **Claimed:** Checkbox with cube token (removed when rune is picked up)
 
@@ -374,7 +375,7 @@ Three lane sections (Top, Mid, Bottom), each with identical tracking.
 - **Component:** Printed grid "Observer Wards Placed"
   - Columns: Team | Hex Location | Duration Remaining
   - Rows: Up to 6 active wards per team
-- **Marker:** Write hex coordinates with dry-erase marker (if using plastic overlay). Use small numbered token for duration countdown.
+- **Marker:** Write hex coordinates with dry-erase marker (if using plastic overlay). Use a die or small generic number marker for duration countdown.
 
 #### Sentry Wards
 - **Component:** Same grid format as Observer Wards
@@ -427,7 +428,7 @@ Players select tokens face-down during Planning Phase and place them in the Acti
 | Aegis Token | Gold | 1 | Aegis of the Immortal holder |
 | Round Start Token | Large Star | 1 | Marks first player each round |
 | Courier Standee | Custom | 2 (1 per team) | Tracks Courier position on board |
-| Rune Die | Custom | 1 | Determines which Power Rune spawns |
+| Power Rune Tokens | Custom | 5 | One token per rune type for river spawns and Bottle storage |
 | Planning Tokens | Mixed | Per hero / per player set | Face-down action commitment during planning |
 
 ---
