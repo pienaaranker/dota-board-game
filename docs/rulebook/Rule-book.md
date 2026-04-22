@@ -25,7 +25,7 @@ All heroes start with 3× the AP at the start of the game to get out onto the ma
 
 ### Planning Phase
 Before each half-round (10 turns), all players simultaneously:
-1. Select face-down planning tokens (Move, Attack, Farm, Use Item, Pass, or a hero-specific ability token) for each hero they control
+1. Select face-down planning tokens for each hero they control. These include Move, Attack, Farm, Pass, the 6 numbered item slot tokens for that hero, and hero-specific ability tokens.
 2. Place tokens face-down in front of them (one set per hero if controlling multiple)
 3. Once all players are ready, the Turn Phase begins
 4. Each hero's tokens remain face-down until that hero's activation, when they are revealed and executed
@@ -51,7 +51,7 @@ Each hero has their own AP per turn to spend.
 | **Attack** | Initiate combat with a Creep, Tower, or Enemy Hero. |
 | **Farm** | Spend AP to gain gold and XP from a creep wave or neutral camp. |
 | **Deny** | *(Reaction)* Use AP from your next turn to interrupt an opponent's Farm action. Requires a die roll challenge. |
-| **Use Item** | Activate an item card's effect. |
+| **Use Item** | Activate an item card's effect using the numbered item slot token corresponding to the slot that currently holds that item. |
 | **Use Ability** | Activate one of the hero's printed abilities using the matching hero-specific token (requires Mana). |
 
 ---

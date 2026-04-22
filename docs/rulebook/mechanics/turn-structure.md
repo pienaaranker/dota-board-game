@@ -82,10 +82,11 @@ Before the Turn Phase begins, all players simultaneously select their actions fo
 5. After the first 10 turns complete, players repeat the Planning Phase for the second half of the round.
 
 **Planning Rules:**
-- Planning Tokens include: Move, Attack, Farm, Use Item, Pass, and hero-specific ability tokens.
+- Planning Tokens include: Move, Attack, Farm, Pass, 6 numbered item slot tokens per hero, and hero-specific ability tokens.
 - Players may select up to their hero's AP worth of actions.
 - Tokens remain hidden until activation — players commit actions without knowing what enemies have planned.
 - Once a hero's tokens are revealed at the start of their activation, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
+- Item use is committed by slot, not by a generic Use Item token. Revealing an item slot token means the hero is attempting to use the item currently in that numbered slot.
 - Reactions are **not** included in Planning Phase — reactions are declared in real-time during the Turn Phase when triggered.
 
 **Strategic Implications:**
@@ -144,6 +145,7 @@ When a committed action cannot be executed, the following rules apply:
 - **Stunned Hero** — Hero has AP reduced below the cost of the action due to stun effects.
 - **Silenced Hero** — Hero cannot use abilities while Silenced.
 - **Insufficient Resources** — Hero lacks the Mana to cast a committed ability.
+- **Invalid Item Slot** — The revealed item slot is empty, or the item expected to be there is no longer in that slot.
 - **Movement Blocked** — The destination hex is occupied or impassable due to game state changes.
 
 **Resolution:**
@@ -154,7 +156,7 @@ When a committed action is revealed during a hero's activation, the player decla
 
 **Target Declaration Timing:**
 - Specific targets (which enemy hero to attack, which hex to move to, which unit to cast an ability on) are **not** committed during Planning Phase.
-- Only the **type** of action is committed (Move, Attack, Storm Hammer, etc.).
+- Only the **type** of action is committed (Move, Attack, Storm Hammer, Item Slot 2, etc.).
 - The specific target or destination is declared when the token is revealed during execution.
 - This gives players flexibility to adapt to game state changes, but commits them to the action type itself.
 
@@ -164,6 +166,7 @@ Some actions cannot be retargeted because no valid alternative exists:
 - **Stunned Hero** — Hero has AP reduced below the cost of the action due to stun effects. Action cannot execute at all.
 - **Silenced Hero** — Hero cannot use abilities while Silenced. Ability actions cannot execute at all.
 - **Insufficient Resources** — Hero lacks the Mana to cast a committed ability. Action cannot execute at all.
+- **Invalid Item Slot** — The chosen slot is empty, or no usable item is currently in that slot. The item action cannot execute.
 - **No Valid Targets** — All potential targets are out of range, dead, or otherwise invalid. Action cannot execute.
 
 In these cases, the action is automatically cancelled (returned to the hero's available token pool, no AP spent).

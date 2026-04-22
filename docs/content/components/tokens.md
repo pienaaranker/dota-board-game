@@ -77,8 +77,22 @@ These are the face-down commitment tools used during the Planning Phase.
 | **Move** | Commit a move action |
 | **Attack** | Commit a basic attack action |
 | **Farm** | Commit a farm action |
-| **Use Item** | Commit an item activation |
 | **Pass** | Commit no further action |
+
+### Item Slot Tokens
+
+Item use is committed by **slot**, not by a single shared Use Item token.
+
+Each hero has **6 item slots** and therefore needs **6 item planning tokens**, one for each slot on their Hero Board or item area.
+
+| Token | Purpose | Notes |
+|---|---|---|
+| **Item Slot 1 Token** | Commit use of the item currently in slot 1 | The token follows the slot, not the item itself. |
+| **Item Slot 2 Token** | Commit use of the item currently in slot 2 | If the slot is empty, the action cannot resolve. |
+| **Item Slot 3 Token** | Commit use of the item currently in slot 3 | Supports hidden commitment during planning. |
+| **Item Slot 4 Token** | Commit use of the item currently in slot 4 | Should match the visual language of the slot layout. |
+| **Item Slot 5 Token** | Commit use of the item currently in slot 5 | Reusable even as items change during the game. |
+| **Item Slot 6 Token** | Commit use of the item currently in slot 6 | One full set per hero. |
 
 ### Hero-Specific Ability Tokens
 
@@ -95,6 +109,7 @@ Each hero needs a reusable planning token for each of their named abilities.
 
 - Planning token backs should be uniform where hidden information matters.
 - Front faces should be icon-first, text-second.
+- Item slot tokens should be numbered clearly from 1 to 6 and visually tied to the hero's item slots.
 - Hero ability tokens should share a common frame while still being hero-specific.
 
 ---
@@ -225,7 +240,7 @@ To keep the token system manageable, token production should be split into five 
 |---|---|
 | **Board Presence Tokens** | Heroes, creeps, wards, rune token, courier, Roshan, dropped items |
 | **Objective Tokens** | Aegis, Fallen Barracks, Mega Creeps, tower destroyed markers |
-| **Planning Tokens** | Move, Attack, Farm, Use Item, Pass, hero ability tokens |
+| **Planning Tokens** | Move, Attack, Farm, Pass, item slot tokens, hero ability tokens |
 | **Status / Marker Tokens** | Stun, Silence, Root, Slow, DoT, cooldown, duration, AP debt, channeling |
 | **Special Effect Tokens** | Illusions, clouds, shields, barriers, charge tokens, future hero-specific summons |
 
@@ -249,7 +264,8 @@ If producing a first playable prototype, the minimum token set should include:
 - Courier tokens
 - Observer Ward and Sentry Ward tokens
 - Invisibility Cloud and Smoke Cloud tokens
-- Move, Attack, Farm, Use Item, Pass planning tokens
+- Move, Attack, Farm, Pass planning tokens
+- six item slot tokens per hero
 - hero-specific ability tokens for any heroes currently in the test pool
 - core status tokens: Stunned, Silenced, Rooted, Slowed, DoT, Hexed, Ethereal, Disarmed
 - cooldown and duration number markers
