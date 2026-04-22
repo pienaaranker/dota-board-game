@@ -175,8 +175,8 @@ The following Dota 2 map elements are **not included** in the board game, either
 
 | Map Feature | Reason for Exclusion |
 |---|---|
-| **Bounty Rune Spawn Points** | Bounty Runes excluded in Mechanics.md (redundant with Passive Income). |
-| **Tormentor Locations** | Tormentor excluded in Mechanics.md (Aghanim's Shard removed). |
+| **Bounty Rune Spawn Points** | Bounty Runes excluded in the main mechanics reference (redundant with Passive Income). |
+| **Tormentor Locations** | Tormentor excluded in the main mechanics reference (Aghanim's Shard removed). |
 | **Lotus Pool** | Tormentor reward; parent mechanic excluded. |
 | **Scan Mechanic** | Not a physical location; global ability not suited to board game. |
 | **Shrines** | Removed from Dota 2 in recent patches; outdated mechanic. |

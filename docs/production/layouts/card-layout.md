@@ -149,7 +149,7 @@ Each ability row should use icons and chips so players can parse it quickly.
 - **Target chip:** Self, Unit, Point, Vector, AoE, Global, Aura
 - **Special keyword chip:** Skillshot, Aura, Channel, Scepter
 
-This matters because `Heroes.md` and `Mechanics.md §17` rely on repeated technical labels. If those labels are standardized visually, players learn the language faster and resolve abilities with fewer rulebook checks.
+This matters because [../../content/heroes/roster.md](../../content/heroes/roster.md) and [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md) rely on repeated technical labels. If those labels are standardized visually, players learn the language faster and resolve abilities with fewer rulebook checks.
 
 ### Back Face
 
@@ -175,7 +175,7 @@ The player should be able to scan the card in this order:
 
 ### Recommended Hero Card Data Template
 
-Use this structure when turning entries from `Heroes.md` into final print layouts:
+Use this structure when turning entries from [../../content/heroes/roster.md](../../content/heroes/roster.md) into final print layouts:
 
 | Section | Content |
 |---|---|
@@ -364,5 +364,5 @@ Use this structure when converting hero abilities into final print layouts:
 ### Design Notes
 
 - Abilities Cards should feel like premium rules references, not collectible mini-cards.
-- The strongest test of a good Abilities Card is whether a player can resolve the hero's full kit correctly without opening `Mechanics.md`.
+- The strongest test of a good Abilities Card is whether a player can resolve the hero's full kit correctly without opening [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md).
 - If text density becomes too high for a specific hero, rebalance panel proportions before reducing rules clarity.

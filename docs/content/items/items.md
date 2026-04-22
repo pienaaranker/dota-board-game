@@ -1,6 +1,6 @@
 # DOTA 2: THE BOARD GAME — ITEMS
 
-This document defines all items included in the board game. Each entry describes the item's intended board game effect, cost, and type. For purchasing rules, item slots, and delivery mechanics, see `Mechanics.md §15`.
+This document defines all items included in the board game. Each entry describes the item's intended board game effect, cost, and type. For purchasing rules, item slots, and delivery mechanics, see [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md).
 
 Items marked **🔲 TODO** are pending final design confirmation. Items marked **✅ Confirmed** are fully designed and locked in.
 
@@ -29,7 +29,7 @@ Single-use items. Once activated, the item card is discarded.
 #### Blood Grenade *(50 Gold)*
 **Type:** Consumable | **Status:** ✅ Confirmed
 
-Thrown at a target hex within range. Apply a **Bleed** token to all enemy heroes within a **1-hex radius** of the target hex (the target hex and all 6 adjacent hexes). Bleed deals X physical damage at the start of each of the affected hero's turns for Y turns. Bleed is dispellable. See Mechanics.md §7 for DoT rules.
+Thrown at a target hex within range. Apply a **Bleed** token to all enemy heroes within a **1-hex radius** of the target hex (the target hex and all 6 adjacent hexes). Bleed deals X physical damage at the start of each of the affected hero's turns for Y turns. Bleed is dispellable. See [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md) for DoT rules.
 
 ---
 
@@ -77,7 +77,7 @@ Place on any Open hex (1 AP). The ward token remains on the board until destroye
 
 Observer Wards do **not** grant invisibility detection — they only provide the reaction advantage. Use Sentry Wards or Dust of Appearance for that.
 
-**Destroying a Ward:** Observer Wards are invisible to the enemy team and cannot be targeted or destroyed unless first revealed by **true sight**. A ward is revealed if it falls within the radius of an enemy **Sentry Ward**, or within range of an enemy hero carrying a **Gem of True Sight**. Once revealed, an adjacent hero may spend 1 AP to destroy it. See Mechanics.md §14 for full ward rules.
+**Destroying a Ward:** Observer Wards are invisible to the enemy team and cannot be targeted or destroyed unless first revealed by **true sight**. A ward is revealed if it falls within the radius of an enemy **Sentry Ward**, or within range of an enemy hero carrying a **Gem of True Sight**. Once revealed, an adjacent hero may spend 1 AP to destroy it. See [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md) for full ward rules.
 
 ---
 
@@ -90,7 +90,7 @@ Place on any Open hex (1 AP). The ward token remains on the board until destroye
 
 **Invisible by default:** Like Observer Wards, Sentry Wards are invisible to the enemy team. They can only be revealed and destroyed if the enemy has a true sight source of their own covering the ward's hex.
 
-Sentry Wards do **not** provide the tactical reaction advantage that Observer Wards do — they are purely a detection tool. See Mechanics.md §14 for full ward rules.
+Sentry Wards do **not** provide the tactical reaction advantage that Observer Wards do — they are purely a detection tool. See [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md) for full ward rules.
 
 ---
 
@@ -104,7 +104,7 @@ When activated, all affected heroes (the user and all allied heroes within **2 h
 - Enters a Tower's area of control.
 - Attacks or uses an offensive ability.
 
-See Mechanics.md §14 for full Smoke rules.
+See [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md) for full Smoke rules.
 
 ---
 

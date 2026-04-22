@@ -1,6 +1,6 @@
 # DOTA 2: THE BOARD GAME — HERO ROSTER
 
-This document is the master roster of all heroes available in the board game. Heroes are organized by stat class. **Universal heroes from the Dota 2 video game are not included in this board game** (see `Mechanics.md §2`).
+This document is the master roster of all heroes available in the board game. Heroes are organized by stat class. **Universal heroes from the Dota 2 video game are not included in this board game** (see [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md)).
 
 Each hero entry will be expanded with full card stats (HP, Mana, Attack, Defense, Move Speed, AP, abilities) as we work through the roster. Entries listed here with only a name are placeholders pending design.
 
