@@ -13,7 +13,7 @@ Destroy the enemy team's **Ancient**, located inside their base. To reach the An
 ## Game Setup & Draft
 
 ### Hero Classes
-Heroes are divided into two stat-based classes: **Agility** and **Strength** and **Intelligence**. **Universal heroes are not included in this game.**
+Heroes are divided into three playable stat classes: **Agility**, **Strength**, and **Intelligence**. **Universal heroes are not used as a separate class in this game; Magnus is the current exception and is treated as a Strength hero.**
 
 ### Coin Flip
 Before drafting, a coin is flipped between the two teams. The winner chooses to either **pick a hero first** or **take the first turn**; the loser receives the other option.

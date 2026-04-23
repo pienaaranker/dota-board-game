@@ -1,6 +1,6 @@
 # DOTA 2: THE BOARD GAME — HERO ROSTER
 
-This document is the master roster of all heroes available in the board game. Heroes are organized by stat class. **Universal heroes from the Dota 2 video game are not included in this board game** (see [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md)).
+This document is the master roster of all heroes available in the board game. Heroes are organized by stat class. **Universal heroes are not used as a separate class in this board game; Magnus is the current exception and is treated as a Strength hero** (see [../../rulebook/mechanics/Mechanics.md](../../rulebook/mechanics/Mechanics.md)).
 
 Each hero entry will be expanded with full card stats (HP, Mana, Attack, Defense, Move Speed, AP, abilities) as we work through the roster. Entries listed here with only a name are placeholders pending design.
 
@@ -27,6 +27,7 @@ Each hero entry will be expanded with full card stats (HP, Mana, Attack, Defense
 | Legion Commander | 🔲 Pending |
 | Lifestealer | 🔲 Pending |
 | Lycan | 🔲 Pending |
+| Magnus | ✅ Designed |
 | Mars | 🔲 Pending |
 | Night Stalker | 🔲 Pending |
 | Ogre Magi | 🔲 Pending |
@@ -132,7 +133,7 @@ Each hero entry will be expanded with full card stats (HP, Mana, Attack, Defense
 
 ## Universal Heroes — Not Included
 
-These heroes exist in Dota 2 but are **excluded from the board game** as Universal heroes are not part of this design. Listed here for reference.
+These heroes exist in Dota 2 but are excluded from the board game because Universal heroes are not used as a separate class here. **Magnus is the current exception and is treated as a Strength hero instead.** Listed here for reference.
 
 | Hero |
 |------|
@@ -148,7 +149,6 @@ These heroes exist in Dota 2 but are **excluded from the board game** as Univers
 | Io |
 | Largo |
 | Lone Druid |
-| Magnus |
 | Marci |
 | Nature's Prophet |
 | Pangolier |

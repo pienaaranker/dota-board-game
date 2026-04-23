@@ -228,3 +228,120 @@ Dismember can be cast on targets up to 2 hexes away (no longer requires adjacenc
 Pudge embodies the tanky Strength ganker archetype: high HP, high-risk/high-reward abilities (Hook + Rot self-damage), and brutal single-target lockdown (Dismember). His design rewards mechanical skill (landing Hooks), positioning (Rot radius, Flesh Heap proximity, Dismember adjacency), and calculated aggression (managing Rot self-damage, committing to Dismember channels).
 
 ---
+
+## Magnus
+**Class:** Strength | **Attack Type:** Melee
+
+### Base Stats
+
+| Stat | Value |
+|------|-------|
+| **Health (HP)** | 105 |
+| **Mana** | 35 |
+| **Attack** | 9 |
+| **Attack Range** | 1 hex |
+| **Defense** | 3 |
+| **Move Speed** | 1 |
+| **Action Points (AP)** | 10 |
+
+### Stat Scaling
+- **Per Level:** +12 HP, +8 Mana, +4 Attack, +1 Defense
+
+### Abilities
+
+---
+
+#### Shockwave
+**Type:** Active | **Targeting:** Direction/Vector | **Unlock:** Level 1
+
+**Mana Cost:** 12 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 4 hexes
+
+**Effect:**  
+Magnus sends a wave of force in a straight line up to 4 hexes. Enemy units in the path take damage and are pulled 1 hex toward Magnus, if a legal Open hex is available. Enemy heroes hit by Shockwave are also Slowed until the end of their next activation.
+
+**Level Progression:**
+- **Level 1-5:** 16 damage
+- **Level 6-11:** 24 damage
+- **Level 12+:** 32 damage
+
+**Notes:**  
+For Shockwave, **Slowed** means the affected hero's first **Move** action on their next activation moves 0 hexes and still costs 1 AP.
+
+---
+
+#### Empower
+**Type:** Active | **Targeting:** Unit Target | **Unlock:** Level 1
+
+**Mana Cost:** 10 | **AP Cost:** 1 | **Cooldown:** 3 rounds | **Range:** 2 hexes | **Duration:** 1 round
+
+**Effect:**  
+Magnus empowers an allied hero or himself with crushing momentum. The empowered hero gains bonus Attack, and their **Attack** actions cleave in a 2-hex cone in front of them, dealing bonus damage to all other enemy units in the cone.
+
+**Level Progression:**
+- **Level 1-5:** +3 Attack, 2 cleave damage
+- **Level 6-11:** +5 Attack, 3 cleave damage
+- **Level 12+:** +7 Attack, 4 cleave damage
+
+---
+
+#### Skewer
+**Type:** Active | **Targeting:** Direction/Vector | **Unlock:** Level 1
+
+**Mana Cost:** 16 | **AP Cost:** 2 | **Cooldown:** 3 rounds | **Range:** Up to 3 hexes
+
+**Effect:**  
+Magnus charges in a straight line up to 3 hexes. Enemy heroes in his path take damage and are dragged with him. After Magnus finishes moving, place each dragged hero on a legal Open hex adjacent to Magnus.
+
+**Level Progression:**
+- **Level 1-5:** 15 damage
+- **Level 6-11:** 25 damage
+- **Level 12+:** 35 damage
+
+**Notes:**  
+Magnus may move through occupied hexes during Skewer, but must end on a legal Open hex. If multiple heroes are dragged, the Magnus player chooses the order in which they are placed adjacent to Magnus.
+
+---
+
+#### Reverse Polarity
+**Type:** Active | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 6
+
+**Mana Cost:** 30 | **AP Cost:** 2 | **Cooldown:** 5 rounds | **Radius:** 2 hexes
+
+**Effect:**  
+Magnus violently reverses the battlefield's pull. All enemy heroes within 2 hexes are pulled onto the single hex directly in front of Magnus, take damage, and are stunned. For the rest of Magnus's current activation, those heroes may temporarily share that hex so Magnus can follow up with abilities such as Skewer.
+
+**Level Progression:**
+- **Level 6-11:** 20 damage, stun (3 AP loss)
+- **Level 12-17:** 30 damage, stun (4 AP loss)
+- **Level 18+:** 40 damage, stun (5 AP loss)
+
+**Notes:**  
+When Magnus's activation ends, all heroes stacked by Reverse Polarity are immediately dispersed to legal Open hexes adjacent to Magnus. The Magnus player chooses the placement order if multiple legal hexes are available.
+
+**Aghanim's Scepter Upgrade:**  
+Reverse Polarity radius increases to 3 hexes.
+
+---
+
+### Design Notes
+
+**Role:** Magnus is a Strength melee initiator who controls fights through forced movement and teamfight setup. He enables allied carries with Empower, isolates enemies with Skewer and Shockwave, and punishes clustered teams with Reverse Polarity.
+
+**Playstyle Considerations:**
+- Shockwave gives Magnus safe reach and small-scale displacement before he commits
+- Empower lets Magnus support an allied core or turn himself into a stronger wave-clear threat
+- Skewer is his key repositioning tool, allowing him to start fights, peel for allies, or drag enemies into danger
+- Reverse Polarity is his signature teamfight swing and should reward patience, angle-finding, and enemy clumping
+- Magnus is durable enough to engage first, but he still relies on timing and allied follow-up to convert positioning wins into kills
+
+**Balance Considerations:**
+- Shockwave should be useful poke and setup, not a full initiation by itself
+- Empower needs to feel worth casting on allies without invalidating other damage-buff heroes or items
+- Skewer should be threatening because of its displacement value more than its raw damage
+- Reverse Polarity must be game-changing when it catches multiple heroes, but its radius and cooldown should leave room for counterplay
+- Magnus should feel like an initiator first and a carry second, even when Empowering himself
+
+**Thematic Identity:**
+Magnus embodies the horned battlefield controller: a brutal frontliner who bends enemy positioning to his will and creates perfect openings for his team. His design should feel forceful, deliberate, and defined by decisive initiation moments.
+
+---
