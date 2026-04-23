@@ -38,6 +38,7 @@ These are the tokens required to run the map, objectives, lane pressure, and boa
 | **Aegis of the Immortal Token** | Indicates the hero holding Aegis, or its dropped position on the board | One premium token. |
 | **Power Rune Tokens** | Mark an unclaimed rune on the river | One single-hex token for each rune type: Illusion, Haste, Invisibility, Regeneration, Double Damage. |
 | **Courier Token** | Represents the shared team Courier on the board or tracking area | One per team. |
+| **Healing Ward Token** | Represents Juggernaut's summoned Healing Ward on the board | Hero-specific summon. Mobile, heal-providing, and destroyable. |
 | **Round Start Token** | Marks the first hero in the round order | Shared rotation token. |
 | **Half-Round Marker** | Marks first half vs second half of the round | Tracks forward/backward pendulum direction. |
 

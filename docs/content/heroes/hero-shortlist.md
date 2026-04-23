@@ -63,7 +63,7 @@ Each hero entry will be expanded with full card stats (HP, Mana, Attack, Defense
 | Faceless Void | 🔲 Pending |
 | Gyrocopter | 🔲 Pending |
 | Hoodwink | 🔲 Pending |
-| Juggernaut | 🔲 Pending |
+| Juggernaut | ✅ Designed |
 | Kez | 🔲 Pending |
 | Luna | 🔲 Pending |
 | Medusa | 🔲 Pending |

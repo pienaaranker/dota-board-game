@@ -117,3 +117,122 @@ Grants Invisibility to Mirana and all allied heroes on the board, regardless of 
 Mirana embodies the high-skill-cap Agility hero: mobile, versatile, rewarding of precision (Arrow), and enabling for her team (Moonlight Shadow). Her design should reward mechanical skill (landing Arrows, positioning for Starfall procs), map awareness (roaming with Leap), and team coordination (using Moonlight Shadow for synchronized plays).
 
 ---
+
+## Juggernaut
+**Class:** Agility | **Attack Type:** Melee
+
+### Base Stats
+
+| Stat | Value |
+|------|-------|
+| **Health (HP)** | 95 |
+| **Mana** | 30 |
+| **Attack** | 9 |
+| **Attack Range** | 1 hex |
+| **Defense** | 2 |
+| **Move Speed** | 1 |
+| **Action Points (AP)** | 10 |
+
+### Stat Scaling
+- **Per Level:** +10 HP, +8 Mana, +4 Attack, +1 Defense
+
+### Abilities
+
+---
+
+#### Blade Fury
+**Type:** Active | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 1
+
+**Mana Cost:** 15 | **AP Cost:** 2 | **Cooldown:** 3 rounds | **Duration:** Current activation
+
+**Effect:**  
+Juggernaut enters a spinning bladestorm for the rest of his current activation. While Blade Fury is active, Juggernaut gains **Spell Immunity**, cannot use **Attack** actions, and cannot use other abilities or items. When Blade Fury is activated, and each time Juggernaut moves into a new hex during that activation, deal damage to all enemy units within 1 hex.
+
+**Level Progression:**
+- **Level 1-5:** 12 damage per hit
+- **Level 6-11:** 18 damage per hit
+- **Level 12+:** 24 damage per hit
+
+**Notes:**  
+Blade Fury is intended to convert Juggernaut's Move actions into area pressure. If Juggernaut does not move after activating Blade Fury, only the initial damage instance is applied.
+
+---
+
+#### Healing Ward
+**Type:** Active | **Targeting:** Unit Target | **Unlock:** Level 1
+
+**Mana Cost:** 12 | **AP Cost:** 1 | **Cooldown:** 4 rounds | **Range:** 1 hex
+
+**Effect:**  
+Place a **Healing Ward token** on an adjacent Open hex. At the start of each allied hero's activation, that hero restores HP if they are within 2 hexes of the Healing Ward. At the start of each of Juggernaut's activations, he may move the Healing Ward up to 2 hexes. Only one Healing Ward may be on the board for Juggernaut at a time.
+
+**Level Progression:**
+- **Level 1-5:** Heal 8 HP per activation, lasts 1 round
+- **Level 6-11:** Heal 12 HP per activation, lasts 2 rounds
+- **Level 12+:** Heal 16 HP per activation, lasts 2 rounds
+
+**Notes:**  
+The Healing Ward is a fragile summon. Any enemy hero adjacent to the ward may spend 1 **Attack** action to destroy it immediately.
+
+---
+
+#### Blade Dance
+**Type:** Passive | **Unlock:** Level 1
+
+**Effect:**  
+Juggernaut's swordsmanship makes his strikes exceptionally lethal. The first **Attack** action Juggernaut resolves during each activation deals bonus damage.
+
+**Level Progression:**
+- **Level 1-5:** +4 bonus damage
+- **Level 6-11:** +6 bonus damage
+- **Level 12+:** +9 bonus damage
+
+**Notes:**  
+Blade Dance also applies to the first slash of **Omnislash** each time Juggernaut uses that ability.
+
+---
+
+#### Omnislash
+**Type:** Active | **Targeting:** Unit Target | **Unlock:** Level 6
+
+**Mana Cost:** 30 | **AP Cost:** 2 | **Cooldown:** 4 rounds | **Range:** 2 hexes
+
+**Effect:**  
+Juggernaut targets an enemy hero within range and immediately begins Omnislash. Resolve the listed number of slashes one at a time.
+
+For the **first slash**, Juggernaut hits the chosen target. For each **later slash**, the Juggernaut player chooses an enemy hero within 1 hex of the hero hit by the previous slash. If there is no other enemy hero within 1 hex, Juggernaut may hit that same hero again instead.
+
+Each slash deals damage equal to Juggernaut's current **Attack**. While Omnislash is resolving, Juggernaut cannot be targeted by enemy attacks or abilities. After the final slash, place Juggernaut on any Open hex adjacent to the hero hit by the last slash.
+
+**Level Progression:**
+- **Level 6-11:** 3 slashes
+- **Level 12-17:** 4 slashes
+- **Level 18+:** 5 slashes
+
+**Aghanim's Scepter Upgrade:**  
+Omnislash gains +1 slash at all levels and its cooldown is reduced to 3 rounds.
+
+---
+
+### Design Notes
+
+**Role:** Juggernaut is an Agility melee carry who combines reliable self-sufficiency with explosive kill windows. He brings lane pressure through Blade Fury, sustain through Healing Ward, and late-game dueling power through Blade Dance and Omnislash.
+
+**Playstyle Considerations:**
+- Blade Fury lets Juggernaut fight early without relying entirely on basic attacks
+- Healing Ward gives him and nearby allies staying power during sieges, Roshan attempts, and drawn-out skirmishes
+- Blade Dance rewards careful sequencing so Juggernaut opens each activation with his strongest strike
+- Omnislash is his signature execution tool and is strongest when enemies are isolated or clustered tightly enough for repeated slashes
+- Moderate durability and low mana pool mean he can frontline briefly, but still needs timing and positioning to avoid being collapsed on after his burst window ends
+
+**Balance Considerations:**
+- Blade Fury must feel threatening during the early game without becoming a guaranteed kill button against slower heroes
+- Healing Ward should create meaningful sustain value, but its fragility must give opponents a clear answer
+- Blade Dance should make Juggernaut's attacks feel elite without introducing too much random swinginess
+- Omnislash should be devastating against isolated targets while still offering counterplay through positioning and nearby allied bodies
+- Mana costs should force Juggernaut to choose between sustain and aggression in the early game
+
+**Thematic Identity:**
+Juggernaut embodies the disciplined masked swordsman: relentless forward pressure, elegant sustain, and terrifying burst once he commits. His design should feel simple to understand, difficult to stop at the right moment, and unmistakably centered on bladework mastery.
+
+---
