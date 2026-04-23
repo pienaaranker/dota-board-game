@@ -627,6 +627,202 @@ Negative constraints:
 
 ---
 
+## Example Image Prompt — Weaver Hero Card
+
+Use the following prompt when generating a sample hero card image for Weaver:
+
+```text
+Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
+Overall style: premium tabletop card design, clean information hierarchy, readable at print size, temporal insect-skirmisher theme, agility-class visual identity, teal, deep indigo, pale cyan, and iridescent amber accents, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
+
+Card structure:
+- Top banner with the name: WEAVER
+- Agility class band in green
+- Attack type badge: Ranged
+- Role tags: Carry, Escape, Nuker
+- Large central portrait of Weaver as an original time-warping insectoid skirmisher: sleek chitin body, glowing segmented eyes, razor limbs, shimmering wings or temporal fins, distorted time trails, poised to dart through the battlefield
+- Horizontal stat strip below portrait with large readable icons and numbers
+- Narrow progression strip
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
+
+Base stats to show exactly:
+- HP 72
+- Mana 35
+- Attack 8
+- Attack Range 3 hexes
+- Defense 1
+- Move Speed 1
+- AP 10
+
+Progression strip:
+- Per Level: +8 HP | +10 Mana | +4 ATK | +1 DEF
+- Milestone icons for Level 6, Level 12, Level 18
+- Scepter badge reminder
+
+Ability summary rows to display:
+
+1. The Swarm
+- Type: Active
+- Target: Point Target
+- Unlock: Level 1
+- Summary: Release parasitic beetles that latch onto clustered enemies and weaken their Defense.
+
+2. Shukuchi
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 1
+- Summary: Turn invisible and surge through enemies, damaging units passed through.
+
+3. Geminate Attack
+- Type: Passive
+- Unlock: Level 1
+- Summary: Weaver's first attack each activation immediately fires a second strike.
+
+4. Time Lapse
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 6
+- Summary: Rewind Weaver to his previous position and restore his saved state.
+
+Graphic direction:
+- The card should feel like a readable tabletop component first, illustration showcase second
+- Use clear panel separation and consistent icon chips
+- Emphasize insect silhouette, iridescent chitin, parasite motifs, temporal distortion, darting motion, and elusive ranged pressure
+- Keep the layout uncluttered and legible; no fake tracker dials, no board-game counters, no 3D mockup angle
+- Present as a straight-on flat card render on a neutral background
+- Include subtle hex motifs and tactical board game icon language for area attachment effects, invisibility movement, and rewind timing
+
+Typography direction:
+- Large, elegant fantasy title for the hero name
+- Clean, compact sans-serif or highly readable game UI font for rules text
+- Important values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
+- Do not copy official game splash art
+- Do not use a trading card game frame style
+- Do not make it look like a mobile game screenshot
+- Do not add extra abilities, extra stats, or extra decorative clutter
+- Do not place current HP, current Mana, gold, XP, cooldown trackers, or item slots on the card
+```
+
+---
+
+## Example Image Prompt — Weaver Abilities Card
+
+Use the following prompt when generating a sample landscape Abilities Card image for Weaver:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Weaver Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of insectoid chitin, parasitic beetles, temporal distortion, high-speed traversal, and rewind effects. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, temporal insect-skirmisher theme, agility-class visual identity, teal, deep indigo, pale cyan, and iridescent amber accents, clean dividers, restrained temporal texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the beetle swarms, invisibility trails, rapid double-shot motifs, and time-rewind iconography visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: WEAVER
+- Small crest or portrait accent
+- Summary strip listing The Swarm, Shukuchi, Geminate Attack, Time Lapse
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. The Swarm
+- Type: Active
+- Target: Point Target
+- Unlock: Level 1
+- Mana Cost: 16
+- AP Cost: 1
+- Cooldown: 3 rounds
+- Range: 4 hexes
+- Rules: Weaver releases a cluster of parasitic weaverlings at a target hex. Apply a Swarm Beetle token to each enemy hero on the target hex and all adjacent hexes. At the start of each affected hero's activation, that hero takes damage and suffers -1 Defense while the token remains attached.
+- Scaling: 1-5: 3 damage per activation, lasts 1 round | 6-11: 4 damage per activation, lasts 2 rounds | 12+: 5 damage per activation, lasts 2 rounds
+- Notes: An affected hero may spend 1 Attack action during their activation to remove their own Swarm Beetle token. The Defense reduction does not stack from multiple beetles.
+
+2. Shukuchi
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 1
+- Mana Cost: 10
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Duration: Current activation
+- Rules: Weaver slips into the folds of reality and becomes Invisible for the rest of his current activation. During that activation, each Move action Weaver takes may move up to 2 hexes instead of 1. The first time Weaver passes through an enemy unit during each Move action, that unit takes damage.
+- Scaling: 1-5: 10 damage per pass-through | 6-11: 16 damage per pass-through | 12+: 22 damage per pass-through
+- Notes: Weaver must still end each Move action on a legal Open hex. Shukuchi ends immediately if Weaver uses an Attack action or another ability.
+
+3. Geminate Attack
+- Type: Passive
+- Unlock: Level 1
+- Rules: The first time Weaver resolves an Attack action during each activation, he immediately makes a second attack.
+- Scaling: 1-5: Second attack deals -2 damage | 6-11: Second attack deals -1 damage | 12+: Second attack deals full damage
+- Notes: The second attack must target the same enemy hero, creep, or structure as the first attack.
+
+4. Time Lapse
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 6
+- Mana Cost: 25
+- AP Cost: 1
+- Cooldown: 5 rounds
+- Rules: Weaver rewinds himself to the state he had at the start of his previous activation. Move Weaver back to the hex marked by his Time Lapse marker, then restore his HP and Mana to the saved values from that snapshot.
+- Scaling: 6-11: Rewind self | 12-17: Rewind self and remove one dispellable debuff | 18+: Rewind self and remove all dispellable debuffs
+- Notes: At the start of each Weaver activation, place a Time Lapse marker on Weaver's current hex and note his current HP and Mana with small number tokens on his Hero Board. If the marked hex is no longer a legal Open hex when Time Lapse resolves, place Weaver on the nearest legal Open hex instead.
+
+Upgrade / notes panel:
+- Aghanim's Scepter Upgrade: Time Lapse may target an allied hero within 2 hexes instead of Weaver. Use that hero's saved Time Lapse state.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle insect wing geometry, beetle silhouettes, temporal ripples, segmented chitin patterns, and motion streaks without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of The Swarm, Shukuchi, Geminate Attack, and Time Lapse should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Elegant fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
 ## Example Image Prompt — Crystal Maiden Abilities Card
 
 Use the following prompt when generating a sample landscape Abilities Card image for Crystal Maiden:
