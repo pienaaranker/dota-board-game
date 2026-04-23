@@ -228,6 +228,209 @@ Negative constraints:
 
 ---
 
+## Example Image Prompt — Magnus Hero Card
+
+Use the following prompt when generating a sample hero card image for Magnus:
+
+```text
+Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
+Overall style: premium tabletop card design, clean information hierarchy, readable at print size, imposing battlefield-controller theme, strength-class visual identity, crimson, bronze, obsidian, and muted teal force-magic accents, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
+
+Card structure:
+- Top banner with the name: MAGNUS
+- Strength class band in red
+- Attack type badge: Melee
+- Role tags: Initiator, Disabler, Durable
+- Large central portrait of Magnus as an original horned battlefield warlord: towering beast-like frontliner, massive curved horns, heavy bronze armor, rune-scarred polearm or hammer, force magic pulling debris and enemies inward, deliberate and commanding stance
+- Horizontal stat strip below portrait with large readable icons and numbers
+- Narrow progression strip
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
+
+Base stats to show exactly:
+- HP 105
+- Mana 35
+- Attack 9
+- Attack Range 1 hex
+- Defense 3
+- Move Speed 1
+- AP 10
+
+Progression strip:
+- Per Level: +12 HP | +8 Mana | +4 ATK | +1 DEF
+- Milestone icons for Level 6, Level 12, Level 18
+- Scepter badge reminder
+
+Ability summary rows to display:
+
+1. Shockwave
+- Type: Active
+- Target: Direction/Vector
+- Unlock: Level 1
+- Summary: Send a force wave that damages enemies, pulls them inward, and slows heroes hit.
+
+2. Empower
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Summary: Empower an allied hero with bonus Attack and cleaving strikes.
+
+3. Skewer
+- Type: Active
+- Target: Direction/Vector
+- Unlock: Level 1
+- Summary: Charge forward, damaging enemy heroes and dragging them with Magnus.
+
+4. Reverse Polarity
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 6
+- Summary: Pull nearby enemy heroes together, damage them, and stun them for a massive setup play.
+
+Graphic direction:
+- The card should feel like a readable tabletop component first, illustration showcase second
+- Use clear panel separation and consistent icon chips
+- Emphasize horn silhouette, heavy armor, force-magic distortion, battlefield debris, sweeping momentum, and clustered-enemy control
+- Keep the layout uncluttered and legible; no fake tracker dials, no board-game counters, no 3D mockup angle
+- Present as a straight-on flat card render on a neutral background
+- Include subtle hex motifs and tactical board game icon language for pull effects, forced movement, cones, and area control
+
+Typography direction:
+- Large, forceful fantasy title for the hero name
+- Clean, compact sans-serif or highly readable game UI font for rules text
+- Important values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
+- Do not copy official game splash art
+- Do not use a trading card game frame style
+- Do not make it look like a mobile game screenshot
+- Do not add extra abilities, extra stats, or extra decorative clutter
+- Do not place current HP, current Mana, gold, XP, cooldown trackers, or item slots on the card
+```
+
+---
+
+## Example Image Prompt — Magnus Abilities Card
+
+Use the following prompt when generating a sample landscape Abilities Card image for Magnus:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Magnus Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of horned warlord motifs, force-magic distortion, heavy bronze armor, battlefield momentum, and violent displacement effects. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, imposing battlefield-controller theme, strength-class visual identity, crimson, bronze, obsidian, and muted teal force-magic accents, clean dividers, restrained arcane texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the force-wave arcs, cleave motifs, charging momentum lines, clustered pull effects, and heavy battlefield impact language visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: MAGNUS
+- Small crest or portrait accent
+- Summary strip listing Shockwave, Empower, Skewer, Reverse Polarity
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Shockwave
+- Type: Active
+- Target: Direction/Vector
+- Unlock: Level 1
+- Mana Cost: 12
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Range: 4 hexes
+- Rules: Magnus sends a wave of force in a straight line up to 4 hexes. Enemy units in the path take damage and are pulled 1 hex toward Magnus, if a legal Open hex is available. Enemy heroes hit by Shockwave are also Slowed until the end of their next activation.
+- Scaling: 1-5: 16 damage | 6-11: 24 damage | 12+: 32 damage
+- Notes: For Shockwave, Slowed means the affected hero's first Move action on their next activation moves 0 hexes and still costs 1 AP.
+
+2. Empower
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Mana Cost: 10
+- AP Cost: 1
+- Cooldown: 3 rounds
+- Range: 2 hexes
+- Duration: 1 round
+- Rules: Magnus empowers an allied hero or himself with crushing momentum. The empowered hero gains bonus Attack, and their Attack actions cleave in a 2-hex cone in front of them, dealing bonus damage to all other enemy units in the cone.
+- Scaling: 1-5: +3 Attack, 2 cleave damage | 6-11: +5 Attack, 3 cleave damage | 12+: +7 Attack, 4 cleave damage
+
+3. Skewer
+- Type: Active
+- Target: Direction/Vector
+- Unlock: Level 1
+- Mana Cost: 16
+- AP Cost: 2
+- Cooldown: 3 rounds
+- Range: Up to 3 hexes
+- Rules: Magnus charges in a straight line up to 3 hexes. Enemy heroes in his path take damage and are dragged with him. After Magnus finishes moving, place each dragged hero on a legal Open hex adjacent to Magnus.
+- Scaling: 1-5: 15 damage | 6-11: 25 damage | 12+: 35 damage
+- Notes: Magnus may move through occupied hexes during Skewer, but must end on a legal Open hex. If multiple heroes are dragged, the Magnus player chooses the order in which they are placed adjacent to Magnus.
+
+4. Reverse Polarity
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 6
+- Mana Cost: 30
+- AP Cost: 2
+- Cooldown: 5 rounds
+- Radius: 2 hexes
+- Rules: Magnus violently reverses the battlefield's pull. All enemy heroes within 2 hexes are pulled onto the single hex directly in front of Magnus, take damage, and are stunned. For the rest of Magnus's current activation, those heroes may temporarily share that hex so Magnus can follow up with abilities such as Skewer.
+- Scaling: 6-11: 20 damage, stun (3 AP loss) | 12-17: 30 damage, stun (4 AP loss) | 18+: 40 damage, stun (5 AP loss)
+- Notes: When Magnus's activation ends, all heroes stacked by Reverse Polarity are immediately dispersed to legal Open hexes adjacent to Magnus. The Magnus player chooses the placement order if multiple legal hexes are available.
+
+Upgrade / notes panel:
+- Aghanim's Scepter Upgrade: Reverse Polarity radius increases to 3 hexes.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle horn motifs, force-wave crescents, impact cracks, drag lines, and disciplined martial ornament without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Shockwave, Empower, Skewer, and Reverse Polarity should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Forceful fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
 ## Example Image Prompt — Crystal Maiden Abilities Card
 
 Use the following prompt when generating a sample landscape Abilities Card image for Crystal Maiden:
