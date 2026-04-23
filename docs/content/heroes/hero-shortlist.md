@@ -103,7 +103,7 @@ Each hero entry will be expanded with full card stats (HP, Mana, Attack, Defense
 | Disruptor | 🔲 Pending |
 | Enchantress | 🔲 Pending |
 | Grimstroke | 🔲 Pending |
-| Invoker | 🔲 Pending |
+| Invoker | ✅ Designed |
 | Jakiro | 🔲 Pending |
 | Keeper of the Light | 🔲 Pending |
 | Leshrac | 🔲 Pending |

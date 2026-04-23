@@ -38,7 +38,9 @@ These are the tokens required to run the map, objectives, lane pressure, and boa
 | **Aegis of the Immortal Token** | Indicates the hero holding Aegis, or its dropped position on the board | One premium token. |
 | **Power Rune Tokens** | Mark an unclaimed rune on the river | One single-hex token for each rune type: Illusion, Haste, Invisibility, Regeneration, Double Damage. |
 | **Courier Token** | Represents the shared team Courier on the board or tracking area | One per team. |
+| **EMP Charge Token** | Marks the hex where Invoker's EMP will detonate | Remove it when EMP resolves or expires. |
 | **Healing Ward Token** | Represents Juggernaut's summoned Healing Ward on the board | Hero-specific summon. Mobile, heal-providing, and destroyable. |
+| **Forge Spirit Token** | Represents one of Invoker's summoned Forge Spirits on the board | Uses the shared summon rules and Invoker's printed summon stat line. |
 | **Weaver Time Lapse Marker** | Marks Weaver's saved hex for Time Lapse | Place on Weaver's hex at the start of his activation; pair with small number tokens on the Hero Board for saved HP and Mana. |
 | **Round Start Token** | Marks the first hero in the round order | Shared rotation token. |
 | **Half-Round Marker** | Marks first half vs second half of the round | Tracks forward/backward pendulum direction. |
@@ -103,6 +105,8 @@ Some heroes may need extra planning tokens when their mechanics let them access 
 |---|---|---|
 | **Rubick Stolen Spell 1 Token** | Commit Rubick's first currently copied spell during Planning Phase | Place it face-down in Rubick's Action Queue. After use, move it to the appropriate Ability Cooldowns row on Rubick's Hero Board for the copied spell's cooldown. |
 | **Rubick Stolen Spell 2 Token** | Commit Rubick's second currently copied spell during Planning Phase | Only usable when Rubick has Aghanim's Scepter and a second stolen spell. Place it face-down in Rubick's Action Queue. After use, move it to the appropriate Ability Cooldowns row on Rubick's Hero Board for the copied spell's cooldown. |
+| **Invoker Invoked Spell 1 Token** | Commit the spell prepared in Invoker's first Invoke Slot during Planning Phase | Place it face-down in Invoker's Action Queue. After use, move it to the appropriate Ability Cooldowns row on Invoker's Hero Board for that spell's cooldown. |
+| **Invoker Invoked Spell 2 Token** | Commit the spell prepared in Invoker's second Invoke Slot during Planning Phase | Place it face-down in Invoker's Action Queue. After use, move it to the appropriate Ability Cooldowns row on Invoker's Hero Board for that spell's cooldown. |
 
 ### Planning Requirements
 
@@ -131,6 +135,7 @@ These tokens live primarily on each player's Hero Board and track changing state
 | **Broken** | Tracks passive disable state |
 | **Hexed** | Tracks polymorph / hard disable state |
 | **Bleeding / DoT** | Tracks damage-over-time effects |
+| **Burning / Burn** | Tracks short-duration fire damage effects |
 | **BKB Active / Spell Immunity** | Tracks temporary spell immunity or similar protection |
 
 ### Generic Tracking Markers
@@ -142,6 +147,10 @@ These tokens live primarily on each player's Hero Board and track changing state
 | **Alive / Dead Flip Token** | Tracks whether the hero is alive | One per hero. |
 | **Buyback Token** | Tracks whether buyback is available or cooling down | Place it on the hero board's cooldown track when used; it becomes available again when it reaches 0. |
 | **Scepter Acquired Token** | Marks that Aghanim's Scepter is active for the hero | One per hero. |
+| **Summon AP Marker** | Tracks a summon's remaining AP during its controller's activation | Shared across all summon-based heroes. |
+| **Summon Hit Marker** | Tracks a summon's remaining Hits | Shared across all summon-based heroes; preferred over bespoke HP dials for fragile summons. |
+| **Summon Duration Marker** | Tracks how many rounds or activations a summon remains in play | Use when the summon does not persist indefinitely. |
+| **Summon Mana Marker** | Tracks summon Mana for summon-based heroes that need it | Reserved for designs such as Spirit Bear or other spell-using summons. |
 
 ### Hero-Specific Tracking Markers
 
@@ -150,6 +159,9 @@ These tokens live primarily on each player's Hero Board and track changing state
 | **Rubick Spell Steal Cooldown Token** | Tracks Spell Steal's own cooldown on Rubick's hero board | Rubick comes with 1 dedicated cooldown token for Spell Steal. |
 | **Rubick Spell Steal Marker Token** | Marks which enemy ability Rubick has currently copied | Place directly on the copied ability on the enemy hero's Abilities Card. Rubick has 1 by default and a second becomes usable with Aghanim's Scepter. Remove all of Rubick's Spell Steal markers when Rubick dies. |
 | **Weaver Swarm Beetle Token** | Marks a hero currently affected by The Swarm | Place on each affected hero; it deals periodic damage and reduces Defense until removed or expired. |
+| **Invoker Orb Token** | Marks one active Quas, Wex, or Exort orb on Invoker's Hero Board | Invoker uses 3 orb slots. The current 3-orb arrangement determines which spell Invoke can prepare. |
+| **Invoker Invoke Slot Marker** | Marks which spell is currently prepared in each Invoke Slot | Invoker has 2 Invoke Slots. Each slot should clearly show the currently prepared spell. |
+| **Invoker Forge Spirit Armor Break Marker** | Marks the Defense reduction applied by Forge Spirit attacks | Use shared modifier styling so it reads like a standard debuff instead of a unique subsystem. |
 
 ### Stat Modification Tokens
 

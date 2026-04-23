@@ -51,6 +51,36 @@ A DoT is a debuff token placed on a hero. At the **start of that hero's activati
 |---|---|---|---|
 | **Bleed** | X physical damage | Once per activation | Applied by Blood Grenade. Dispellable. |
 
+### Summons
+
+Some abilities create **Summons**: controlled units that belong to a hero but are not heroes themselves.
+
+**Core summon rules:**
+- A summon is a unit on the board. It may be targeted by attacks and abilities unless the creating ability says otherwise.
+- Each summon has its own mini stat line printed on the creating hero's Abilities Card or supporting component: **Hits**, **AP**, **Attack**, **Defense**, **Move Speed**, and **Mana** if relevant.
+- Summon durability is tracked with **Hits**, not full HP. Each time a summon would take damage from an attack, ability, or effect that successfully affects it, it loses **1 Hit** unless the creating ability says it loses more.
+- If a summon reaches **0 Hits**, remove it from the board immediately.
+- Summons do not level up unless the creating ability includes scaling values.
+- Unless otherwise stated, a summon cannot carry items, gain gold, collect runes, capture objectives, buy back, or use shop actions.
+
+**Turn and activation rules:**
+- A summon does not enter the round-order pendulum as a separate combatant.
+- A summon acts only during its controller's activation.
+- The controller may spend the summon's own AP during that activation to move, attack, or use printed summon abilities.
+- Summon AP refreshes at the start of the controller's activation, not at the start of every turn on the table.
+- Unless otherwise stated, each summon may take the shared actions **Move**, **Attack**, and **Pass**.
+
+**Board and control rules:**
+- Summons count as allied units for auras, targeting, blocking movement, and occupying hexes.
+- A summon occupies its own hex and follows the same terrain and Line of Sight rules as other units unless the creating ability says otherwise.
+- If the controlling hero dies, remove that hero's summons immediately unless a specific ability says they persist.
+- If multiple summons are created by one ability, each summon tracks its own remaining Hits, but matching summons may share the same printed stat line.
+
+**Summon timing and bookkeeping:**
+- Summons with a limited duration are removed when that duration expires, even if they still have Hits remaining.
+- If a summon has Mana, that Mana is tracked separately from the hero's Mana.
+- If a summon applies a repeated debuff such as armor reduction, use shared status or modifier tokens where possible instead of bespoke markers.
+
 ### Death
 When a hero's Health reaches 0 they are removed from the board and enter a respawn countdown (see Economy and Progression).
 

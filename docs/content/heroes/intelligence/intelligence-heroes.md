@@ -368,3 +368,206 @@ Spell Steal cooldown reduced to 1/2 round. Rubick may hold **two** stolen spells
 Rubick embodies the theatrical spell-thief fantasy: clever positioning, magical disruption, and turning enemy signature tools back against them. His design should make the opposing team feel unsafe using their best abilities carelessly, while rewarding the Rubick player for timing, rules fluency, and tactical opportunism.
 
 ---
+
+## Invoker
+**Class:** Intelligence | **Attack Type:** Ranged | **Status:** 🔲 Design in Progress
+
+### Base Stats
+
+| Stat | Value |
+|------|-------|
+| **Health (HP)** | 70 |
+| **Mana** | 60 |
+| **Attack** | 6 |
+| **Attack Range** | 3 hexes |
+| **Defense** | 1 |
+| **Move Speed** | 1 |
+| **Action Points (AP)** | 10 |
+
+### Stat Scaling
+- **Per Level:** +8 HP, +12 Mana, +3 Attack, +1 Defense
+
+### Abilities
+
+---
+
+#### Quas
+**Type:** Passive (Orb) | **Unlock:** Level 1
+
+**Effect:**  
+Quas governs Invoker's cold-based magic and defensive stability. Each active **Quas Orb** restores HP to Invoker at the start of his activation.
+
+**Level Progression:**
+- **Level 1-5:** Restore 2 HP per active Quas Orb
+- **Level 6-11:** Restore 3 HP per active Quas Orb
+- **Level 12+:** Restore 4 HP per active Quas Orb
+
+---
+
+#### Wex
+**Type:** Passive (Orb) | **Unlock:** Level 1
+
+**Effect:**  
+Wex governs Invoker's storm-based magic and mobility. Each active **Wex Orb** increases the distance of Invoker's first **Move** action during that activation by 1 hex.
+
+**Level Progression:**
+- **Level 1-5:** +1 hex per active Wex Orb
+- **Level 6-11:** +1 hex per active Wex Orb
+- **Level 12+:** +1 hex per active Wex Orb
+
+---
+
+#### Exort
+**Type:** Passive (Orb) | **Unlock:** Level 1
+
+**Effect:**  
+Exort governs Invoker's fire-based magic and offensive power. Each active **Exort Orb** increases Invoker's Attack.
+
+**Level Progression:**
+- **Level 1-5:** +1 Attack per active Exort Orb
+- **Level 6-11:** +2 Attack per active Exort Orb
+- **Level 12+:** +3 Attack per active Exort Orb
+
+---
+
+#### Invoke
+**Type:** Active | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 1
+
+**Mana Cost:** 10 | **AP Cost:** 1 | **Cooldown:** 1 round
+
+**Effect:**  
+Invoker combines his current 3 active orbs to prepare one spell from his **Invoked Spell List**. Place that spell into an open **Invoke Slot** on Invoker's Hero Board. If both slots are full, discard the oldest prepared spell before placing the new one.
+
+**Orb Setup Rules:**
+- At the start of each Invoker activation, before revealing his **Action Queue**, set Invoker's 3 active orb slots using any mix of **Quas**, **Wex**, and **Exort**.
+- Invoker always has exactly 3 active orbs.
+- Invoker's passive orb bonuses apply for as long as those orbs remain active during that activation.
+
+**Prepared Spell Rules:**
+- Invoker has **2 Invoke Slots** and **2 Invoked Spell planning tokens**: **Invoked Spell 1** and **Invoked Spell 2**.
+- During the **Planning Phase**, place **Invoked Spell 1** or **Invoked Spell 2** face-down in Invoker's **Action Queue** to cast the prepared spell in that slot.
+- After a prepared spell resolves, place the matching planning token in the appropriate **Ability Cooldowns** row on Invoker's **Hero Board** for that spell's cooldown.
+- A prepared spell remains in its slot until it is replaced by a newly Invoked spell.
+
+**Invoked Spell List:**
+
+| Orb Combination | Spell | Effect Summary |
+|---|---|---|
+| **QQQ** | **Cold Snap** | Single-target disruption and minor repeated damage |
+| **QQW** | **Ghost Walk** | Invisibility and escape utility |
+| **QWW** | **Tornado** | Linear lift and displacement |
+| **WWW** | **EMP** | Delayed mana burn and damage zone |
+| **WWE** | **Alacrity** | Ally or self attack buff |
+| **EEE** | **Sun Strike** | Global burst on a chosen hex |
+| **EEQ** | **Forge Spirit** | Summon ranged spirits that wear down targets |
+| **EEW** | **Chaos Meteor** | Rolling line damage with burn |
+| **QWE** | **Deafening Blast** | Cone damage, push, and disarm |
+
+**Aghanim's Scepter Upgrade:**  
+Invoke cooldown becomes **1/2 round**. Invoker may immediately replace either prepared spell when he uses Invoke instead of always discarding the oldest one.
+
+---
+
+### Invoked Spells
+
+#### Cold Snap *(QQQ)*
+**Mana Cost:** 12 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 3 hexes
+
+**Effect:** Target enemy hero takes 8 damage immediately. Until the end of their next activation, the first time they take damage during each activation they suffer an additional 6 damage and stun (1 AP loss).
+
+#### Ghost Walk *(QQW)*
+**Mana Cost:** 12 | **AP Cost:** 1 | **Cooldown:** 3 rounds | **Duration:** 1 round
+
+**Effect:** Invoker gains **Invisibility** and +1 **Move Speed** for the duration. Enemy heroes within 1 hex of Invoker when Ghost Walk is cast are **Slowed** until the end of their next activation.
+
+#### Tornado *(QWW)*
+**Mana Cost:** 18 | **AP Cost:** 2 | **Cooldown:** 3 rounds | **Range:** 4 hexes
+
+**Effect:** Send a tornado in a straight line up to 4 hexes. Enemy heroes in the path are lifted and untargetable until the start of Invoker's next activation, then land on the same hex and take 12 damage.
+
+#### EMP *(WWW)*
+**Mana Cost:** 16 | **AP Cost:** 1 | **Cooldown:** 3 rounds | **Range:** 4 hexes | **Delay:** 1/2 round
+
+**Effect:** Place an **EMP Charge token** on a target Open hex within range. At the start of the next half-round, EMP detonates. All enemy heroes within 2 hex of that token lose Mana and take damage equal to the Mana lost.
+
+**Level Progression:**
+- **Level 1-5:** Lose up to 10 Mana, then take equal damage
+- **Level 6-11:** Lose up to 16 Mana, then take equal damage
+- **Level 12+:** Lose up to 24 Mana, then take equal damage
+
+**Notes:**
+- EMP affects only enemy heroes.
+- If a hero has less Mana than the listed amount, they lose all remaining Mana and take damage equal to the amount actually lost.
+- Remove the **EMP Charge token** after the detonation resolves.
+
+#### Alacrity *(WWE)*
+**Mana Cost:** 10 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 3 hexes | **Duration:** 1 round
+
+**Effect:** Target allied hero or Invoker gains +4 Attack and their first **Attack** action during each activation deals +4 additional damage.
+
+#### Sun Strike *(EEE)*
+**Mana Cost:** 20 | **AP Cost:** 2 | **Cooldown:** 4 rounds | **Range:** Global
+
+**Effect:** Choose any Open hex on the board. After all currently resolving reactions finish, deal 25 damage to all units on that hex.
+
+#### Forge Spirit *(EEQ)*
+**Mana Cost:** 18 | **AP Cost:** 1 | **Cooldown:** 4 rounds | **Range:** Adjacent Open hex
+
+**Effect:** Summon Forge Spirits on adjacent Open hexes using the shared **Summons** rules.
+
+**Level Progression:**
+- **Level 1-5:** Summon 1 Forge Spirit
+- **Level 6-11:** Summon 1 Forge Spirit
+- **Level 12+:** Summon 2 Forge Spirits
+
+**Forge Spirit Stats:**
+- **Hits:** 2
+- **AP:** 4 per controller activation
+- **Attack:** 5
+- **Attack Range:** 2 hexes
+- **Defense:** 0
+- **Move Speed:** 1
+- **Mana:** 0
+- **Duration:** 2 rounds
+
+**Forge Spirit Attack Effect:**
+When a Forge Spirit deals damage to an enemy hero with an **Attack** action, that hero gains **-1 Defense** until the end of their next activation. This effect does not stack with itself; repeated hits refresh the duration.
+
+**Notes:**
+- Forge Spirits act only during Invoker's activation and spend their own AP.
+- If both Forge Spirits are in play, they track Hits and AP separately.
+
+#### Chaos Meteor *(EEW)*
+**Mana Cost:** 22 | **AP Cost:** 2 | **Cooldown:** 4 rounds | **Range:** 4 hexes
+
+**Effect:** Place a meteor on a target hex within range, then move it 2 hexes in a straight line away from Invoker. Enemy units on the target hex and each crossed hex take 18 damage and gain a **Burn** token that deals 4 damage at the start of their next activation.
+
+#### Deafening Blast *(QWE)*
+**Mana Cost:** 18 | **AP Cost:** 2 | **Cooldown:** 3 rounds | **Range:** 3-hex cone
+
+**Effect:** Deal 16 damage to all enemy heroes in the cone, push them 1 hex directly away from Invoker if possible, and **Disarm** them until the end of their next activation.
+
+---
+
+### Design Notes
+
+**Role:** Invoker is a high-complexity Intelligence ranged controller who trades raw stat efficiency for unmatched spell flexibility. He adapts to skirmishes, pick-offs, zoning, and teamfights by preparing the right spell mix for the current board state.
+
+**Playstyle Considerations:**
+- Quas, Wex, and Exort make Invoker's turn planning matter before he casts a single spell
+- Invoke rewards anticipating the next fight rather than simply reacting once it starts
+- The curated spell list gives Invoker answers to multiple situations without creating a ten-spell bookkeeping problem
+- Invoker is strongest when the player sequences orb setup, preparation, and spell timing correctly over several activations
+- Low durability means he still needs protection or clever positioning despite his large toolset
+
+**Balance Considerations:**
+- Invoker's strength should come from optionality and sequencing, not from every individual spell being overtuned
+- Invoke slot pressure is an important limiter — Invoker should not have every answer prepared at once
+- Global and control spells must remain potent but readable, with straightforward timing windows
+- Orb passives should matter enough to influence decisions without overshadowing the invoked spells themselves
+- The curated list should preserve Invoker's identity while keeping the board-state management realistic for tabletop play
+
+**Thematic Identity:**
+Invoker embodies the arrogant master mage: overwhelming breadth, elegant preparation, and the feeling that he always has the right spell if given time to arrange it. His design should feel cerebral, flexible, and deliberately more demanding than any other hero in the roster.
+
+---
