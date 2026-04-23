@@ -236,3 +236,121 @@ Omnislash gains +1 slash at all levels and its cooldown is reduced to 3 rounds.
 Juggernaut embodies the disciplined masked swordsman: relentless forward pressure, elegant sustain, and terrifying burst once he commits. His design should feel simple to understand, difficult to stop at the right moment, and unmistakably centered on bladework mastery.
 
 ---
+
+## Weaver
+**Class:** Agility | **Attack Type:** Ranged
+
+### Base Stats
+
+| Stat | Value |
+|------|-------|
+| **Health (HP)** | 72 |
+| **Mana** | 35 |
+| **Attack** | 8 |
+| **Attack Range** | 3 hexes |
+| **Defense** | 1 |
+| **Move Speed** | 1 |
+| **Action Points (AP)** | 10 |
+
+### Stat Scaling
+- **Per Level:** +8 HP, +10 Mana, +4 Attack, +1 Defense
+
+### Abilities
+
+---
+
+#### The Swarm
+**Type:** Active | **Targeting:** Point Target | **Unlock:** Level 1
+
+**Mana Cost:** 16 | **AP Cost:** 1 | **Cooldown:** 3 rounds | **Range:** 4 hexes
+
+**Effect:**  
+Weaver releases a cluster of parasitic weaverlings at a target hex. Apply a **Swarm Beetle token** to each enemy hero on the target hex and all adjacent hexes. At the start of each affected hero's activation, that hero takes damage and suffers -1 Defense while the token remains attached.
+
+**Level Progression:**
+- **Level 1-5:** 3 damage per activation, lasts 1 round
+- **Level 6-11:** 4 damage per activation, lasts 2 rounds
+- **Level 12+:** 5 damage per activation, lasts 2 rounds
+
+**Notes:**  
+An affected hero may spend 1 **Attack** action during their activation to remove their own **Swarm Beetle token**. The Defense reduction does not stack from multiple beetles.
+
+---
+
+#### Shukuchi
+**Type:** Active | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 1
+
+**Mana Cost:** 10 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Duration:** Current activation
+
+**Effect:**  
+Weaver slips into the folds of reality and becomes **Invisible** for the rest of his current activation. During that activation, each **Move** action Weaver takes may move up to 2 hexes instead of 1. The first time Weaver passes through an enemy unit during each Move action, that unit takes damage.
+
+**Level Progression:**
+- **Level 1-5:** 10 damage per pass-through
+- **Level 6-11:** 16 damage per pass-through
+- **Level 12+:** 22 damage per pass-through
+
+**Notes:**  
+Weaver must still end each Move action on a legal Open hex. Shukuchi ends immediately if Weaver uses an **Attack** action or another ability.
+
+---
+
+#### Geminate Attack
+**Type:** Passive | **Unlock:** Level 1
+
+**Effect:**  
+The first time Weaver resolves an **Attack** action during each activation, he immediately makes a second attack.
+
+**Level Progression:**
+- **Level 1-5:** Second attack deals -2 damage
+- **Level 6-11:** Second attack deals -1 damage
+- **Level 12+:** Second attack deals full damage
+
+**Notes:**  
+The second attack must target the same enemy hero, creep, or structure as the first attack.
+
+---
+
+#### Time Lapse
+**Type:** Active | **Targeting:** No Target (Self-Cast) | **Unlock:** Level 6
+
+**Mana Cost:** 25 | **AP Cost:** 1 | **Cooldown:** 5 rounds
+
+**Effect:**  
+Weaver rewinds himself to the state he had at the start of his previous activation. Move Weaver back to the hex marked by his **Time Lapse marker**, then restore his HP and Mana to the saved values from that snapshot.
+
+**Level Progression:**
+- **Level 6-11:** Rewind self
+- **Level 12-17:** Rewind self and remove one dispellable debuff
+- **Level 18+:** Rewind self and remove all dispellable debuffs
+
+**Notes:**  
+At the start of each Weaver activation, place a **Time Lapse marker** on Weaver's current hex and note his current HP and Mana with small number tokens on his Hero Board. If the marked hex is no longer a legal Open hex when Time Lapse resolves, place Weaver on the nearest legal Open hex instead.
+
+**Aghanim's Scepter Upgrade:**  
+Time Lapse may target an allied hero within 2 hexes instead of Weaver. Use that hero's saved Time Lapse state.
+
+---
+
+### Design Notes
+
+**Role:** Weaver is an Agility ranged skirmisher who relies on mobility, chip damage, and temporal escape tools to stay alive while constantly pressuring enemies. He excels at being difficult to pin down and punishing heroes who cannot finish him quickly.
+
+**Playstyle Considerations:**
+- The Swarm pressures clustered heroes and taxes their actions if they want to remove the beetles
+- Shukuchi turns Weaver's movement into offense and lets him reposition aggressively without committing to a full fight
+- Geminate Attack gives Weaver consistent ranged harassment and farming efficiency without adding much rules weight
+- Time Lapse is Weaver's signature survival tool and rewards careful timing after he has already baited enemy commitment
+- Low HP and Defense mean Weaver still dies quickly if caught without Time Lapse or Shukuchi available
+
+**Balance Considerations:**
+- The Swarm should feel annoying and valuable, but not lock heroes into spending every activation removing beetles
+- Shukuchi must reward pathing and positioning without making Weaver impossible to interact with
+- Geminate Attack should be reliable, not swingy, so Weaver's baseline output stays readable
+- Time Lapse should create dramatic saves, but its cooldown and snapshot timing should keep it from feeling unconditional
+- Weaver should win by attrition and evasion more often than by raw burst damage
+
+**Thematic Identity:**
+Weaver embodies the untouchable time-skirmisher: darting through the fight, leaving parasites in his wake, and undoing the damage that should have killed him. His design should feel slippery, irritating, and defined by perfect timing.
+
+---

@@ -39,6 +39,7 @@ These are the tokens required to run the map, objectives, lane pressure, and boa
 | **Power Rune Tokens** | Mark an unclaimed rune on the river | One single-hex token for each rune type: Illusion, Haste, Invisibility, Regeneration, Double Damage. |
 | **Courier Token** | Represents the shared team Courier on the board or tracking area | One per team. |
 | **Healing Ward Token** | Represents Juggernaut's summoned Healing Ward on the board | Hero-specific summon. Mobile, heal-providing, and destroyable. |
+| **Weaver Time Lapse Marker** | Marks Weaver's saved hex for Time Lapse | Place on Weaver's hex at the start of his activation; pair with small number tokens on the Hero Board for saved HP and Mana. |
 | **Round Start Token** | Marks the first hero in the round order | Shared rotation token. |
 | **Half-Round Marker** | Marks first half vs second half of the round | Tracks forward/backward pendulum direction. |
 
@@ -148,6 +149,7 @@ These tokens live primarily on each player's Hero Board and track changing state
 |---|---|---|
 | **Rubick Spell Steal Cooldown Token** | Tracks Spell Steal's own cooldown on Rubick's hero board | Rubick comes with 1 dedicated cooldown token for Spell Steal. |
 | **Rubick Spell Steal Marker Token** | Marks which enemy ability Rubick has currently copied | Place directly on the copied ability on the enemy hero's Abilities Card. Rubick has 1 by default and a second becomes usable with Aghanim's Scepter. Remove all of Rubick's Spell Steal markers when Rubick dies. |
+| **Weaver Swarm Beetle Token** | Marks a hero currently affected by The Swarm | Place on each affected hero; it deals periodic damage and reduces Defense until removed or expired. |
 
 ### Stat Modification Tokens
 

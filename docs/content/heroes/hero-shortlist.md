@@ -87,7 +87,7 @@ Each hero entry will be expanded with full card stats (HP, Mana, Attack, Defense
 | Troll Warlord | 🔲 Pending |
 | Venomancer | 🔲 Pending |
 | Viper | 🔲 Pending |
-| Weaver | 🔲 Pending |
+| Weaver | ✅ Designed |
 
 ---
 
