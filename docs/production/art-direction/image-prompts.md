@@ -1024,6 +1024,387 @@ Negative constraints:
 
 ---
 
+## Example Image Prompt — Invoker Hero Card
+
+Use the following prompt when generating a sample hero card image for Invoker:
+
+```text
+Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
+Overall style: premium tabletop card design, clean information hierarchy, readable at print size, supreme archmage theme, intelligence-class visual identity, deep violet, arcane gold, ivory, and ember accents, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
+
+Card structure:
+- Top banner with the name: INVOKER
+- Intelligence class band in blue
+- Attack type badge: Ranged
+- Role tags: Nuker, Control, Utility
+- Large central portrait of Invoker as an original master mage: aristocratic posture, layered robes, floating arcane sigils, controlled fire and storm energy, cold light at his fingertips, overwhelming magical confidence
+- Horizontal stat strip below portrait with large readable icons and numbers
+- Narrow progression strip
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
+
+Base stats to show exactly:
+- HP 70
+- Mana 60
+- Attack 6
+- Attack Range 3 hexes
+- Defense 1
+- Move Speed 1
+- AP 10
+
+Progression strip:
+- Per Level: +8 HP | +12 Mana | +3 ATK | +1 DEF
+- Milestone icons for Level 6, Level 12, Level 18
+- Scepter badge reminder
+- Optional small status note: Design in Progress
+
+Ability summary rows to display:
+
+1. Quas
+- Type: Passive (Orb)
+- Unlock: Level 1
+- Summary: Active Quas orbs restore HP to Invoker at the start of his activation.
+
+2. Wex
+- Type: Passive (Orb)
+- Unlock: Level 1
+- Summary: Active Wex orbs increase the distance of Invoker's first Move action.
+
+3. Exort
+- Type: Passive (Orb)
+- Unlock: Level 1
+- Summary: Active Exort orbs increase Invoker's Attack.
+
+4. Invoke
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 1
+- Summary: Combine the current 3 active orbs to prepare one spell in an Invoke Slot.
+
+Graphic direction:
+- The card should feel like a readable tabletop component first, illustration showcase second
+- Use clear panel separation and consistent icon chips
+- Emphasize ritual geometry, elite mage silhouette, tri-element magic, calculated spell preparation, and a cerebral high-complexity identity
+- Keep the layout uncluttered and legible; no fake tracker dials, no board-game counters, no 3D mockup angle
+- Present as a straight-on flat card render on a neutral background
+- Include subtle hex motifs and tactical board game icon language for orb setup, prepared spells, and multi-card spell management
+
+Typography direction:
+- Large, elegant fantasy title for the hero name
+- Clean, compact sans-serif or highly readable game UI font for rules text
+- Important values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
+- Do not copy official game splash art
+- Do not use a trading card game frame style
+- Do not make it look like a mobile game screenshot
+- Do not add extra abilities, extra stats, or extra decorative clutter
+- Do not place current HP, current Mana, gold, XP, cooldown trackers, or item slots on the card
+```
+
+---
+
+## Example Image Prompt — Invoker Abilities Card I: Orbs and Invoke
+
+Use the following prompt when generating the first sample landscape Abilities Card image for Invoker:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Invoker Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of tri-element orbs, master mage glyph systems, prepared-spell slots, and aristocratic arcane motifs. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, supreme archmage theme, intelligence-class visual identity, deep violet, arcane gold, ivory, and ember accents, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space. This is Card I of Invoker's 3-card spellbook set.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the orb icons, invoke circles, slot markers, and tri-element arcane geometry visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: INVOKER
+- Subtitle label: Spellbook I — Orbs and Invocation
+- Small crest or portrait accent
+- Summary strip listing Quas, Wex, Exort, Invoke
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for orb setup, prepared spell rules, and spell list routing
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Quas
+- Type: Passive (Orb)
+- Unlock: Level 1
+- Rules: Quas governs Invoker's cold-based magic and defensive stability. Each active Quas Orb restores HP to Invoker at the start of his activation.
+- Scaling: 1-5: Restore 2 HP per active Quas Orb | 6-11: Restore 3 HP per active Quas Orb | 12+: Restore 4 HP per active Quas Orb
+
+2. Wex
+- Type: Passive (Orb)
+- Unlock: Level 1
+- Rules: Wex governs Invoker's storm-based magic and mobility. Each active Wex Orb increases the distance of Invoker's first Move action during that activation by 1 hex.
+- Scaling: 1-5: +1 hex per active Wex Orb | 6-11: +1 hex per active Wex Orb | 12+: +1 hex per active Wex Orb
+
+3. Exort
+- Type: Passive (Orb)
+- Unlock: Level 1
+- Rules: Exort governs Invoker's fire-based magic and offensive power. Each active Exort Orb increases Invoker's Attack.
+- Scaling: 1-5: +1 Attack per active Exort Orb | 6-11: +2 Attack per active Exort Orb | 12+: +3 Attack per active Exort Orb
+
+4. Invoke
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 1
+- Mana Cost: 10
+- AP Cost: 1
+- Cooldown: 1 round
+- Rules: Invoker combines his current 3 active orbs to prepare one spell from his Invoked Spell List. Place that spell into an open Invoke Slot on Invoker's Hero Board. If both slots are full, discard the oldest prepared spell before placing the new one.
+- Notes: Invoker has 2 Invoke Slots and 2 Invoked Spell planning tokens, Invoked Spell 1 and Invoked Spell 2. During the Planning Phase, place one of these face-down in Invoker's Action Queue to cast the prepared spell in that slot.
+
+Upgrade / notes panel:
+- Orb setup rules: At the start of each Invoker activation, before revealing his Action Queue, set Invoker's 3 active orb slots using any mix of Quas, Wex, and Exort. Invoker always has exactly 3 active orbs.
+- Prepared spell rules: After a prepared spell resolves, place the matching planning token in the appropriate Ability Cooldowns row on Invoker's Hero Board for that spell's cooldown. A prepared spell remains in its slot until it is replaced by a newly Invoked spell.
+- Invoked spell list routing: QQQ Cold Snap | QQW Ghost Walk | QWW Tornado | WWW EMP | WWE Alacrity | EEE Sun Strike | EEQ Forge Spirit | EEW Chaos Meteor | QWE Deafening Blast
+- Aghanim's Scepter Upgrade: Invoke cooldown becomes 1/2 round. Invoker may immediately replace either prepared spell when he uses Invoke instead of always discarding the oldest one.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle orb halos, invocation circles, rune lattices, and slot indicators without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Quas, Wex, Exort, and Invoke should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Elegant fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters beyond the clearly printed Invoker slot and token guidance
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
+## Example Image Prompt — Invoker Abilities Card II: Utility and Control Spells
+
+Use the following prompt when generating the second sample landscape Abilities Card image for Invoker:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Invoker Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of cold magic, storm energy, invisibility, tornado lift effects, and EMP charge iconography. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, supreme archmage theme, intelligence-class visual identity, deep violet, arcane gold, icy cyan, and storm-blue accents, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space. This is Card II of Invoker's 3-card spellbook set.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the cold snap marks, ghost-walk haze, tornado lift columns, and EMP charge token language visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: INVOKER
+- Subtitle label: Spellbook II — Utility and Control
+- Small crest or portrait accent
+- Summary strip listing Cold Snap, Ghost Walk, Tornado, EMP
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for timing reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Cold Snap (QQQ)
+- Mana Cost: 12
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Range: 3 hexes
+- Rules: Target enemy hero takes 8 damage immediately. Until the end of their next activation, the first time they take damage during each activation they suffer an additional 6 damage and stun (1 AP loss).
+
+2. Ghost Walk (QQW)
+- Mana Cost: 12
+- AP Cost: 1
+- Cooldown: 3 rounds
+- Duration: 1 round
+- Rules: Invoker gains Invisibility and +1 Move Speed for the duration. Enemy heroes within 1 hex of Invoker when Ghost Walk is cast are Slowed until the end of their next activation.
+
+3. Tornado (QWW)
+- Mana Cost: 18
+- AP Cost: 2
+- Cooldown: 3 rounds
+- Range: 4 hexes
+- Rules: Send a tornado in a straight line up to 4 hexes. Enemy heroes in the path are lifted and untargetable until the start of Invoker's next activation, then land on the same hex and take 12 damage.
+
+4. EMP (WWW)
+- Mana Cost: 16
+- AP Cost: 1
+- Cooldown: 3 rounds
+- Range: 4 hexes
+- Delay: 1/2 round
+- Rules: Place an EMP Charge token on a target Open hex within range. At the start of the next half-round, EMP detonates. All enemy heroes within 2 hex of that token lose Mana and take damage equal to the Mana lost.
+- Scaling: 1-5: Lose up to 10 Mana, then take equal damage | 6-11: Lose up to 16 Mana, then take equal damage | 12+: Lose up to 24 Mana, then take equal damage
+
+Upgrade / notes panel:
+- EMP notes: EMP affects only enemy heroes. If a hero has less Mana than the listed amount, they lose all remaining Mana and take damage equal to the amount actually lost. Remove the EMP Charge token after the detonation resolves.
+- Timing reminder: Tornado keeps heroes untargetable until the start of Invoker's next activation. Cold Snap only triggers the first time the target takes damage during each activation.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle frost cracks, invisible shimmer bands, wind spirals, mana-burn circles, and delayed detonation motifs without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Cold Snap, Ghost Walk, Tornado, and EMP should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Elegant fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters beyond clearly printed rules tokens like EMP Charge
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
+## Example Image Prompt — Invoker Abilities Card III: Offensive Spellbook
+
+Use the following prompt when generating the third sample landscape Abilities Card image for Invoker:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Invoker Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of solar fire, summoned constructs, meteor trails, force blasts, and archmage spellbook ornament. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game, with one explicit Invoker-only exception: this third spellbook card may use five narrower horizontal ability rows instead of four so the full spell list fits across the planned 3-card set. Preserve all other layout conventions.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, supreme archmage theme, intelligence-class visual identity, deep violet, arcane gold, solar orange, ember red, and pale ivory accents, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space. This is Card III of Invoker's 3-card spellbook set.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and the standard Abilities Card visual hierarchy. Use five evenly spaced compact rows as a special Invoker spellbook exception while preserving the same typography system, divider thickness, corner treatment, panel spacing logic, and straight-on flat component view.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the buff sigils, solar targeting marks, forge-spirit summons, meteor trails, and blast-wave cones visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: INVOKER
+- Subtitle label: Spellbook III — Offensive and Summoned Spells
+- Small crest or portrait accent
+- Summary strip listing Alacrity, Sun Strike, Forge Spirit, Chaos Meteor, Deafening Blast
+- Five clearly separated compact horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for summon and targeting reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Alacrity (WWE)
+- Mana Cost: 10
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Range: 3 hexes
+- Duration: 1 round
+- Rules: Target allied hero or Invoker gains +4 Attack and their first Attack action during each activation deals +4 additional damage.
+
+2. Sun Strike (EEE)
+- Mana Cost: 20
+- AP Cost: 2
+- Cooldown: 4 rounds
+- Range: Global
+- Rules: Choose any Open hex on the board. After all currently resolving reactions finish, deal 25 damage to all units on that hex.
+
+3. Forge Spirit (EEQ)
+- Mana Cost: 18
+- AP Cost: 1
+- Cooldown: 4 rounds
+- Range: Adjacent Open hex
+- Rules: Summon Forge Spirits on adjacent Open hexes using the shared Summons rules.
+- Scaling: 1-5: Summon 1 Forge Spirit | 6-11: Summon 1 Forge Spirit | 12+: Summon 2 Forge Spirits
+- Notes: Forge Spirit stats: Hits 2, AP 4 per controller activation, Attack 5, Attack Range 2 hexes, Defense 0, Move Speed 1, Mana 0, Duration 2 rounds. When a Forge Spirit deals damage to an enemy hero with an Attack action, that hero gains -1 Defense until the end of their next activation. This effect does not stack with itself; repeated hits refresh the duration.
+
+4. Chaos Meteor (EEW)
+- Mana Cost: 22
+- AP Cost: 2
+- Cooldown: 4 rounds
+- Range: 4 hexes
+- Rules: Place a meteor on a target hex within range, then move it 2 hexes in a straight line away from Invoker. Enemy units on the target hex and each crossed hex take 18 damage and gain a Burn token that deals 4 damage at the start of their next activation.
+
+5. Deafening Blast (QWE)
+- Mana Cost: 18
+- AP Cost: 2
+- Cooldown: 3 rounds
+- Range: 3-hex cone
+- Rules: Deal 16 damage to all enemy heroes in the cone, push them 1 hex directly away from Invoker if possible, and Disarm them until the end of their next activation.
+
+Upgrade / notes panel:
+- Forge Spirit notes: Forge Spirits act only during Invoker's activation and spend their own AP. If both Forge Spirits are in play, they track Hits and AP separately.
+- Targeting reminder: Sun Strike affects all units on the chosen Open hex after current reactions finish. Chaos Meteor hits the target hex and each crossed hex as it rolls away from Invoker.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle solar runes, forge-brass motifs, burning trail marks, summoned construct shapes, and resonant blast arcs without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Alacrity, Sun Strike, Forge Spirit, Chaos Meteor, and Deafening Blast should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Elegant fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable even in the five-row format
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the typography hierarchy or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters beyond clearly printed rules tokens for summons and effects
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
 ## Example Image Prompt — Crystal Maiden Abilities Card
 
 Use the following prompt when generating a sample landscape Abilities Card image for Crystal Maiden:
