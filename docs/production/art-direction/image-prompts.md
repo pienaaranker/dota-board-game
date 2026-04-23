@@ -823,6 +823,207 @@ Negative constraints:
 
 ---
 
+## Example Image Prompt — Rubick Hero Card
+
+Use the following prompt when generating a sample hero card image for Rubick:
+
+```text
+Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
+Overall style: premium tabletop card design, clean information hierarchy, readable at print size, theatrical spell-thief theme, intelligence-class visual identity, emerald green, arcane gold, black, and pale cyan accents, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
+
+Card structure:
+- Top banner with the name: RUBICK
+- Intelligence class band in blue
+- Attack type badge: Ranged
+- Role tags: Support, Control, Nuker
+- Large central portrait of Rubick as an original grand magus and arcane thief: floating robes, ornate staff, luminous green spell geometry, masked or shadowed face, theatrical pose, stolen magic swirling around him
+- Horizontal stat strip below portrait with large readable icons and numbers
+- Narrow progression strip
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
+
+Base stats to show exactly:
+- HP 72
+- Mana 55
+- Attack 6
+- Attack Range 3 hexes
+- Defense 1
+- Move Speed 1
+- AP 10
+
+Progression strip:
+- Per Level: +10 HP | +12 Mana | +3 ATK | +1 DEF
+- Milestone icons for Level 6, Level 12, Level 18
+- Scepter badge reminder
+- Optional small status note: Design in Progress
+
+Ability summary rows to display:
+
+1. Telekinesis
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Summary: Lift an enemy hero, reposition them, and stun enemies around the landing hex.
+
+2. Fade Bolt
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Summary: Fire unstable magic that jumps between enemies and reduces hero Attack.
+
+3. Arcane Supremacy
+- Type: Passive
+- Unlock: Level 1
+- Summary: Increase Rubick's ability damage and extend debuffs he applies.
+
+4. Spell Steal
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 6
+- Summary: Copy the last non-passive hero ability used by an enemy and cast it as Rubick's own.
+
+Graphic direction:
+- The card should feel like a readable tabletop component first, illustration showcase second
+- Use clear panel separation and consistent icon chips
+- Emphasize ornate mage silhouette, levitation, arcane theft motifs, green spell trails, stolen glyphs, and cunning battlefield control
+- Keep the layout uncluttered and legible; no fake tracker dials, no board-game counters, no 3D mockup angle
+- Present as a straight-on flat card render on a neutral background
+- Include subtle hex motifs and tactical board game icon language for lift, jump chains, debuffs, and copied-spell tracking
+
+Typography direction:
+- Large, elegant fantasy title for the hero name
+- Clean, compact sans-serif or highly readable game UI font for rules text
+- Important values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
+- Do not copy official game splash art
+- Do not use a trading card game frame style
+- Do not make it look like a mobile game screenshot
+- Do not add extra abilities, extra stats, or extra decorative clutter
+- Do not place current HP, current Mana, gold, XP, cooldown trackers, or item slots on the card
+```
+
+---
+
+## Example Image Prompt — Rubick Abilities Card
+
+Use the following prompt when generating a sample landscape Abilities Card image for Rubick:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Rubick Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of arcane theft, levitation magic, emerald spell energy, copied glyph systems, and theatrical wizard motifs. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, theatrical spell-thief theme, intelligence-class visual identity, emerald green, arcane gold, black, and pale cyan accents, clean dividers, restrained magical texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the lift effect, bolt-jump language, debuff sigils, and copied-spell markers visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: RUBICK
+- Small crest or portrait accent
+- Summary strip listing Telekinesis, Fade Bolt, Arcane Supremacy, Spell Steal
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Telekinesis
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Mana Cost: 18
+- AP Cost: 2
+- Cooldown: 2 rounds
+- Range: 3 hexes
+- Rules: Rubick lifts target enemy hero into the air, removing them from their hex until they land. While lifted, the target cannot move, attack, use abilities, use items, or react. Rubick then places that hero on any Open hex within 2 hexes of the original target hex. When the target lands, all enemy units within 1 hex of the landing hex are stunned.
+- Scaling: 1-5: Landing stun 3 AP loss | 6-11: Landing stun 4 AP loss | 12+: Landing stun 5 AP loss
+- Notes: The lifted hero is not targetable while airborne. Rubick may throw the target onto high-value terrain positions, out of cover, or into allied follow-up range, but the target must land on a legal Open hex.
+
+2. Fade Bolt
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Mana Cost: 14
+- AP Cost: 1
+- Cooldown: 2 rounds
+- Range: 4 hexes
+- Rules: Rubick fires a bolt of unstable magic at target enemy unit. The bolt deals damage, then jumps to up to 2 additional enemy units within 2 hexes of the last target. A unit can only be hit once per cast. Heroes hit by Fade Bolt deal reduced Attack damage until the end of their next activation.
+- Scaling: 1-5: 16 damage per hit, -2 Attack | 6-11: 24 damage per hit, -3 Attack | 12+: 32 damage per hit, -4 Attack
+- Notes: Fade Bolt may jump between heroes, creeps, and neutral units, but the Attack reduction only affects heroes.
+
+3. Arcane Supremacy
+- Type: Passive
+- Unlock: Level 1
+- Rules: Rubick amplifies stolen and cast magic with unnerving precision. Whenever Rubick deals damage with an ability, increase that damage. When Rubick applies a stun, silence, root, slow, or other non-passive debuff with an ability, extend its duration.
+- Scaling: 1-5: +4 ability damage, +2 turns to applied debuffs | 6-11: +8 ability damage, +3 turns to applied debuffs | 12+: +12 ability damage, +4 turns to applied debuffs
+- Notes: Arcane Supremacy affects Rubick's native abilities and any ability currently copied by Spell Steal. It does not increase damage from basic attacks or items unless an item explicitly counts as an ability effect.
+
+4. Spell Steal
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 6
+- Mana Cost: 20
+- AP Cost: 2
+- Cooldown: 2 rounds
+- Range: 4 hexes
+- Rules: Rubick targets an enemy hero and copies the last non-passive hero ability that hero successfully used. Rubick may commit and use that stolen ability as if it were printed on his own card until Spell Steal expires, he steals a different spell, or he dies.
+- Scaling: 6-11: Stolen spell lasts 1 round | 12-17: Stolen spell lasts 2 rounds | 18+: Stolen spell lasts 3 rounds
+- Notes: Rubick may only hold one stolen spell at a time unless upgraded. Rubick uses the stolen spell's normal AP cost, mana cost, range, targeting rules, and current level scaling based on the target hero's level bracket when it was stolen. Passive abilities, item abilities, and ultimates modified by Aghanim's Scepter cannot be stolen unless the printed ability itself is the one being copied. Arcane Supremacy applies to the stolen spell.
+
+Upgrade / notes panel:
+- Spell Steal tracking: Rubick comes with 3 Spell Steal tracking tokens, 1 cooldown token for his hero board and 2 stolen-spell marker tokens for copied abilities.
+- Planning reminder: Rubick also has 2 hero-specific planning tokens, Stolen Spell 1 and Stolen Spell 2, used to queue copied spells during the Planning Phase.
+- Rules reminder: After Rubick steals a spell, place a stolen-spell marker on the copied ability on the target hero's Abilities Card. After Rubick resolves a stolen spell, place the matching planning token in the appropriate Ability Cooldowns row on Rubick's Hero Board for that copied spell's normal cooldown.
+- Aghanim's Scepter Upgrade: Spell Steal cooldown reduced to 1/2 round. Rubick may hold two stolen spells at once.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle emerald glyph rings, levitation sigils, copied rune overlays, staff motifs, and magical chain-light patterns without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Telekinesis, Fade Bolt, Arcane Supremacy, and Spell Steal should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Elegant fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
 ## Example Image Prompt — Crystal Maiden Abilities Card
 
 Use the following prompt when generating a sample landscape Abilities Card image for Crystal Maiden:
