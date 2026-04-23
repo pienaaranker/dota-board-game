@@ -431,6 +431,202 @@ Negative constraints:
 
 ---
 
+## Example Image Prompt — Juggernaut Hero Card
+
+Use the following prompt when generating a sample hero card image for Juggernaut:
+
+```text
+Create a polished fantasy board game hero card in portrait orientation, designed for a 10 × 15 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the Mirana example hero card. Keep this visually part of the same manufactured hero-card product family.
+
+Overall style: premium tabletop card design, clean information hierarchy, readable at print size, disciplined masked swordsman theme, agility-class visual identity, ivory, crimson, warm gold, and restrained jade accents, crisp iconography, high contrast text panels, collectible but practical.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, name banner position, class ribbon position, attack-type badge position, role tag position, portrait window position and proportions, stat strip position and icon order, progression strip position, four-row ability grid structure, typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view established by the Mirana example.
+- Only change the portrait artwork, accent palette, emblem, and hero-specific atmospheric details inside the established frame.
+
+Card structure:
+- Top banner with the name: JUGGERNAUT
+- Agility class band in green
+- Attack type badge: Melee
+- Role tags: Carry, Durable, Pusher
+- Large central portrait of Juggernaut as an original masked blade master: elegant white mask, flowing red sash, curved katana, controlled whirlwind energy, poised forward stance, calm but lethal presence
+- Horizontal stat strip below portrait with large readable icons and numbers
+- Narrow progression strip
+- Bottom half contains four compact ability summary rows with chips for unlock level, type, and target only
+
+Base stats to show exactly:
+- HP 95
+- Mana 30
+- Attack 9
+- Attack Range 1 hex
+- Defense 2
+- Move Speed 1
+- AP 10
+
+Progression strip:
+- Per Level: +10 HP | +8 Mana | +4 ATK | +1 DEF
+- Milestone icons for Level 6, Level 12, Level 18
+- Scepter badge reminder
+
+Ability summary rows to display:
+
+1. Blade Fury
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 1
+- Summary: Spin in a bladestorm that damages nearby enemies while Juggernaut advances.
+
+2. Healing Ward
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Summary: Place a fragile ward that heals nearby allied heroes over time.
+
+3. Blade Dance
+- Type: Passive
+- Unlock: Level 1
+- Summary: Juggernaut's first attack each activation deals bonus damage.
+
+4. Omnislash
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 6
+- Summary: Leap through enemy heroes in a rapid series of untargetable slashes.
+
+Graphic direction:
+- The card should feel like a readable tabletop component first, illustration showcase second
+- Use clear panel separation and consistent icon chips
+- Emphasize the iconic mask, disciplined sword form, red cloth movement, sweeping blade arcs, healing aura motifs, and precise burst combat
+- Keep the layout uncluttered and legible; no fake tracker dials, no board-game counters, no 3D mockup angle
+- Present as a straight-on flat card render on a neutral background
+- Include subtle hex motifs and tactical board game icon language for spinning area damage, healing radius, and chained strikes
+
+Typography direction:
+- Large, elegant fantasy title for the hero name
+- Clean, compact sans-serif or highly readable game UI font for rules text
+- Important values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the stat strip order, typography hierarchy, or four-row ability layout
+- Do not introduce new decorative badges, alternate UI systems, or extra card zones
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not print full numerical rules text, costs, cooldowns, or scaling values on the hero card
+- Do not copy official game splash art
+- Do not use a trading card game frame style
+- Do not make it look like a mobile game screenshot
+- Do not add extra abilities, extra stats, or extra decorative clutter
+- Do not place current HP, current Mana, gold, XP, cooldown trackers, or item slots on the card
+```
+
+---
+
+## Example Image Prompt — Juggernaut Abilities Card
+
+Use the following prompt when generating a sample landscape Abilities Card image for Juggernaut:
+
+```text
+Create a polished fantasy board game abilities reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+Use the attached Juggernaut Hero Card image as the primary visual reference for this Abilities Card. Match its card family exactly: same design language, same frame sensibility, same typography hierarchy, same icon rendering style, same accent palette logic, same material finish, and the same treatment of masked swordsman motifs, disciplined bladework, healing ward iconography, whirlwind motion, and precision-strike effects. The Abilities Card should look like it was manufactured as a companion component to that exact Hero Card, not merely a related card from a similar set.
+
+Use the same card architecture, typography hierarchy, icon order, spacing rhythm, and panel system as the established landscape Abilities Card template for this game. Keep this visually part of the same manufactured product family as the attached Hero Card while clearly functioning as a rules reference.
+
+Overall style: premium tabletop reference component, rules-forward layout, highly readable at print size, disciplined masked swordsman theme, agility-class visual identity, ivory, crimson, warm gold, and restrained jade accents, clean dividers, restrained motion texture, crisp iconography, collectible but practical.
+
+This is an Abilities Card, not a Hero Card. The card should prioritize gameplay clarity, full rules readability, and explicit numerical values over portrait space.
+
+Locked layout instruction:
+- Preserve the exact outer frame shape, border treatment, hero header position, summary strip position, and a four-row stacked ability layout with one ability per horizontal row. Preserve the typography system, divider thickness, corner treatment, panel spacing, and straight-on flat component view across all Abilities Cards.
+- Derive the small hero portrait or crest, ability icons, accent palette, and hero-specific atmospheric details directly from the attached Hero Card so the spell visuals feel like the same hero package.
+- Make the spinning blade arcs, healing ward glow, sword-trail language, and rapid slash sequencing visually consistent with what appears on the attached Hero Card.
+
+Card structure:
+- Hero header with the name: JUGGERNAUT
+- Small crest or portrait accent
+- Summary strip listing Blade Fury, Healing Ward, Blade Dance, Omnislash
+- Four clearly separated horizontal ability rows, one per ability, each with icon, type, target, costs, rules text, and scaling
+- Upgrade / notes panel for key reminders
+- Small footer legend for icon language if needed
+
+Ability data to show exactly:
+
+1. Blade Fury
+- Type: Active
+- Target: No Target (Self-Cast)
+- Unlock: Level 1
+- Mana Cost: 15
+- AP Cost: 2
+- Cooldown: 3 rounds
+- Duration: Current activation
+- Rules: Juggernaut enters a spinning bladestorm for the rest of his current activation. While Blade Fury is active, Juggernaut gains Spell Immunity, cannot use Attack actions, and cannot use other abilities or items. When Blade Fury is activated, and each time Juggernaut moves into a new hex during that activation, deal damage to all enemy units within 1 hex.
+- Scaling: 1-5: 12 damage per hit | 6-11: 18 damage per hit | 12+: 24 damage per hit
+- Notes: Blade Fury is intended to convert Juggernaut's Move actions into area pressure. If Juggernaut does not move after activating Blade Fury, only the initial damage instance is applied.
+
+2. Healing Ward
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 1
+- Mana Cost: 12
+- AP Cost: 1
+- Cooldown: 4 rounds
+- Range: 1 hex
+- Rules: Place a Healing Ward token on an adjacent Open hex. At the start of each allied hero's activation, that hero restores HP if they are within 2 hexes of the Healing Ward. At the start of each of Juggernaut's activations, he may move the Healing Ward up to 2 hexes. Only one Healing Ward may be on the board for Juggernaut at a time.
+- Scaling: 1-5: Heal 8 HP per activation, lasts 1 round | 6-11: Heal 12 HP per activation, lasts 2 rounds | 12+: Heal 16 HP per activation, lasts 2 rounds
+- Notes: The Healing Ward is a fragile summon. Any enemy hero adjacent to the ward may spend 1 Attack action to destroy it immediately.
+
+3. Blade Dance
+- Type: Passive
+- Unlock: Level 1
+- Rules: Juggernaut's swordsmanship makes his strikes exceptionally lethal. The first Attack action Juggernaut resolves during each activation deals bonus damage.
+- Scaling: 1-5: +4 bonus damage | 6-11: +6 bonus damage | 12+: +9 bonus damage
+- Notes: Blade Dance also applies to the first slash of Omnislash each time Juggernaut uses that ability.
+
+4. Omnislash
+- Type: Active
+- Target: Unit Target
+- Unlock: Level 6
+- Mana Cost: 30
+- AP Cost: 2
+- Cooldown: 4 rounds
+- Range: 2 hexes
+- Rules: Juggernaut targets an enemy hero within range and immediately begins Omnislash. Resolve the listed number of slashes one at a time. For the first slash, Juggernaut hits the chosen target. For each later slash, the Juggernaut player chooses an enemy hero within 1 hex of the hero hit by the previous slash. If there is no other enemy hero within 1 hex, Juggernaut may hit that same hero again instead. Each slash deals damage equal to Juggernaut's current Attack. While Omnislash is resolving, Juggernaut cannot be targeted by enemy attacks or abilities. After the final slash, place Juggernaut on any Open hex adjacent to the hero hit by the last slash.
+- Scaling: 6-11: 3 slashes | 12-17: 4 slashes | 18+: 5 slashes
+
+Upgrade / notes panel:
+- Aghanim's Scepter Upgrade: Omnislash gains +1 slash at all levels and its cooldown is reduced to 3 rounds.
+
+Graphic direction:
+- The card should feel like a technical tabletop rules reference first, fantasy illustration second
+- Use a wide landscape layout with strong horizontal row separation and consistent icon chips
+- Keep the text area bright and readable with minimal texture behind it
+- Include subtle mask motifs, clean sword arcs, healing sigils, wind-swept ribbons, and precise motion trails without reducing clarity
+- Ensure the color story, border finish, chip styling, and spell-effect rendering clearly match the attached Hero Card reference
+- The look of Blade Fury, Healing Ward, Blade Dance, and Omnislash should feel like direct spell extensions of the attached Hero Card art rather than newly invented visual languages
+- Present as a straight-on flat card render on a neutral background
+
+Typography direction:
+- Elegant fantasy title for the hero name
+- Clear section titles for each ability
+- Compact, highly legible game UI font for rules text and numbers
+- Costs, timing information, and scaling values should be instantly scannable
+
+Negative constraints:
+- Do not redesign the frame or reposition any major card elements
+- Do not change the four-row structure, typography hierarchy, or cost strip order
+- Do not arrange the abilities in a 2x2 grid, card quadrant layout, or any multi-column panel system
+- Do not turn the card into a hero card, poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not use a large full-card portrait in place of rules text space
+- Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
+- Do not copy official game splash art or spell icons
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
+- Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
 ## Example Image Prompt — Crystal Maiden Abilities Card
 
 Use the following prompt when generating a sample landscape Abilities Card image for Crystal Maiden:
