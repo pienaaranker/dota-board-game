@@ -235,3 +235,136 @@ Finger of Death cooldown reduced to 2 rounds. Damage increased by 30 at all leve
 Lion embodies the hard-disable Intelligence support archetype: fragile but with devastating control and burst potential. His design rewards precise ability usage (landing Earth Spike on multiple targets, choosing correct Hex timing), resource management (using Mana Drain to sustain spell casting), and target prioritization (saving Finger for high-value kills). He's the quintessential "glass cannon" support — immense impact when protected, easy kill when caught out of position.
 
 ---
+
+## Rubick
+**Class:** Intelligence | **Attack Type:** Ranged | **Status:** 🔲 Design in Progress
+
+### Base Stats
+
+| Stat | Value |
+|------|-------|
+| **Health (HP)** | 72 |
+| **Mana** | 55 |
+| **Attack** | 6 |
+| **Attack Range** | 3 hexes |
+| **Defense** | 1 |
+| **Move Speed** | 1 |
+| **Action Points (AP)** | 10 |
+
+### Stat Scaling
+- **Per Level:** +10 HP, +12 Mana, +3 Attack, +1 Defense
+
+### Abilities
+
+---
+
+#### Telekinesis
+**Type:** Active | **Targeting:** Unit Target | **Unlock:** Level 1
+
+**Mana Cost:** 18 | **AP Cost:** 2 | **Cooldown:** 2 rounds | **Range:** 3 hexes
+
+**Effect:**  
+Rubick lifts target enemy hero into the air, removing them from their hex until they land. While lifted, the target cannot move, attack, use abilities, use items, or react. Rubick then places that hero on any Open hex within 2 hexes of the original target hex. When the target lands, all enemy units within 1 hex of the landing hex are stunned.
+
+**Level Progression:**
+- **Level 1-5:** Landing stun 3 AP loss
+- **Level 6-11:** Landing stun 4 AP loss
+- **Level 12+:** Landing stun 5 AP loss
+
+**Notes:**  
+The lifted hero is not targetable while airborne. Rubick may throw the target onto high-value terrain positions, out of cover, or into allied follow-up range, but the target must land on a legal Open hex.
+
+---
+
+#### Fade Bolt
+**Type:** Active | **Targeting:** Unit Target | **Unlock:** Level 1
+
+**Mana Cost:** 14 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 4 hexes
+
+**Effect:**  
+Rubick fires a bolt of unstable magic at target enemy unit. The bolt deals damage, then jumps to up to 2 additional enemy units within 2 hexes of the last target. A unit can only be hit once per cast. Heroes hit by Fade Bolt deal reduced Attack damage until the end of their next activation.
+
+**Level Progression:**
+- **Level 1-5:** 16 damage per hit, -2 Attack
+- **Level 6-11:** 24 damage per hit, -3 Attack
+- **Level 12+:** 32 damage per hit, -4 Attack
+
+**Notes:**  
+Fade Bolt may jump between heroes, creeps, and neutral units, but the Attack reduction only affects heroes.
+
+---
+
+#### Arcane Supremacy
+**Type:** Passive | **Unlock:** Level 1
+
+**Effect:**  
+Rubick amplifies stolen and cast magic with unnerving precision. Whenever Rubick deals damage with an ability, increase that damage. When Rubick applies a stun, silence, root, slow, or other non-passive debuff with an ability, extend its duration.
+
+**Level Progression:**
+- **Level 1-5:** +4 ability damage, +2 turns to applied debuffs
+- **Level 6-11:** +8 ability damage, +3 turns to applied debuffs
+- **Level 12+:** +12 ability damage, +4 turns to applied debuffs
+
+**Notes:**  
+Arcane Supremacy affects Rubick's native abilities and any ability currently copied by Spell Steal. It does not increase damage from basic attacks or items unless an item explicitly counts as an ability effect.
+
+---
+
+#### Spell Steal
+**Type:** Active | **Targeting:** Unit Target | **Unlock:** Level 6
+
+**Mana Cost:** 20 | **AP Cost:** 2 | **Cooldown:** 2 rounds | **Range:** 4 hexes
+
+**Effect:**  
+Rubick targets an enemy hero and copies the last non-passive hero ability that hero successfully used. Rubick may commit and use that stolen ability as if it were printed on his own card until Spell Steal expires, he steals a different spell, or he dies.
+
+**Level Progression:**
+- **Level 6-11:** Stolen spell lasts 1 round
+- **Level 12-17:** Stolen spell lasts 2 rounds
+- **Level 18+:** Stolen spell lasts 3 rounds
+
+**Rules for Stolen Spells:**
+- Rubick may only hold **one** stolen spell at a time.
+- Rubick comes with **3 Spell Steal tracking tokens**: **1 cooldown token** for his own hero board and **2 stolen-spell marker tokens** for marking copied abilities.
+- Rubick also has **2 hero-specific planning tokens**: **Stolen Spell 1** and **Stolen Spell 2**.
+- When Rubick casts Spell Steal, place the **cooldown token** in the appropriate **Ability Cooldowns** row on Rubick's **Hero Board**.
+- Place **1 stolen-spell marker token** on the copied ability on the target hero's Abilities Card to show exactly which spell Rubick currently holds.
+- During the **Planning Phase**, Rubick places **Stolen Spell 1** or **Stolen Spell 2** face-down in his **Action Queue** to commit the stolen spell linked to that marker.
+- After Rubick resolves a stolen spell, place the matching **Stolen Spell 1** or **Stolen Spell 2** token in the appropriate **Ability Cooldowns** row on Rubick's **Hero Board** for that copied spell's normal cooldown. Use the **Turns** or **Rounds** section that the copied spell normally uses. When that cooldown expires, return the token to Rubick's available planning token pool.
+- If Rubick has **Aghanim's Scepter**, he may hold **two** stolen spells at once. Place **1 stolen-spell marker token** on each copied ability.
+- **Stolen Spell 1** corresponds to Rubick's first stolen-spell marker. **Stolen Spell 2** corresponds to his second stolen-spell marker and is only usable while Rubick has Aghanim's Scepter and a second copied spell.
+- If Rubick steals a new spell while already at his stolen-spell limit, remove the existing stolen-spell marker in a first-in-first-out order.
+- If Rubick dies, remove all Spell Steal marker tokens immediately. Any stolen-spell planning tokens on his Hero Board return to his available token pool when he respawns.
+- Rubick uses the stolen spell's normal AP cost, mana cost, range, and targeting rules.
+- Rubick uses the stolen spell at the stolen spell's **current level scaling** based on the target hero's level bracket when it was stolen.
+- If the stolen spell depends on a token, marker, or state unique to the original hero, Rubick copies only the cast effect, not that hero's entire subsystem.
+- Passive abilities, item abilities, and ultimates modified by Aghanim's Scepter cannot be stolen unless the printed ability itself is the one being copied.
+- Arcane Supremacy applies to the stolen spell.
+
+**Aghanim's Scepter Upgrade:**  
+Spell Steal cooldown reduced to 1/2 round. Rubick may hold **two** stolen spells at once.
+
+---
+
+### Design Notes
+
+**Role:** Rubick is an Intelligence ranged support-disabler built around repositioning, spell disruption, and stealing the enemy's strongest play pattern. He excels at punishing predictable initiations and converting enemy power spikes into his own.
+
+**Playstyle Considerations:**
+- Telekinesis is his primary setup and save-denial tool — it creates positional chaos more than raw damage
+- Fade Bolt gives Rubick reliable poke and soft teamfight mitigation without turning him into a pure nuker
+- Arcane Supremacy makes Rubick's spells and stolen spells feel sharper than the originals without changing their core identity
+- Spell Steal rewards matchup knowledge and timing — Rubick is strongest when he steals the right spell from the right hero at the right moment
+- Low durability means Rubick must play from range and from vision rather than frontline positions
+
+**Balance Considerations:**
+- Telekinesis should be strong because of repositioning, not because it fully removes a hero for too long
+- Fade Bolt must stay efficient utility damage rather than becoming a board-wiping chain nuke
+- Arcane Supremacy should enhance clarity and payoff without forcing constant cross-referencing during play
+- Spell Steal needs hard limits on duration, slot count, and eligible spell types so Rubick remains exciting but administratively manageable
+- Rubick should scale with enemy roster complexity, which makes him naturally high-skill without needing inflated base stats
+
+**Thematic Identity:**
+Rubick embodies the theatrical spell-thief fantasy: clever positioning, magical disruption, and turning enemy signature tools back against them. His design should make the opposing team feel unsafe using their best abilities carelessly, while rewarding the Rubick player for timing, rules fluency, and tactical opportunism.
+
+---

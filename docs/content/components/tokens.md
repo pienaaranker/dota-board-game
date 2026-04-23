@@ -95,6 +95,13 @@ Each hero needs a reusable planning token for each of their named abilities.
 | **Ability 3 Token** | Commit the hero's third ability | Hero-branded token or icon treatment. |
 | **Ultimate Token** | Commit the hero's fourth ability | Should stand out clearly from basic ability tokens. |
 
+Some heroes may need extra planning tokens when their mechanics let them access non-printed actions during play.
+
+| Token Family | Purpose | Notes |
+|---|---|---|
+| **Rubick Stolen Spell 1 Token** | Commit Rubick's first currently copied spell during Planning Phase | Place it face-down in Rubick's Action Queue. After use, move it to the appropriate Ability Cooldowns row on Rubick's Hero Board for the copied spell's cooldown. |
+| **Rubick Stolen Spell 2 Token** | Commit Rubick's second currently copied spell during Planning Phase | Only usable when Rubick has Aghanim's Scepter and a second stolen spell. Place it face-down in Rubick's Action Queue. After use, move it to the appropriate Ability Cooldowns row on Rubick's Hero Board for the copied spell's cooldown. |
+
 ### Planning Requirements
 
 - Planning token backs should be uniform where hidden information matters.
@@ -133,6 +140,13 @@ These tokens live primarily on each player's Hero Board and track changing state
 | **Alive / Dead Flip Token** | Tracks whether the hero is alive | One per hero. |
 | **Buyback Token** | Tracks whether buyback is available or cooling down | Place it on the hero board's cooldown track when used; it becomes available again when it reaches 0. |
 | **Scepter Acquired Token** | Marks that Aghanim's Scepter is active for the hero | One per hero. |
+
+### Hero-Specific Tracking Markers
+
+| Token | Purpose | Notes |
+|---|---|---|
+| **Rubick Spell Steal Cooldown Token** | Tracks Spell Steal's own cooldown on Rubick's hero board | Rubick comes with 1 dedicated cooldown token for Spell Steal. |
+| **Rubick Spell Steal Marker Token** | Marks which enemy ability Rubick has currently copied | Place directly on the copied ability on the enemy hero's Abilities Card. Rubick has 1 by default and a second becomes usable with Aghanim's Scepter. Remove all of Rubick's Spell Steal markers when Rubick dies. |
 
 ### Stat Modification Tokens
 

@@ -10,7 +10,7 @@ For hero selection and draft rules, see [../../rulebook/mechanics/Mechanics.md](
 
 - [strength/strength-heroes.md](strength/strength-heroes.md) — Strength hero card designs, including Sven and Pudge
 - [agility/agility-heroes.md](agility/agility-heroes.md) — Agility hero card designs, including Mirana
-- [intelligence/intelligence-heroes.md](intelligence/intelligence-heroes.md) — Intelligence hero card designs, including Crystal Maiden and Lion
+- [intelligence/intelligence-heroes.md](intelligence/intelligence-heroes.md) — Intelligence hero card designs, including Crystal Maiden, Lion, and Rubick
 
 ---
 
@@ -20,7 +20,7 @@ For hero selection and draft rules, see [../../rulebook/mechanics/Mechanics.md](
 |------|-----------------|--------|
 | Strength | Sven, Pudge | Active roster file |
 | Agility | Mirana | Active roster file |
-| Intelligence | Crystal Maiden, Lion | Active roster file |
+| Intelligence | Crystal Maiden, Lion, Rubick | Active roster file |
 
 ---
 

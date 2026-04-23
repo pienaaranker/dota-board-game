@@ -117,7 +117,7 @@ Each hero entry will be expanded with full card stats (HP, Mana, Attack, Defense
 | Puck | 🔲 Pending |
 | Pugna | 🔲 Pending |
 | Queen of Pain | 🔲 Pending |
-| Rubick | 🔲 Pending |
+| Rubick | ✅ Designed |
 | Shadow Demon | 🔲 Pending |
 | Shadow Shaman | 🔲 Pending |
 | Silencer | 🔲 Pending |
