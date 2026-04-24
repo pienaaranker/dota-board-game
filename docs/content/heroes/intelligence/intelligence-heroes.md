@@ -158,7 +158,7 @@ Earth Spike now erupts in a T-shape pattern: the original line plus perpendicula
 **Mana Cost:** 18 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 3 hexes
 
 **Effect:**  
-Transforms target enemy hero into a harmless critter, disabling them completely for the duration. Hexed heroes cannot move, attack, use abilities, or use items. The target's Defense is reduced to 0 while Hexed.
+Transforms target enemy hero into a harmless critter for the duration. Hexed heroes cannot attack, use abilities, or use items, and are instead **Slowed 7 AP** for the duration. The target's Defense is reduced to 0 while Hexed.
 
 **Level Progression:**
 - **Level 1-5:** 10 turns duration
@@ -166,7 +166,7 @@ Transforms target enemy hero into a harmless critter, disabling them completely 
 - **Level 12+:** 20 turns (1 round) duration
 
 **Notes:**  
-Hex is one of the strongest disables in the game — the target is completely helpless and vulnerable. Unlike stuns (which only reduce AP), Hex prevents all actions and removes defensive stats.
+Hex is one of the strongest disables in the game — the target is almost completely helpless and highly vulnerable. Unlike stuns, Hex shuts off attacks, abilities, and items, reduces Defense to 0, and leaves only extremely limited movement.
 
 ---
 

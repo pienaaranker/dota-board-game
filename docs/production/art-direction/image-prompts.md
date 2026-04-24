@@ -1850,9 +1850,9 @@ Ability data to show exactly:
 - AP Cost: 1
 - Cooldown: 2 rounds
 - Range: 3 hexes
-- Rules: Transform target enemy hero into a harmless critter, disabling them completely for the duration. Hexed heroes cannot move, attack, use abilities, or use items. The target's Defense is reduced to 0 while Hexed.
+- Rules: Transform target enemy hero into a harmless critter for the duration. Hexed heroes cannot attack, use abilities, or use items, and are instead Slowed 7 AP for the duration. The target's Defense is reduced to 0 while Hexed.
 - Scaling: 1-5: 10 turns duration | 6-11: 15 turns duration | 12+: 20 turns (1 round) duration
-- Notes: Hex is a full disable, not just an AP reduction effect.
+- Notes: Hex shuts off attacks, abilities, and items, reduces Defense to 0, and leaves only extremely limited movement.
 
 3. Mana Drain
 - Type: Channeled

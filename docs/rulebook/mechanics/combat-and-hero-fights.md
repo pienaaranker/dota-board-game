@@ -24,15 +24,28 @@ The attacker's Damage and the defender's Defense are taken from their Hero Cards
 - **Ranged** heroes use the **attack range printed on their Hero Card** and require **clear Line of Sight** (see above).
 - If a card effect changes a hero's attack range, use the modified value for as long as that effect applies.
 
-### Crowd Control (CC)
+### Status Effects
+
+These are the default shared rules for status effects used by heroes, items, and tokens. If a card applies a status effect, it uses these rules unless that card explicitly states an exception.
+
 | Status Effect | Mechanical Effect |
 |---|---|
-| **Stun** | A stun may remove **AP**, a **turn**, or a **round** as specified by the card or effect. See stun timing below. |
-| **Silence** | Target cannot use abilities for the remainder of the current round and their next turn. |
-| **Slow** | A slow applies a movement AP tax for a stated number of turns or rounds. See slow timing below. |
-| **DoT (Damage over Time)** | See below. |
+| **Stun** | A stun may remove **AP**, a **turn**, or a **round** as specified by the card or effect. See Stun below. |
+| **Silence** | Prevents the use of abilities and interrupts channels. See Silence below. |
+| **Slow** | Applies a movement AP tax for a stated number of turns or rounds. See Slow below. |
+| **Root** | Stops all movement actions for the stated duration but allows other actions normally. |
+| **Hex** | Prevents attacks, abilities, and item use, but leaves only extremely limited movement. |
+| **Disarm** | Prevents attack actions but allows other actions normally. |
+| **Break** | Disables passive abilities only. |
+| **Ethereal** | Prevents normal attacks and physical weapon damage interactions. See Ethereal below. |
+| **Spell Immunity** | Blocks most enemy abilities and debuffs unless an effect says it pierces spell immunity. |
+| **DoT (Damage over Time)** | See DoT below. |
 
-### Stun Timing
+#### Stun
+
+A stun removes a hero's ability to act by removing AP, a full activation, or a full round of activations.
+
+##### Stun Timing
 
 Stun effects use one of three measurements. The card or effect must always state which one it uses.
 
@@ -50,7 +63,22 @@ Stun effects use one of three measurements. The card or effect must always state
 
 **Example:** A hero committed: Move (1 AP) -> Move (1 AP) -> Ability (2 AP) -> Ability (2 AP) -> Farm (2 AP) -> Farm (2 AP). If that hero is stunned for **5 AP**, remove tokens from left to right until at least 5 AP has been removed: Move (1 AP), Move (1 AP), Ability (2 AP), Ability (2 AP). The hero keeps only the two Farm actions for that activation.
 
-### Slow Timing
+#### Silence
+
+Silence prevents a hero from using abilities for the stated duration.
+
+**Silence rules:**
+- A Silenced hero cannot activate printed hero abilities, including **Active**, **Toggle**, and **Channeled** abilities.
+- Silence immediately interrupts any **Channeled** ability the hero is currently maintaining.
+- A Silenced hero cannot toggle a printed hero ability on or off while Silenced.
+- A Silenced hero may still move, attack, farm, and use item actions unless another effect also prevents those actions.
+- Silence does not remove committed tokens in advance; ability tokens simply fail if revealed while the hero is Silenced.
+
+#### Slow
+
+A slow reduces how efficiently a hero can move by taxing movement AP instead of removing general AP.
+
+##### Slow Timing
 
 Slow effects use an **AP value** and a **duration**. The card or effect must state both.
 
@@ -70,7 +98,66 @@ Slow effects use an **AP value** and a **duration**. The card or effect must sta
 
 **Example:** A hero is **Slowed 1 AP for 10 turns**. During each of those 10 turns, the first **Move** token the hero spends moves them **0 hexes**. If that hero wants to move **4 hexes** on one of those turns, they must commit **5 Move tokens**: 1 token to satisfy the slow, then 4 more tokens to move 4 hexes.
 
-### Damage over Time (DoT)
+#### Root
+
+Root prevents a hero from moving voluntarily for the stated duration.
+
+**Root rules:**
+- A Rooted hero cannot use **Move** actions.
+- A Rooted hero may still attack, farm, use items, and use abilities unless the card or effect says otherwise.
+- Root does not prevent **forced movement** caused by another hero, item, or board effect unless that effect specifically says the target cannot be moved.
+- If a committed **Move** token is revealed while the hero is Rooted, that action fails normally under the failed-action rules.
+
+#### Hex
+
+Hex is a hard disable that shuts down a hero's actions and leaves only extremely limited movement for the stated duration.
+
+**Hex rules:**
+- A Hexed hero cannot attack, use abilities, or use items.
+- A Hexed hero is treated as **Slowed 7 AP** for the duration. This is their only normal action freedom while Hexed.
+- A Hexed hero's **Defense becomes 0** for the duration unless the card says otherwise.
+- Hex does not remove committed tokens in advance. **Attack**, ability, and item tokens fail if revealed while the hero is Hexed. **Move** tokens are resolved using the Hex slow value.
+- Forced movement may still affect a Hexed hero unless the source effect says otherwise.
+
+#### Disarm
+
+Disarm prevents a hero from making attack actions for the stated duration.
+
+**Disarm rules:**
+- A Disarmed hero cannot declare **Attack** actions.
+- A Disarmed hero may still move, use abilities, use items, and farm unless another effect prevents those actions.
+- If a committed **Attack** token is revealed while the hero is Disarmed, that action fails normally under the failed-action rules.
+
+#### Break
+
+Break disables passive abilities for the stated duration.
+
+**Break rules:**
+- A Broken hero gains no benefit from printed passive abilities on their Hero Card.
+- Break does not affect active abilities, item abilities, or basic actions unless those abilities explicitly depend on a passive that has been disabled.
+- If a passive creates a continuous bonus, that bonus is ignored while the hero is Broken.
+
+#### Ethereal
+
+Ethereal represents a ghostly state that shuts off normal attacking and most physical damage interactions.
+
+**Ethereal rules:**
+- An Ethereal hero cannot make **Attack** actions.
+- Normal physical attack damage cannot be dealt to an Ethereal hero.
+- Effects that grant bonus magic damage, extra magic vulnerability, or other ethereal modifiers must state those values on the card or item that applies Ethereal.
+- Ethereal does not prevent movement or ability use unless the card says otherwise.
+
+#### Spell Immunity
+
+Spell Immunity protects a hero from most hostile magical interference for the stated duration.
+
+**Spell Immunity rules:**
+- Enemy abilities and debuffs cannot affect a hero with Spell Immunity unless the source explicitly says it **pierces spell immunity**.
+- Spell Immunity does not prevent normal attack damage unless the card says otherwise.
+- Existing dispellable debuffs on the hero are handled by the card or item granting Spell Immunity; if it also dispels, that must be stated explicitly.
+- Allied abilities may still affect a Spell Immune hero if the card allows it.
+
+#### DoT (Damage over Time)
 
 A DoT is a debuff token placed on a hero. At the **start of that hero's activation** (when their turn begins), the DoT deals its damage and decrements its duration by 1. When the duration reaches 0, the token is removed.
 
@@ -134,7 +221,7 @@ Hero abilities use different targeting and activation methods. This section defi
 
 **Active** — Manually cast during a hero's turn. Costs Mana and AP as printed on the hero's Abilities Card.
 
-**Toggle** — Can only be **activated** during the hero's own turn (costs Mana and AP as printed). Once active, can be **toggled off at any time** — even during another player's turn — unless the hero is Silenced. While active, may drain Mana or Health per round. Examples: Rot, Mana Shield.
+**Toggle** — Can only be **activated** during the hero's own turn (costs Mana and AP as printed). Once active, can be **toggled off at any time** — even during another player's turn — unless the hero is Silenced. While the hero is Silenced, the toggle remains in its current state and cannot be switched on or off. While active, may drain Mana or Health per round. Examples: Rot, Mana Shield.
 
 **Channeled** — Can be **activated** during the hero's own turn (costs Mana and AP as printed on the hero's Abilities Card). Once active, the hero must remain stationary and the effect persists across subsequent turns until interrupted or cancelled. **Interrupted by:** Stun, Silence, forced movement, or the target moving out of range. The casting player may **cancel the channel at any time** (like a toggle). Examples: Freezing Field, Black Hole.
 
