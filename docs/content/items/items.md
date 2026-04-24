@@ -152,7 +152,7 @@ While carried, grants the hero **true sight** in a radius around them at all tim
 #### Ghost Scepter *(1500 Gold)*
 **Type:** Active | **Status:** 🔲 TODO
 
-Spend 1 AP. Become Ethereal for 1 round: immune to physical attack damage, cannot attack, takes increased magic damage. Ends at start of your next turn.
+Spend 1 AP. Become Ethereal for 1 round: immune to physical attack damage, cannot attack, and take +1 magic damage from each instance of magic damage. Ends at the start of your next turn.
 
 ---
 
@@ -393,7 +393,7 @@ Spend 1 AP. Deal X magic damage to a single enemy hero within range. Can be upgr
 #### Ethereal Blade *(5200 Gold)*
 **Type:** Active | **Status:** 🔲 TODO
 
-Spend 1 AP. Target enemy hero becomes Ethereal for 1 round (cannot attack, takes increased magic damage, immune to physical attacks) and immediately takes X magic damage.
+Spend 1 AP. Target enemy hero becomes Ethereal for 1 round (cannot attack, is immune to physical attack damage, and takes +2 magic damage from each instance of magic damage) and immediately takes X magic damage.
 
 ---
 
@@ -495,7 +495,7 @@ When this hero's HP drops to 20% or below, automatically gain an Aeon Shield tok
 #### Black King Bar *(4050 Gold)*
 **Type:** Active | **Status:** 🔲 TODO
 
-Spend 1 AP. Become Magic Immune for 1 round: immune to all magic damage and ability effects, except abilities explicitly marked "pierces BKB" on the hero's Abilities Card. Cooldown decreases with each use (first use: 3 rounds; subsequent uses: 2 rounds, minimum 1).
+Spend 1 AP. Gain **Spell Immunity** for 1 round: enemy magic damage, enemy ability effects, and enemy debuffs cannot affect this hero unless the source explicitly says it pierces Spell Immunity (BKB). This does not remove existing debuffs unless a card says it dispels them. Cooldown decreases with each use (first use: 3 rounds; subsequent uses: 2 rounds, minimum 1).
 
 ---
 

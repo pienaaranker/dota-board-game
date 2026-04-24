@@ -144,7 +144,7 @@ Ethereal represents a ghostly state that shuts off normal attacking and most phy
 **Ethereal rules:**
 - An Ethereal hero cannot make **Attack** actions.
 - Normal physical attack damage cannot be dealt to an Ethereal hero.
-- Effects that grant bonus magic damage, extra magic vulnerability, or other ethereal modifiers must state those values on the card or item that applies Ethereal.
+- While Ethereal, each instance of magic damage dealt to that hero is increased by a flat amount stated by the card or item that applied Ethereal.
 - Ethereal does not prevent movement or ability use unless the card says otherwise.
 
 #### Spell Immunity
@@ -152,10 +152,12 @@ Ethereal represents a ghostly state that shuts off normal attacking and most phy
 Spell Immunity protects a hero from most hostile magical interference for the stated duration.
 
 **Spell Immunity rules:**
-- Enemy abilities and debuffs cannot affect a hero with Spell Immunity unless the source explicitly says it **pierces spell immunity**.
-- Spell Immunity does not prevent normal attack damage unless the card says otherwise.
-- Existing dispellable debuffs on the hero are handled by the card or item granting Spell Immunity; if it also dispels, that must be stated explicitly.
+- Enemy **magic damage**, enemy ability effects, and enemy debuffs cannot affect a hero with Spell Immunity unless the source explicitly says it **pierces spell immunity**.
+- If an enemy effect would both deal magic damage and apply a status effect, Spell Immunity blocks the entire effect unless that source says it pierces spell immunity.
+- Spell Immunity does not prevent normal physical attack damage unless the card says otherwise.
+- Existing debuffs on the hero remain unless the card or item granting Spell Immunity also says it **dispels** them.
 - Allied abilities may still affect a Spell Immune hero if the card allows it.
+- Effects that bypass Spell Immunity should use explicit wording such as **pierces spell immunity** or **bypasses Spell Immunity (BKB)**.
 
 #### DoT (Damage over Time)
 
