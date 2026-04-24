@@ -128,7 +128,7 @@ These tokens live primarily on each player's Hero Board and track changing state
 | **Stunned** | Tracks stun effects and AP loss timing |
 | **Silenced** | Tracks inability to use abilities |
 | **Rooted** | Tracks inability to move |
-| **Slowed** | Tracks movement or AP reduction effects |
+| **Slowed** | Tracks movement AP tax effects and their remaining duration |
 | **Invisible** | Tracks invisibility state when a full cloud token is not used |
 | **Ethereal** | Tracks ethereal state |
 | **Disarmed** | Tracks inability to attack |

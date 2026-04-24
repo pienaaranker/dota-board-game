@@ -257,7 +257,7 @@ Pudge embodies the tanky Strength ganker archetype: high HP, high-risk/high-rewa
 **Mana Cost:** 12 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 4 hexes
 
 **Effect:**  
-Magnus sends a wave of force in a straight line up to 4 hexes. Enemy units in the path take damage and are pulled 1 hex toward Magnus, if a legal Open hex is available. Enemy heroes hit by Shockwave are also Slowed until the end of their next activation.
+Magnus sends a wave of force in a straight line up to 4 hexes. Enemy units in the path take damage and are pulled 1 hex toward Magnus, if a legal Open hex is available. Enemy heroes hit by Shockwave are also **Slowed 1 AP until the end of their next activation**.
 
 **Level Progression:**
 - **Level 1-5:** 16 damage
@@ -265,7 +265,7 @@ Magnus sends a wave of force in a straight line up to 4 hexes. Enemy units in th
 - **Level 12+:** 32 damage
 
 **Notes:**  
-For Shockwave, **Slowed** means the affected hero's first **Move** action on their next activation moves 0 hexes and still costs 1 AP.
+For Shockwave, **Slowed** means the affected hero is **Slowed 1 AP until the end of their next activation**.
 
 ---
 

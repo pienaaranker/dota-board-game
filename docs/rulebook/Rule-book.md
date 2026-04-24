@@ -113,7 +113,7 @@ Buildings and Obstacles allow heroes to see (and target) enemies on the other si
 
 - **Initiative** — When multiple heroes are in the same area, action order is determined by Move Speed.
 - **Resolution** — `Damage − Defense = Health Lost`
-- **Crowd Control (CC)** — Stuns remove AP from the target's next turn. Silences prevent the use of abilities for one round.
+- **Crowd Control (CC)** — Stuns may remove AP, a full turn, or a full round depending on the effect. AP stuns remove committed actions from left to right until the removed total meets or exceeds the stun value. Slows tax the first stated amount of movement AP on each affected turn. Silences prevent the use of abilities for the stated duration.
 - **Range** — Melee heroes attack adjacent hexes. Ranged heroes use the attack range printed on their Hero Card and still need clear Line of Sight.
 
 ---

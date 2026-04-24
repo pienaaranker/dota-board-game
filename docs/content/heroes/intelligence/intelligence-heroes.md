@@ -34,12 +34,12 @@ For draft rules and class-wide roster status, see [../hero-shortlist.md](../hero
 **Mana Cost:** 15 | **AP Cost:** 2 | **Cooldown:** 2 rounds | **Range:** 2 hexes
 
 **Effect:**  
-Blast an area with damaging frost, dealing damage to all enemy units within a 2-hex radius and applying a Slow debuff for the specified duration. Slowed enemies have their AP reduced when planning their next activation.
+Blast an area with damaging frost, dealing damage to all enemy units within a 2-hex radius and applying a Slow debuff for the specified duration. Slowed enemies lose movement AP on each affected turn: the first AP they spend on movement each turn is consumed by the slow and moves them 0 hexes.
 
 **Level Progression:**
-- **Level 1-5:** 20 damage, -2 AP for 10 turns
-- **Level 6-11:** 30 damage, -3 AP for 1 round (20 turns)
-- **Level 12+:** 40 damage, -4 AP for 2 rounds (40 turns)
+- **Level 1-5:** 20 damage, Slow 2 AP for 10 turns
+- **Level 6-11:** 30 damage, Slow 3 AP for 1 round
+- **Level 12+:** 40 damage, Slow 4 AP for 2 rounds
 
 ---
 
@@ -80,9 +80,9 @@ Crystal Maiden and all allied heroes within range passively regenerate Mana. Thi
 Crystal Maiden channels a massive ice storm around her, dealing damage in pulses to all enemy units within range and slowing them. Must remain stationary while channeling. Interrupted by Stun, Silence, forced movement, or voluntary cancellation.
 
 **Level Progression:**
-- **Level 6-11:** 20 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -2 AP while in range
-- **Level 12-17:** 30 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -3 AP while in range
-- **Level 18+:** 40 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, -5 AP while in range
+- **Level 6-11:** 20 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, Slow 2 AP while in range
+- **Level 12-17:** 30 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, Slow 3 AP while in range
+- **Level 18+:** 40 damage per pulse, 1 pulse every 2nd turn, 2 hex radius, Slow 5 AP while in range
 
 ---
 

@@ -86,6 +86,7 @@ Before the Turn Phase begins, all players simultaneously select their actions fo
 - Players may select up to their hero's AP worth of actions.
 - Tokens remain hidden until activation — players commit actions without knowing what enemies have planned.
 - Once a hero's tokens are revealed at the start of their activation, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
+- If a hero loses AP before their activation due to a stun or reaction cost, remove committed tokens from left to right until the removed tokens total at least the AP lost. Those removed actions are lost for that activation.
 - Item use is committed by slot, not by a generic Use Item token. Revealing an item slot token means the hero is attempting to use the item currently in that numbered slot.
 - Reactions are **not** included in Planning Phase — reactions are declared in real-time during the Turn Phase when triggered.
 
@@ -136,6 +137,7 @@ This ensures positional fairness over time — no hero is always first or always
 - A player may commit fewer actions than their total AP allows, effectively passing early.
 - AP does not carry over between activations or rounds.
 - Committed actions must be attempted in order, but may fail or be prevented by game state (e.g., target no longer valid, hero stunned).
+- If a hero loses their next turn to a stun, that activation is skipped and all committed actions for it are lost.
 
 ### Failed Actions
 When a committed action cannot be executed, the following rules apply:
@@ -163,7 +165,7 @@ When a committed action is revealed during a hero's activation, the player decla
 **When Retargeting is Not Possible:**
 Some actions cannot be retargeted because no valid alternative exists:
 
-- **Stunned Hero** — Hero has AP reduced below the cost of the action due to stun effects. Action cannot execute at all.
+- **Stunned Hero** — The action was already removed by the stun's token-removal rule, or the hero's entire activation was skipped. Action cannot execute at all.
 - **Silenced Hero** — Hero cannot use abilities while Silenced. Ability actions cannot execute at all.
 - **Insufficient Resources** — Hero lacks the Mana to cast a committed ability. Action cannot execute at all.
 - **Invalid Item Slot** — The chosen slot is empty, or no usable item is currently in that slot. The item action cannot execute.

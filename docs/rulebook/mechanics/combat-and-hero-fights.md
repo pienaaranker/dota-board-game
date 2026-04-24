@@ -27,10 +27,48 @@ The attacker's Damage and the defender's Defense are taken from their Hero Cards
 ### Crowd Control (CC)
 | Status Effect | Mechanical Effect |
 |---|---|
-| **Stun** | Target loses AP equal to the stun value from their *next* turn. |
+| **Stun** | A stun may remove **AP**, a **turn**, or a **round** as specified by the card or effect. See stun timing below. |
 | **Silence** | Target cannot use abilities for the remainder of the current round and their next turn. |
-| **Slow** | Defined per card — typically reduces effective movement areas per AP. |
+| **Slow** | A slow applies a movement AP tax for a stated number of turns or rounds. See slow timing below. |
 | **DoT (Damage over Time)** | See below. |
+
+### Stun Timing
+
+Stun effects use one of three measurements. The card or effect must always state which one it uses.
+
+| Stun Type | Effect |
+|---|---|
+| **AP Stun** | The hero loses the stated amount of AP from their next activation. If that activation has already been planned, remove committed planning tokens from left to right until the removed tokens total at least the stun value. Those removed actions are lost. |
+| **Turn Stun** | The hero loses their next activation entirely. All committed actions for that activation are lost and the hero is skipped. |
+| **Round Stun** | The hero cannot act for the stated round duration. Each activation the hero would take during that round is skipped, and any committed actions for those skipped activations are lost. |
+
+**AP stun token removal:**
+- Remove tokens in committed order from left to right.
+- Remove whole tokens only; do not partially reduce a token's cost.
+- Continue removing tokens until the total removed AP is **equal to or greater than** the AP stun value.
+- If the hero is already in the middle of an activation when the AP stun is applied, start with the next unresolved token and continue left to right through the remaining committed actions.
+
+**Example:** A hero committed: Move (1 AP) -> Move (1 AP) -> Ability (2 AP) -> Ability (2 AP) -> Farm (2 AP) -> Farm (2 AP). If that hero is stunned for **5 AP**, remove tokens from left to right until at least 5 AP has been removed: Move (1 AP), Move (1 AP), Ability (2 AP), Ability (2 AP). The hero keeps only the two Farm actions for that activation.
+
+### Slow Timing
+
+Slow effects use an **AP value** and a **duration**. The card or effect must state both.
+
+| Slow Element | Effect |
+|---|---|
+| **Slow AP Value** | The first X AP spent on movement during each affected turn is lost to the slow and produces **0 hexes** of movement. |
+| **Turn Duration** | The slow affects the hero for the stated number of total turns. |
+| **Round Duration** | The slow affects the hero for the stated number of complete rounds. |
+
+**Slow rules:**
+- Slow affects only **Move** actions. It does not remove AP from attacks, abilities, items, or other actions.
+- Slow consumes whole **Move** tokens only.
+- On each affected turn, resolve the slow against the hero's movement in committed order: the first X AP worth of **Move** tokens are spent normally but move the hero **0 hexes**.
+- After the slow tax has been paid for that turn, any remaining **Move** tokens work normally.
+- If the hero does not use any **Move** actions on an affected turn, no AP is lost that turn, but the slow duration still decreases normally.
+- If a hero is already in the middle of an activation when a slow is applied, it begins affecting the next unresolved **Move** token unless the card says it starts on the next turn or next activation instead.
+
+**Example:** A hero is **Slowed 1 AP for 10 turns**. During each of those 10 turns, the first **Move** token the hero spends moves them **0 hexes**. If that hero wants to move **4 hexes** on one of those turns, they must commit **5 Move tokens**: 1 token to satisfy the slow, then 4 more tokens to move 4 hexes.
 
 ### Damage over Time (DoT)
 

@@ -516,7 +516,7 @@ Spend 1 AP. Apply a Physical Block token to yourself and all allied heroes withi
 #### Eye of Skadi *(5900 Gold)*
 **Type:** Passive | **Status:** 🔲 TODO
 
-Large +HP, +Mana, +Attack. Attacks from this hero apply an Arctic Slow token to the target: –1 Movement and reduced Attack Speed for 1 round.
+Large +HP, +Mana, +Attack. Attacks from this hero apply an Arctic Slow token to the target: Slow 1 AP for 1 round and reduced Attack Speed for 1 round.
 
 ---
 
@@ -544,7 +544,7 @@ Spend 1 AP. Apply a Lotus Echo token to yourself or target allied hero within ra
 #### Shiva's Guard *(4500 Gold)*
 **Type:** Passive / Active | **Status:** 🔲 TODO
 
-**Passive:** +Armor. **Active:** Spend 1 AP. Emit a Frost Wave — all enemy heroes within 3 hexes take X magic damage and receive –1 Movement for 1 round. Cooldown: 2 rounds.
+**Passive:** +Armor. **Active:** Spend 1 AP. Emit a Frost Wave — all enemy heroes within 3 hexes take X magic damage and are Slowed 1 AP for 1 round. Cooldown: 2 rounds.
 
 ---
 
@@ -618,7 +618,7 @@ Spend 1 AP. Silence target enemy hero for 2 rounds. While Silenced by Bloodthorn
 #### Diffusal Blade *(2500 Gold)*
 **Type:** Passive / Active | **Status:** 🔲 TODO
 
-**Passive:** +Attack. Attacks burn X Mana from the target. If the target has no Mana, deal bonus damage instead. **Active:** Spend 1 AP. Apply a Slow token (–1 Movement for 1 round) to target enemy hero.
+**Passive:** +Attack. Attacks burn X Mana from the target. If the target has no Mana, deal bonus damage instead. **Active:** Spend 1 AP. Apply a Slow token to target enemy hero: Slow 1 AP for 1 round.
 
 ---
 
@@ -702,7 +702,7 @@ Upgraded Shadow Blade. Spend 1 AP. Become Invisible. The next attack from Invisi
 #### Witch Blade *(2775 Gold)*
 **Type:** Passive | **Status:** 🔲 TODO
 
-+Attack Speed, +Armor. Attacks deal bonus magic damage and apply a Slow token (–1 Movement for 1 round).
++Attack Speed, +Armor. Attacks deal bonus magic damage and apply a Slow token: Slow 1 AP for 1 round.
 
 ---
 
