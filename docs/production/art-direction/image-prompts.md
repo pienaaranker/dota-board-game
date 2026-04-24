@@ -395,7 +395,7 @@ Ability data to show exactly:
 - AP Cost: 2
 - Cooldown: 5 rounds
 - Radius: 2 hexes
-- Rules: Magnus violently reverses the battlefield's pull. All enemy heroes within 2 hexes are pulled onto the single hex directly in front of Magnus, take damage, and are stunned. For the rest of Magnus's current activation, those heroes may temporarily share that hex so Magnus can follow up with abilities such as Skewer.
+- Rules: Magnus violently reverses the battlefield's pull. Reverse Polarity pierces spell immunity. All enemy heroes within 2 hexes are pulled onto the single hex directly in front of Magnus, take damage, and are stunned. For the rest of Magnus's current activation, those heroes may temporarily share that hex so Magnus can follow up with abilities such as Skewer.
 - Scaling: 6-11: 20 damage, stun (3 AP loss) | 12-17: 30 damage, stun (4 AP loss) | 18+: 40 damage, stun (5 AP loss)
 - Notes: When Magnus's activation ends, all heroes stacked by Reverse Polarity are immediately dispersed to legal Open hexes adjacent to Magnus. The Magnus player chooses the placement order if multiple legal hexes are available.
 
@@ -1669,7 +1669,7 @@ Ability data to show exactly:
 - Cooldown: 4 rounds
 - Duration: Channeled (max 2 rounds)
 - Range: 1 hex
-- Rules: Pudge channels his ultimate on target enemy hero within 1 hex, dealing damage per turn and disabling the target completely. The target cannot move, attack, or use abilities while Dismembered. Pudge must remain adjacent to the target while channeling. Interrupted by Stun, Silence, forced movement, or voluntary cancellation.
+- Rules: Pudge channels his ultimate on target enemy hero within 1 hex, dealing damage per turn and disabling the target completely. Dismember pierces spell immunity. The target cannot move, attack, or use abilities while Dismembered. Pudge must remain adjacent to the target while channeling. Interrupted by Stun, Silence, forced movement, or voluntary cancellation.
 - Scaling: 6-11: 4 damage per activation | 12-17: 6 damage per activation | 18+: 8 damage per activation
 - Notes: Per activation means damage is dealt at the start of each hero's turn while the channel is active. Pudge and the target are both effectively locked into the channel.
 

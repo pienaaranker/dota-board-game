@@ -157,7 +157,7 @@ Spell Immunity protects a hero from most hostile magical interference for the st
 - Spell Immunity does not prevent normal physical attack damage unless the card says otherwise.
 - Existing debuffs on the hero remain unless the card or item granting Spell Immunity also says it **dispels** them.
 - Allied abilities may still affect a Spell Immune hero if the card allows it.
-- Effects that bypass Spell Immunity should use explicit wording such as **pierces spell immunity** or **bypasses Spell Immunity (BKB)**.
+- Effects that ignore this protection should use the explicit wording **pierces spell immunity**.
 
 #### DoT (Damage over Time)
 

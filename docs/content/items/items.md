@@ -674,7 +674,7 @@ Spend 1 AP. Target enemy hero within range: remove all positive buff tokens and 
 #### Revenant's Brooch *(3300 Gold)*
 **Type:** Active | **Status:** 🔲 TODO
 
-Spend 1 AP. For 1 round, this hero's attacks become magic damage, gain +1 Attack Range, and bypass Magic Immunity (BKB).
+Spend 1 AP. For 1 round, this hero's attacks become magic damage, gain +1 Attack Range, and **pierce spell immunity**.
 
 ---
 

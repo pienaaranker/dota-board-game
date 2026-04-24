@@ -190,7 +190,7 @@ Flesh Heap rewards aggressive positioning and kill participation. Stacks are per
 **Mana Cost:** 30 | **AP Cost:** 2 | **Cooldown:** 4 rounds | **Duration:** Channeled (max 2 rounds)
 
 **Effect:**  
-Pudge channels his ultimate on target enemy hero within 1 hex, dealing damage per turn and disabling the target completely. The target cannot move, attack, or use abilities while Dismembered. Pudge must remain adjacent to the target while channeling. Interrupted by Stun, Silence, forced movement (Pudge or target), or if Pudge voluntarily cancels.
+Pudge channels his ultimate on target enemy hero within 1 hex, dealing damage per turn and disabling the target completely. **Dismember pierces spell immunity.** The target cannot move, attack, or use abilities while Dismembered. Pudge must remain adjacent to the target while channeling. Interrupted by Stun, Silence, forced movement (Pudge or target), or if Pudge voluntarily cancels.
 
 **Level Progression:**
 - **Level 6-11:** 4 damage per activation (80 damage over full 2-round channel in 10-hero game)
@@ -308,7 +308,7 @@ Magnus may move through occupied hexes during Skewer, but must end on a legal Op
 **Mana Cost:** 30 | **AP Cost:** 2 | **Cooldown:** 5 rounds | **Radius:** 2 hexes
 
 **Effect:**  
-Magnus violently reverses the battlefield's pull. All enemy heroes within 2 hexes are pulled onto the single hex directly in front of Magnus, take damage, and are stunned. For the rest of Magnus's current activation, those heroes may temporarily share that hex so Magnus can follow up with abilities such as Skewer.
+Magnus violently reverses the battlefield's pull. **Reverse Polarity pierces spell immunity.** All enemy heroes within 2 hexes are pulled onto the single hex directly in front of Magnus, take damage, and are stunned. For the rest of Magnus's current activation, those heroes may temporarily share that hex so Magnus can follow up with abilities such as Skewer.
 
 **Level Progression:**
 - **Level 6-11:** 20 damage, stun (3 AP loss)
