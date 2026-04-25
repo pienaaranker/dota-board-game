@@ -6,7 +6,136 @@ Its purpose is to answer two questions:
 - Which physical tokens must exist on the table or Hero Boards during play?
 - Which token families must be supported as the hero roster and item pool expand?
 
-This document focuses on **tokens and markers**. It does **not** cover full cards, dice, dials, or 3D number trackers unless a token is still needed alongside them.
+This document focuses on **tokens and markers**. It does **not** cover full cards, dice, dials, or the **3D-printed stat tracker** used for hero HP, Mana, XP, Gold, Level, and similar numeric values.
+
+---
+
+## Required Physical Token List
+
+This is the filtered list of **actual physical tokens players must handle during play** based on the current rules set and current designed hero roster.
+
+### Explicit Exclusions
+
+Do **not** include the following in the token list for live play:
+
+- hero HP, Mana, XP, Gold, Level, or AP value trackers
+- tower HP trackers
+- Roshan HP trackers
+- generic +Attack, +Defense, or +Move stat counters
+- any other purely numeric counters that belong on the 3D-printed stat tracker, a die, or a printed track
+
+### 1. Board Presence And Objective Tokens
+
+These are the pieces that physically appear on the board to represent units, objectives, and changing map state.
+
+| Token | Why It Is Needed |
+|---|---|
+| **Hero Tokens** | Show each drafted hero's position on the board. Also used as the hero's respawn piece when the hero dies. |
+| **Lane Creep Tokens / Counters** | Represent lane creep waves at each current Creep Meeting Point. |
+| **Neutral Camp Tokens / Counters** | Represent neutral creeps in jungle camps. |
+| **Ancient Camp Tokens / Counters** | Represent Ancient creeps in Ancient camps. |
+| **Tower Marker** | Marks a tower position. If destroyed the underlying art will display a distroyed build |
+| **Barracks Status Marker** | Represents a standing Barracks on its hex until destroyed. |
+| **Roshan Marker** | Shows whether Roshan is currently present. |
+| **Aegis of the Immortal Token** | Represents the Aegis as an objective reward and carried board-state item. |
+| **Power Rune Tokens** | Represent the five possible runes when a rune is present on the map or stored in Bottle. |
+| **Courier Tokens** | Represents each hero's Courier, placed on the cooldown track for timing |
+| **Illusion Tokens** | Represent Illusions created by rune or hero effects. |
+
+### 2. Vision, Hidden Information, And Deception Tokens
+
+These tokens support the map-information layer that replaces digital fog-of-war with tabletop hidden information.
+
+| Token | Why It Is Needed |
+|---|---|
+| **Observer Ward Token** | Represents placed Observer Wards. |
+| **Sentry Ward Token** | Represents placed Sentry Wards. |
+| **Invisibility Cloud Token** | Hides the true position of a single invisible hero. |
+| **Smoke Cloud Token** | Hides the shared position of a smoked allied group. |
+
+### 3. Shared Planning Tokens
+
+These are required because the core turn system is built around hidden action commitment.
+
+| Token | Why It Is Needed |
+|---|---|
+| **Move Token** | Commit a move action during Planning Phase. |
+| **Attack Token** | Commit a basic attack action during Planning Phase. |
+| **Farm Token** | Commit a farm action during Planning Phase. |
+| **Item Slot 1 Token** | Commit use of the item currently in active slot 1. |
+| **Item Slot 2 Token** | Commit use of the item currently in active slot 2. |
+| **Item Slot 3 Token** | Commit use of the item currently in active slot 3. |
+| **Item Slot 4 Token** | Commit use of the item currently in active slot 4. |
+| **Item Slot 5 Token** | Commit use of the item currently in active slot 5. |
+| **Item Slot 6 Token** | Commit use of the item currently in active slot 6. |
+
+### 4. Hero Ability Planning Tokens
+
+Each hero needs reusable physical tokens for their printed abilities, plus extra planning tokens for heroes with special spell-access systems.
+
+| Token | Why It Is Needed |
+|---|---|
+| **Ability 1 Token** | Commit the hero's first printed ability. |
+| **Ability 2 Token** | Commit the hero's second printed ability. |
+| **Ability 3 Token** | Commit the hero's third printed ability. |
+| **Ultimate Token** | Commit the hero's fourth printed ability. |
+| **Rubick Stolen Spell 1 Token** | Lets Rubick commit his first currently stolen spell. |
+| **Rubick Stolen Spell 2 Token** | Lets Rubick commit a second currently stolen spell when allowed. |
+| **Invoker Invoked Spell 1 Token** | Lets Invoker commit the prepared spell in Invoke Slot 1. |
+| **Invoker Invoked Spell 2 Token** | Lets Invoker commit the prepared spell in Invoke Slot 2. |
+
+### 5. Status And State Tokens
+
+These are the non-numeric state markers players need to place on Hero Boards or near units during play.
+
+| Token | Why It Is Needed |
+|---|---|
+| **Stunned** | Marks that a hero is stunned. |
+| **Silenced** | Marks that a hero is silenced. |
+| **Rooted** | Marks that a hero is rooted. |
+| **Slowed** | Marks that a hero is slowed. |
+| **Ethereal** | Marks that a hero is ethereal. |
+| **Disarmed** | Marks that a hero is disarmed. |
+| **Broken** | Marks that a hero's passives are disabled. |
+| **Hexed** | Marks that a hero is hexed. |
+| **DoT** | Marks a damage-over-time effect such as Bleed / Burn. |
+| **Buyback Token** | Marks whether a hero's Buyback is on cooldown. |
+
+### 6. Current Hero-Specific Effect Tokens
+
+These are required by the currently designed heroes, not future placeholders.
+
+| Token | Why It Is Needed |
+|---|---|
+| **Healing Ward Token** | Represents Juggernaut's Healing Ward on the board. |
+| **Weaver Swarm Beetle Token** | Marks heroes affected by The Swarm. |
+| **Weaver Time Lapse Marker** | Marks Weaver's saved rewind position. |
+| **Rubick Spell Steal Marker Token** | Marks which enemy ability Rubick has currently copied. |
+| **Rubick Spell Steal Cooldown Token** | Tracks Spell Steal's own cooldown identity on Rubick's board. |
+| **Invoker Orb Token** | Shows Invoker's active Quas, Wex, and Exort orb setup. |
+| **Invoker Invoke Slot Marker** | Shows which spell is prepared in each Invoke Slot. |
+| **EMP Charge Token** | Marks the hex where Invoker's EMP will detonate. |
+| **Forge Spirit Token** | Represents Invoker's Forge Spirit summon on the board. |
+| **Invoker Forge Spirit Armor Break Marker** | Marks the temporary Defense reduction from Forge Spirit attacks. |
+
+### 7. Conditional Or Optional Current-File Tokens
+
+These are only needed if the corresponding item remains in the final playable item pool.
+
+| Token | Why It Is Needed |
+|---|---|
+| **Gem of True Sight Drop Token** | Needed only if Gem remains a droppable board item instead of using the item card alone. |
+| **Divine Rapier Drop Token** | Needed only if Divine Rapier is included in the final item set. |
+
+### One-Line Practical Summary
+
+If you build the current playable token kit, you need:
+
+- board-presence tokens for heroes, creeps, camps, Barracks, Roshan, runes, Courier, Aegis, and illusions
+- ward and hidden-position tokens for vision and invisibility play
+- full planning-token sets for shared actions, item slots, and hero abilities
+- shared status/state tokens for debuffs, channels, cooldown identity, and Buyback
+- the hero-specific tokens currently required by Juggernaut, Weaver, Rubick, and Invoker
 
 ---
 
@@ -146,10 +275,8 @@ These tokens live primarily on each player's Hero Board and track changing state
 | **Ability Identifier Tokens** | Mark which hero ability is cooling down | May use Q/W/E/R style or ability icons. |
 | **Channeling Token** | Marks an ability currently being channeled | Hourglass-style marker. |
 | **Buyback Token** | Tracks whether buyback is available or cooling down | Place it on the hero board's cooldown track when used; it becomes available again when it reaches 0. |
-| **Summon AP Marker** | Tracks a summon's remaining AP during its controller's activation | Shared across all summon-based heroes. |
-| **Summon Hit Marker** | Tracks a summon's remaining Hits | Shared across all summon-based heroes; preferred over bespoke HP dials for fragile summons. |
-| **Summon Duration Marker** | Tracks how many rounds or activations a summon remains in play | Use when the summon does not persist indefinitely. |
-| **Summon Mana Marker** | Tracks summon Mana for summon-based heroes that need it | Reserved for designs such as Spirit Bear or other spell-using summons. |
+
+**Excluded from this token list:** numeric summon stat trackers such as summon AP, Hits, Mana, or duration counters. Those are bookkeeping aids, but they are not part of the filtered list of distinct required token types requested for the live-play token kit.
 
 ### Hero-Specific Tracking Markers
 
@@ -164,14 +291,7 @@ These tokens live primarily on each player's Hero Board and track changing state
 
 ### Stat Modification Tokens
 
-| Token | Purpose |
-|---|---|
-| **+1 Attack Token** | Temporary or permanent attack increases |
-| **+5 Attack Token** | Larger attack increases |
-| **+10 Attack Token** | Large attack increases |
-| **+1 Defense Token** | Defense increases |
-| **+5 Defense Token** | Larger defense increases |
-| **+1 Move Speed Token** | Move Speed increases |
+These are **excluded** from the filtered required-token list because hero stat changes should be handled by the 3D-printed stat tracker rather than by separate stat-modification tokens.
 
 ---
 
@@ -274,8 +394,10 @@ If producing a first playable prototype, the minimum token set should include:
 - hero-specific ability tokens for any heroes currently in the test pool
 - core status tokens: Stunned, Silenced, Rooted, Slowed, DoT, Hexed, Ethereal, Disarmed
 - ability identifier tokens
+- channeling token
 - buyback token
 - illusion tokens
+- current hero-specific effect tokens for Juggernaut, Weaver, Rubick, and Invoker
 
 ---
 
