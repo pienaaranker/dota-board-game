@@ -246,3 +246,149 @@ If asset production starts soon, the most efficient first batch is:
 8. Structural Objectives And Destruction States
 
 These pages cover the largest number of reusable tokens while establishing the core icon language for the full set.
+
+---
+
+## Final Prompt Draft — Board Presence And Vision Token Sheet
+
+Use the following prompt when generating the first printable token sheet for **board presence / objective tokens** and **compact vision tokens**.
+
+This prompt assumes two attachments are supplied to the image model:
+
+- **Attachment 1:** the token-sheet layout wireframe with the large top section and smaller bottom section
+- **Attachment 2:** the Rubick hero card image used only as a **style-family reference**, not as subject matter
+
+```text
+Create a flat, print-ready fantasy board game token sheet that follows the attached wireframe layout exactly.
+
+This is a premium tabletop component for a Dota-inspired board game. The result must look like it belongs to the same manufactured product family as the attached Rubick hero card, but it must not copy that card's specific character art, Rubick iconography, or hero-specific symbols. Use the Rubick card only as a style reference for material finish, border treatment, palette discipline, ornament density, typography mood, and icon rendering quality.
+
+PRIMARY GOAL
+Generate a clean printable token sheet for:
+1. Board Presence And Objective Tokens
+2. Vision, Hidden Information, And Deception Tokens
+
+LOCKED LAYOUT REQUIREMENTS
+- Preserve the attached token-sheet page layout exactly.
+- Keep the same page proportions, same large rounded outer border, same inner section boxes, same section-title placement, and the same arrangement of rotated rounded-square token cut zones.
+- Keep the top section as the larger area labeled Board Presence And Objective Tokens.
+- Keep the bottom section as the smaller area labeled Vision, Hidden Information, And Deception Tokens.
+- Keep the token cells aligned exactly to the wireframe grid.
+- Do not redesign the page architecture.
+- Do not change the number, spacing, tilt, or proportions of the token slots.
+- Present the page straight-on, perfectly flat, with no perspective distortion.
+
+PRINTABILITY REQUIREMENTS
+- This must read as a real printable token sheet, not a mockup.
+- Use a bright clean background suitable for printing.
+- Keep all token art fully contained inside its own token boundary.
+- Leave clean gutters between token cells for cutting or punchboard separation.
+- Use crisp outlines and high-contrast iconography.
+- Avoid muddy shadows, fog, overpainting, or low-contrast effects that would reduce print legibility.
+- Do not place hands, table surfaces, props, scissors, dice, cards, rulers, or environmental scene dressing around the page.
+- Do not render the page as a photographed object, angled sheet, curled poster, or 3D product mockup.
+- No dramatic cast shadows outside the token artwork.
+- No fake paper texture so heavy that it interferes with token readability.
+
+STYLE DIRECTION
+- Match the general visual sophistication of the attached Rubick hero card.
+- Use the same overall product-family feeling: polished fantasy board game component, restrained premium ornament, elegant gold-edged detailing, dark teal / deep green / navy structural tones, ivory highlights, and crisp readable icon-first design.
+- Do not make this token sheet Rubick-themed. The palette and ornament system should feel like the same publisher and same component line, not like a Rubick expansion sheet.
+- Let each token family use its own color-coded icon treatment inside that shared system.
+- The tokens should feel readable at arm's length on a real tabletop.
+
+TOKEN FRAME SYSTEM
+- Every token should use the same manufactured frame language.
+- Each token should have a consistent border treatment that feels related to the hero card frame: thin premium border, subtle inner panel, and a strong central icon area.
+- Keep the token faces clean and icon-forward.
+- Minimal or no text on token faces unless absolutely necessary.
+- If text is used at all, it must be tiny, secondary, and never dominate the token.
+
+TOP SECTION CONTENT: BOARD PRESENCE AND OBJECTIVE TOKENS
+The top section should contain compact board tokens from these families:
+- lane creep
+- neutral camp
+- ancient camp
+- barracks standing marker
+- Roshan marker
+- Aegis of the Immortal
+- power rune set: Illusion, Haste, Invisibility, Regeneration, Double Damage
+- courier
+- broken tree
+
+Do NOT include hero portrait tokens on this sheet.
+Do NOT include Ancient or Tower position markers, because those should be printed on the board rather than manufactured as tokens.
+
+BOARD TOKEN VISUAL RULES
+- Lane creep token: simple hostile lane-unit iconography, readable, faction-neutral, mass-produced feel.
+- Neutral camp token: beast / fang / claw / horn language, clearly different from lane creeps.
+- Ancient camp token: elite neutral treatment, heavier silhouette, more dangerous and ancient-looking than standard neutral camp tokens.
+- Barracks token: structural fortified building icon, readable as a standing objective.
+- Roshan token: premium boss marker, heavier visual weight than all other board tokens.
+- Aegis token: premium relic look, gold and sacred aura, clearly a high-value objective reward.
+- Power rune tokens: one full coherent 5-token set with distinct icons and color coding:
+	- Illusion: spectral or mirrored motif
+	- Haste: motion / wind / streak motif
+	- Invisibility: eye-hidden / haze / veil motif
+	- Regeneration: restorative life / leaf / healing-water motif
+	- Double Damage: explosive / crossed-strike / radiant impact motif
+- Courier token: allied utility piece, messenger silhouette, readable and distinct from combat units.
+- Broken tree token: a cut stump / broken trunk / exposed roots motif that clearly signals a once-blocked space now opened.
+
+TOP SECTION REPETITION PRIORITY
+Repeat token types to fill the available slots, prioritizing the tokens that need multiple copies in actual play.
+Use this duplication priority from highest to lowest:
+1. broken tree
+2. lane creep
+3. neutral camp
+4. barracks
+5. courier
+6. ancient camp
+7. power runes
+8. Roshan
+9. Aegis
+
+BOTTOM SECTION CONTENT: COMPACT VISION TOKENS
+The bottom section should contain only compact vision tokens:
+- Observer Ward
+- Sentry Ward
+
+Do NOT include Invisibility Cloud or Smoke Cloud on this sheet.
+Those are larger hidden-position templates and should be generated as separate assets later.
+
+VISION TOKEN VISUAL RULES
+- Observer Ward: elegant watchful vision iconography, mystical but non-aggressive, intelligence / sight / awareness theme.
+- Sentry Ward: same family as Observer Ward but clearly distinct through sharper detection / reveal / true-sight language.
+- The two ward types must feel manufactured as a matching pair.
+- They should be instantly distinguishable from each other even when viewed from across the table.
+
+BOTTOM SECTION REPETITION RULE
+- Fill the bottom section primarily with Observer Ward and Sentry Ward tokens.
+- Keep both types repeated multiple times in balanced proportion.
+- Slightly favor Observer Wards if an uneven count is needed.
+
+ICONOGRAPHY RULES
+- Use bold central symbols with clean silhouettes.
+- Favor icon clarity over painterly detail.
+- Use subtle magical embellishment, not noisy illustrative clutter.
+- Keep token identity understandable even if printed small.
+- No token should depend on tiny text to be recognized.
+
+ANTI-DRIFT / NEGATIVE CONSTRAINTS
+- Do not redesign the page layout.
+- Do not change the token slot arrangement.
+- Do not turn the sheet into cards, stickers, coins photographed on a table, or a punchboard mockup seen at an angle.
+- Do not include Rubick himself, his staff, his face, or his spell icons as token subjects.
+- Do not use copyrighted Dota 2 UI symbols or official Valve art.
+- Do not make the tokens muddy, hyper-rendered, or overloaded with effects.
+- Do not place giant text labels inside each token.
+- Do not add extra token categories not listed above.
+- Do not include hero tokens, invisibility clouds, smoke clouds, or planning tokens on this page.
+
+FINAL OUTPUT TARGET
+The final image should look like a production-quality printable token sheet for a premium fantasy board game: clean, aligned, readable, stylistically cohesive with the attached Rubick hero card, and immediately usable as a print reference for board presence and ward tokens.
+```
+
+## Practical Note
+
+This prompt intentionally excludes **hero tokens**, **Invisibility Cloud**, and **Smoke Cloud** from the sheet even though they belong to nearby token families. They need different scale and layout treatment than the compact token grid shown in the attached wireframe.
