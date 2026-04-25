@@ -49,7 +49,7 @@ Summons a wave of meteors around target enemy unit, dealing damage to all enemy 
 **Mana Cost:** 15 | **AP Cost:** 2 | **Cooldown:** 2.5 rounds | **Range:** 5 hexes max
 
 **Effect:**  
-Fires an arrow in a straight line in the chosen direction. The arrow travels up to 5 hexes or until it hits an enemy hero. The first enemy hero struck takes damage and is stunned. Stun duration increases based on how far the arrow traveled before impact. Enemies may use the Dodge Skillshot reaction to attempt to avoid the arrow.
+Fires an arrow in a straight line in the chosen direction. The arrow travels up to 5 hexes or until it hits an enemy hero. The first enemy hero struck takes damage and is stunned. Stun duration increases based on how far the arrow traveled before impact. Enemies may attempt to dodge the arrow by using a committed 1 AP movement action or 1 AP movement ability as a reaction.
 
 **Level Progression:**
 - **Level 1-5:** 20 damage, +3 AP stun per hex traveled (3 AP at 1 hex, 6 AP at 2 hexes, 9 AP at 3 hexes, 12 AP at 4 hexes, 15 AP at max range)

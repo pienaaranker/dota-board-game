@@ -137,7 +137,7 @@ Crystal Maiden is the quintessential Intelligence support: fragile, mana-efficie
 **Mana Cost:** 12 | **AP Cost:** 1 | **Cooldown:** 2 rounds | **Range:** 4 hexes max
 
 **Effect:**  
-Sends a column of spikes erupting along a line in the chosen direction. The spikes travel up to 4 hexes, stunning and damaging all enemy units in a 1-hex-wide path. Enemies may use the Dodge Skillshot reaction to attempt to avoid the spikes.
+Sends a column of spikes erupting along a line in the chosen direction. The spikes travel up to 4 hexes, stunning and damaging all enemy units in a 1-hex-wide path. Enemies may attempt to dodge the spikes by using a committed 1 AP movement action or 1 AP movement ability as a reaction.
 
 **Level Progression:**
 - **Level 1-5:** 15 damage, 8 AP stun

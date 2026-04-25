@@ -1638,7 +1638,7 @@ Ability data to show exactly:
 - AP Cost: 2
 - Cooldown: 2.5 rounds
 - Range: 5 hexes max
-- Rules: Launch a bloody hook in a straight line in the chosen direction. The hook travels up to 5 hexes or until it hits an enemy hero or creep. The first unit struck takes damage and is pulled back to the hex adjacent to Pudge. Enemies may use the Dodge Skillshot reaction to attempt to avoid the hook.
+- Rules: Launch a bloody hook in a straight line in the chosen direction. The hook travels up to 5 hexes or until it hits an enemy hero or creep. The first unit struck takes damage and is pulled back to the hex adjacent to Pudge. Enemies may attempt to dodge the hook by using a committed 1 AP movement action or 1 AP movement ability as a reaction.
 - Scaling: 1-5: 15 damage | 6-11: 25 damage | 12+: 40 damage
 - Notes: The hooked unit is forcibly moved to a hex adjacent to Pudge along the line of the hook. If the direct hex is not available, the player being hooked chooses which adjacent hex.
 
@@ -1838,7 +1838,7 @@ Ability data to show exactly:
 - AP Cost: 1
 - Cooldown: 2 rounds
 - Range: 4 hexes max
-- Rules: Send a column of spikes erupting along a line in the chosen direction. The spikes travel up to 4 hexes, stunning and damaging all enemy units in a 1-hex-wide path. Enemies may use the Dodge Skillshot reaction to attempt to avoid the spikes.
+- Rules: Send a column of spikes erupting along a line in the chosen direction. The spikes travel up to 4 hexes, stunning and damaging all enemy units in a 1-hex-wide path. Enemies may attempt to dodge the spikes by using a committed 1 AP movement action or 1 AP movement ability as a reaction.
 - Scaling: 1-5: 15 damage, 8 AP stun | 6-11: 25 damage, 12 AP stun | 12+: 35 damage, 16 AP stun
 - Notes: Unlike Sacred Arrow, Earth Spike hits all units along its path, not just the first.
 
@@ -2056,7 +2056,7 @@ Ability data to show exactly:
 - AP Cost: 2
 - Cooldown: 2.5 rounds
 - Range: 5 hexes max
-- Rules: Fire an arrow in a straight line in the chosen direction. The arrow travels up to 5 hexes or until it hits an enemy hero. The first enemy hero struck takes damage and is stunned. Stun duration increases based on how far the arrow traveled before impact. Enemies may use the Dodge Skillshot reaction to attempt to avoid the arrow.
+- Rules: Fire an arrow in a straight line in the chosen direction. The arrow travels up to 5 hexes or until it hits an enemy hero. The first enemy hero struck takes damage and is stunned. Stun duration increases based on how far the arrow traveled before impact. Enemies may attempt to dodge the arrow by using a committed 1 AP movement action or 1 AP movement ability as a reaction.
 - Scaling: 1-5: 20 damage, +3 AP stun per hex traveled | 6-11: 30 damage, +4 AP stun per hex traveled | 12+: 40 damage, +5 AP stun per hex traveled
 - Notes: At max range the stun reaches 15 AP at levels 1-5, 20 AP at levels 6-11, and 25 AP at levels 12+.
 

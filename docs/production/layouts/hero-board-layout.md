@@ -291,10 +291,10 @@ Located at the very top, spanning the width of the mat.
 - **Marker:** Generic cube token tracking how many AP have been spent this turn
 - **Usage:** Move token forward as actions are executed. Reset to 0 at start of each activation.
 
-#### Reaction AP Owed
-- **Component:** Printed box "Reaction AP Debt: ___"
-- **Marker:** Small numbered token (1–5)
-- **Usage:** When spending AP from next turn for a Reaction (e.g., Deny), place token showing how much AP is deducted from next activation.
+#### Reaction Slots
+- **Component:** 2 printed slots to the left of the 10 action slots
+- **Marker:** Standard planning tokens committed face-down
+- **Usage:** During Planning Phase, place up to 2 reaction tokens here for the current half-round. Each committed reaction reserves 1 AP from that hero's normal AP budget and cannot also be committed to the hero's normal activation actions.
 
 ---
 

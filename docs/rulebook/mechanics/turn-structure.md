@@ -84,11 +84,16 @@ Before the Turn Phase begins, all players simultaneously select their actions fo
 **Planning Rules:**
 - Planning Tokens include: Move, Attack, Farm, Pass, 6 numbered item slot tokens per hero, and hero-specific ability tokens.
 - Players may select up to their hero's AP worth of actions.
+- Each hero also has **2 dedicated reaction token slots** for the current half-round.
 - Tokens remain hidden until activation — players commit actions without knowing what enemies have planned.
 - Once a hero's tokens are revealed at the start of their activation, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
 - If a hero loses AP before their activation due to a stun or reaction cost, remove committed tokens from left to right until the removed tokens total at least the AP lost. Those removed actions are lost for that activation.
 - Item use is committed by slot, not by a generic Use Item token. Revealing an item slot token means the hero is attempting to use the item currently in that numbered slot.
-- Reactions are **not** included in Planning Phase — reactions are declared in real-time during the Turn Phase when triggered.
+- Reactions **are** committed during Planning Phase using the hero's reaction slots.
+- Any committed reaction reserves **1 AP** from that hero's normal AP budget for the current half-round.
+- Reaction slots are **token slots**, not AP slots. Any action that costs exactly **1 AP** may be committed there if it is legal to use as an out-of-turn action.
+- AP committed to reaction slots cannot also be committed to that hero's normal activation actions.
+- If a committed reaction is never triggered during that half-round, its reserved AP is lost.
 
 **Strategic Implications:**
 - Players must predict enemy positions and actions when committing their tokens.
@@ -196,24 +201,47 @@ In these cases, the action is automatically cancelled (returned to the hero's av
 - Later heroes can commit actions more confidently knowing more of the game state, but have less ability to adapt since more enemy actions have already resolved.
 
 ### Reactions
-When an active hero targets your hero with an attack or ability, you may **React** before the effect resolves. Reactions interrupt the active hero's turn, are resolved immediately, and then the active hero continues.
+Reactions are pre-committed out-of-turn actions that can interrupt another hero's turn. They are committed during Planning Phase, triggered after targeting is declared, resolved immediately, and then the active hero continues.
 
 **Rules:**
-- A hero may only **react once** per opposing hero's activation (not once per round — once per turn when that specific enemy hero is acting).
-- **Exception — Observer Ward Coverage:** If the attacking hero is standing in an area covered by an enemy **Observer Ward**, the defending team's heroes may react **twice** during that hero's activation instead of once. This represents the tactical advantage of having vision and awareness of enemy positioning.
-- Reactions are **always paid from the reacting hero's next activation AP**. The cost is deducted at the start of that hero's next turn during Planning Phase — they simply have that many fewer AP to commit to actions.
-- Only the **targeted hero** may react, not teammates.
+- A reaction is, in its purest form, an action taken out of turn.
+- Only heroes **directly affected** by the triggering action may react. A hero is directly affected if they are targeted by the action, included in its affected area or skillshot path, or are eligible to use **Deny** against that action.
+- A hero may normally use only **1 committed reaction** per half-round.
+- **Exception — Observer Ward Coverage:** If the acting enemy hero is standing in an area covered by an allied **Observer Ward**, each directly affected defending hero may use up to **2 committed reactions** during that half-round instead of 1.
+- A hero may split those 2 reactions across different triggers during the same half-round if later valid triggers occur.
+- Reactions are triggered **after targeting is declared** and **before** the triggering action resolves.
+- If multiple defending heroes react to the same action, reactions resolve in **turn-order order** among the eligible defenders.
+- A committed reaction can only be used if that hero is currently able to perform that action. If the reaction becomes illegal before use, it cannot be used and the reserved AP remains lost for that half-round.
+- When a committed reaction is used, its specific target or destination is declared at that moment using the normal targeting rules for that action.
 
-**Reaction Types:**
+**Common Reaction Uses:**
 
-| Reaction | AP Cost (from next turn) | Effect |
+| Reaction | AP Cost | Effect |
 |---|---|---|
-| **Flee** | 2 AP | Move 1 hex in any direction before the attack or ability resolves. If the attacker required adjacency or LoS, the attack misses entirely. |
-| **Activate Defensive Item** | 1 AP | Immediately trigger a held defensive Item Card (e.g. BKB equivalent) before damage is applied. The item's effect takes place before resolution. |
+| **Move** | 1 AP | Reposition 1 hex using the normal movement rules before the triggering action resolves. If this movement breaks the attacker's required adjacency or Line of Sight, the attack or ability misses. |
+| **Activate Defensive Item** | 1 AP | Immediately trigger a committed defensive item-slot action before damage is applied. The item's effect takes place before resolution. |
 | **Deny** | 1 AP | Contest an allied creep's last hit to deny the enemy gold and XP. See Economy and Progression for full rules. |
-| **Dodge Skillshot** | 2 AP | Roll a die to attempt to dodge an incoming Skillshot ability. On success, the ability misses. On failure, the ability hits normally. Regardless of outcome, the hero must immediately move to an adjacent hex. Only usable against abilities marked as Skillshot. |
 
-> **Example:** Juggernaut (4 AP) attacks Crystal Maiden. She reacts with **Flee** (costs 2 AP from her next turn), moving 1 hex away. Juggernaut is melee — he no longer has adjacency — so the attack misses. On Crystal Maiden's next turn she has 2 fewer AP to spend.
+These are common reactions, not the full limit of the system. Any committed action that costs exactly **1 AP** may be used as a reaction if it is legal to perform at that timing window.
+
+**Examples of legal 1 AP reactions:**
+- **Movement reaction:** A hero commits **Move** into a reaction slot so they can reposition out of danger when directly affected.
+- **Ability reaction:** Mirana commits **Leap** into a reaction slot. If she is directly affected by an enemy action later in the half-round and is still able to Leap, she may use it out of turn as her reaction.
+- **Item reaction:** A hero commits an item-slot token for a 1 AP defensive item, then triggers it when directly affected before damage resolves.
+- **Deny reaction:** A hero commits **Deny** into a reaction slot so they can contest an enemy **Farm** action against an allied creep wave.
+
+**Dodging a Skillshot:**
+- A hero may attempt to dodge a **Skillshot** only by using a committed **1 AP movement action or 1 AP movement ability** as their reaction.
+- After the Skillshot's path is declared and before it resolves, both players roll a die: the reacting hero and the acting hero.
+- If the reacting hero rolls higher, the Skillshot misses.
+- If the acting hero rolls equal or higher, the Skillshot hits normally.
+- The reacting hero then resolves the committed movement action or movement ability used for the dodge, following that action's normal movement rules.
+
+> **Example:** Crystal Maiden commits **Move** into one of her reaction slots during Planning Phase, reserving 1 AP for it. Later in the half-round, Juggernaut attacks her from melee range. After Juggernaut declares Crystal Maiden as the target, she triggers that committed **Move**, chooses an adjacent hex, and moves there before the attack resolves. Because Juggernaut no longer has adjacency, the attack misses. That 1 reserved AP is already spent for the half-round and cannot be used during Crystal Maiden's own activation.
+
+> **Example:** Mirana commits **Leap** into a reaction slot during Planning Phase, reserving 1 AP for it. Later in the half-round, an enemy declares an attack against her. After targeting is declared, Mirana may trigger **Leap** as her reaction, moving according to Leap's rules before the enemy action resolves. If no valid trigger occurs before Mirana's own activation, the reserved AP is still lost for the half-round, but she may still use Leap normally on her turn if she has the AP and a legal action slot for it.
+
+> **Example:** Pudge throws **Meat Hook** at Mirana. Mirana has committed **Leap** in a reaction slot. After the Hook path is declared and before it resolves, both players roll a die. If Mirana rolls higher than Pudge, the Hook misses and Mirana resolves **Leap** normally. If Pudge rolls equal or higher, the Hook hits normally and Mirana does not avoid the Hook.
 
 ### Round End Phase
 After all heroes on both sides have completed their turns, the following occur in order:

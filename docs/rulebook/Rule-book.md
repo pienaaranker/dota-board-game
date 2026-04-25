@@ -50,7 +50,7 @@ Each hero has their own AP per turn to spend.
 | **Move** | Move a hero to an adjacent area. |
 | **Attack** | Initiate combat with a Creep, Tower, or Enemy Hero. |
 | **Farm** | Spend AP to gain gold and XP from a creep wave or neutral camp. |
-| **Deny** | *(Reaction)* Use AP from your next turn to interrupt an opponent's Farm action. Requires a die roll challenge. |
+| **Deny** | *(Reaction)* Commit a 1 AP reaction during Planning Phase to interrupt an opponent's Farm action if triggered. Requires a die roll challenge. |
 | **Use Item** | Activate an item card's effect using the numbered item slot token corresponding to the slot that currently holds that item. |
 | **Use Ability** | Activate one of the hero's printed abilities using the matching hero-specific token (requires Mana). |
 

@@ -19,7 +19,7 @@ No die roll is required to farm — spending the AP secures the last hit unless 
 Every hero receives a flat gold amount at the **Round End Phase**, regardless of farming activity.
 
 ### Deny
-Deny is a **Reaction** costing **1 AP from the reacting hero's next turn**. An allied hero may react to an enemy's Farm action targeting an allied creep wave to attempt to deny the last hit, depriving the enemy of gold.
+Deny is a **Reaction** committed during Planning Phase by reserving **1 AP** in one of the hero's reaction slots for the current half-round. An allied hero may use that committed reaction when an enemy uses **Farm** on an allied creep wave, attempting to deny the last hit and deprive the enemy of gold.
 
 - Resolved with a **die roll challenge** between the denying hero and the farming hero.
 - **Deny succeeds:** The farming hero gains **reduced XP and no gold** from that creep.

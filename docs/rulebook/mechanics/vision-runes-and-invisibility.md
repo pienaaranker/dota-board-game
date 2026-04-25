@@ -43,7 +43,7 @@ When a hero becomes invisible:
 6. **AoE abilities** may target individual cloud tiles. If the tile containing the hero is hit, the hero is **revealed**.
 
 **Attacking from Invisibility:**
-When an invisible hero attacks or uses an offensive ability, the targeted hero **cannot use reactions** — the attack resolves without the defender being able to Flee, Dodge, or use Defensive Items. The invisible hero is then revealed immediately after the attack resolves.
+When an invisible hero attacks or uses an offensive ability, directly affected defending heroes **cannot use committed reactions** against that action. The attack resolves uncontested, and the invisible hero is then revealed immediately after the attack resolves.
 
 ### Breaking Invisibility
 The hero is revealed when:
@@ -64,7 +64,7 @@ A consumable item. When used, creates a **Reveal radius** centred on the using h
 A purchased consumable token placed by a hero on any Open hex.
 
 - Observer Wards cover a fixed radius of hexes (typically 3–4 hexes, specified on the Item Card).
-- **Tactical Advantage:** When an enemy hero standing in a warded area attacks or uses an ability on an allied hero, that allied hero (and any other allied heroes targeted during that same activation) may use **two reactions** instead of the normal one. This represents superior awareness and positioning intel.
+- **Tactical Advantage:** When an enemy hero standing in a warded area attacks or uses an ability that directly affects an allied hero, each directly affected allied hero may use up to **2 committed reactions** during that half-round instead of 1. Those reactions may be split across different valid triggers later in the same half-round.
 - Observer Wards remain active for a set number of rounds before expiring.
 - Ward duration is tracked on the shared board's ward log using a die or generic number marker, not a dedicated ward-duration token.
 - Observer Wards do **not** grant detection — they only provide the reaction advantage. Use Sentry Wards or Dust for invisibility detection.
@@ -78,7 +78,7 @@ A consumable item purchased at the Fountain. When used, Smoke grants **Invisibil
 - All affected heroes move together as a group under a single **Smoke Cloud** token (similar to Invisibility Clouds, but covering multiple heroes).
 - **Activation Restriction:** The hero who activates Smoke **cannot attack or use offensive abilities for the remainder of that turn**. This prevents immediate exploitation of the Smoke buff.
 - Heroes under Smoke are **invisible to Observer Wards** — they do not trigger the tactical reaction advantage when attacking from a warded area.
-- **Attacking from Smoke:** When a hero under Smoke attacks or uses an offensive ability, the targeted hero **cannot use reactions** — the attack resolves without the defender being able to Flee, Dodge, or use Defensive Items. The Smoke dispels from the attacking hero immediately after the attack resolves.
+- **Attacking from Smoke:** When a hero under Smoke attacks or uses an offensive ability, directly affected defending heroes **cannot use committed reactions** against that action. The Smoke dispels from the attacking hero immediately after the attack resolves.
 
 **Smoke Dispels When:**
 - Any affected hero moves within **3 hexes** of an enemy hero.

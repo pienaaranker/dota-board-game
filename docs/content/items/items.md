@@ -73,7 +73,7 @@ Restore X HP over 2 rounds. Interrupted if the user takes damage from an enemy h
 
 Place on any Open hex (1 AP). The ward token remains on the board until destroyed and covers a fixed radius of hexes as printed on the item card.
 
-**Tactical Advantage:** While an enemy hero is standing within a warded area, any allied hero they target may use **two reactions** instead of the normal one. This represents the awareness and intel that vision provides. Heroes attacking from under **Smoke of Deceit** bypass this advantage entirely.
+**Tactical Advantage:** While an enemy hero is standing within a warded area, each directly affected allied hero may use up to **2 committed reactions** during that half-round instead of 1. Those reactions may be split across different valid triggers later in the same half-round. Heroes attacking from under **Smoke of Deceit** bypass this advantage entirely.
 
 Observer Wards do **not** grant invisibility detection — they only provide the reaction advantage. Use Sentry Wards or Dust of Appearance for that.
 
@@ -97,7 +97,7 @@ Sentry Wards do **not** provide the tactical reaction advantage that Observer Wa
 #### Smoke of Deceit *(50 Gold)*
 **Type:** Consumable | **Status:** ✅ Confirmed
 
-When activated, all affected heroes (the user and all allied heroes within **2 hexes**) move together under a single **Smoke Cloud** token for group invisibility. The hero who activates Smoke **cannot attack or use offensive abilities for the remainder of that turn**. Heroes under Smoke are **invisible to Observer Wards** and do not trigger the tactical reaction advantage. When a Smoke hero attacks or uses an offensive ability, the targeted hero **cannot use reactions** — the attack resolves uncontested — and Smoke immediately dispels from the attacker.
+When activated, all affected heroes (the user and all allied heroes within **2 hexes**) move together under a single **Smoke Cloud** token for group invisibility. The hero who activates Smoke **cannot attack or use offensive abilities for the remainder of that turn**. Heroes under Smoke are **invisible to Observer Wards** and do not trigger the tactical reaction advantage. When a Smoke hero attacks or uses an offensive ability, directly affected defending heroes **cannot use committed reactions** against that action, and Smoke immediately dispels from the attacker.
 
 **Smoke dispels from all affected heroes when any one of them:**
 - Moves within **3 hexes** of an enemy hero.

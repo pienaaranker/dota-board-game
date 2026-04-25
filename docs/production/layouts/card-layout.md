@@ -46,7 +46,7 @@ The following should remain on the Hero Board because they change constantly and
 - Current level and XP progress
 - Gold
 - Current AP spent this activation
-- Reaction AP debt
+- Reaction slots and reserved reaction AP
 - Active cooldown timers
 - Active status effects and durations
 - Temporary stat bonuses or penalties

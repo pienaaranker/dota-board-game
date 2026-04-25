@@ -138,7 +138,7 @@ Sven embodies the classic Strength hero archetype: tanky, hits hard, scales into
 **Mana Cost:** 14 | **AP Cost:** 2 | **Cooldown:** 2.5 rounds | **Range:** 5 hexes max
 
 **Effect:**  
-Launches a bloody hook in a straight line in the chosen direction. The hook travels up to 5 hexes or until it hits an enemy hero or creep. The first unit struck takes damage and is pulled back to the hex adjacent to Pudge. Enemies may use the Dodge Skillshot reaction to attempt to avoid the hook.
+Launches a bloody hook in a straight line in the chosen direction. The hook travels up to 5 hexes or until it hits an enemy hero or creep. The first unit struck takes damage and is pulled back to the hex adjacent to Pudge. Enemies may attempt to dodge the hook by using a committed 1 AP movement action or 1 AP movement ability as a reaction.
 
 **Level Progression:**
 - **Level 1-5:** 15 damage
