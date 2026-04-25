@@ -35,6 +35,19 @@ Located at the top of Zone 2.
 - **Size:** Fits up to 10 planning tokens laid horizontally in sequence
 - **Usage:** During Planning Phase, place selected tokens face-down here in the order you want to execute them. During your activation, reveal and execute from left to right.
 
+#### Printed Quick Reference Panel
+- **Component:** A compact printed rules-reference panel placed in the open space between the action-planning area and the item / backpack area
+- **Usage:** Provides high-frequency reminders so players do not need a separate helper card for core turn flow and item handling
+- **Printed Copy:**
+  - **PLAN** — Commit actions and reactions
+  - **REVEAL** — Resolve **left to right**; choose targets on reveal
+  - **MOVE** — Move **1 hex**
+  - **ATTACK | FARM** — Damage enemies | Farm gold / XP
+  - **ABILITY | ITEM** — Use hero skills and active items
+  - **REACTIONS** — Respond to enemy actions
+  - **COMBAT** — Apply damage after defense
+  - **ROUND END** — Resolve round upkeep
+
 ---
 
 #### Dual Duration Tracking System

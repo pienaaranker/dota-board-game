@@ -2316,6 +2316,7 @@ Locked layout instruction:
 - preserve the wireframe structure exactly
 - keep the top action-planning area with 2 reaction slots and 10 action slots
 - keep the right-side item area with 6 active item slots plus a visually separate 3-slot backpack section
+- use the open space between the action area and the item area as a compact printed quick-reference panel rather than leaving it empty
 - keep the dual duration tracking area with separate turn and round sections
 - keep the status effects area in the lower left
 - keep the AP-spent tracker integrated into the board without adding extra subsystems
@@ -2327,6 +2328,16 @@ Board content instruction:
 - include clear labels for Reactions, Actions, Items, Backpack, Turn Status Effects, Turn Cooldowns, Round Status Effects, and Round Cooldowns
 - number the item slots clearly from 1 to 6
 - keep the 3 backpack slots visually secondary to the active item slots
+- include a compact printed quick-reference block in the empty upper-middle space
+- use this exact quick-reference content, arranged cleanly and legibly:
+	- PLAN — Commit actions and reactions
+	- REVEAL — Resolve left to right; choose targets on reveal
+	- MOVE — Move 1 hex
+	- ATTACK | FARM — Damage enemies | Farm gold / XP
+	- ABILITY | ITEM — Use hero skills and active items
+	- REACTIONS — Respond to enemy actions
+	- COMBAT — Apply damage after defense
+	- ROUND END — Resolve round upkeep
 - label the turn track compartments 1 through 10
 - label the round track compartments 1/2, 1, 2, 3, 4, 5
 - include a clean AP tracker row or AP-spent indicator that fits the same visual system
@@ -2367,6 +2378,7 @@ Negative constraints:
 - do not add fake dice, tokens, miniatures, or cards on top of the board unless used very minimally for scale reference
 - do not overcrowd empty play areas with decoration
 - do not introduce extra counters, extra tracks, or extra side panels not present in the wireframe
+- do not turn the quick-reference panel into a large text-heavy rules sheet; it should be a concise aid, not a replacement for the rulebook
 - do not make the board dark to the point that tokens become hard to read
 - do not use glossy sci-fi UI, mobile game UI, or trading card frame language
 
