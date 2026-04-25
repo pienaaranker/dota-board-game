@@ -306,7 +306,6 @@ Three lane sections (Top, Mid, Bottom), each with identical tracking.
 A shared pool of reusable tokens used during the Planning Phase:
 - **Move** tokens
 - **Attack** tokens
-- **Farm** tokens
 - **Item Slot 1-6** tokens for the active item slots only
 - **Pass** tokens
 - **Hero Ability Tokens** (custom to each hero, one per named ability)

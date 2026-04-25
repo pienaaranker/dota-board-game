@@ -61,7 +61,7 @@ Stun effects use one of three measurements. The card or effect must always state
 - Continue removing tokens until the total removed AP is **equal to or greater than** the AP stun value.
 - If the hero is already in the middle of an activation when the AP stun is applied, start with the next unresolved token and continue left to right through the remaining committed actions.
 
-**Example:** A hero committed: Move (1 AP) -> Move (1 AP) -> Ability (2 AP) -> Ability (2 AP) -> Farm (2 AP) -> Farm (2 AP). If that hero is stunned for **5 AP**, remove tokens from left to right until at least 5 AP has been removed: Move (1 AP), Move (1 AP), Ability (2 AP), Ability (2 AP). The hero keeps only the two Farm actions for that activation.
+**Example:** A hero committed: Move (1 AP) -> Move (1 AP) -> Ability (2 AP) -> Ability (2 AP) -> Attack (2 AP) -> Attack (2 AP). If that hero is stunned for **5 AP**, remove tokens from left to right until at least 5 AP has been removed: Move (1 AP), Move (1 AP), Ability (2 AP), Ability (2 AP). The hero keeps only the two Attack actions for that activation.
 
 #### Silence
 
@@ -71,7 +71,7 @@ Silence prevents a hero from using abilities for the stated duration.
 - A Silenced hero cannot activate printed hero abilities, including **Active**, **Toggle**, and **Channeled** abilities.
 - Silence immediately interrupts any **Channeled** ability the hero is currently maintaining.
 - A Silenced hero cannot toggle a printed hero ability on or off while Silenced.
-- A Silenced hero may still move, attack, farm, and use item actions unless another effect also prevents those actions.
+- A Silenced hero may still move, attack, and use item actions unless another effect also prevents those actions.
 - Silence does not remove committed tokens in advance; ability tokens simply fail if revealed while the hero is Silenced.
 
 #### Slow
@@ -104,7 +104,7 @@ Root prevents a hero from moving voluntarily for the stated duration.
 
 **Root rules:**
 - A Rooted hero cannot use **Move** actions.
-- A Rooted hero may still attack, farm, use items, and use abilities unless the card or effect says otherwise.
+- A Rooted hero may still attack, use items, and use abilities unless the card or effect says otherwise.
 - Root does not prevent **forced movement** caused by another hero, item, or board effect unless that effect specifically says the target cannot be moved.
 - If a committed **Move** token is revealed while the hero is Rooted, that action fails normally under the failed-action rules.
 

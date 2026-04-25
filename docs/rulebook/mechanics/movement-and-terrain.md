@@ -74,9 +74,8 @@ Each hero has a fixed AP value printed on their Hero Card. All AP is refreshed a
 | Action | AP Cost | Description |
 |---|---|---|
 | **Move** | 1 | Move the hero token to one adjacent area on the board. |
-| **Attack** | 1 | Initiate combat against a Creep, Tower, or Enemy Hero in range. |
-| **Farm** | 1 | Secure gold and XP from a creep wave or neutral camp in the hero's current area. |
-| **Deny** | Reaction | Commit a 1 AP reaction during Planning Phase to contest an enemy Farm action if triggered. Requires a die roll. See Economy and Progression. |
+| **Attack** | 1 | Initiate combat against a lane creep token, neutral camp token, Tower, or Enemy Hero in range. Attacking creeps and camps is how farming is resolved. |
+| **Deny** | Reaction | Commit a 1 AP reaction during Planning Phase to contest an enemy Attack against an allied lane creep if triggered. Requires a die roll. See Economy and Progression. |
 | **Use Item** | Varies | Activate an Item Card's effect by revealing the numbered item slot token for the slot that currently holds that item. Cost listed on the card. |
 | **Use Ability** | Varies | Activate a hero ability using the matching hero-specific token. Costs Mana and any AP listed on the hero's Abilities Card. |
 

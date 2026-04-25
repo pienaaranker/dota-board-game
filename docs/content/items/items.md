@@ -182,7 +182,7 @@ Spend 2 AP. Teleport to any friendly structure (Tower, Barracks, Fountain) or al
 #### Hand of Midas *(2200 Gold)*
 **Type:** Active | **Status:** 🔲 TODO
 
-Once per round, use during a Farm action on a neutral camp: gain double gold and bonus XP from that camp. Cannot be used on lane creeps.
+Once per round, use during an Attack against a neutral camp token: gain double gold and bonus XP from that camp. Cannot be used on lane creeps.
 
 ---
 

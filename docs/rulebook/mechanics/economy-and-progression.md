@@ -6,24 +6,24 @@ This document collects gold, farming, leveling, items, and death-cycle rules.
 
 ## Farming & Economy
 
-### Farm Action
-A hero in the same area as a creep wave or neutral camp spends 1 AP to **Farm**.
+### Farming Through Attacks
+A hero in the same area as a creep wave or neutral camp spends 1 AP to **Attack** the relevant creep or camp token to farm it.
 
 - **Lane Creeps:** Remove 1 creep counter from the wave. The hero receives **gold and XP** for that creep.
 - **Neutral/Ancient Camps:** Remove 1 creep counter from the camp. The hero receives **gold and XP** but also loses **Health** (neutrals fight back).
-- **If Denied:** An enemy hero may use the Deny reaction (see Turn Structure). If the Deny succeeds, the farming hero receives **reduced XP and no gold**.
+- **If Denied:** An enemy hero may use the Deny reaction (see Turn Structure). If the Deny succeeds, the attacking hero receives **reduced XP and no gold**.
 
-No die roll is required to farm — spending the AP secures the last hit unless interrupted by a Deny reaction.
+No separate Farm action exists. Spending the AP on the Attack secures the last hit unless interrupted by a Deny reaction.
 
 ### Passive Income
 Every hero receives a flat gold amount at the **Round End Phase**, regardless of farming activity.
 
 ### Deny
-Deny is a **Reaction** committed during Planning Phase by reserving **1 AP** in one of the hero's reaction slots for the current half-round. An allied hero may use that committed reaction when an enemy uses **Farm** on an allied creep wave, attempting to deny the last hit and deprive the enemy of gold.
+Deny is a **Reaction** committed during Planning Phase by reserving **1 AP** in one of the hero's reaction slots for the current half-round. An allied hero may use that committed reaction when an enemy uses **Attack** on an allied lane creep, attempting to deny the last hit and deprive the enemy of gold.
 
 - Resolved with a **die roll challenge** between the denying hero and the farming hero.
-- **Deny succeeds:** The farming hero gains **reduced XP and no gold** from that creep.
-- **Deny fails:** Farm proceeds normally — the enemy receives full gold and XP.
+- **Deny succeeds:** The attacking hero gains **reduced XP and no gold** from that creep.
+- **Deny fails:** The attack resolves normally — the enemy receives full gold and XP.
 
 ### Gold Uses
 Gold is spent to:

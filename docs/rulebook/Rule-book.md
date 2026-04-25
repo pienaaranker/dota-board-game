@@ -25,7 +25,7 @@ All heroes start with 3× the AP at the start of the game to get out onto the ma
 
 ### Planning Phase
 Before each half-round (10 turns), all players simultaneously:
-1. Select face-down planning tokens for each hero they control. These include Move, Attack, Farm, Pass, the 6 numbered item slot tokens for that hero's active item slots, and hero-specific ability tokens.
+1. Select face-down planning tokens for each hero they control. These include Move, Attack, Pass, the 6 numbered item slot tokens for that hero's active item slots, and hero-specific ability tokens.
 2. Place tokens face-down in front of them (one set per hero if controlling multiple)
 3. Once all players are ready, the Turn Phase begins
 4. Each hero's tokens remain face-down until that hero's activation, when they are revealed and executed
@@ -48,9 +48,8 @@ Each hero has their own AP per turn to spend.
 | Action | Description |
 |--------|-------------|
 | **Move** | Move a hero to an adjacent area. |
-| **Attack** | Initiate combat with a Creep, Tower, or Enemy Hero. |
-| **Farm** | Spend AP to gain gold and XP from a creep wave or neutral camp. |
-| **Deny** | *(Reaction)* Commit a 1 AP reaction during Planning Phase to interrupt an opponent's Farm action if triggered. Requires a die roll challenge. |
+| **Attack** | Initiate combat with a lane creep token, neutral camp token, Tower, or Enemy Hero. Attacking creeps and camps is how farming is resolved. |
+| **Deny** | *(Reaction)* Commit a 1 AP reaction during Planning Phase to interrupt an opponent's Attack against an allied lane creep if triggered. Requires a die roll challenge. |
 | **Use Item** | Activate an item card's effect using the numbered item slot token corresponding to one of the hero's 6 active item slots. Backpack items cannot be used directly and items swapped in from the backpack can only be used in the next round. |
 | **Use Ability** | Activate one of the hero's printed abilities using the matching hero-specific token (requires Mana). |
 

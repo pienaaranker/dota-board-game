@@ -82,7 +82,7 @@ Before the Turn Phase begins, all players simultaneously select their actions fo
 5. After the first 10 turns complete, players repeat the Planning Phase for the second half of the round.
 
 **Planning Rules:**
-- Planning Tokens include: Move, Attack, Farm, Pass, 6 numbered item slot tokens for each hero's active item slots, and hero-specific ability tokens.
+- Planning Tokens include: Move, Attack, Pass, 6 numbered item slot tokens for each hero's active item slots, and hero-specific ability tokens.
 - Players may select up to their hero's AP worth of actions.
 - Each hero also has **2 dedicated reaction token slots** for the current half-round.
 - Tokens remain hidden until activation — players commit actions without knowing what enemies have planned.
@@ -182,13 +182,13 @@ Some actions cannot be retargeted because no valid alternative exists:
 
 In these cases, the action is automatically cancelled (returned to the hero's available token pool, no AP spent).
 
-**Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack (1 AP) → Move (1 AP) → Farm (1 AP) → Move (1 AP). He intended to attack Hero X, but Hero X dies during another hero's activation before Sven's turn.
+**Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack (1 AP) → Move (1 AP) → Attack (1 AP) → Move (1 AP). He intended to attack Hero X, but Hero X dies during another hero's activation before Sven's turn.
 - First Move executes: 1 AP spent (9 AP remaining).
-**Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack (1 AP) → Move (1 AP) → Farm (1 AP) → Move (1 AP). He intended to attack Hero X, but Hero X dies during another hero's activation before Sven's turn.
+**Example:** Sven commits 10 AP worth of actions: Move (1 AP) → Attack (1 AP) → Move (1 AP) → Attack (1 AP) → Move (1 AP). He intended to attack Hero X, but Hero X dies during another hero's activation before Sven's turn.
 - First Move executes: 1 AP spent (9 AP remaining).
 - Attack action revealed: Hero X is dead. Sven may either (a) cancel the Attack (returned to deck, 0 AP spent) or (b) attack a different valid target in range (Hero Y). He chooses to attack Hero Y: 1 AP spent (8 AP remaining).
 - Second Move executes: 1 AP spent (7 AP remaining).
-- Farm executes: 1 AP spent (6 AP remaining).
+- Second Attack executes against a lane creep token: 1 AP spent (6 AP remaining).
 - Third Move executes: 1 AP spent (5 AP remaining).
 - Sven's turn ends with 5 unused AP (which is lost).
 
@@ -224,7 +224,7 @@ Reactions are pre-committed out-of-turn actions that can interrupt another hero'
 |---|---|---|
 | **Move** | 1 AP | Reposition 1 hex using the normal movement rules before the triggering action resolves. If this movement breaks the attacker's required adjacency or Line of Sight, the attack or ability misses. |
 | **Activate Defensive Item** | 1 AP | Immediately trigger a committed defensive item-slot action before damage is applied. The item's effect takes place before resolution. |
-| **Deny** | 1 AP | Contest an allied creep's last hit to deny the enemy gold and XP. See Economy and Progression for full rules. |
+| **Deny** | 1 AP | Contest an enemy Attack against an allied lane creep to deny the enemy gold and XP. See Economy and Progression for full rules. |
 
 These are common reactions, not the full limit of the system. Any committed action that costs exactly **1 AP** may be used as a reaction if it is legal to perform at that timing window.
 
@@ -232,7 +232,7 @@ These are common reactions, not the full limit of the system. Any committed acti
 - **Movement reaction:** A hero commits **Move** into a reaction slot so they can reposition out of danger when directly affected.
 - **Ability reaction:** Mirana commits **Leap** into a reaction slot. If she is directly affected by an enemy action later in the half-round and is still able to Leap, she may use it out of turn as her reaction.
 - **Item reaction:** A hero commits an item-slot token for a 1 AP defensive item, then triggers it when directly affected before damage resolves.
-- **Deny reaction:** A hero commits **Deny** into a reaction slot so they can contest an enemy **Farm** action against an allied creep wave.
+- **Deny reaction:** A hero commits **Deny** into a reaction slot so they can contest an enemy **Attack** against an allied lane creep.
 
 **Dodging a Skillshot:**
 - A hero may attempt to dodge a **Skillshot** only by using a committed **1 AP movement action or 1 AP movement ability** as their reaction.

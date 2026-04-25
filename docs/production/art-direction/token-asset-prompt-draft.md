@@ -108,7 +108,7 @@ These are the universal planning tokens used by every hero.
 
 | Token Family | Include On This Page | Why They Belong Together |
 |---|---|---|
-| Core Action Commitments | Move, Attack, Farm, Pass | All four must read as a single hidden-planning product set. |
+| Core Action Commitments | Move, Attack, Pass | All three must read as a single hidden-planning product set. |
 
 ---
 

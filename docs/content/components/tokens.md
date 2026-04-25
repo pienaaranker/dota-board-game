@@ -31,16 +31,17 @@ These are the pieces that physically appear on the board to represent units, obj
 | Token | Why It Is Needed |
 |---|---|
 | **Hero Tokens** | Show each drafted hero's position on the board. Also used as the hero's respawn piece when the hero dies. |
-| **Lane Creep Tokens / Counters** | Represent lane creep waves at each current Creep Meeting Point. |
-| **Neutral Camp Tokens / Counters** | Represent neutral creeps in jungle camps. |
-| **Ancient Camp Tokens / Counters** | Represent Ancient creeps in Ancient camps. |
+| **Lane Creep Tokens** | Represent lane creep waves at each current Creep Meeting Point. |
+| **Neutral Camp Tokens** | Represent neutral creeps in jungle camps. |
+| **Ancient Camp Tokens** | Represent Ancient creeps in Ancient camps. |
+| **Ancient Marker** | Marks the position of the Ancient on the map. |
 | **Tower Marker** | Marks a tower position. If destroyed the underlying art will display a distroyed build |
 | **Barracks Status Marker** | Represents a standing Barracks on its hex until destroyed. |
 | **Roshan Marker** | Shows whether Roshan is currently present. |
 | **Aegis of the Immortal Token** | Represents the Aegis as an objective reward and carried board-state item. |
 | **Power Rune Tokens** | Represent the five possible runes when a rune is present on the map or stored in Bottle. |
 | **Courier Tokens** | Represents each hero's Courier, placed on the cooldown track for timing |
-| **Illusion Tokens** | Represent Illusions created by rune or hero effects. |
+| **Broken tree Tokens** | Placed on a tree hex that's been cut down to represent an open space. |
 
 ### 2. Vision, Hidden Information, And Deception Tokens
 
@@ -61,7 +62,6 @@ These are required because the core turn system is built around hidden action co
 |---|---|
 | **Move Token** | Commit a move action during Planning Phase. |
 | **Attack Token** | Commit a basic attack action during Planning Phase. |
-| **Farm Token** | Commit a farm action during Planning Phase. |
 | **Item Slot 1 Token** | Commit use of the item currently in active slot 1. |
 | **Item Slot 2 Token** | Commit use of the item currently in active slot 2. |
 | **Item Slot 3 Token** | Commit use of the item currently in active slot 3. |
@@ -200,7 +200,6 @@ These are the face-down commitment tools used during the Planning Phase.
 |---|---|
 | **Move** | Commit a move action |
 | **Attack** | Commit a basic attack action |
-| **Farm** | Commit a farm action |
 | **Pass** | Commit no further action |
 
 ### Item Slot Tokens
@@ -366,7 +365,7 @@ To keep the token system manageable, token production should be split into five 
 |---|---|
 | **Board Presence Tokens** | Heroes, creeps, wards, rune tokens, courier, dropped items |
 | **Objective Tokens** | Aegis, Barracks standing markers, tower destroyed markers, Roshan alive/dead marker |
-| **Planning Tokens** | Move, Attack, Farm, Pass, item slot tokens, hero ability tokens |
+| **Planning Tokens** | Move, Attack, Pass, item slot tokens, hero ability tokens |
 | **Status / Marker Tokens** | Stun, Silence, Root, Slow, DoT, buyback, channeling |
 | **Special Effect Tokens** | Illusions, clouds, shields, barriers, future hero-specific summons |
 
@@ -389,7 +388,7 @@ If producing a first playable prototype, the minimum token set should include:
 - Courier delivery tokens
 - Observer Ward and Sentry Ward tokens
 - Invisibility Cloud and Smoke Cloud tokens
-- Move, Attack, Farm, Pass planning tokens
+- Move, Attack, Pass planning tokens
 - six item slot tokens per hero
 - hero-specific ability tokens for any heroes currently in the test pool
 - core status tokens: Stunned, Silenced, Rooted, Slowed, DoT, Hexed, Ethereal, Disarmed
