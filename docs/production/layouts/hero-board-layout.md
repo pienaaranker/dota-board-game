@@ -8,25 +8,11 @@ This document specifies how all game variables are tracked using physical, offli
 
 ## Individual Hero Board (Player Mat)
 
-Each player receives a **Hero Board** — a large printed cardboard mat (approximately 30 × 40 cm) that holds all information for one hero. The board is divided into functional zones.
+Each player receives a **Hero Board** — a large printed cardboard mat (approximately 30 × 40 cm) that holds the hero's generic planning and tracking surfaces. Variable numeric values such as HP, Mana, AP, Level, XP, Gold, and similar counters are handled by a separate **3D-printed stat tracker**, not printed directly on the Hero Board. The board is divided into functional zones.
 
-### Zone 1: Base Stats & Resources
+### Zone 1: Base Stats Reference
 
-Located at the top of the mat. Uses **3D-printed number trackers** for HP, Mana, and Level tracking.
-
-#### HP Track
-- **Component:** 3D-printed multi-digit number tracker ([Thingiverse #3458256](https://www.thingiverse.com/thing:3458256))
-  - Current HP tracker (red or primary color)
-  - Max HP tracker (white or secondary color, starts at hero's base HP)
-- **Scale:** 0–999 (adjustable digits)
-- **Usage:** Rotate digit wheels to display current HP and max HP. Update current HP as damage is taken/healed. Update max HP when it increases via leveling or items.
-
-#### Mana Track
-- **Component:** 3D-printed multi-digit number tracker ([Thingiverse #3458256](https://www.thingiverse.com/thing:3458256))
-  - Current Mana tracker (blue or primary color)
-  - Max Mana tracker (white or secondary color)
-- **Scale:** 0–999 (adjustable digits)
-- **Usage:** Rotate digit wheels to display current Mana and max Mana. Update current Mana as mana is spent/restored. Update max Mana when it increases via leveling or items.
+Located at the top of the mat. The Hero Board shows only the hero's static printed reference stats. Live numeric values are handled on the separate **3D-printed stat tracker**.
 
 #### Static Stats Display
 - **Component:** Printed boxes with **stackable +1 tokens** for modifications
@@ -38,35 +24,12 @@ Located at the top of the mat. Uses **3D-printed number trackers** for HP, Mana,
 
 ---
 
-### Zone 2: Progression & Leveling
-
-Located in the upper-right corner.
-
-#### Level Track
-- **Component:** 3D-printed multi-digit number tracker ([Thingiverse #3458256](https://www.thingiverse.com/thing:3458256))
-- **Scale:** 1–18 (or up to 99 with two digits)
-- **Usage:** Rotate digit wheels to display current hero level. Check ability unlock milestones at levels 6, 12, and 18.
-
-#### XP Counter
-- **Component:** Printed XP threshold table + **6-sided die** placed next to it
-- **Scale:** 0–5 on the die (represents partial progress toward next level)
-- **Usage:** Rotate die face to show XP progress. When die reaches 6, level up and reset die to 1.
-
-#### Ability Unlock Tracker
-- **Component:** Three checkboxes printed on the mat
-  - ☐ Level 6 — Ultimate Unlocked
-  - ☐ Level 12 — Ultimate Upgraded
-  - ☐ Level 18 — Ultimate Max Level
-- **Usage:** Check visually against the hero's current Level tracker; no dedicated milestone token is required.
-
----
-
-### Zone 3: Action Planning & Duration Tracking
+### Zone 2: Action Planning & Duration Tracking
 
 Located in the center of the mat. This zone serves two purposes: staging face-down planning tokens for the current turn and tracking all time-based effects.
 
 #### Planning Token Staging Area
-Located at the top of Zone 3.
+Located at the top of Zone 2.
 
 - **Component:** Rectangular zone labeled "Action Queue"
 - **Size:** Fits up to 10 planning tokens laid horizontally in sequence
@@ -154,45 +117,22 @@ Each section contains two rows of tracking compartments:
 - Items with round-based cooldowns (e.g., Black King Bar) use **Rounds** section
 - The 6 compartments per row provide ample space for simultaneous effects
 - Numbered tokens (D6 dice or small number markers) placed on status/ability tokens show remaining duration
+- The same generic tracks can also hold non-ability timers such as a dead hero's respawn position, Buyback cooldown, Aegis expiration, or courier delivery countdown when those states are represented by dedicated tokens
 
 ---
 
-#### Additional Ability Tracking (Optional)
-
-For heroes with abilities requiring special tracking (stacks, charges, channeling):
-
-**Ability Stacks**
-- **Component:** Small printed box at the bottom of Zone 3 labeled "Ability Stacks: ___"
-- **Marker:** D20 die or small numbered dial (0–20)
-- **Usage:** For abilities like Flesh Heap (Pudge), Essence Shift (Slark), Fervor (Ursa) — track permanent or temporary stacks.
-
-**Channeling Indicator**
-- **Component:** Hourglass token placed on relevant ability identifier in the Action Queue or Cooldown sections
-- **Usage:** Indicates ability is being channeled and can be interrupted.
-
----
-
-### Zone 4: Item Slots (×6)
+### Zone 3: Item Slots (×6)
 
 Located in the center-right of the mat. Six horizontal item slots arranged vertically.
 
 #### Item Card Slot
 - **Component:** Standard card slot (fits Item Cards)
+- **Printed Identity:** Each slot is clearly labeled **1** through **6** to match the hero's numbered item planning tokens
 - **Card displays:** Item name, stats/bonuses, active effect (if any)
-
-#### Per-Item Tracking (printed beside each slot)
-- **Active Cooldown:**
-  - Small circles: 0 ← 1 ← 2 ← 3 rounds
-  - Marker: Small cube token (same system as ability cooldowns)
-  
-- **Charge Counter:**
-  - Printed box: "Charges: ___"
-  - Component: D6 die or small numbered token (0–6)
-  - Usage: For items like Magic Wand, Urn of Shadows, Spirit Vessel, Drum of Endurance
 
 ---
 
-### Zone 5: Status Effects
+### Zone 4: Status Effects
 
 Located at the bottom-left of the mat. Grid of status effect boxes with token placement areas.
 
@@ -223,66 +163,7 @@ Located at the bottom-left of the mat. Grid of status effect boxes with token pl
 
 ---
 
-### Zone 6: Economy
-
-Located at the bottom-center of the mat.
-
-#### Gold Counter
-- **Component:** Printed box "Gold: _____"
-- **Marker:** Two D10 dice (showing tens and ones, allowing 00–99 range)
-- **Alternative:** Three D10 for 0–999 if gold values are higher
-- **Usage:** Rotate dice to display current gold total.
-
-#### Passive Income
-- **Component:** Printed box "Income/Round: ___"
-- **Marker:** Static printed value or small numbered token (updated if passive income changes)
-
-#### Courier Delivery Timer
-- **Component:** Printed box "Courier ETA: ___ rounds"
-- **Marker:** D6 die or small numbered token (0–5)
-- **Usage:** Place die showing rounds until courier delivers items.
-
----
-
-### Zone 7: Alive/Dead & Respawn
-
-Located at the bottom-right of the mat.
-
-#### Alive/Dead Indicator
-- **Component:** Flip token (double-sided)
-  - Front: ✓ ALIVE (green)
-  - Back: ✗ DEAD (red)
-- **Usage:** Flip token when hero dies.
-
-#### Respawn Counter
-- **Component:** Printed box "Respawn in: ___ turns"
-- **Marker:** D20 die or small numbered token (0–20 turns, scales with level)
-- **Usage:** When dead, place die showing respawn countdown. Decrement each turn.
-
-#### Buyback Tracker
-- **Component:** Dedicated Buyback token + printed ready space beside the hero board's round cooldown track
-- **Marker:** The Buyback token sits in its ready space while available.
-- **Usage:** When Buyback is used, move the Buyback token into the round cooldown track at its cooldown value. Advance it toward 0 during Round End updates, just like other round-based cooldown pieces. When it reaches 0, return it to the ready space.
-
-#### Aegis Held
-- **Component:** Printed checkbox "🛡️ Aegis of the Immortal"
-- **Marker:** Aegis token (large, ornate) placed on checkbox when hero holds Aegis
-- **Usage:** When hero dies with Aegis, remove Aegis token and flip Alive/Dead token back to ALIVE.
-
----
-
-### Zone 8: Aghanim's Scepter
-
-Located near the hero's Abilities Card reference area.
-
-#### Scepter Acquired
-- **Component:** Printed checkbox "⭐ Aghanim's Scepter"
-- **Marker:** Star token placed when Scepter is purchased
-- **Usage:** The item in the inventory slot already makes Scepter ownership visible, so this token functions only as a quick hero-board reminder. No separate upgrade pointer is needed because the upgraded ability is printed directly on the Abilities Card.
-
----
-
-### Zone 10: Turn AP Tracker
+### Zone 5: Turn AP Tracker
 
 Located at the very top, spanning the width of the mat.
 
@@ -404,7 +285,7 @@ A shared pool of reusable tokens used during the Planning Phase:
 - **Move** tokens
 - **Attack** tokens
 - **Farm** tokens
-- **Use Item** tokens
+- **Item Slot 1-6** tokens
 - **Pass** tokens
 - **Hero Ability Tokens** (custom to each hero, one per named ability)
 
@@ -418,16 +299,17 @@ Players select tokens face-down during Planning Phase and place them in the Acti
 |------------|-------|-----------------|---------|
 | Small Cube | Assorted | 100+ | General-purpose tracking (cooldowns, statuses, checkboxes) |
 | D6 Dice | Standard | 20+ | Charges, timers, XP progress |
-| D10 Dice | Standard | 10+ | Gold counter, round counter |
+| D10 Dice | Standard | 10+ | Round counter and general high-visibility numeric tracking |
 | D20 Dice | Standard | 10+ | AP penalties, high-value counters |
 | +1/+5/+10 Stat Tokens | Red/Gray/Green | 50+ | Attack/Defense/Move Speed bonuses |
-| Hero Standee | Custom | 1 per hero | Marks level on Hero Board, represents hero on map |
+| Hero Standee / Hero Token | Custom | 1 per hero | Represents the hero on the map and doubles as that hero's respawn marker when placed on a duration track after death |
 | Status Effect Tokens | Colored Icons | 50+ | Stunned, Silenced, Rooted, etc. |
-| Flip Tokens (Alive/Dead) | Green/Red | 1 per hero | Alive or dead status |
 | Flip Tokens (Wards) | Green/Gray | 20+ | Populated or cleared camps |
-| Aegis Token | Gold | 1 | Aegis of the Immortal holder |
+| Aegis Token | Gold | 1 | Aegis item token and Aegis expiration marker when placed on a duration track |
+| Buyback Token | Distinct Hero Marker | 1 per hero | Tracks Buyback cooldown when placed on the round cooldown track |
+| Courier Delivery Token | Distinct Hero Marker | 1 per hero | Tracks when that hero's courier delivery arrives by sitting on a duration track |
 | Round Start Token | Large Star | 1 | Marks first player each round |
-| Courier Standee | Custom | 2 (1 per team) | Tracks Courier position on board |
+| Courier Standee | Custom | 2 (1 per team) | Tracks the shared team Courier position on board |
 | Power Rune Tokens | Custom | 5 | One token per rune type for river spawns and Bottle storage |
 | Planning Tokens | Mixed | Per hero / per player set | Face-down action commitment during planning |
 
@@ -457,6 +339,7 @@ Players select tokens face-down during Planning Phase and place them in the Acti
 ## Design Philosophy
 
 1. **Visibility** — All critical information is immediately visible to the owning player and can be shared with opponents when needed (HP, status effects, gold).
+2. **Uniformity** — The Hero Board remains generic across the full roster; hero-specific tracking should live on hero cards, ability cards, or dedicated tokens rather than requiring bespoke board layouts.
 2. **Modularity** — Each tracking system is independent. Damage doesn't require recalculating multiple values.
 3. **Minimal Writing** — Use dials, dice, and tokens instead of writing whenever possible to speed up gameplay.
 4. **Redundancy Avoidance** — Don't track the same information in multiple places. Max HP lives on the Hero Board only, not on a separate sheet.

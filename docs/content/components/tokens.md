@@ -27,7 +27,7 @@ These are the tokens required to run the map, objectives, lane pressure, and boa
 
 | Token | Purpose | Notes |
 |---|---|---|
-| **Hero Tokens** | Represent hero position on the board | One token per drafted hero, team-colored or team-rimmed. |
+| **Hero Tokens** | Represent hero position on the board | One token per drafted hero, team-colored or team-rimmed. When a hero dies, remove this token from the map and place it on the appropriate turn or round track to mark the hero's respawn countdown. |
 | **Lane Creep Tokens / Counters** | Represent lane creeps at each Creep Meeting Point | Should support normal lane state and removal through Farm. |
 | **Neutral Camp Tokens / Counters** | Represent remaining neutral creeps in a camp | Used for camp farming and respawn tracking. |
 | **Ancient Camp Tokens / Counters** | Represent remaining Ancient creeps in a camp | Visually distinct from regular neutral camps. |
@@ -35,9 +35,10 @@ These are the tokens required to run the map, objectives, lane pressure, and boa
 | **Tower Destroyed Marker** | Marks a destroyed tower | Large, obvious overlay marker. |
 | **Barracks Status Marker** | Represents a standing Barracks on its hex | Remove the token when the Barracks falls; the printed board art beneath shows the destroyed state. |
 | **Roshan Alive / Dead Marker** | Indicates whether Roshan is currently present | Useful between kill and respawn windows. |
-| **Aegis of the Immortal Token** | Indicates the hero holding Aegis, or its dropped position on the board | One premium token. |
+| **Aegis of the Immortal Token** | Represents the Aegis item and can also track its expiration on a duration track | One premium token. It may sit with the carrier's items or on that hero's duration track when timing matters. |
 | **Power Rune Tokens** | Mark an unclaimed rune on the river | One single-hex token for each rune type: Illusion, Haste, Invisibility, Regeneration, Double Damage. |
 | **Courier Token** | Represents the shared team Courier on the board or tracking area | One per team. |
+| **Courier Delivery Token** | Tracks when a specific hero's courier delivery will arrive | One per hero. Place it on that hero's duration track until delivery resolves. |
 | **EMP Charge Token** | Marks the hex where Invoker's EMP will detonate | Remove it when EMP resolves or expires. |
 | **Healing Ward Token** | Represents Juggernaut's summoned Healing Ward on the board | Hero-specific summon. Mobile, heal-providing, and destroyable. |
 | **Forge Spirit Token** | Represents one of Invoker's summoned Forge Spirits on the board | Uses the shared summon rules and Invoker's printed summon stat line. |
@@ -144,9 +145,7 @@ These tokens live primarily on each player's Hero Board and track changing state
 |---|---|---|
 | **Ability Identifier Tokens** | Mark which hero ability is cooling down | May use Q/W/E/R style or ability icons. |
 | **Channeling Token** | Marks an ability currently being channeled | Hourglass-style marker. |
-| **Alive / Dead Flip Token** | Tracks whether the hero is alive | One per hero. |
 | **Buyback Token** | Tracks whether buyback is available or cooling down | Place it on the hero board's cooldown track when used; it becomes available again when it reaches 0. |
-| **Scepter Acquired Token** | Marks that Aghanim's Scepter is active for the hero | One per hero. |
 | **Summon AP Marker** | Tracks a summon's remaining AP during its controller's activation | Shared across all summon-based heroes. |
 | **Summon Hit Marker** | Tracks a summon's remaining Hits | Shared across all summon-based heroes; preferred over bespoke HP dials for fragile summons. |
 | **Summon Duration Marker** | Tracks how many rounds or activations a summon remains in play | Use when the summon does not persist indefinitely. |
@@ -267,6 +266,7 @@ If producing a first playable prototype, the minimum token set should include:
 - Aegis token
 - five power rune tokens
 - Courier tokens
+- Courier delivery tokens
 - Observer Ward and Sentry Ward tokens
 - Invisibility Cloud and Smoke Cloud tokens
 - Move, Attack, Farm, Pass planning tokens
@@ -275,8 +275,6 @@ If producing a first playable prototype, the minimum token set should include:
 - core status tokens: Stunned, Silenced, Rooted, Slowed, DoT, Hexed, Ethereal, Disarmed
 - ability identifier tokens
 - buyback token
-- alive / dead flip tokens
-- Scepter acquired marker
 - illusion tokens
 
 ---
