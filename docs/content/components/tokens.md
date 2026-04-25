@@ -78,7 +78,7 @@ These are the face-down commitment tools used during the Planning Phase.
 
 Item use is committed by **slot**, not by a single shared Use Item token.
 
-Each hero has **6 item slots** and therefore needs **6 item planning tokens**, one for each slot on their Hero Board or item area.
+Each hero has **6 active item slots** and therefore needs **6 item planning tokens**, one for each active slot on their Hero Board. Backpack slots do not receive planning tokens because backpack items cannot be used directly.
 
 | Token | Purpose | Notes |
 |---|---|---|

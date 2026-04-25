@@ -82,13 +82,15 @@ Before the Turn Phase begins, all players simultaneously select their actions fo
 5. After the first 10 turns complete, players repeat the Planning Phase for the second half of the round.
 
 **Planning Rules:**
-- Planning Tokens include: Move, Attack, Farm, Pass, 6 numbered item slot tokens per hero, and hero-specific ability tokens.
+- Planning Tokens include: Move, Attack, Farm, Pass, 6 numbered item slot tokens for each hero's active item slots, and hero-specific ability tokens.
 - Players may select up to their hero's AP worth of actions.
 - Each hero also has **2 dedicated reaction token slots** for the current half-round.
 - Tokens remain hidden until activation — players commit actions without knowing what enemies have planned.
 - Once a hero's tokens are revealed at the start of their activation, actions are locked in and must be executed in the order committed unless prevented by crowd control, reactions, or game state changes.
 - If a hero loses AP before their activation due to a stun or reaction cost, remove committed tokens from left to right until the removed tokens total at least the AP lost. Those removed actions are lost for that activation.
 - Item use is committed by slot, not by a generic Use Item token. Revealing an item slot token means the hero is attempting to use the item currently in that numbered slot.
+- Backpack items cannot be committed or used directly. Only the 6 active item slots are valid for item-slot planning tokens.
+- If a hero swaps an item from the backpack into an active slot during their activation, that item is not eligible to satisfy any item-slot token during that same activation and cannot be used until the next round.
 - Reactions **are** committed during Planning Phase using the hero's reaction slots.
 - Any committed reaction reserves **1 AP** from that hero's normal AP budget for the current half-round.
 - Reaction slots are **token slots**, not AP slots. Any action that costs exactly **1 AP** may be committed there if it is legal to use as an out-of-turn action.
@@ -153,6 +155,7 @@ When a committed action cannot be executed, the following rules apply:
 - **Silenced Hero** — Hero cannot use abilities while Silenced.
 - **Insufficient Resources** — Hero lacks the Mana to cast a committed ability.
 - **Invalid Item Slot** — The revealed item slot is empty, or the item expected to be there is no longer in that slot.
+- **Freshly Swapped Item** — The slot now contains an item moved in from the backpack during this round, so that item is not yet usable.
 - **Movement Blocked** — The destination hex is occupied or impassable due to game state changes.
 
 **Resolution:**
@@ -174,6 +177,7 @@ Some actions cannot be retargeted because no valid alternative exists:
 - **Silenced Hero** — Hero cannot use abilities while Silenced. Ability actions cannot execute at all.
 - **Insufficient Resources** — Hero lacks the Mana to cast a committed ability. Action cannot execute at all.
 - **Invalid Item Slot** — The chosen slot is empty, or no usable item is currently in that slot. The item action cannot execute.
+- **Freshly Swapped Item** — The chosen slot contains an item moved in from the backpack during this round. That item cannot execute until the next round.
 - **No Valid Targets** — All potential targets are out of range, dead, or otherwise invalid. Action cannot execute.
 
 In these cases, the action is automatically cancelled (returned to the hero's available token pool, no AP spent).

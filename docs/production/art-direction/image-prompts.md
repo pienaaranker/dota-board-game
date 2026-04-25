@@ -2292,6 +2292,90 @@ Negative constraints:
 
 ---
 
+## Reusable Prompt Template — Generic Printable Hero Board Generation
+
+Use the following prompt to generate a printable generic Hero Board that matches the same product family as an existing hero card, while following an attached wireframe as the locked layout:
+
+```text
+Create a polished fantasy board game Hero Board in landscape orientation, designed for a 30 × 40 cm printed player mat. This is a Dota-inspired tabletop component, but all artwork must be original and should not copy official Valve or Dota 2 art.
+
+I am providing two references:
+1. a hero card image that should be used only as a visual-style and product-family reference
+2. a wireframe image that should be treated as the locked layout blueprint for the board
+
+Treat the wireframe as the fixed manufacturing template. Preserve its zone placement, proportions, spacing rhythm, and functional structure. Treat the hero card as the style reference only: match its frame language, ornament level, typography mood, color logic, border treatment, icon finish, and overall product-family cohesion.
+
+Overall visual goal:
+- premium tabletop player mat first, fantasy illustration second
+- clean readable board-game UI designed for real play, not poster art
+- straight-on flat presentation suitable for print production
+- elegant fantasy finish consistent with the supplied hero card
+- restrained decorative treatment so tokens, cards, and counters remain easy to read on top of the board
+
+Locked layout instruction:
+- preserve the wireframe structure exactly
+- keep the top action-planning area with 2 reaction slots and 10 action slots
+- keep the right-side item area with 6 active item slots plus a visually separate 3-slot backpack section
+- keep the dual duration tracking area with separate turn and round sections
+- keep the status effects area in the lower left
+- keep the AP-spent tracker integrated into the board without adding extra subsystems
+- do not invent new tracking zones beyond what the wireframe shows
+
+Board content instruction:
+- this Hero Board is generic and uniform across all heroes
+- include static reference boxes for Attack, Defense, Move Speed, and AP per Turn
+- include clear labels for Reactions, Actions, Items, Backpack, Turn Status Effects, Turn Cooldowns, Round Status Effects, and Round Cooldowns
+- number the item slots clearly from 1 to 6
+- keep the 3 backpack slots visually secondary to the active item slots
+- label the turn track compartments 1 through 10
+- label the round track compartments 1/2, 1, 2, 3, 4, 5
+- include a clean AP tracker row or AP-spent indicator that fits the same visual system
+- include subtle icon support for status families, but do not overcrowd the board with large illustrative icons
+
+Important rules constraints:
+- do not place HP, Mana, Level, XP, Gold, or other live numeric counters on the Hero Board because those are handled by a separate 3D-printed stat tracker
+- do not add hero-specific sections such as Invoker orb slots, Rubick spell areas, or unique stack panels
+- do not add Aghanim's Scepter reminder zones, respawn boxes, buyback ready boxes, or courier boxes
+- only the 6 active item slots should read as directly usable equipment slots; the backpack should read as storage, not direct-use play space
+- the generic turn and round tracks must be visually suitable for holding cooldown tokens, status tokens, dead hero tokens for respawn timing, buyback tokens, courier delivery tokens, and Aegis expiration timing
+
+Style direction:
+- visually part of the same manufactured set as the supplied hero card
+- same fantasy UI family, same material language, same typography mood, same border logic, same panel treatment
+- use the hero card's ornament style in a broader board-game layout language rather than copying the exact card composition
+- use a controlled accent palette derived from the supplied hero card, but keep the board more neutral and functional so all token colors remain readable
+- use subtle hex-pattern or tactical-map motifs where helpful
+- keep the board elegant, high-contrast, and print-legible
+
+Typography direction:
+- headings should feel like part of the same product family as the supplied hero card
+- labels must be immediately readable at tabletop distance
+- compartment numbers must be clean, centered, and easy to scan
+- avoid overly decorative fonts for functional labels
+
+Material and production direction:
+- printed laminated cardboard player mat
+- crisp vector-like linework and panel edges
+- clean zone separation suitable for die-cut-free flat printing
+- no faux 3D perspective, no photographed table scene, no hands, no props
+- present on a neutral background as a flat printable component sheet or isolated board render
+
+Negative constraints:
+- do not redesign the wireframe layout
+- do not turn this into a splash-art poster or playmat illustration
+- do not add character portrait art to the board
+- do not add fake dice, tokens, miniatures, or cards on top of the board unless used very minimally for scale reference
+- do not overcrowd empty play areas with decoration
+- do not introduce extra counters, extra tracks, or extra side panels not present in the wireframe
+- do not make the board dark to the point that tokens become hard to read
+- do not use glossy sci-fi UI, mobile game UI, or trading card frame language
+
+Consistency constraint:
+Keep this Hero Board in the exact same product family as the supplied hero card reference. Preserve the shared visual identity, typography mood, border finish, icon language, and fantasy-material treatment, but apply them to the wireframe's locked board layout without redesigning the structure.
+```
+
+---
+
 ## Example Image Prompt — Sven Hero Card
 
 Use the following prompt when generating a sample hero card image for Sven:

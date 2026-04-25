@@ -64,6 +64,13 @@ Items provide:
 - **Active abilities** — cost AP and/or Mana when activated.
 - **Consumable effects** — single-use items (e.g. Sentry Ward, Observer Ward, Dust, Smoke of Deceit).
 
+### Inventory, Active Slots, And Backpack
+- Each hero has **6 active item slots** and **3 backpack slots**.
+- Only items in the **6 active item slots** may be activated, committed with numbered item-slot planning tokens, or provide passive bonuses.
+- Items in the **backpack** are carried for storage only. They cannot be activated directly from the backpack and provide no passive bonuses while stored there.
+- During the hero's own activation, that hero may swap items between active slots and backpack slots.
+- Any item moved from the backpack into an active slot becomes usable only in the **next round**. Until then, it cannot be activated, committed with an item-slot token, or provide passive bonuses.
+
 ### The Courier
 A shared team token that delivers items from the Fountain stash to heroes in the field.
 

@@ -121,14 +121,23 @@ Each section contains two rows of tracking compartments:
 
 ---
 
-### Zone 3: Item Slots (×6)
+### Zone 3: Item Slots And Backpack
 
-Located in the center-right of the mat. Six horizontal item slots arranged vertically.
+Located in the center-right of the mat. This zone contains **6 active item slots** and a separate **3-slot backpack**.
 
-#### Item Card Slot
+#### Active Item Slots (×6)
 - **Component:** Standard card slot (fits Item Cards)
 - **Printed Identity:** Each slot is clearly labeled **1** through **6** to match the hero's numbered item planning tokens
 - **Card displays:** Item name, stats/bonuses, active effect (if any)
+
+#### Backpack Slots (×3)
+- **Component:** Standard card slots grouped beside the active item area under a clear **Backpack** label
+- **Usage:** Backpack items are carried but cannot be used directly from the backpack and do not receive numbered item planning tokens
+
+#### Swapping Items
+- **Usage:** During the hero's own activation, items may be swapped between the 6 active slots and the 3 backpack slots
+- **Restriction:** Any item moved from the backpack into an active slot is **inactive until the next round**. It cannot be activated, committed with an item slot token, or provide passive bonuses before then
+- **Restriction:** Any item moved out of an active slot immediately stops being usable as an active-slot item for the remainder of that activation
 
 ---
 
@@ -285,7 +294,7 @@ A shared pool of reusable tokens used during the Planning Phase:
 - **Move** tokens
 - **Attack** tokens
 - **Farm** tokens
-- **Item Slot 1-6** tokens
+- **Item Slot 1-6** tokens for the active item slots only
 - **Pass** tokens
 - **Hero Ability Tokens** (custom to each hero, one per named ability)
 
@@ -320,7 +329,7 @@ Players select tokens face-down during Planning Phase and place them in the Acti
 ### Hero Board Material
 - **Material:** Thick laminated cardboard (2mm) with glossy finish for durability
 - **Size:** 30 × 40 cm (large enough to hold all zones without crowding)
-- **Overlay Option:** Clear plastic sleeve allows dry-erase marker for dynamic values (gold, timers, ward locations)
+- **Overlay Option:** Clear plastic sleeve allows dry-erase marker for temporary notes during prototyping, though the intended production version should rely primarily on tokens and the separate 3D-printed stat tracker
 
 ### Planning Tokens
 - **Material:** Thick cardboard punchboard or acrylic tokens
@@ -338,11 +347,11 @@ Players select tokens face-down during Planning Phase and place them in the Acti
 
 ## Design Philosophy
 
-1. **Visibility** — All critical information is immediately visible to the owning player and can be shared with opponents when needed (HP, status effects, gold).
+1. **Visibility** — All critical information is immediately visible to the owning player and can be shared with opponents when needed through the board, tokens, cards, and the separate stat tracker.
 2. **Uniformity** — The Hero Board remains generic across the full roster; hero-specific tracking should live on hero cards, ability cards, or dedicated tokens rather than requiring bespoke board layouts.
 2. **Modularity** — Each tracking system is independent. Damage doesn't require recalculating multiple values.
 3. **Minimal Writing** — Use dials, dice, and tokens instead of writing whenever possible to speed up gameplay.
-4. **Redundancy Avoidance** — Don't track the same information in multiple places. Max HP lives on the Hero Board only, not on a separate sheet.
+4. **Redundancy Avoidance** — Don't track the same information in multiple places. Live numeric values belong on the separate stat tracker, while the Hero Board focuses on generic positional tracking surfaces.
 5. **Accessibility** — Colorblind-friendly icons. Large text for readability. Tactile components (raised tokens, textured dice).
 
 ---
@@ -352,7 +361,6 @@ Players select tokens face-down during Planning Phase and place them in the Acti
 - **XP Scaling:** If XP requirements vary significantly by level, consider a printed XP table with a sliding marker instead of a simple die.
 - **Charge Items:** Should charge counters be universal (D6 for all items) or item-specific (custom dials)?
 - **DoT Tracking:** Bleeding/DoT effects need both duration (ticks remaining) and damage value. Suggest a two-token system or small reference insert placed in Status Effects zone.
-- **High Gold Values:** If late-game gold exceeds 999, consider using poker chips (10/50/100 denominations) instead of dice.
 - **Ward Coordinates:** Hex notation (e.g., "D7") or descriptive locations (e.g., "Radiant jungle, near Ancient camp")? May need labeled hex grid on main board.
 
 ---
@@ -360,6 +368,6 @@ Players select tokens face-down during Planning Phase and place them in the Acti
 ## Next Steps
 
 1. **Prototype a Hero Board** — Print a mock layout at scale to validate zone sizing and token fit.
-2. **Test tracking flow** — Simulate a full turn with Sven to ensure all interactions (leveling, ability use, item purchase, status effects) are smooth.
+2. **Test tracking flow** — Simulate a full turn with Sven to ensure all interactions (ability use, item use, status effects, cooldown timing, courier timing, and death / respawn handling) are smooth.
 3. **Refine token counts** — Playtest to determine if 100 small cubes is sufficient or if more are needed.
 4. **Finalize shared board layout** — Integrate lane tracking, Roshan, and runes into the main game board or separate tracking mat.
