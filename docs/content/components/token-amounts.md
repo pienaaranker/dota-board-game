@@ -66,12 +66,6 @@ For a 10-hero game, these counts assume compressed denomination tokens instead o
 |---|---:|---|---|
 | Attack x1 | 40 | Diamond | Single committed attacks. |
 
-### Pass Tokens
-
-| Token | Amount | Shape | Notes |
-|---|---:|---|---|
-| Pass | 10 | Diamond | One per hero is sufficient. |
-
 ### Item Slot Tokens
 
 | Token | Amount | Shape | Notes |
