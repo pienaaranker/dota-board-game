@@ -91,3 +91,42 @@ These are still best kept at one per hero per slot, because they refer to distin
 | Rubick Stolen Spell 2 Token | 1 | Diamond | Only needed if Rubick is in the game. |
 | Invoker Invoked Spell 1 Token | 1 | Diamond | Only needed if Invoker is in the game. |
 | Invoker Invoked Spell 2 Token | 1 | Diamond | Only needed if Invoker is in the game. |
+
+## Status And State Tokens
+
+These are practical prototype counts for shared debuffs and hero-board state markers. Using 5 copies of each shared status keeps the full family slightly above the `50+` status-token target in the hero-board layout notes once Buyback tokens are included.
+
+| Token | Amount | Shape | Notes |
+|---|---:|---|---|
+| Stunned | 5 | Circle | Practical shared pool for simultaneous disables across both teams. |
+| Silenced | 5 | Circle | Practical shared pool for simultaneous disables across both teams. |
+| Rooted | 5 | Circle | Practical shared pool for simultaneous disables across both teams. |
+| Slowed | 5 | Circle | Practical shared pool for simultaneous movement debuffs across both teams. |
+| Ethereal | 5 | Circle | Practical shared pool for temporary state changes across both teams. |
+| Disarmed | 5 | Circle | Practical shared pool for simultaneous disables across both teams. |
+| Broken | 5 | Circle | Practical shared pool for passive-disable effects across both teams. |
+| Hexed | 5 | Circle | Practical shared pool for simultaneous hard disables across both teams. |
+| DoT | 5 | Circle | Practical shared pool for bleed, burn, and other damage-over-time effects. |
+| Buyback Token | 10 | Circle | One per hero in a 10-hero game. |
+
+## Current Hero-Specific Effect Tokens
+
+| Token | Amount | Shape | Notes |
+|---|---:|---|---|
+| Healing Ward Token | 1 | Hex | Juggernaut can have only one Healing Ward on the board at a time. |
+| Weaver Swarm Beetle Token | 5 | Circle | Supports marking every enemy hero on one team at once. |
+| Weaver Time Lapse Marker | 1 | Hex | Weaver tracks one saved rewind position at a time. |
+| Rubick Spell Steal Marker Token | 2 | Circle | Rubick has 1 by default; a second becomes usable with Aghanim's Scepter. |
+| Rubick Spell Steal Cooldown Token | 1 | Circle | Rubick has one dedicated Spell Steal cooldown identity marker. |
+| Invoker Orb Token | 3 | Circle | Invoker always has exactly 3 active orb slots. |
+| Invoker Invoke Slot Marker | 2 | Circle | Invoker has 2 Invoke Slots. |
+| EMP Charge Token | 1 | Hex | EMP uses one delayed-resolution target marker at a time. |
+| Forge Spirit Token | 2 | Hex | Invoker can have 2 Forge Spirits in play at level 12+. |
+| Invoker Forge Spirit Armor Break Marker | 5 | Circle | Supports tracking the debuff on multiple enemy heroes at once. |
+
+## Conditional Or Optional Current-File Tokens
+
+| Token | Amount | Shape | Notes |
+|---|---:|---|---|
+| Gem of True Sight Drop Token | 1 | Hex | Only needed if Gem remains a droppable board item. |
+| Divine Rapier Drop Token | 1 | Hex | Only needed if Divine Rapier remains in the final item pool. |

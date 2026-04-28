@@ -1,8 +1,8 @@
 # Token Prompts
 
-This file contains final image prompts for the two printable **diamond token** sheets.
+This file contains final image prompts for the printable token sheets used across the project.
 
-Both prompts assume the image model is given the attached diamond-token wireframe as the layout reference, plus the Rubick and Invoker hero cards as style-reference attachments.
+Each prompt assumes the image model is given the matching token-sheet wireframe as the layout reference, plus one or more hero cards as style-reference attachments where noted.
 
 ## Page 1: Move, Attack, And Special Planning Tokens
 
@@ -340,4 +340,146 @@ ANTI-DRIFT / NEGATIVE CONSTRAINTS
 
 FINAL OUTPUT TARGET
 The final image should look like a production-quality printable hex-token sheet for a premium fantasy board game: clean, aligned, readable, stylistically cohesive, and immediately usable as a print reference for board-state and map-presence hex tokens.
+```
+
+## Page 4: Circle Tokens
+
+```text
+Create a flat, print-ready fantasy board game token sheet that follows the attached circle-token wireframe exactly.
+
+This is a premium tabletop component for a Dota-inspired board game. The result must look like it belongs to the same manufactured product family as the project's existing cards and printed components, while avoiding direct use of copyrighted Dota 2 UI, logos, or official Valve art.
+
+ATTACHMENTS PROVIDED
+- Attachment 1: circle-token wireframe layout
+- Attachment 2: hero card for style and theme reference only
+
+Use the attached hero card only as general design-context reference for ornament, palette discipline, material finish, icon rendering quality, and overall fantasy theme cohesion. Do not copy character portraits, named spell icons, or hero-specific card compositions directly into the token sheet.
+
+PRIMARY GOAL
+Generate a clean printable circle-token sheet for all compact circle tokens used for premium objectives, shared status markers, hero-board state, and hero-specific circular markers.
+
+LOCKED LAYOUT REQUIREMENTS
+- Preserve the attached page layout exactly.
+- Keep the same page proportions, same rounded outer border, and the same arrangement of circular token cut zones.
+- Keep the token cells aligned exactly to the wireframe grid.
+- Do not redesign the page architecture.
+- Do not change the number, spacing, or proportions of the token slots.
+- Present the page straight-on, perfectly flat, with no perspective distortion.
+
+PRINTABILITY REQUIREMENTS
+- This must read as a real printable token sheet, not a mockup.
+- Use a bright clean background suitable for printing.
+- Keep all token art fully contained inside its own token boundary.
+- Leave clean gutters between token cells for cutting or punchboard separation.
+- Use crisp outlines and high-contrast iconography.
+- Avoid muddy shadows, fog, overpainting, or low-contrast effects that would reduce print legibility.
+- Do not place hands, table surfaces, props, scissors, dice, cards, rulers, or environmental scene dressing around the page.
+- Do not render the page as a photographed object, angled sheet, curled poster, or 3D product mockup.
+- No dramatic cast shadows outside the token artwork.
+- No heavy paper texture that interferes with readability.
+
+STYLE DIRECTION
+- Match the project's premium fantasy board game visual language and use the attached hero card as broad styling context for general design and theme.
+- Borrow overall product-family qualities such as polished component design, restrained ornament, elegant gold-edged detailing, controlled fantasy palette, material finish, and icon rendering quality.
+- The page should feel like a premium manufactured marker-token sheet, not like character art.
+- Use a coherent shared circle-frame language across every token.
+- Let iconography, small accent colors, and subtle frame differences distinguish token families inside that shared system.
+- The tokens should stay readable at arm's length on a real tabletop and still remain clear when placed on Hero Boards.
+
+TOKEN FRAME SYSTEM
+- Every token should use the same manufactured circle-frame language.
+- Each token should have a consistent border treatment with a thin premium rim, subtle inner panel, and a bold central icon area.
+- Keep token faces clean and icon-forward.
+- Use minimal text.
+- If any label, letter, numeral, or slot identifier appears, it must be large, crisp, and secondary to the icon.
+
+PAGE CONTENT AND REQUIRED COUNTS
+Include only these circle tokens on this page:
+- Roshan Marker x1
+- Aegis of the Immortal Token x1
+- Stunned x5
+- Silenced x5
+- Rooted x5
+- Slowed x5
+- Ethereal x5
+- Disarmed x5
+- Broken x5
+- Hexed x5
+- DoT x5
+- Buyback Token x10
+- Weaver Swarm Beetle Token x5
+- Rubick Spell Steal Marker Token x2
+- Rubick Spell Steal Cooldown Token x1
+- Invoker Orb Token x3
+- Invoker Invoke Slot Marker x2
+- Invoker Forge Spirit Armor Break Marker x5
+
+Do NOT include any hex tokens such as Healing Ward, Time Lapse Marker, EMP Charge Token, Forge Spirit Token, Gem of True Sight Drop Token, or Divine Rapier Drop Token.
+Do NOT include any diamond planning tokens.
+Do NOT include custom template tokens.
+
+VISUAL RULES BY TOKEN TYPE
+- Roshan Marker: premium boss-state token with heavy visual weight, ancient-monster menace, and strong tabletop presence.
+- Aegis of the Immortal Token: sacred relic token with premium gold treatment, radiant aura language, and unmistakable high-value objective identity.
+- Stunned: lightning, impact burst, or cracked-star hard-control language.
+- Silenced: muted voice, sealed rune, crossed sound-wave, or hush sigil language.
+- Rooted: vines, binding roots, or grasping earth language.
+- Slowed: drag, frost-trail, weighted motion, or hindered-step language.
+- Ethereal: ghostly veil, spectral silhouette, or phase-shift language.
+- Disarmed: broken blade stance, dropped weapon, or crossed non-attack emblem language.
+- Broken: shattered passive crest, cracked heart-core, or disabled-inner-engine language.
+- Hexed: transformation, cursed critter, or hostile polymorph language.
+- DoT: bleeding, burn, poison, or persistent damage language, but keep it generic enough to cover multiple DoT sources.
+- Buyback Token: life-cycle / return-to-battle identity that reads as a hero-board cooldown marker rather than a debuff.
+- Weaver Swarm Beetle Token: parasitic beetle or clinging insect marker that reads as an attached hostile debuff.
+- Rubick Spell Steal Marker Token: copied-magic / stolen-spell identity with arcane theft language, clearly distinct from a cooldown token.
+- Rubick Spell Steal Cooldown Token: same Rubick arcane family, but designed as a self-board cooldown identity marker rather than a target marker.
+- Invoker Orb Token: three-token family for Quas, Wex, and Exort, clearly differentiated while still manufactured as a matching trio.
+- Invoker Invoke Slot Marker: prepared-spell slot identity markers, readable as slot 1 and slot 2 without becoming generic number tokens.
+- Invoker Forge Spirit Armor Break Marker: defense-reduction marker with heated-metal, cracked-armor, or sundered-plating language.
+
+FAMILY COLOR LANGUAGE
+- Roshan and Aegis: premium objective palette, using gold, ivory, ember, sacred bronze, and darker boss-state contrast where appropriate.
+- Shared status tokens: readable debuff palette with distinct but controlled accents, keeping the set cohesive rather than rainbow-noisy.
+- Buyback token: heroic recovery palette such as gold-ivory, teal-gold, or phoenix-like return energy.
+- Weaver token: insectoid green, acid jade, or parasitic bio-magical tones.
+- Rubick tokens: arcane green-teal theft-magic identity.
+- Invoker tokens: Quas cool blue, Wex stormy violet or electric amber, Exort warm solar gold; related Invoke markers should feel like prepared spell slots in the same magic system.
+
+STATUS TOKEN DESIGN RULES
+- The nine shared status types should feel like one coherent manufactured family.
+- Keep the frame, rim, and overall composition consistent across the full status set.
+- Differentiate statuses mainly through clean central symbols and restrained accent colors.
+- Avoid making any one status token look like a completely different product line.
+
+SPECIAL HERO TOKEN DESIGN RULES
+- Weaver, Rubick, and Invoker markers should each echo their hero's thematic identity without becoming portrait tokens.
+- They should still fit cleanly inside the same global circle-token system used by the shared statuses.
+- Hero-specific markers must remain icon-first and readable even for players who do not know the hero art by memory.
+
+REPETITION RULE
+- Place the required counts first.
+- If the attached wireframe contains more token slots than the required counts, fill the remaining slots with extra copies of the most commonly reused shared markers.
+- Use this spare-fill priority: Buyback Token first, then Stunned, then Silenced, then Rooted, then Slowed, then DoT.
+- Do not create extra copies of Roshan, Aegis, Rubick cooldown, or Invoke slot markers unless space still remains after the main shared-marker spare fill.
+
+ICONOGRAPHY RULES
+- Use bold central symbols with clean silhouettes.
+- Favor icon clarity over painterly detail.
+- Use subtle magical embellishment, not noisy illustrative clutter.
+- Keep token identity understandable even if printed small.
+- No token should depend on tiny text to be recognized.
+
+ANTI-DRIFT / NEGATIVE CONSTRAINTS
+- Do not redesign the page layout.
+- Do not change the token slot arrangement.
+- Do not turn the sheet into cards, stickers, coins photographed on a table, or a punchboard mockup seen at an angle.
+- Do not include character portraits or full hero art.
+- Do not directly copy spell symbols, card layouts, or hero-specific illustrated elements from the attached reference card.
+- Do not use copyrighted Dota 2 UI symbols or official Valve art.
+- Do not make the sheet muddy, hyper-rendered, or overloaded with effects.
+- Do not place giant text labels inside each token.
+
+FINAL OUTPUT TARGET
+The final image should look like a production-quality printable circle-token sheet for a premium fantasy board game: clean, aligned, readable, stylistically cohesive, and immediately usable as a print reference for objective markers, shared status markers, and hero-specific circular effect markers.
 ```
