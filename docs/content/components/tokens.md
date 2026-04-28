@@ -185,8 +185,8 @@ These tokens support the game's vision war, hidden positioning, and reveal mecha
 |---|---|---|
 | **Observer Ward Token** | Placed vision token that grants the tactical reaction advantage | Needs team identity and hidden/enemy-facing handling. |
 | **Sentry Ward Token** | Placed true-sight token | Also hidden until revealed by enemy true sight. |
-| **Invisibility Cloud Token** | Multi-tile token hiding a single invisible hero's true position | Must support secret placement under one tile. |
-| **Smoke Cloud Token** | Multi-hero hidden movement token for Smoke of Deceit | Distinct from standard invisibility cloud. |
+| **Invisibility Cloud Token** | Multi-tile token hiding a single invisible hero's true position | Uses numbered hexes plus a separate hidden counter to record the hero's actual space. |
+| **Smoke Cloud Token** | Multi-hero hidden movement token for Smoke of Deceit | Uses numbered hexes plus one hidden counter per smoked hero to record actual spaces. |
 
 ---
 

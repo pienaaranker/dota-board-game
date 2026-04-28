@@ -120,8 +120,8 @@ Buildings and Obstacles allow heroes to see (and target) enemies on the other si
 ## Vision and Invisibility
 
 - **Visibility** — All units are visible unless they have the Invisibility status.
-- **Invisibility Mechanics** — Replace the hero with an invisibility cloud. The cloud covers multiple tiles with a compartment in each; the player decides under which tile their hero token sits. The entire cloud moves as the player wishes. Individual tiles may be targeted with AOE abilities (not single-target). If an AOE ability hits, the hero is revealed. Attacking or using an ability also reveals the hero, unless specified otherwise.
-- **Sentry Wards and Dust** — Items that provide a passive Reveal radius. Any cloud token entering this radius must be replaced with the hero token in the correct position.
+- **Invisibility Mechanics** — Replace the hero with an invisibility cloud. Each cloud hex is numbered; the owning player secretly records which numbered hex the hero occupies on a hidden counter and may update that number as the cloud moves. Individual cloud hexes may be targeted with AOE abilities (not single-target). If the targeted hex matches the hidden number, the hero is revealed; if a dispute arises, the hidden counter is revealed to verify the result. A missed check lets the player choose a new hidden number. Attacking or using an ability also reveals the hero, unless specified otherwise.
+- **Sentry Wards and Dust** — Items that provide a passive Reveal radius. Any cloud token entering this radius must reveal its hidden number and replace the cloud with the hero token in the matching position.
 
 ---
 

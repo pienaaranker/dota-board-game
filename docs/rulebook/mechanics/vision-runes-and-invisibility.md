@@ -37,10 +37,14 @@ Invisibility is granted by:
 When a hero becomes invisible:
 1. Remove the hero token from the board.
 2. Place an **Invisibility Cloud** — a multi-tile token — over the hero's area.
-3. The player **secretly** places their hero token beneath one tile of the cloud.
-4. The cloud moves as a single unit. The player may silently rearrange which tile the hero is under when the cloud moves.
-5. The cloud **cannot** be targeted by single-target attacks or abilities.
-6. **AoE abilities** may target individual cloud tiles. If the tile containing the hero is hit, the hero is **revealed**.
+3. The cloud's hexes are treated as **numbered hidden-position spaces**.
+4. The owning player secretly chooses which numbered space the hero currently occupies and records that number on a **hidden counter** kept off to the side.
+5. The hero token itself remains off the board until the hero is revealed.
+6. The cloud moves as a single unit. Whenever it moves, the owning player may silently choose a new numbered space within the cloud and update the hidden counter.
+7. The cloud **cannot** be targeted by single-target attacks or abilities.
+8. **AoE abilities** may target specific hexes covered by the cloud. If the chosen hex matches the number currently recorded on the hidden counter, the hero is **revealed** and is treated as occupying that hex.
+9. If an AoE ability targets the wrong numbered space and a dispute arises, the owning player must reveal the hidden counter to verify whether the hero was hit.
+10. If the revealed number shows the hero was **not** hit, the attack misses and the owning player may immediately choose a new hidden number within the cloud before play continues.
 
 **Attacking from Invisibility:**
 When an invisible hero attacks or uses an offensive ability, directly affected defending heroes **cannot use committed reactions** against that action. The attack resolves uncontested, and the invisible hero is then revealed immediately after the attack resolves.
@@ -54,7 +58,7 @@ The hero is revealed when:
 ### Sentry Wards
 A purchased consumable token placed by a hero in any area.
 
-- Any Invisibility Cloud **entering** the ward's area is immediately revealed — the owning player must disclose the hero's tile.
+- Any Invisibility Cloud **entering** the ward's area is immediately revealed — the owning player must disclose the hidden number and place the hero token on the matching hex.
 - Sentry Wards remain active for a set number of rounds before expiring.
 
 ### Dust of Appearance
@@ -76,6 +80,11 @@ A consumable item purchased at the Fountain. When used, Smoke grants **Invisibil
 
 **Rules:**
 - All affected heroes move together as a group under a single **Smoke Cloud** token (similar to Invisibility Clouds, but covering multiple heroes).
+- Each affected hero secretly records their own numbered space within the Smoke Cloud on a separate hidden counter.
+- Multiple smoked heroes may not occupy the same numbered space unless a card or effect explicitly allows it.
+- Whenever the Smoke Cloud moves, the owning player may silently reassign each affected hero to any legal numbered space within the cloud and update those hidden counters.
+- If an AoE ability targets a specific Smoke Cloud hex, each smoked hero whose hidden counter matches that numbered space is hit and revealed normally.
+- If a dispute arises over whether a smoked hero was hit by an AoE effect, the owning player must reveal that hero's hidden counter. If the hex was missed, that hero may immediately choose a new hidden number within the Smoke Cloud before play continues.
 - **Activation Restriction:** The hero who activates Smoke **cannot attack or use offensive abilities for the remainder of that turn**. This prevents immediate exploitation of the Smoke buff.
 - Heroes under Smoke are **invisible to Observer Wards** — they do not trigger the tactical reaction advantage when attacking from a warded area.
 - **Attacking from Smoke:** When a hero under Smoke attacks or uses an offensive ability, directly affected defending heroes **cannot use committed reactions** against that action. The Smoke dispels from the attacking hero immediately after the attack resolves.
