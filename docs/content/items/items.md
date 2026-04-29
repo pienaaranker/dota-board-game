@@ -36,14 +36,14 @@ Thrown at a target hex within range. Apply a **Bleed** token to all enemy heroes
 #### Bottle *(70 Gold)*
 **Type:** Consumable / Active | **Status:** ✅ Confirmed
 
-Can store one Rune token or be used if full. **Use:** Restore X HP and Y Mana over 4 turns. **Stored Rune:** Consume the stored Rune for its full effect. Refilled at the Fountain. One Bottle per hero maximum.
+Bottle enters play with **3 charges**. **Use:** Spend 1 charge to restore **10 HP** and **6 Mana** over **1 half-round**. That restoration is applied during the current and next half-round checkpoints. Bottle may store **1 Rune token** for later use; consuming the stored rune uses its full normal effect. All charges are restored when the hero returns to the **Fountain** or when a Rune is bottled. One Bottle per hero maximum.
 
 ---
 
 #### Clarity *(5 Gold)*
 **Type:** Consumable | **Status:** ✅ Confirmed
 
-Restore X Mana over 2 rounds. Interrupted if the user takes damage from an enemy hero before regen completes.
+Consume this item to restore **20 Mana** over **2 rounds**. Restore **5 Mana** at each half-round checkpoint. Cancelled if the user takes damage from an enemy hero before the effect completes.
 
 ---
 
@@ -57,14 +57,14 @@ Use during your turn (1 AP). Remove Invisible tokens from all enemy heroes withi
 #### Enchanted Mango *(7 Gold)*
 **Type:** Consumable | **Status:** ✅ Confirmed
 
-Instantly restore X Mana. Can be used on an allied hero within 1 hex instead of self.
+Consume this item to instantly restore **10 Mana**. Can be used on an allied hero within **1 hex** instead of self.
 
 ---
 
 #### Healing Salve *(10 Gold)*
 **Type:** Consumable | **Status:** ✅ Confirmed
 
-Restore X HP over 2 rounds. Interrupted if the user takes damage from an enemy hero before regen completes.
+Consume this item to restore **40 HP** over **2 rounds**. Restore **10 HP** at each half-round checkpoint. Cancelled if the user takes damage from an enemy hero before the effect completes.
 
 ---
 
@@ -116,9 +116,9 @@ Target an adjacent Tree hex — it is destroyed (becomes Open). Restore X HP to 
 ---
 
 #### Town Portal Scroll *(10 Gold)*
-**Type:** Consumable (Channeled) | **Status:** 🔲 TODO
+**Type:** Consumable (Channeled) | **Status:** ✅ Confirmed
 
-Channel: spend 2 AP. At the start of your next turn, teleport to any friendly structure (Tower, Barracks, or Fountain). Cancelled only if the hero is Stunned or Rooted while channeling. Consumed on use.
+Consume this item and spend **1 AP** to begin teleporting to any **standing allied structure** (**Tower**, **Barracks**, or **Fountain**). The hero arrives at that structure after **10 turns**. This is a **Channeled** item effect and is cancelled if the hero becomes **Stunned**, **Rooted**, **Hexed**, or is subjected to **forced movement** before arrival. **Cooldown:** **4 rounds**. Each hero gets **1 free Town Portal Scroll at game start** and **1 free Town Portal Scroll each time they respawn**.
 
 ---
 
@@ -127,16 +127,16 @@ Channel: spend 2 AP. At the start of your next turn, teleport to any friendly st
 Standalone items that don't fit neatly into an upgrade line.
 
 #### Blink Dagger *(230 Gold)*
-**Type:** Active | **Status:** 🔲 TODO
+**Type:** Active | **Status:** ✅ Confirmed
 
-Spend 1 AP. Instantly teleport up to X hexes in any direction, ignoring all terrain and units. Cannot be activated if this hero took damage this round.
+Spend **1 AP** to instantly move to any **Open hex** within **5 hexes**. If this hero takes damage from an enemy, Blink Dagger is disabled for the rest of that **half-round**. **Cooldown:** **2 rounds**
 
 ---
 
 #### Boots of Speed *(50 Gold)*
-**Type:** Passive | **Status:** 🔲 TODO
+**Type:** Passive | **Status:** ✅ Confirmed
 
-+1 Movement.
+The first **Move** action this hero resolves on each activation costs **0 AP**.
 
 ---
 
@@ -493,9 +493,9 @@ When this hero's HP drops to 20% or below, automatically gain an Aeon Shield tok
 ---
 
 #### Black King Bar *(400 Gold)*
-**Type:** Active | **Status:** 🔲 TODO
+**Type:** Active | **Status:** ✅ Confirmed
 
-Spend 1 AP. Gain **Spell Immunity** for 1 round: enemy magic damage, enemy ability effects, and enemy debuffs cannot affect this hero unless the source explicitly says it pierces Spell Immunity (BKB). This does not remove existing debuffs unless a card says it dispels them. Cooldown decreases with each use (first use: 3 rounds; subsequent uses: 2 rounds, minimum 1).
+Spend **1 AP**. Gain **Spell Immunity** for **1 round**: enemy **magic damage**, enemy **ability effects**, and enemy **debuffs** cannot affect this hero unless the source explicitly says it **pierces Spell Immunity**. This removes existing debuffs unless the **spell that caused** the debuff **pierces Spell Immunity**. **Cooldown:** **4 rounds**
 
 ---
 
