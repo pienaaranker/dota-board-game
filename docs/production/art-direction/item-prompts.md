@@ -164,17 +164,19 @@ The front should avoid long paragraphs.
 
 ### Back Face
 
-The back is for **full rules explanation and reminder text**.
+The back is for a **blank styled reverse side**.
 
-It should be designed to accept longer inserted text cleanly and consistently:
+It should preserve the same manufactured family identity as the front while remaining intentionally empty so text can be added later in layout software.
 
-- repeated item name
-- repeated type or keyword band
-- larger body-text area
-- optional subheaders like Use, Passive, Cooldown, Restrictions, Notes
-- a small icon or watermark motif, but less illustration emphasis than the front
+Keep only the structural and decorative elements that help it read as the reverse side of the same card:
 
-The back should look visually related to the front, but should prioritize readability and text flow over object showcase.
+- matching outer border and corner treatment
+- matching ornament language
+- matching palette family
+- optional faint watermark or subtle background motif
+- large clean central empty area for later text placement
+
+The back should look visually related to the front, but it should not pre-print rules text, section labels, headers, or dense information blocks.
 
 ---
 
@@ -284,56 +286,52 @@ ATTACHMENTS PROVIDED
 Use the attached references only as product-family guidance for layout discipline, ornament restraint, typography hierarchy, frame language, and overall tabletop cohesion. Do not copy any copyrighted symbols, logos, or official item art.
 
 PRIMARY GOAL
-Generate a clean, print-ready **back face** for [ITEM NAME] that matches the front-face design system while providing a text-friendly rules layout.
+Generate a clean, print-ready **back face** for [ITEM NAME] that matches the front-face design system while remaining completely blank apart from the border, frame language, and very subtle supporting style details.
 
 OVERALL STYLE
 - premium fantasy board game component
 - readable at print size
 - same product family as the front face
-- cleaner and more text-oriented than the front
+- cleaner and more minimal than the front
 - original art only
 
 LOCKED LAYOUT REQUIREMENTS
 - Preserve the attached **back-face** item-card architecture exactly.
 - Keep the same physical card proportions and same manufactured family identity as the front.
 - Use a matching border treatment, matching ornament system, matching typography hierarchy, and matching color-family logic.
-- Provide a large readable body-text area designed for easy insertion of full rules text.
-- Keep a clear hierarchy for title, cost, type, keyword chips, section labels, and body text.
+- Preserve a large clean empty interior area for later manual text placement.
 - Do not redesign the page architecture.
-- Do not overload the back with illustration.
+- Do not overload the back with illustration, labels, or printed information.
 
 BACK-FACE DATA
-- Item name: [ITEM NAME]
-- Cost: [COST]
-- Type: [TYPE]
-- Keyword chips if relevant: [Placeable] | [Channeled] | [Aura] | [Passive] | [Consumable]
-- Full rules text to be inserted later: [LEAVE LARGE BODY TEXT PANEL READY]
-- Optional section headers if useful: [Use] [Passive] [Cooldown] [Restrictions] [Notes]
+- Do not print any rules text on the generated back.
+- Do not print section headers.
+- Do not print item metadata unless explicitly requested later.
+- Leave the central content area blank for later layout insertion.
 
 BACK-FACE ART DIRECTION
 - Use only subtle art support on the back.
 - Include a faint watermark, emblem, rune pattern, item silhouette ghost, or decorative motif related to [ITEM NAME].
-- Keep the back primarily optimized for readability and text insertion.
+- Keep the back primarily optimized as a blank styled surface for later text insertion.
 - Accent palette: [PALETTE]
 - Motif: [SUBTLE MOTIF]
 - Mood: [MOOD]
 
 GRAPHIC DIRECTION
-- The back should feel like a readable rules reference surface first and a decorative card face second.
-- Leave generous, clearly bounded text space.
-- Make it easy to overlay or insert body text later without fighting the art.
-- Use subtle separators and section markers.
+- The back should feel like a blank production-ready reverse face, not a populated rules reference.
+- Leave generous, clearly bounded empty space.
+- Make it easy to overlay or insert text later without fighting the art.
+- Avoid printed separators, labels, or text scaffolding inside the empty area.
 - Present as a straight-on flat card render on a neutral background.
 
 TYPOGRAPHY DIRECTION
-- Keep the item name prominent but secondary to the main rules text zone.
-- Use highly readable body-text styling suitable for dense rules text.
-- Preserve the same title and metadata typography family as the front.
+- Preserve the same typography family as the front only where tiny decorative lettering is required by the frame.
+- Do not pre-populate the back with item name, rules text, or body text blocks.
 
 MANUFACTURING MINDSET
 - The back must look like the reverse side of the same printed card, not a separate product.
-- The back exists to support clarity, not spectacle.
-- Ornament should frame the text, not compete with it.
+- The back exists as a styled blank template, not a finished rules surface.
+- Ornament should frame the empty area, not compete with future inserted text.
 
 MASTER CONSTRAINT
 Keep this double-sided item card in the exact same product family as the approved item-card template or reference card. Preserve the front/back frame language, panel layout, typography hierarchy, metadata-chip system, spacing rhythm, and overall card architecture. Only vary the subtle motif, accent palette, and item-specific atmospheric details. Do not redesign the structure.
@@ -341,14 +339,14 @@ Keep this double-sided item card in the exact same product family as the approve
 NEGATIVE CONSTRAINTS
 - Do not redesign the frame.
 - Do not move major card elements.
-- Do not fill the back with large illustration that reduces text space.
+- Do not fill the back with large illustration that reduces usable blank space.
 - Do not create a poster-like composition.
-- Do not add fake parchment clutter, unreadable texture, or busy effects behind the text area.
+- Do not add fake parchment clutter, unreadable texture, section headers, rules text, labels, or busy effects inside the blank area.
 - Do not turn the card into a photographed object, angled mockup, or 3D render presentation.
 - Do not copy official Dota 2 UI, logos, or item art.
 
 FINAL OUTPUT TARGET
-The final image should look like a production-quality printable **back face** for a premium fantasy board game item card: clean, aligned, clearly related to the front face, highly readable, and built to accept inserted rules text easily.
+The final image should look like a production-quality printable **back face** for a premium fantasy board game item card: clean, aligned, clearly related to the front face, and intentionally blank apart from the frame, border, and subtle style treatment so text can be added later.
 ```
 
 ---
@@ -392,15 +390,12 @@ Constraints:
 Use this when you want the reverse side quickly.
 
 ```text
-Create a print-ready **back face** for [ITEM NAME]. Use the exact same double-sided item-card architecture, back-face frame language, typography hierarchy, spacing rhythm, and physical size as the approved template. Match the front-face style, but prioritize a large readable text panel for inserted full rules.
+Create a print-ready **back face** for [ITEM NAME]. Use the exact same double-sided item-card architecture, back-face frame language, typography hierarchy, spacing rhythm, and physical size as the approved template. Match the front-face style, but keep the back completely blank apart from the border, frame, and subtle decorative treatment.
 
 Back data:
-- Name: [ITEM NAME]
-- Cost: [COST]
-- Type: [TYPE]
-- Keyword chips: [KEYWORDS]
-- Full rules text panel: leave clean space for later insertion
-- Optional section labels: [Use] [Passive] [Cooldown] [Restrictions] [Notes]
+- No printed text
+- No section labels
+- Leave clean blank space for later insertion
 
 Back art direction:
 - Accent palette: [PALETTE]
@@ -410,10 +405,11 @@ Back art direction:
 Constraints:
 - Original art only
 - No frame redesign
-- No busy illustration behind text
+- No printed rules text or labels
+- No busy illustration in the blank area
 - Same product family as the front
 - Straight-on flat component render
-- Optimized for readability and easy text insertion
+- Optimized as a styled blank reverse side for easy later text insertion
 ```
 
 ---
@@ -450,13 +446,11 @@ LOCKED LAYOUT REQUIREMENTS
 FRONT-FACE DATA
 - Item name: Bottle
 - Cost: 70 Gold
-- Type: Consumable / Active
 - Immediately relevant info to show on front:
-	- 3 Charges
-	- Spend 1 charge: restore 10 HP and 6 Mana over 1 half-round
-	- Bottle 1 Rune for later use
-	- Refill at Fountain or when bottling a Rune
-- Standard metadata chips to show if relevant: 1 charge per use | 3 charges total | Rune storage
+	- 3 Charges (use charges icon)
+	- +10hp (use healh icon)
+	- +6mp (use mana icon)
+	- per 1/2 round (use half round indicator icon)
 
 ITEM ILLUSTRATION DIRECTION
 - Show Bottle as an original fantasy glass flask designed for a tactical board game economy item.
@@ -502,29 +496,26 @@ ATTACHMENTS PROVIDED
 - Attachment 2: approved front-face Bottle card for style matching
 
 PRIMARY GOAL
-Generate a clean, print-ready **back face** for Bottle that matches the front-face design system while providing a text-friendly rules layout.
+Generate a clean, print-ready **back face** for Bottle that matches the front-face design system while remaining completely blank apart from the border, frame language, and very subtle supporting style details.
 
 OVERALL STYLE
 - premium fantasy board game component
 - readable at print size
 - same product family as the front face
-- cleaner and more text-oriented than the front
+- cleaner and more minimal than the front
 - original art only
 
 LOCKED LAYOUT REQUIREMENTS
 - Preserve the attached **back-face** item-card architecture exactly.
 - Keep the same physical card proportions and same manufactured family identity as the front.
 - Use a matching border treatment, matching ornament system, matching typography hierarchy, and matching color-family logic.
-- Provide a large readable body-text area designed for easy insertion of full rules text.
-- Do not overload the back with illustration.
+- Preserve a large clean empty interior area for later manual text placement.
+- Do not overload the back with illustration, labels, or printed information.
 
 BACK-FACE DATA
-- Item name: Bottle
-- Cost: 70 Gold
-- Type: Consumable / Active
-- Keyword chips: Charges | Rune Storage
-- Full rules text panel: leave clean space for later insertion
-- Optional section labels: Use | Charges | Rune Storage | Refill
+- Do not print any rules text on the generated back.
+- Do not print section headers.
+- Leave the central content area blank for later layout insertion.
 
 BACK-FACE ART DIRECTION
 - Use only subtle art support on the back.
@@ -533,9 +524,9 @@ BACK-FACE ART DIRECTION
 - Mood: practical, magical, versatile utility item
 
 GRAPHIC DIRECTION
-- The back should feel like a readable rules reference surface first and a decorative card face second.
-- Leave generous, clearly bounded text space.
-- Make it easy to overlay or insert body text later without fighting the art.
+- The back should feel like a blank production-ready reverse face, not a populated rules reference.
+- Leave generous, clearly bounded empty space.
+- Make it easy to overlay or insert text later without fighting the art.
 - Present as a straight-on flat card render on a neutral background.
 
 MASTER CONSTRAINT
@@ -550,7 +541,7 @@ NEGATIVE CONSTRAINTS
 - Do not turn the card into a photographed object, angled mockup, or 3D render presentation.
 
 FINAL OUTPUT TARGET
-The final image should look like a production-quality printable **back face** for a premium fantasy board game item card: clean, aligned, clearly related to the front face, highly readable, and built to accept inserted rules text easily.
+The final image should look like a production-quality printable **back face** for a premium fantasy board game item card: clean, aligned, clearly related to the front face, and intentionally blank apart from the frame, border, and subtle style treatment so text can be added later.
 ```
 
 ---
