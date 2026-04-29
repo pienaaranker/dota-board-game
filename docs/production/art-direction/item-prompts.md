@@ -414,7 +414,7 @@ Constraints:
 
 ---
 
-## Example Front Template Fill — Bottle
+## Example Front Template Fill — Smoke of Deceit
 
 Use this as a model for how much detail to give the system.
 
@@ -426,7 +426,7 @@ ATTACHMENTS PROVIDED
 - Attachment 2: approved hero card or component for product-family style reference only
 
 PRIMARY GOAL
-Generate a clean, print-ready **front face** for Bottle.
+Generate a clean, print-ready **front face** for Smoke of Deceit.
 
 OVERALL STYLE
 - premium fantasy board game component
@@ -444,26 +444,28 @@ LOCKED LAYOUT REQUIREMENTS
 - Only change the item illustration, accent palette, material identity, and item-specific atmospheric details inside the established frame.
 
 FRONT-FACE DATA
-- Item name: Bottle
-- Cost: 70 Gold
+- Item name: Smoke of Deceit
+- Cost: 5 Gold
 - Immediately relevant info to show on front:
-	- 3 Charges (use charges icon)
-	- +10hp (use healh icon)
-	- +6mp (use mana icon)
-	- per 1/2 round (use half round indicator icon)
+	- 1 AP (use AP icon)
+	- affect self and allies within 2 hexes
+	- move under a Smoke Cloud
+	- ignore Observer Ward reaction advantage
+	- breaks near enemies, towers, or on attack
+	- consumable
 
 ITEM ILLUSTRATION DIRECTION
-- Show Bottle as an original fantasy glass flask designed for a tactical board game economy item.
-- Primary object identity: compact potion bottle with a rune-lock stopper and visible glowing liquid reserve
-- Primary material identity: blue-tinted glass, silver neck fittings, arcane cork or metal seal
-- Accent palette: aqua, sapphire, silver, faint rune-white highlights
-- Magical effect family: contained liquid glow and subtle rune resonance
-- Background motif: gentle circular rune rings and faint river-energy pattern
-- Mood: practical, magical, versatile, valuable utility item
+- Show Smoke of Deceit as an original fantasy stealth consumable designed for a tactical board game coordinated movement and ambush tool.
+- Primary object identity: a sealed alchemical vial, smoke canister, or deception flask built to release a controlled concealment cloud
+- Primary material identity: dark glass or metal vessel, wax seal or clasp, subtle rune etching, vapor residue, and concealed-pressure detailing
+- Accent palette: muted teal, ash gray, shadow blue, smoky silver, restrained ghostly glow
+- Magical effect family: drifting concealment mist, stealth-cloud shimmer, and deceptive arcane vapor
+- Background motif: layered smoke rings, concealment sigils, and subtle ambush geometry
+- Mood: secretive, tactical, coordinated, ambush-focused item
 
 GRAPHIC DIRECTION
 - The card should feel like a readable tabletop component first and a fantasy illustration second.
-- Keep the bottle silhouette instantly legible.
+- Keep the smoke-of-deceit silhouette instantly legible.
 - Use clean panel separation and crisp metadata chips.
 - Keep front-face text intentionally limited.
 - Present as a straight-on flat card render on a neutral background.
@@ -484,7 +486,7 @@ The final image should look like a production-quality printable **front face** f
 
 ---
 
-## Example Back Template Fill — Bottle
+## Example Back Template Fill — Smoke of Deceit
 
 Use this as a model for a matching reverse side.
 
@@ -493,10 +495,10 @@ Create the **back face** of a polished double-sided fantasy board game item card
 
 ATTACHMENTS PROVIDED
 - Attachment 1: approved item-card wireframe or item-card layout reference
-- Attachment 2: approved front-face Bottle card for style matching
+- Attachment 2: approved front-face Smoke of Deceit card for style matching
 
 PRIMARY GOAL
-Generate a clean, print-ready **back face** for Bottle that matches the front-face design system while remaining completely blank apart from the border, frame language, and very subtle supporting style details.
+Generate a clean, print-ready **back face** for Smoke of Deceit that matches the front-face design system while remaining completely blank apart from the border, frame language, and very subtle supporting style details.
 
 OVERALL STYLE
 - premium fantasy board game component
@@ -519,9 +521,9 @@ BACK-FACE DATA
 
 BACK-FACE ART DIRECTION
 - Use only subtle art support on the back.
-- Include a faint bottle silhouette watermark, gentle circular rune rings, and a soft river-energy motif.
-- Accent palette: aqua, sapphire, silver, faint rune-white highlights
-- Mood: practical, magical, versatile utility item
+- Include a faint smoke-vial or concealment-canister silhouette watermark, restrained drifting smoke rings, and a subtle deception-cloud motif.
+- Accent palette: muted teal, ash gray, shadow blue, smoky silver, restrained ghostly glow
+- Mood: secretive, tactical, coordinated, ambush-focused item
 
 GRAPHIC DIRECTION
 - The back should feel like a blank production-ready reverse face, not a populated rules reference.
