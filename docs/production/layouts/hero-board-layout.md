@@ -139,13 +139,19 @@ Each section contains two rows of tracking compartments:
 Located in the center-right of the mat. This zone contains **6 active item slots** and a separate **3-slot backpack**.
 
 #### Active Item Slots (×6)
-- **Component:** Standard card slot (fits Item Cards)
+- **Component:** Mini item-card slot sized for **63 × 41 mm** double-sided Item Cards
 - **Printed Identity:** Each slot is clearly labeled **1** through **6** to match the hero's numbered item planning tokens
 - **Card displays:** Item name, stats/bonuses, active effect (if any)
 
 #### Backpack Slots (×3)
-- **Component:** Standard card slots grouped beside the active item area under a clear **Backpack** label
+- **Component:** Matching mini item-card slots grouped beside the active item area under a clear **Backpack** label
 - **Usage:** Backpack items are carried but cannot be used directly from the backpack and do not receive numbered item planning tokens
+
+#### Item Card Size Recommendation
+- **Recommended physical item-card size:** **63 × 41 mm** (**W × H**)
+- **Reasoning:** The Hero Board is approximately **30 × 40 cm** and needs to fit **6 active item slots** plus **3 backpack slots** without crowding the planning and duration-tracking areas. A poker-size card would overpower the right-side item zone, while **63 × 41 mm** remains large enough for a readable front face and a compact rules back.
+- **Orientation on board:** Item Cards are printed and used in **landscape orientation** so the slot rectangles stay wide and easy to scan.
+- **Design implication:** Front faces should prioritize item name, cost, cooldown, charges, and only the most immediately relevant play text. The reverse side can hold the fuller rules text.
 
 #### Swapping Items
 - **Usage:** During the hero's own activation, items may be swapped between the 6 active slots and the 3 backpack slots
