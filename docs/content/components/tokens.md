@@ -31,7 +31,8 @@ These are the pieces that physically appear on the board to represent units, obj
 | Token | Why It Is Needed |
 |---|---|
 | **Hero Tokens** | Show each drafted hero's position on the board. Also used as the hero's respawn piece when the hero dies. |
-| **Lane Creep Tokens** | Represent lane creep waves at each current Creep Meeting Point. |
+| **Melee Lane Creep Tokens** | Represent the 2 melee-token positions in each team's lane wave. Each token is double-sided: 2 melee creeps on one face and 1 melee creep on the reverse. |
+| **Ranged Lane Creep Tokens** | Represent the 1 ranged-token position in each team's lane wave. |
 | **Neutral Camp Tokens** | Represent neutral creeps in jungle camps. |
 | **Ancient Camp Tokens** | Represent Ancient creeps in Ancient camps. |
 | **Ancient Marker** | Marks the position of the Ancient on the map. |
@@ -157,8 +158,9 @@ These are the tokens required to run the map, objectives, lane pressure, and boa
 | Token | Purpose | Notes |
 |---|---|---|
 | **Hero Tokens** | Represent hero position on the board | One token per drafted hero, team-colored or team-rimmed. When a hero dies, remove this token from the map and place it on the appropriate turn or round track to mark the hero's respawn countdown. |
-| **Lane Creep Tokens / Counters** | Represent lane creeps at each Creep Meeting Point | Should support normal lane state and removal through Farm. |
-| **Neutral Camp Tokens / Counters** | Represent remaining neutral creeps in a camp | Used for camp farming and respawn tracking. |
+| **Melee Lane Creep Tokens** | Represent the front 2 melee positions in each team's lane wave | Double-sided token: 1 face shows 2 melee creeps, the reverse shows 1 melee creep. Flip it when one melee creep dies; remove it when the last melee creep dies. |
+| **Ranged Lane Creep Tokens** | Represent the rear ranged position in each team's lane wave | Single-creep token. Remove it when that ranged creep dies. |
+| **Neutral Camp Tokens / Counters** | Represent remaining neutral creeps in a camp | Used for camp attacks and respawn tracking. |
 | **Ancient Camp Tokens / Counters** | Represent remaining Ancient creeps in a camp | Visually distinct from regular neutral camps. |
 | **Camp Cleared / Populated Marker** | Shows whether a neutral camp is currently available | Can be a flip token or two-sided marker. |
 | **Tower Destroyed Marker** | Marks a destroyed tower | Large, obvious overlay marker. |

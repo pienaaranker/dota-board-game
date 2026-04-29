@@ -125,7 +125,8 @@ Disarm prevents a hero from making attack actions for the stated duration.
 
 **Disarm rules:**
 - A Disarmed hero cannot declare **Attack** actions.
-- A Disarmed hero may still move, use abilities, use items, and farm unless another effect prevents those actions.
+- A Disarmed hero may still move, use abilities, and use items unless another effect prevents those actions.
+- Because lane creeps and neutral camps are killed through **Attack** actions, a Disarmed hero also cannot clear creeps or camps while Disarmed.
 - If a committed **Attack** token is revealed while the hero is Disarmed, that action fails normally under the failed-action rules.
 
 #### Break

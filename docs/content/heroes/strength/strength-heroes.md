@@ -50,7 +50,7 @@ Sven may choose to travel with the hammer, arriving at the impact location. Impa
 **Type:** Passive | **Unlock:** Level 1
 
 **Effect:**  
-Sven's attacks cleave in a 2-hex cone in front of him, dealing damage to all units in the area. When Sven uses Farm on a creep wave, he only needs to farm twice to clear the entire wave and receives the gold and XP for all creeps.
+Sven's attacks cleave in a 2-hex cone in front of him, dealing damage to all units in the area. Against a normal lane wave, this lets Sven clear the full wave in 2 successful attacks if his cone covers both melee tokens and the ranged token, and he receives the normal gold and XP for each creep killed.
 
 **Level Progression:**
 - **Level 1-5:** 2 cleave damage

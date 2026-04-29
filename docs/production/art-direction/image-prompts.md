@@ -2333,7 +2333,7 @@ Board content instruction:
 	- PLAN — Commit actions and reactions
 	- REVEAL — Resolve left to right; choose targets on reveal
 	- MOVE — Move 1 hex
-	- ATTACK | FARM — Damage enemies | Farm gold / XP
+	- ATTACK — Damage enemies and kill creeps
 	- ABILITY | ITEM — Use hero skills and active items
 	- REACTIONS — Respond to enemy actions
 	- COMBAT — Apply damage after defense
@@ -2524,7 +2524,7 @@ Ability data to show exactly:
 2. Great Cleave
 - Type: Passive
 - Unlock: Level 1
-- Rules: Sven's attacks cleave in a 2-hex cone in front of him, dealing damage to all units in the area. When Sven uses Farm on a creep wave, he only needs to farm twice to clear the entire wave and receives the gold and XP for all creeps.
+- Rules: Sven's attacks cleave in a 2-hex cone in front of him, dealing damage to all units in the area. Against a normal lane wave, this lets Sven clear the full wave in 2 successful attacks if his cone covers both melee tokens and the ranged token, and he receives the normal gold and XP for each creep killed.
 - Scaling: 1-5: 2 cleave damage | 6-11: 4 cleave damage | 12+: 6 cleave damage
 
 3. Warcry

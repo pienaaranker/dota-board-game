@@ -42,7 +42,7 @@ Located at the top of Zone 2.
   - **PLAN** — Commit actions and reactions
   - **REVEAL** — Resolve **left to right**; choose targets on reveal
   - **MOVE** — Move **1 hex**
-  - **ATTACK | FARM** — Damage enemies | Farm gold / XP
+  - **ATTACK** — Damage enemies and kill creeps
   - **ABILITY | ITEM** — Use hero skills and active items
   - **REACTIONS** — Respond to enemy actions
   - **COMBAT** — Apply damage after defense
@@ -234,13 +234,13 @@ Three lane sections (Top, Mid, Bottom), each with identical tracking.
 #### Creep Wave State (per lane)
 - **Component:** Slide token with three positions
   - Normal (green)
-  - Enhanced / Super (yellow) — one Barracks destroyed
-  - Mega (red) — both Barracks destroyed
+  - Enhanced (yellow) — that lane's Barracks destroyed
+  - Mega (red) — all 3 Barracks destroyed
 - **Usage:** Move slider when Barracks are destroyed.
 
 #### Creep Wave Exhausted (siege requirement)
 - **Component:** Printed checkbox per lane "✓ Wave Exhausted This Round"
-- **Marker:** Cube token placed when creeps have been farmed. Removed at Round End Phase.
+- **Marker:** Cube token placed when all enemy creep tokens in that lane have been removed for the round. Removed at Round End Phase.
 
 #### Tower Health (per lane)
 - **Component:** Printed tower icons (T1 → T2 → T3 → T4 × 2) with HP tracks

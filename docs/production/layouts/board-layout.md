@@ -43,6 +43,8 @@ The midpoint between standing towers where creep waves spawn and meet.
 
 **Visual Markers:** Each lane has **multiple pre-defined meeting point hexes** printed directly on the board. These hexes are clearly marked with visual indicators (icons, special coloring, or labeled zones).
 
+**Lane Formation:** Each meeting point includes **6 printed creep hexes** arranged as **3 per team**: **2 front melee positions** and **1 rear ranged position** for each side.
+
 **Shifting Rule:** When a tower is destroyed, the meeting point for that lane shifts forward (toward the enemy base) to the next pre-marked hex. **The shift takes effect during the Round End Phase** when new creep waves spawn. This ensures creeps spawn at the new, advanced position after a tower falls, creating lane pressure. Since towers can only be attacked after the lane's creep wave is exhausted (siege requirement), the meeting point naturally updates between waves.
 
 ---

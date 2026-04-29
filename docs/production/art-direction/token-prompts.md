@@ -281,7 +281,8 @@ TOKEN FRAME SYSTEM
 
 PAGE CONTENT AND REQUIRED COUNTS
 Include only these hex tokens on this page:
-- Lane Creep Tokens x6
+- Melee Lane Creep Tokens x12
+- Ranged Lane Creep Tokens x6
 - Neutral Camp Tokens x8
 - Ancient Camp Tokens x2
 - Barracks Status Marker x6
@@ -297,7 +298,8 @@ Do NOT include Invisibility Cloud or Smoke Cloud, because those are custom templ
 Do NOT include any diamond planning tokens.
 
 VISUAL RULES BY TOKEN TYPE
-- Lane Creep token: simple lane-unit iconography with readable massed-infantry or marching wave language. It should read as a generic lane presence marker, not a hero.
+- Melee Lane Creep token: simple lane-unit iconography with readable massed-infantry language. This family must be designed as a reversible token system: the main face shows 2 melee creeps, and the reverse face shows the same token reduced to 1 melee creep for the flipped damaged state.
+- Ranged Lane Creep token: same overall lane-unit family, but clearly the rear support creep rather than a front-line melee body.
 - Neutral Camp token: beast / fang / claw / horn language that clearly marks a standard jungle camp.
 - Ancient Camp token: elite neutral treatment, heavier silhouette, more dangerous and ancient-looking than the standard neutral camp token.
 - Barracks Status Marker: structural fortified-building iconography that reads as a standing lane objective.
@@ -308,7 +310,7 @@ VISUAL RULES BY TOKEN TYPE
 - Sentry Ward token: matching ward family but clearly sharper and more reveal-oriented, with detection / true-sight language.
 
 FAMILY COLOR LANGUAGE
-- Lane Creep and Barracks tokens: controlled battlefield and structural palette such as steel, stone, muted teal, or weathered bronze.
+- Melee Lane Creep, Ranged Lane Creep, and Barracks tokens: controlled battlefield and structural palette such as steel, stone, muted teal, or weathered bronze.
 - Neutral Camp and Ancient Camp tokens: natural beast-tones, bone, tusk, moss, or ancient jungle accents.
 - Power Rune tokens: brighter magical accent colors within one unified rune system, with each rune clearly distinct.
 - Courier tokens: utility-friendly accent such as soft gold, pale teal, or messenger blue.
@@ -318,7 +320,7 @@ FAMILY COLOR LANGUAGE
 REPETITION RULE
 - Place the required counts first.
 - If the attached wireframe contains more token slots than the required counts, fill the remaining slots with extra copies of the most-used gameplay tokens on this page.
-- Use this spare-fill priority: Broken Tree first, then Observer Ward, then Sentry Ward, then Neutral Camp, then Lane Creep.
+- Use this spare-fill priority: Broken Tree first, then Observer Ward, then Sentry Ward, then Neutral Camp, then Melee Lane Creep, then Ranged Lane Creep.
 - Do not create extra copies of Ancient Camp, Courier, or the five distinct rune types unless space still remains after the main spare-fill priorities.
 
 ICONOGRAPHY RULES

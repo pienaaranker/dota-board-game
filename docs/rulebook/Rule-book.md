@@ -48,7 +48,7 @@ Each hero has their own AP per turn to spend.
 | Action | Description |
 |--------|-------------|
 | **Move** | Move a hero to an adjacent area. |
-| **Attack** | Initiate combat with a lane creep token, neutral camp token, Tower, or Enemy Hero. Attacking creeps and camps is how farming is resolved. |
+| **Attack** | Initiate combat with a specific lane creep token, neutral camp token, Tower, or Enemy Hero. There is no separate Farm action. |
 | **Deny** | *(Reaction)* Commit a 1 AP reaction during Planning Phase to interrupt an opponent's Attack against an allied lane creep if triggered. Requires a die roll challenge. |
 | **Use Item** | Activate an item card's effect using the numbered item slot token corresponding to one of the hero's 6 active item slots. Backpack items cannot be used directly and items swapped in from the backpack can only be used in the next round. |
 | **Use Ability** | Activate one of the hero's printed abilities using the matching hero-specific token (requires Mana). |
@@ -61,7 +61,9 @@ Each hero has their own AP per turn to spend.
 Located in the base. Instantly restores all Health and Mana to heroes in this area.
 
 ### Creep Meeting Points
-Locations halfway between the closest standing towers in a lane. Lane creeps can only be farmed here. (Each possible location is marked on the map.)
+Locations halfway between the closest standing towers in a lane. Lane creep waves spawn and clash here, and heroes attack those creeps directly here. (Each possible location is marked on the map.)
+
+Each meeting point has 3 creep positions per team: 2 front melee positions and 1 rear ranged position. Each team's wave in a lane therefore consists of 2 melee tokens and 1 ranged token.
 
 When a tower is destroyed, the meeting point in that lane shifts forward (toward the enemy base) during the Round End Phase when new creeps spawn. This causes the next wave to appear at the advanced position, creating immediate lane pressure.
 
@@ -128,5 +130,6 @@ Buildings and Obstacles allow heroes to see (and target) enemies on the other si
 ## Economy and Progression
 
 - **The Courier** — A shared unit that delivers items from the Fountain to heroes. Delivery typically takes 1–2 rounds.
+- **Lane Creep Rewards** — Each lane creep killed gives the killer 5 Gold and gives exactly 2 shared XP to allied heroes within 4 hexes, split between up to the 2 closest eligible heroes.
 - **Leveling** — Heroes gain levels via XP. At levels 6, 12, and 18, heroes unlock or upgrade the relevant sections on their Abilities Card.
 - **Buybacks** — Dead heroes can spend a significant Gold fee to respawn immediately at the Fountain, then place their Buyback token onto their round cooldown track until it refreshes.

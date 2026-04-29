@@ -4,16 +4,18 @@ This document collects gold, farming, leveling, items, and death-cycle rules.
 
 ---
 
-## Farming & Economy
+## Creep Kills & Economy
 
-### Farming Through Attacks
-A hero in the same area as a creep wave or neutral camp spends 1 AP to **Attack** the relevant creep or camp token to farm it.
+### Attacking Creeps And Camps
+A hero in the same area as a lane creep wave or neutral camp spends AP on a normal **Attack** action targeting a specific creep or camp token.
 
-- **Lane Creeps:** Remove 1 creep counter from the wave. The hero receives **gold and XP** for that creep.
-- **Neutral/Ancient Camps:** Remove 1 creep counter from the camp. The hero receives **gold and XP** but also loses **Health** (neutrals fight back).
-- **If Denied:** An enemy hero may use the Deny reaction (see Turn Structure). If the Deny succeeds, the attacking hero receives **reduced XP and no gold**.
+- **Lane Creeps:** Each creep killed gives the killing hero **5 gold**. Each killed creep also gives exactly **2 shared XP** to allied heroes within **4 hexes** of that creep.
+- **XP Split:** If 2 allied heroes are in XP range, each gains **1 XP**. If only 1 allied hero is in XP range, that hero gains the full **2 XP**. If more than 2 allied heroes are in XP range, only the **2 closest** allied heroes gain **1 XP** each.
+- **XP Ties:** If multiple allied heroes are tied for the final eligible XP position, the creep-killing team chooses which tied hero receives that XP.
+- **Neutral/Ancient Camps:** Remove 1 creep counter from the camp. The hero receives the camp's normal gold and XP but also loses **Health** (neutrals fight back).
+- **If Denied:** An enemy hero may use the Deny reaction (see Turn Structure). If the Deny succeeds, the attacking hero receives **no gold**, and only the **closest** eligible hero on the attacking team within **4 hexes** of the denied creep gains **1 XP**.
 
-No separate Farm action exists. Spending the AP on the Attack secures the last hit unless interrupted by a Deny reaction.
+There is **no separate Farm action**. Heroes must target and attack creeps directly to kill them.
 
 ### Passive Income
 Every hero receives a flat gold amount at the **Round End Phase**, regardless of farming activity.
@@ -21,8 +23,8 @@ Every hero receives a flat gold amount at the **Round End Phase**, regardless of
 ### Deny
 Deny is a **Reaction** committed during Planning Phase by reserving **1 AP** in one of the hero's reaction slots for the current half-round. An allied hero may use that committed reaction when an enemy uses **Attack** on an allied lane creep, attempting to deny the last hit and deprive the enemy of gold.
 
-- Resolved with a **die roll challenge** between the denying hero and the farming hero.
-- **Deny succeeds:** The attacking hero gains **reduced XP and no gold** from that creep.
+- Resolved with a **die roll challenge** between the denying hero and the attacking hero.
+- **Deny succeeds:** The attacking hero gains **no gold** from that creep, and only the **closest** eligible hero on the attacking team within **4 hexes** of the denied creep gains **1 XP**.
 - **Deny fails:** The attack resolves normally — the enemy receives full gold and XP.
 
 ### Gold Uses
@@ -36,9 +38,9 @@ Gold is spent to:
 
 ### Earning XP
 Heroes gain XP from:
-- Farming lane creep waves.
+- Killing lane creeps.
 - Killing or assisting in the death of an enemy hero (shared among nearby allied heroes).
-- Farming Neutral or Ancient Camps.
+- Killing Neutral or Ancient Creeps.
 
 ### Leveling Up
 Heroes level up when their XP track is filled. Milestones:

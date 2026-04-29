@@ -35,7 +35,7 @@ These are small board counters that track non-hero units and map-state occupancy
 
 | Token Family | Include On This Page | Why They Belong Together |
 |---|---|---|
-| Lane Wave Counters | Lane Creep Tokens / Counters | Shared small-counter language for repeatable board states. |
+| Lane Wave Counters | Melee Lane Creep Tokens (double-sided 2-creep / 1-creep), Ranged Lane Creep Tokens | Shared small-counter language for repeatable lane states, with the melee family built as a reversible damage-state token. |
 | Neutral Camp Counters | Neutral Camp Tokens / Counters | Uses the same production logic as lane creeps, but with neutral-specific identity. |
 | Ancient Camp Counters | Ancient Camp Tokens / Counters | Best treated as the elite variant of neutral camp counters. |
 | Camp Availability | Camp Cleared / Populated Marker | Tracks the same neutral ecosystem and should match the camp counter set. |
@@ -320,7 +320,8 @@ Do NOT include hero portrait tokens on this sheet.
 Do NOT include Ancient or Tower position markers, because those should be printed on the board rather than manufactured as tokens.
 
 BOARD TOKEN VISUAL RULES
-- Lane creep token: simple hostile lane-unit iconography, readable, faction-neutral, mass-produced feel.
+- Melee lane creep token: simple hostile lane-unit iconography, readable, faction-neutral, mass-produced feel. This family must support a double-sided 2-creep / 1-creep state.
+- Ranged lane creep token: matching lane-unit family, but clearly the rear support creep rather than a front-line melee body.
 - Neutral camp token: beast / fang / claw / horn language, clearly different from lane creeps.
 - Ancient camp token: elite neutral treatment, heavier silhouette, more dangerous and ancient-looking than standard neutral camp tokens.
 - Barracks token: structural fortified building icon, readable as a standing objective.

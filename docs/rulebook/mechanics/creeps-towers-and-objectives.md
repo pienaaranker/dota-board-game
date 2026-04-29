@@ -10,36 +10,39 @@ This document collects lane-state, siege-state, and major map-objective rules.
 Creep waves spawn at the Round End Phase from each team's base and meet at the **Creep Meeting Point** — the midpoint between the two nearest standing towers on opposite sides of a lane.
 
 - The Meeting Point shifts **toward the enemy during Round End Phase** when a tower on that side has been destroyed. The shift takes effect when the new creep wave spawns, causing creeps to appear at the advanced position and creating immediate lane pressure.
-- Lane creeps may only be Farmed at the Meeting Point.
-- A creep wave persists until Farmed or replaced by the next wave.
+- Each lane's meeting point has **3 creep positions per team**: **2 melee positions** in front and **1 ranged position** behind them.
+- Each team's wave in a lane therefore consists of **2 melee tokens** and **1 ranged token**.
+- Each **melee token** is double-sided: one side shows **2 melee creeps**, the other shows **1 melee creep**. When one melee creep from that token is killed, flip the token to its 1-creep side. When the last melee creep on that token is killed, remove the token.
+- Each **ranged token** represents **1 ranged creep**. Remove it when that ranged creep is killed.
+- Heroes attack lane creeps directly using normal **Attack** actions. There is **no separate Farm action**.
+- A creep wave persists until all 3 tokens for that team have been removed or the next wave replaces it.
 - Each lane's meeting point hexes are pre-marked on the board with visual indicators.
 
 ### Lane Creep States
 Lane creep strength scales based on how many enemy Barracks have been destroyed. When a team's Barracks falls, the **opposing team's** creeps in that lane become stronger.
 
-| State | Trigger | AP to Farm a Wave | Health Cost to Farm | Gold Awarded |
-|---|---|---|---|---|
-| **Normal** | Barracks standing | Standard | None | Full |
-| **Enhanced** | That lane's Barracks has been destroyed | +2 AP | None | Reduced |
-| **Mega Creeps** | All 3 Barracks destroyed | +4 AP | Yes — same as Neutral Camps | Reduced further |
+| State | Trigger | Effect |
+|---|---|---|
+| **Normal** | Barracks standing | Base wave uses the standard 2 melee + 1 ranged token formation. |
+| **Enhanced** | That lane's Barracks has been destroyed | That lane keeps the same token formation, but its creeps use the stronger Enhanced profile. |
+| **Mega Creeps** | All 3 Barracks destroyed | All lanes keep the same token formation, but their creeps use the stronger Mega Creep profile. |
 
 - Enhanced and Mega creep states apply **per lane** until all 3 Barracks fall, at which point Mega Creeps replace Enhanced everywhere.
-- Reduced gold reflects the difficulty of farming tougher creeps — you spend more resources for a worse return.
 - Passive Income is unaffected by creep state.
 - Barracks cannot be rebuilt once destroyed.
 
 ### Neutral Camps
 Located in the Jungle. Contain neutral creeps that belong to neither team.
 
-- A hero Farms a Neutral Camp by spending 1 AP while in the camp's area.
-- Farming costs the hero **Health** (the neutrals fight back).
+- A hero attacks a Neutral Camp by spending AP on normal **Attack** actions while in the camp's area.
+- Attacking neutral creeps costs the hero **Health** (the neutrals fight back).
 - Neutral Camps do **not** require a lane creep wave to be exhausted first.
 - Camps respawn on every **even-numbered round** if cleared.
 
 ### Ancient Camps
 Stronger neutral camps found deep in the Jungle.
 
-- Cost **more AP** to Farm and deal **more Health damage**.
+- Require **more successful attacks** to clear and deal **more Health damage**.
 - Award commensurately higher gold and XP.
 
 ---
