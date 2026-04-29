@@ -399,6 +399,7 @@ PAGE CONTENT AND REQUIRED COUNTS
 Include only these circle tokens on this page:
 - Roshan Marker x1
 - Aegis of the Immortal Token x1
+- Creep Damage Marker x18
 - Stunned x5
 - Silenced x5
 - Rooted x5
@@ -423,6 +424,7 @@ Do NOT include custom template tokens.
 VISUAL RULES BY TOKEN TYPE
 - Roshan Marker: premium boss-state token with heavy visual weight, ancient-monster menace, and strong tabletop presence.
 - Aegis of the Immortal Token: sacred relic token with premium gold treatment, radiant aura language, and unmistakable high-value objective identity.
+- Creep Damage Marker: compact shared damage-state marker for Super and Mega lane creeps, readable when placed on top of a lane creep token without obscuring the creep identity.
 - Stunned: lightning, impact burst, or cracked-star hard-control language.
 - Silenced: muted voice, sealed rune, crossed sound-wave, or hush sigil language.
 - Rooted: vines, binding roots, or grasping earth language.
@@ -442,6 +444,7 @@ VISUAL RULES BY TOKEN TYPE
 
 FAMILY COLOR LANGUAGE
 - Roshan and Aegis: premium objective palette, using gold, ivory, ember, sacred bronze, and darker boss-state contrast where appropriate.
+- Creep Damage Marker: restrained warning palette such as red-bronze, ember-iron, or cracked-steel so it reads clearly over both Radiant and Dire creep tokens.
 - Shared status tokens: readable debuff palette with distinct but controlled accents, keeping the set cohesive rather than rainbow-noisy.
 - Buyback token: heroic recovery palette such as gold-ivory, teal-gold, or phoenix-like return energy.
 - Weaver token: insectoid green, acid jade, or parasitic bio-magical tones.

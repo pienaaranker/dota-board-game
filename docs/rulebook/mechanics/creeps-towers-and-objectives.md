@@ -18,16 +18,28 @@ Creep waves spawn at the Round End Phase from each team's base and meet at the *
 - A creep wave persists until all 3 tokens for that team have been removed or the next wave replaces it.
 - Each lane's meeting point hexes are pre-marked on the board with visual indicators.
 
+### Lane Creep Hits
+Lane creeps do **not** track numeric HP or Defense. They use a low-bookkeeping **Hit** system instead.
+
+- **Normal Creeps:** Each creep has **1 Hit**.
+- **Super Creeps:** Each creep has **2 Hits**.
+- **Mega Creeps:** Each creep has **2 Hits**.
+- A successful basic **Attack** action or a damaging ability removes **1 Hit** from each lane creep it affects, unless that card explicitly says otherwise.
+- AoE and cleave effects remove **1 Hit** from each affected creep separately.
+- Resolve Hits within a token **one creep at a time**. Do not spread partial damage across multiple creeps in the same token before one of them dies.
+- If a Super or Mega creep on a token has lost **1 Hit** but is still alive, place a **Creep Damage Marker** on that token. Remove that marker when the damaged creep dies.
+- A lane creep token can have only **1 Creep Damage Marker** at a time.
+
 ### Lane Creep States
 Lane creep strength scales based on how many enemy Barracks have been destroyed. When a team's Barracks falls, the **opposing team's** creeps in that lane become stronger.
 
 | State | Trigger | Effect |
 |---|---|---|
 | **Normal** | Barracks standing | Base wave uses the standard 2 melee + 1 ranged token formation. |
-| **Enhanced** | That lane's Barracks has been destroyed | That lane keeps the same token formation, but its creeps use the stronger Enhanced profile. |
-| **Mega Creeps** | All 3 Barracks destroyed | All lanes keep the same token formation, but their creeps use the stronger Mega Creep profile. |
+| **Super Creeps** | That lane's Barracks has been destroyed | That lane keeps the same token formation, but its creeps use the stronger Super Creep profile. Each Super Creep kill gives **3 gold** to the killer and **1 XP** to the closest allied hero within **4 hexes**. |
+| **Mega Creeps** | All 3 Barracks destroyed | All lanes keep the same token formation, but their creeps use the stronger Mega Creep profile. Each Mega Creep kill gives **3 gold** to the killer and **1 XP** to the closest allied hero within **4 hexes**. Whenever a hero uses a basic **Attack** action against one or more Mega Creeps, that hero takes **5 damage** in retaliation. If that basic attack hits multiple Mega Creeps at once, that retaliation still applies only **once** for that attack. |
 
-- Enhanced and Mega creep states apply **per lane** until all 3 Barracks fall, at which point Mega Creeps replace Enhanced everywhere.
+- Super and Mega creep states apply **per lane** until all 3 Barracks fall, at which point Mega Creeps replace Super Creeps everywhere.
 - Passive Income is unaffected by creep state.
 - Barracks cannot be rebuilt once destroyed.
 
@@ -64,7 +76,7 @@ Each team has three Barracks buildings, one per lane, located in the base interi
 - Barracks use the same **Siege Requirement** as towers: the allied creep wave in that lane must be exhausted before heroes can attack.
 - Barracks have a fixed HP value and do **not** deal retaliation damage to attackers (unlike towers).
 - Each Barracks is represented by a removable **standing Barracks token** on its hex. When a Barracks is destroyed, remove that token. The printed board art beneath shows the broken Barracks state.
-- When a Barracks is destroyed, the opposing team's creeps immediately become **Enhanced** in that lane (see Creeps).
+- When a Barracks is destroyed, the opposing team's creeps immediately become **Super Creeps** in that lane (see Creeps).
 - If all 3 Barracks fall, the lane-state tracker for that team shifts to **Mega Creeps** globally. No separate Mega Creeps token is required.
 - Destroying a Barracks awards a **gold bonus** to all heroes on the attacking team.
 

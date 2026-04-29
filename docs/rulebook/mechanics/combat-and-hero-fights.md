@@ -13,6 +13,8 @@ All combat uses the formula:
 
 The attacker's Damage and the defender's Defense are taken from their Hero Cards, modified by any active items and abilities.
 
+**Lane creep exception:** Lane creeps do **not** use tracked HP or the normal damage-minus-defense formula. Lane creeps use the shared **Hit** rules defined in [creeps-towers-and-objectives.md](creeps-towers-and-objectives.md).
+
 ### Line of Sight (LoS)
 - **Melee Attacks** target an adjacent hex and do **not** require clear LoS.
 - **Ranged Attacks and targeted Abilities** require an unobstructed line between the attacker's hex and the target's hex.

@@ -156,6 +156,7 @@ These tokens track time, cooldown, AP, life state, and progression on Hero Board
 | Cooldown Identity | Ability Identifier Tokens | These sit in printed cooldown tracks and need a consistent visual system. |
 | Activation State | Channeling Token | Channeling still benefits from a dedicated state token. |
 | Life Cycle | Alive / Dead Flip Token, Buyback Token | These are the remaining dedicated death-cycle tokens. |
+| Shared Damage State | Creep Damage Marker | Small generic marker placed on Super and Mega lane creep tokens to show the current front-most creep has lost 1 Hit. |
 | Progression State | Scepter Acquired Token | Scepter remains a visible board-state reminder if a separate token is kept in production. |
 
 ---

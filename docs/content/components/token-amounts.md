@@ -29,6 +29,7 @@ This only works as a shorthand for **consecutive identical queued actions**. If 
 |---|---:|---|---|
 | Melee Lane Creep Tokens | 12 | Hex | 2 per team per lane. Double-sided: 2 melee creeps on one face, 1 melee creep on the reverse. |
 | Ranged Lane Creep Tokens | 6 | Hex | 1 per team per lane. |
+| Creep Damage Markers | 18 | Circle | One per lane creep token if every active lane token is partially damaged at once. Used only for Super and Mega creeps. |
 | Neutral Camp Tokens | 8 | Hex | 4 regular neutral camps per side. |
 | Ancient Camp Tokens | 2 | Hex | 1 Ancient camp per side. |
 | Ancient Marker | 0 | Hex | Ancient should be printed on the board, not tracked with a token. |

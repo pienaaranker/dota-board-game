@@ -234,7 +234,7 @@ Three lane sections (Top, Mid, Bottom), each with identical tracking.
 #### Creep Wave State (per lane)
 - **Component:** Slide token with three positions
   - Normal (green)
-  - Enhanced (yellow) — that lane's Barracks destroyed
+  - Super (yellow) — that lane's Barracks destroyed
   - Mega (red) — all 3 Barracks destroyed
 - **Usage:** Move slider when Barracks are destroyed.
 
