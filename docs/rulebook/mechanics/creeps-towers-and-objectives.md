@@ -88,6 +88,14 @@ A Tower may only be attacked if the **enemy creep wave in that lane has been exh
 ### Tower Retaliation Damage
 When a hero attacks a tower, the tower deals **5 damage** to the attacker (reduced by the number of allied lane creeps present in the area — creep bodies absorb tower aggro).
 
+### Tower Aggro (Diving)
+The tower protects its lane by punishing enemy heroes who enter its range while allied creeps are alive. If no allied creeps remain, the tower only fires to defend allied heroes under attack.
+
+- **Trigger — allied creeps alive:** Whenever an enemy hero enters within **3 hexes** of a tower while any allied lane creeps are alive in that lane, the tower immediately deals **5 damage** to that hero. Damage triggers once per entry — crossing the boundary a second time on the same activation does not re-trigger.
+- **No allied creeps — hero protection only:** If all allied lane creeps are dead in that lane, proximity alone does not trigger aggro. However, if an enemy hero attacks an allied hero within 3 hexes of the tower, the tower immediately deals **5 damage** to the attacker. This protects allied heroes even when the creep wave is gone.
+- **Persistent threat:** If the hero remains within 3 hexes at the start of their next activation with conditions still met (allied creeps alive, or they attacked an allied hero), the tower fires again.
+- **Stacking:** Tower aggro is independent of Retaliation Damage. Both can apply in the same activation.
+
 ---
 
 ## Roshan

@@ -270,6 +270,8 @@ Towers must be destroyed in sequence per lane: **Tier 1 → Tier 2 → Tier 3 �
 
 - A Tower can only be attacked if the **enemy creep wave in that lane is exhausted** for the round. Mark this on the shared board's creep wave exhausted checkbox.
 - Towers deal **5 damage** to the attacker per hit (reduced by the number of allied creeps present).
+- **Tower aggro — allied creeps alive:** Whenever an enemy hero enters within **3 hexes** of a tower while allied creeps are alive in that lane, the tower immediately deals **5 damage** (diving penalty). Fires again each activation the conditions hold.
+- **Tower aggro — hero protection:** If all allied creeps are dead, proximity alone does not trigger aggro. But attacking an allied hero within 3 hexes of the tower draws 5 damage from the tower.
 - Destroying a tower awards gold to every hero on the destroying team: **Tier 1 — 30g, Tier 2 — 50g, Tier 3 — 75g, Tier 4 — 100g**.
 - The **Ancient** cannot be attacked until both Tier 4 Towers are destroyed.
 
