@@ -6,7 +6,7 @@ Its purpose is to answer two questions:
 - Which physical tokens must exist on the table or Hero Boards during play?
 - Which token families must be supported as the hero roster and item pool expand?
 
-This document focuses on **tokens and markers**. It does **not** cover full cards, dice, dials, or the **3D-printed stat tracker** used for hero HP, Mana, XP, Gold, Level, and similar numeric values.
+This document focuses on **tokens and markers**. It does **not** cover full cards, dice, dials, or the **3D-printed stat tracker** used for hero HP, Mana, XP (Level is derived — Level = XP ÷ 10), Gold, and similar numeric values.
 
 ---
 
@@ -18,7 +18,7 @@ This is the filtered list of **actual physical tokens players must handle during
 
 Do **not** include the following in the token list for live play:
 
-- hero HP, Mana, XP, Gold, Level, or AP value trackers
+- hero HP, Mana, XP (Level is derived — Level = XP ÷ 10), Gold, or AP value trackers
 - tower HP trackers
 - Roshan HP trackers
 - generic +Attack, +Defense, or +Move stat counters

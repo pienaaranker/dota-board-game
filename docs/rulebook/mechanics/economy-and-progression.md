@@ -42,21 +42,29 @@ Gold is spent to:
 ## XP & Leveling
 
 ### Earning XP
-Heroes gain XP from:
-- Killing lane creeps.
-- Killing or assisting in the death of an enemy hero (shared among nearby allied heroes).
-- Killing Neutral or Ancient Creeps.
+Heroes gain XP whenever a unit dies within **4 hexes** of them:
+- **Lane creeps** — All allied heroes within 4 hexes of the killed creep gain XP (split among eligible heroes).
+- **Enemy heroes** — **XP = 5 + killed hero's level**, split equally among all allied heroes within 4 hexes. The closest hero receives any remainder.
+- **Neutral/Ancient creeps** — Only heroes who attacked the camp gain XP (printed on the camp).
 
 ### Leveling Up
-Heroes level up when their XP track is filled. Milestones:
+Level is derived directly from XP: **Level = XP ÷ 10** (rounded down). Track only XP — no separate level counter is needed.
 
-| Level | Effect |
-|---|---|
-| **6** | Unlock a new ability section or breakpoint on the hero's Abilities Card. |
-| **12** | Upgrade existing ability values on the hero's Abilities Card. |
-| **18** | Final ability breakpoint or upgrade on the hero's Abilities Card. |
+**Ability unlocking:**
+- Level 1: Hero starts with one basic ability unlocked.
+- Levels 2–4: Each level unlocks one additional basic ability (the player chooses which to unlock).
+- Level 5: Stats only — no ability unlock.
+- Level 6: The hero's ultimate unlocks. All basic abilities and the ultimate upgrade to their level 6–11 values.
 
-All other level-ups provide stat increases as printed on the Hero Card.
+**Milestone upgrades:**
+
+| XP | Level | Effect |
+|---|---|---|
+| **60** | **6** | Ultimate unlocked. All abilities upgrade to the 6–11 bracket. |
+| **120** | **12** | All abilities upgrade to the 12–17 bracket. |
+| **180** | **18** | All abilities upgrade to their final values (18+ bracket). |
+
+Every 10 XP earned grants the hero's per-level stat increases as printed on the Hero Card, applied immediately upon reaching that XP total. Ability values between milestones use the values of the most recently unlocked bracket.
 
 ---
 

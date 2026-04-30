@@ -8,7 +8,7 @@ This document specifies how all game variables are tracked using physical, offli
 
 ## Individual Hero Board (Player Mat)
 
-Each player receives a **Hero Board** — a large printed cardboard mat (approximately 30 × 40 cm) that holds the hero's generic planning and tracking surfaces. Variable numeric values such as HP, Mana, AP, Level, XP, Gold, and similar counters are handled by a separate **3D-printed stat tracker**, not printed directly on the Hero Board. The board is divided into functional zones.
+Each player receives a **Hero Board** — a large printed cardboard mat (approximately 30 × 40 cm) that holds the hero's generic planning and tracking surfaces. Variable numeric values such as HP, Mana, AP, XP (doubles as Level — 10 XP per level), Gold, and similar counters are handled by a separate **3D-printed stat tracker**, not printed directly on the Hero Board. The board is divided into functional zones.
 
 ### Zone 1: Base Stats Reference
 
@@ -376,7 +376,7 @@ Players select tokens face-down during Planning Phase and place them in the Acti
 
 ## Open Questions
 
-- **XP Scaling:** If XP requirements vary significantly by level, consider a printed XP table with a sliding marker instead of a simple die.
+- ~~**XP Scaling:** If XP requirements vary significantly by level, consider a printed XP table with a sliding marker instead of a simple die.~~ **Resolved:** XP = Level × 10. Track XP only; level is derived. A D20 or D100 on the stat tracker suffices.
 - **Charge Items:** Should charge counters be universal (D6 for all items) or item-specific (custom dials)?
 - **DoT Tracking:** Bleeding/DoT effects need both duration (ticks remaining) and damage value. Suggest a two-token system or small reference insert placed in Status Effects zone.
 - **Ward Coordinates:** Hex notation (e.g., "D7") or descriptive locations (e.g., "Radiant jungle, near Ancient camp")? May need labeled hex grid on main board.

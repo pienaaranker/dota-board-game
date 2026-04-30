@@ -8,7 +8,7 @@ Destroy the enemy team's **Ancient**, located inside their base. To reach the An
 ## Game Components
 
 - **Hero Boards** — One player mat per hero (approx. 30 × 40 cm) containing the Action Queue for planning tokens, reaction slots, an AP-spent track (0–10), a dual duration tracking system (Turns and Rounds), 6 numbered active item slots and 3 backpack slots, and a status effect grid.
-- **Stat Trackers** — Separate 3D-printed trackers per hero for live numeric values: Health, Mana, Level, XP, Gold, and AP.
+- **Stat Trackers** — Separate 3D-printed trackers per hero for live numeric values: Health, Mana, XP (doubles as Level — see Leveling), Gold, and AP.
 - **Hero Cards** — Each hero's printed reference statistics: Attack, Defense, Health, Mana, Move Speed, Attack Range, and AP.
 - **Abilities Cards** — One landscape card per hero containing all four abilities, their costs, effects, and upgrade breakpoints.
 - **The Board** — A 46 × 46 hex-grid map featuring three lanes (Top, Mid, Bottom), the River, the Jungle, two Bases, Secret Shops, and Roshan's Pit.
@@ -292,15 +292,19 @@ Roshan respawns after a fixed number of rounds. His current HP is tracked on the
 **Gold Uses:** Purchase items at the Fountain shop or pay the Buyback fee.
 
 ### XP & Leveling
-Heroes gain XP from kills and assists. Milestone levels:
+Heroes gain XP when an enemy unit dies within **4 hexes** of them. **Level = XP ÷ 10** (rounded down). Each level grants the per-level stat increase printed on the Hero Card.
 
-| Level | Effect |
-|-------|--------|
-| **6** | Unlock a new ability section on the Abilities Card. |
-| **12** | Upgrade existing ability values. |
-| **18** | Final ability upgrade. |
+Hero kills grant **5 + killed hero's level** XP, split equally among allies in range (closest receives any remainder). Creep kills: 2 XP for normal, 1 XP for Super/Mega.
 
-All other levels provide stat increases as printed on the Hero Card.
+> **Example:** A level 8 hero dies with 3 allies in range. Total XP = 13. Split: closest hero gets 5 XP, the other two heroes get 4 XP each.
+
+Heroes start with one ability unlocked. Each level from 2–4 unlocks an additional ability. At level 5 the hero gains stats only. Level 6 unlocks the ultimate and upgrades all abilities. Further upgrades at levels 12 and 18.
+
+| XP | Level | Milestone |
+|---|---|---|
+| **60** | **6** | Ultimate unlocked. All abilities upgrade. |
+| **120** | **12** | Abilities upgrade. |
+| **180** | **18** | Final ability upgrade. |
 
 ### Items & the Shop
 

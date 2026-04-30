@@ -34,7 +34,7 @@ The following were considered and deliberately excluded to avoid bloat. Candidat
 
 | Mechanic | Reason for Exclusion |
 |---|---|
-| **Talent Tree** | Per-hero card complexity; Ability unlocks at levels 6/12/18 cover progression. |
+| **Talent Tree** | Per-hero card complexity; unlocking abilities at levels 1–4 and upgrading at 6/12/18 covers progression without talent choices. |
 | **Bounty Runes** | Redundant with Passive Income in the Round End Phase. |
 | **Glyph of Fortification** | Risks stalling siege turns; candidate for optional rule after playtesting. |
 | **Neutral Item Drops** | Requires a separate tiered item pool; excessive component overhead. |
