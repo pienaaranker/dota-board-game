@@ -296,8 +296,12 @@ Heroes gain XP when an enemy unit dies within **4 hexes** of them. **Level = XP 
 
 Hero kills grant **5 + killed hero's level** XP, split equally among allies in range (closest receives any remainder). Creep kills: 2 XP for normal, 1 XP for Super/Mega.
 
-> **Example:** A level 8 hero dies with 3 allies in range. Total XP = 13. Split: closest hero gets 5 XP, the other two heroes get 4 XP each.
-
+**Example:**
+```
+A level 8 hero dies with 3 allies in range. Total XP = 13. 
+13 / 3 = 4 and a remainder of 1. 
+So the closest hero gets 5 XP, the other two heroes get 4 XP each.
+```
 Heroes start with one ability unlocked. Each level from 2–4 unlocks an additional ability. At level 5 the hero gains stats only. Level 6 unlocks the ultimate and upgrades all abilities. Further upgrades at levels 12 and 18.
 
 | XP | Level | Milestone |
