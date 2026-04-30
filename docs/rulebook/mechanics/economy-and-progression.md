@@ -17,7 +17,7 @@ Lane creeps use the shared **Hit** system from [creeps-towers-and-objectives.md]
 - **Super Creeps:** Each creep killed gives the killing hero **3 gold** and gives **1 XP** to the **closest** allied hero within **4 hexes**.
 - **Mega Creeps:** Each creep killed gives the killing hero **3 gold** and gives **1 XP** to the **closest** allied hero within **4 hexes**. Whenever a hero uses a basic **Attack** action against one or more Mega Creeps, that hero takes **5 damage** in retaliation. If that basic attack hits multiple Mega Creeps at once, that retaliation still applies only **once** for that attack.
 - **Neutral/Ancient Camps:** Remove 1 creep counter from the camp. The hero receives the camp's normal gold and XP but also loses **Health** (neutrals fight back).
-- **If Denied:** An enemy hero may use the Deny reaction (see Turn Structure) only when the current **Attack** would remove the target lane creep's **last remaining Hit**. If the Deny succeeds, the attacking hero receives **no gold**, and only the **closest** eligible hero on the attacking team within **4 hexes** of the denied creep gains **1 XP**.
+- **If Denied:** An enemy hero may use a committed **Attack** reaction (see Deny below) only when the current **Attack** would remove the target lane creep's **last remaining Hit**. If the Deny succeeds, the attacking hero receives **no gold**, and only the **closest** eligible hero on the attacking team within **4 hexes** of the denied creep gains **1 XP**.
 
 There is **no separate Farm action**. Heroes must target and attack creeps directly to kill them.
 
@@ -25,12 +25,12 @@ There is **no separate Farm action**. Heroes must target and attack creeps direc
 Every hero receives a flat gold amount at the **Round End Phase**, regardless of farming activity.
 
 ### Deny
-Deny is a **Reaction** committed during Planning Phase by reserving **1 AP** in one of the hero's reaction slots for the current half-round. An allied hero may use that committed reaction when an enemy uses **Attack** on an allied lane creep, attempting to deny the last hit and deprive the enemy of gold.
+There is no dedicated Deny token. To attempt a deny, a hero commits an **Attack** token into a **reaction slot** during Planning Phase, reserving 1 AP. When an enemy declares an **Attack** that would remove an allied lane creep's last remaining Hit, that hero may trigger their Attack reaction against the same creep token — racing the enemy to land the killing blow first.
 
-- Deny may only be used when the triggering **Attack** would remove the target creep's **last remaining Hit**.
-- Resolved with a **die roll challenge** between the denying hero and the attacking hero.
-- **Deny succeeds:** The attacking hero gains **no gold** from that creep, and only the **closest** eligible hero on the attacking team within **4 hexes** of the denied creep gains **1 XP**.
-- **Deny fails:** The attack resolves normally — the enemy receives that creep's normal gold and XP reward based on its current lane-creep state.
+- Deny may only be attempted when the triggering **Attack** would remove the target creep's **last remaining Hit**.
+- Both the attacker and the denying hero are targeting the same creep simultaneously. Resolve with a **die roll challenge** — the higher roll lands the kill.
+- **Deny succeeds (denier wins roll):** The denying hero kills the creep. The attacking hero gains **no gold**. Only the **closest** eligible hero on the attacking team within **4 hexes** of the denied creep gains **1 XP**.
+- **Deny fails (attacker wins roll):** The enemy's Attack resolves normally — they receive that creep's normal gold and XP reward.
 
 ### Gold Uses
 Gold is spent to:

@@ -209,7 +209,7 @@ Reactions are pre-committed out-of-turn actions that can interrupt another hero'
 
 **Rules:**
 - A reaction is, in its purest form, an action taken out of turn.
-- Only heroes **directly affected** by the triggering action may react. A hero is directly affected if they are targeted by the action, included in its affected area or skillshot path, or are eligible to use **Deny** against that action.
+- Only heroes **directly affected** by the triggering action may react. A hero is directly affected if they are targeted by the action, included in its affected area or skillshot path, or are eligible to contest a creep kill using a committed Attack reaction (see Deny rules in Economy and Progression).
 - A hero may normally use only **1 committed reaction** per half-round.
 - **Exception — Observer Ward Coverage:** If the acting enemy hero is standing in an area covered by an allied **Observer Ward**, each directly affected defending hero may use up to **2 committed reactions** during that half-round instead of 1.
 - A hero may split those 2 reactions across different triggers during the same half-round if later valid triggers occur.
@@ -224,7 +224,7 @@ Reactions are pre-committed out-of-turn actions that can interrupt another hero'
 |---|---|---|
 | **Move** | 1 AP | Reposition 1 hex using the normal movement rules before the triggering action resolves. If this movement breaks the attacker's required adjacency or Line of Sight, the attack or ability misses. |
 | **Activate Defensive Item** | 1 AP | Immediately trigger a committed defensive item-slot action before damage is applied. The item's effect takes place before resolution. |
-| **Deny** | 1 AP | Contest an enemy Attack that would remove an allied lane creep's last remaining Hit to deny the enemy gold and XP. See Economy and Progression for full rules. |
+| **Attack (Deny)** | 1 AP | Contest an enemy Attack that would remove an allied lane creep's last remaining Hit. Commit an **Attack** token to a reaction slot — when the enemy attacks a creep on its last Hit, you may trigger your Attack against the same creep. Both players roll a die; the winner lands the killing blow. See Economy and Progression for full rules. |
 
 These are common reactions, not the full limit of the system. Any committed action that costs exactly **1 AP** may be used as a reaction if it is legal to perform at that timing window.
 
@@ -232,7 +232,7 @@ These are common reactions, not the full limit of the system. Any committed acti
 - **Movement reaction:** A hero commits **Move** into a reaction slot so they can reposition out of danger when directly affected.
 - **Ability reaction:** Mirana commits **Leap** into a reaction slot. If she is directly affected by an enemy action later in the half-round and is still able to Leap, she may use it out of turn as her reaction.
 - **Item reaction:** A hero commits an item-slot token for a 1 AP defensive item, then triggers it when directly affected before damage resolves.
-- **Deny reaction:** A hero commits **Deny** into a reaction slot so they can contest an enemy **Attack** that would remove an allied lane creep's last remaining Hit.
+- **Deny reaction:** A hero commits **Attack** into a reaction slot so they can contest an enemy **Attack** that would remove an allied lane creep's last remaining Hit.
 
 **Dodging a Skillshot:**
 - A hero may attempt to dodge a **Skillshot** only by using a committed **1 AP movement action or 1 AP movement ability** as their reaction.
