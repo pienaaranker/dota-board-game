@@ -68,23 +68,25 @@ Structures must be destroyed in the following order per lane:
 
 - A higher-tier tower cannot be attacked until all lower-tier towers in that lane are destroyed.
 - Once the Tier 3 Tower in a lane falls, heroes gain access to the **base interior** for that lane. Both the **Barracks** for that lane and the **Tier 4 Towers** may then be sieged.
-- The **Ancient** cannot be attacked until both Tier 4 Towers are destroyed.
+- Destroying a tower awards gold to every allied hero: **Tier 1 — 30g, Tier 2 — 50g, Tier 3 — 75g, Tier 4 — 100g**.
+- Towers use the **Hits** system: each successful Attack removes 1 Hit. **Tier 1 = 10 Hits, Tier 2 = 15 Hits, Tier 3 = 18 Hits, Tier 4 = 20 Hits**.
+- The **Ancient** cannot be attacked until both Tier 4 Towers are destroyed. The Ancient has **30 Hits**.
 
 ### Barracks
 Each team has three Barracks buildings, one per lane, located in the base interior behind the Tier 3 Tower.
 
 - Barracks use the same **Siege Requirement** as towers: the allied creep wave in that lane must be exhausted before heroes can attack.
-- Barracks have a fixed HP value and do **not** deal retaliation damage to attackers (unlike towers).
+- Barracks have **15 Hits** and do **not** deal retaliation damage to attackers.
 - Each Barracks is represented by a removable **standing Barracks token** on its hex. When a Barracks is destroyed, remove that token. The printed board art beneath shows the broken Barracks state.
 - When a Barracks is destroyed, the opposing team's creeps immediately become **Super Creeps** in that lane (see Creeps).
 - If all 3 Barracks fall, the lane-state tracker for that team shifts to **Mega Creeps** globally. No separate Mega Creeps token is required.
-- Destroying a Barracks awards a **gold bonus** to all heroes on the attacking team.
+- Destroying a Barracks awards **50 gold** to all heroes on the attacking team.
 
 ### Siege Requirement
 A Tower may only be attacked if the **enemy creep wave in that lane has been exhausted** for the current round. Creeps must be cleared before heroes can deal damage to a tower.
 
-### Tower Attack Damage
-When a hero attacks a tower, the tower deals a **Health penalty** back to the attacker. This penalty is **reduced** (or nullified) by the number of allied lane creeps present in the area — creep bodies absorb tower aggro.
+### Tower Retaliation Damage
+When a hero attacks a tower, the tower deals **5 damage** to the attacker (reduced by the number of allied lane creeps present in the area — creep bodies absorb tower aggro).
 
 ---
 
@@ -93,8 +95,8 @@ When a hero attacks a tower, the tower deals a **Health penalty** back to the at
 Roshan occupies **Roshan's Pit**, a fixed area on the board.
 
 - Any hero or team may attack Roshan. He is treated as a very powerful neutral camp — he deals significant Health damage to attackers.
-- Upon death, Roshan drops the **Aegis of the Immortal**.
-- If heroes from **both teams** are present when Roshan dies, a **die roll** determines which team claims the Aegis.
+- Upon death, Roshan drops the **Aegis of the Immortal** and awards **50 gold** and **10 XP** to every allied hero.
+- If heroes from **both teams** are present when Roshan dies, a **die roll** determines which team claims the rewards.
 - Roshan **respawns** after a fixed number of rounds.
 - Roshan HP is tracked on the printed Roshan track, not with a separate Roshan HP token.
 

@@ -251,6 +251,6 @@ These are common reactions, not the full limit of the system. Any committed acti
 After all heroes on both sides have completed their turns, the following occur in order:
 
 1. **Creep Spawning** — A new creep wave appears at the Creep Meeting Point in each lane (skipped during Round 1).
-2. **Passive Income** — Every hero receives a fixed amount of gold regardless of activity.
+2. **Passive Income** — Every hero receives 10 gold regardless of activity.
 3. **Power Rune Spawn** — On every 4th round, determine the rune type and flip a coin to determine which river position it spawns at, then place the matching Power Rune token. See Vision, Runes, and Invisibility.
 4. **Neutral Respawns** — On every even-numbered round, all cleared jungle camps are replenished.

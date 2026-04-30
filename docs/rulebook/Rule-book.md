@@ -12,7 +12,7 @@ Destroy the enemy team's **Ancient**, located inside their base. To reach the An
 - **Hero Cards** — Each hero's printed reference statistics: Attack, Defense, Health, Mana, Move Speed, Attack Range, and AP.
 - **Abilities Cards** — One landscape card per hero containing all four abilities, their costs, effects, and upgrade breakpoints.
 - **The Board** — A 46 × 46 hex-grid map featuring three lanes (Top, Mid, Bottom), the River, the Jungle, two Bases, Secret Shops, and Roshan's Pit.
-- **Shared Game Board** — A central tracking board with a round counter, half-round flip token, Round Start Token, turn order tracker, lane creep wave sliders, tower HP tracks, ward log, Roshan status, and rune tracker.
+- **Shared Game Board** — A central tracking board with a round counter, half-round flip token, Round Start Token, turn order tracker, lane creep wave sliders, tower and barracks hit counters, ward log, Roshan status, and rune tracker.
 - **Planning Tokens** — Move, Attack, Pass, 6 numbered item-slot tokens (matching the 6 active item slots on your Hero Board), and hero-specific ability tokens.
 - **Tokens** — Creeps, wards, runes, Barracks, invisibility clouds, Smoke clouds, dropped items, status markers, stat modifier tokens (+1/+5/+10), and creep camp tokens.
 - **Dice** — D6, D10, and D20 for combat contests, deny attempts, skillshot dodging, and tracking.
@@ -129,7 +129,7 @@ Reactions are pre-committed out-of-turn actions that interrupt an enemy's activa
 After all 20 turns complete, resolve in order. The shared game board tracks round number, half-round direction (forward/backward), and creep wave states.
 
 1. **Creep Spawning** — New waves spawn at the Creep Meeting Point in each lane. The Meeting Point shifts toward the enemy base for each tower destroyed in that lane. Update the creep wave slider on the shared board as needed.
-2. **Passive Income** — Every hero receives a flat gold amount.
+2. **Passive Income** — Every hero receives 10 gold.
 3. **Power Rune Spawn** — Every 4th round, a new rune appears (see Runes). Track on the shared board's rune tracker.
 4. **Neutral Respawns** — Every even-numbered round, flip all cleared camp tokens back to Populated.
 5. **Duration Ticks** — All round-based duration effects on Hero Boards tick down by 1.
@@ -255,20 +255,29 @@ Creep waves spawn each Round End Phase and meet at the Creep Meeting Point in ea
 When a team's Barracks is destroyed, the **opposing team's** creeps in that lane become **Super Creeps** (3 gold, 1 XP to closest hero). If all 3 Barracks fall, all lanes produce **Mega Creeps** (3 gold, 1 XP, and basic attacks against them deal 5 retaliation damage — once per attack regardless of how many Mega Creeps are hit).
 
 ### Barracks
-Three Barracks per team (one per lane), located behind the Tier 3 Tower. They have fixed HP, deal no retaliation damage, and follow the same siege requirement as Towers. Destroying a Barracks gives a gold bonus to all attacking team members and upgrades the enemy's creeps in that lane to Super Creeps.
+Three Barracks per team (one per lane), located behind the Tier 3 Tower. They have fixed HP, deal no retaliation damage, and follow the same siege requirement as Towers. Destroying a Barracks awards **50 gold** to every allied hero and upgrades the enemy's creeps in that lane to Super Creeps.
 
 ### Towers & Siege
-Towers must be destroyed in sequence per lane: **Tier 1 → Tier 2 → Tier 3 → Tier 4 → Ancient**. Tower HP is tracked on the shared game board — mark damage with the cube token on each tower's HP track. Place a red X token over destroyed towers.
+Towers must be destroyed in sequence per lane: **Tier 1 → Tier 2 → Tier 3 → Tier 4 → Ancient**. Each tower has Hits — a successful Attack removes 1 Hit.
+
+| Tower | Hits |
+|---|---|
+| **Tier 1** | 10 |
+| **Tier 2** | 15 |
+| **Tier 3** | 18 |
+| **Tier 4** | 20 |
+| **Ancient** | 30 |
 
 - A Tower can only be attacked if the **enemy creep wave in that lane is exhausted** for the round. Mark this on the shared board's creep wave exhausted checkbox.
-- Attacking a Tower deals a Health penalty to the attacker, reduced by the number of allied creeps present.
+- Towers deal **5 damage** to the attacker per hit (reduced by the number of allied creeps present).
+- Destroying a tower awards gold to every hero on the destroying team: **Tier 1 — 30g, Tier 2 — 50g, Tier 3 — 75g, Tier 4 — 100g**.
 - The **Ancient** cannot be attacked until both Tier 4 Towers are destroyed.
 
 ### Neutral & Ancient Camps
 Located in the Jungle. Attack them using normal Attack actions. Neutrals deal Health damage back. Camps respawn every even-numbered round if cleared. Ancient Camps are stronger, deal more damage, and award more gold and XP.
 
 ### Roshan & Aegis
-Roshan resides in Roshan's Pit. He is a powerful neutral — attacks deal significant damage. On death, he drops the **Aegis of the Immortal**. If both teams are present at his death, a die roll determines who claims it.
+Roshan resides in Roshan's Pit. He is a powerful neutral — attacks deal significant damage. On death, he drops the **Aegis of the Immortal** and awards **50 gold** and **10 XP** to every allied hero. If both teams are present at his death, a die roll determines which team claims the rewards.
 
 **Aegis of the Immortal:** The holder revives in place with full Health and Mana upon death, consuming the Aegis. This bypasses the normal respawn timer and Buyback cost.
 
@@ -285,7 +294,11 @@ Roshan respawns after a fixed number of rounds. His current HP is tracked on the
 - **Super/Mega Creep:** 3 gold to the killer. 1 XP to the closest allied hero within 4 hexes.
 - **Neutral/Ancient Camps:** Gold and XP as printed on the camp. Hero loses Health (neutrals fight back).
 
-**Passive Income:** Every hero receives a flat gold amount each Round End Phase.
+**Hero Kills:**
+- **Killer:** 10 × killed hero's level gold.
+- **Assisters:** killed hero's level gold each. A hero is counted as an assister if they damaged the killed hero or applied a debuff to them during the current round.
+
+**Passive Income:** Every hero receives 10 gold each Round End Phase.
 
 **Deny:** There is no dedicated Deny token. An allied hero commits an **Attack** token to a reaction slot during planning. When an enemy attacks a lane creep on its last remaining Hit, the ally may trigger their Attack reaction against the same creep. Both players roll a die — the higher roll lands the kill. If the denier wins, the attacker gets no gold and only 1 XP goes to the closest eligible attacker.
 

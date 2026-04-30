@@ -17,12 +17,13 @@ Lane creeps use the shared **Hit** system from [creeps-towers-and-objectives.md]
 - **Super Creeps:** Each creep killed gives the killing hero **3 gold** and gives **1 XP** to the **closest** allied hero within **4 hexes**.
 - **Mega Creeps:** Each creep killed gives the killing hero **3 gold** and gives **1 XP** to the **closest** allied hero within **4 hexes**. Whenever a hero uses a basic **Attack** action against one or more Mega Creeps, that hero takes **5 damage** in retaliation. If that basic attack hits multiple Mega Creeps at once, that retaliation still applies only **once** for that attack.
 - **Neutral/Ancient Camps:** Remove 1 creep counter from the camp. The hero receives the camp's normal gold and XP but also loses **Health** (neutrals fight back).
+- **Enemy Heroes:** The killing hero receives **10 × the killed hero's level** gold. Each assisting hero receives **the killed hero's level** gold. A hero is counted as an assister if they damaged the killed hero or applied a debuff to them during the current round. The killer does not count as an assister.
 - **If Denied:** An enemy hero may use a committed **Attack** reaction (see Deny below) only when the current **Attack** would remove the target lane creep's **last remaining Hit**. If the Deny succeeds, the attacking hero receives **no gold**, and only the **closest** eligible hero on the attacking team within **4 hexes** of the denied creep gains **1 XP**.
 
 There is **no separate Farm action**. Heroes must target and attack creeps directly to kill them.
 
 ### Passive Income
-Every hero receives a flat gold amount at the **Round End Phase**, regardless of farming activity.
+Every hero receives **10 gold** at the **Round End Phase**, regardless of farming activity.
 
 ### Deny
 There is no dedicated Deny token. To attempt a deny, a hero commits an **Attack** token into a **reaction slot** during Planning Phase, reserving 1 AP. When an enemy declares an **Attack** that would remove an allied lane creep's last remaining Hit, that hero may trigger their Attack reaction against the same creep token — racing the enemy to land the killing blow first.
