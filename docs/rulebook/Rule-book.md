@@ -12,7 +12,8 @@ Destroy the enemy team's **Ancient**, located inside their base. To reach the An
 - **Hero Cards** — Each hero's printed reference statistics: Attack, Defense, Health, Mana, Move Speed, Attack Range, and AP.
 - **Abilities Cards** — One landscape card per hero containing all four abilities, their costs, effects, and upgrade breakpoints.
 - **The Board** — A 46 × 46 hex-grid map featuring three lanes (Top, Mid, Bottom), the River, the Jungle, two Bases, Secret Shops, and Roshan's Pit.
-- **Shared Game Board** — A central tracking board with a round counter, half-round flip token, Round Start Token, turn order tracker, lane creep wave sliders, tower and barracks hit counters, ward log, Roshan status, and rune tracker.
+- **Board Tracker** — A 3D-printed tracker (matching the hero stat trackers) with slide tracks for each structure's remaining Hits: all tower tiers per lane, Barracks, Ancient, and Roshan HP.
+- **Shared Game Board** — A central tracking board with a round counter, half-round flip token, Round Start Token, turn order tracker, lane creep wave sliders, ward log, rune tracker, and creep wave exhausted checkboxes.
 - **Planning Tokens** — Move, Attack, Pass, 6 numbered item-slot tokens (matching the 6 active item slots on your Hero Board), and hero-specific ability tokens.
 - **Tokens** — Creeps, wards, runes, Barracks, invisibility clouds, Smoke clouds, dropped items, status markers, stat modifier tokens (+1/+5/+10), and creep camp tokens.
 - **Dice** — D6, D10, and D20 for combat contests, deny attempts, skillshot dodging, and tracking.
@@ -269,7 +270,7 @@ Towers must be destroyed in sequence per lane: **Tier 1 → Tier 2 → Tier 3 �
 | **Ancient** | 30 |
 
 - A Tower can only be attacked if the **enemy creep wave in that lane is exhausted** for the round. Mark this on the shared board's creep wave exhausted checkbox.
-- Towers deal **5 damage** to the attacker per hit (reduced by the number of allied creeps present).
+- Towers deal damage per hit scaled by tier: **Tier 1 = 5, Tier 2 = 10, Tier 3 = 15, Tier 4 = 15** (reduced by allied creeps present).
 - **Tower aggro — allied creeps alive:** Whenever an enemy hero enters within **3 hexes** of a tower while allied creeps are alive in that lane, the tower immediately deals **5 damage** (diving penalty). Fires again each activation the conditions hold.
 - **Tower aggro — hero protection:** If all allied creeps are dead, proximity alone does not trigger aggro. But attacking an allied hero within 3 hexes of the tower draws 5 damage from the tower.
 - Destroying a tower awards gold to every hero on the destroying team: **Tier 1 — 30g, Tier 2 — 50g, Tier 3 — 75g, Tier 4 — 100g**.
@@ -279,11 +280,11 @@ Towers must be destroyed in sequence per lane: **Tier 1 → Tier 2 → Tier 3 �
 Located in the Jungle. Attack them using normal Attack actions. Neutrals deal Health damage back. Camps respawn every even-numbered round if cleared. Ancient Camps are stronger, deal more damage, and award more gold and XP.
 
 ### Roshan & Aegis
-Roshan resides in Roshan's Pit. He is a powerful neutral — attacks deal significant damage. On death, he drops the **Aegis of the Immortal** and awards **50 gold** and **10 XP** to every allied hero. If both teams are present at his death, a die roll determines which team claims the rewards.
+Roshan resides in Roshan's Pit. He is a powerful neutral — attacks deal **10 damage** to the attacker. Roshan has **600 HP** tracked on the Board Tracker. On death, he drops the **Aegis of the Immortal** and awards **50 gold** and **10 XP** to every allied hero. If both teams are present at his death, a die roll determines which team claims the rewards.
 
 **Aegis of the Immortal:** The holder revives in place with full Health and Mana upon death, consuming the Aegis. This bypasses the normal respawn timer and Buyback cost.
 
-Roshan respawns after a fixed number of rounds. His current HP is tracked on the Roshan track printed on the board.
+Roshan respawns after **5 rounds**. His current HP is tracked on the Board Tracker.
 
 ---
 

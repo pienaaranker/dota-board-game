@@ -618,3 +618,86 @@ ANTI-DRIFT / NEGATIVE CONSTRAINTS
 FINAL OUTPUT TARGET
 The final image should look like a production-quality printable token sheet for a premium fantasy board game: clean, aligned, readable, stylistically cohesive, and immediately usable as a print reference for multi-hex concealment templates and the remaining bespoke one-hex special tokens.
 ```
+
+---
+
+## Example Image Prompt — Round Start Token
+
+Use the following prompt when generating a single premium **Round Start Token** that follows the attached round-aegis token wireframe exactly — the large round medallion that marks which hero activates first each round:
+
+```text
+Create a flat, print-ready fantasy board game Round Start Token that follows the attached round-aegis token wireframe exactly.
+
+This is a premium tabletop component for a Dota-inspired board game. The result must look like it belongs to the same manufactured product family as the project's existing cards and printed components, while avoiding direct use of copyrighted Dota 2 UI, logos, or official Valve art.
+
+ATTACHMENTS PROVIDED
+- Attachment 1: round-aegis token wireframe for the Round Start Token
+- Attachment 2: hero card for style and theme reference only
+
+Use the attached hero card only as a general design-context reference for ornament, palette discipline, material finish, icon rendering quality, and overall fantasy theme cohesion. Do not copy character portraits, named spell icons, or hero-specific card compositions directly into the token.
+
+PRIMARY GOAL
+Generate a clean, printable single Round Start Token that reads immediately as the round-start indicator at table distance.
+
+LOCKED LAYOUT REQUIREMENTS
+- Preserve the attached round-aegis token wireframe exactly.
+- Keep the same circular proportions, ornamental border, and central medallion or inset panel position.
+- Keep the icon and text area aligned exactly to the wireframe's central zone.
+- Do not redesign the token architecture.
+- Do not change the diameter, border rhythm, or inner panel proportions.
+- Present the token straight-on, perfectly flat, with no perspective distortion.
+- Design both faces identically so the token reads the same from any angle.
+
+PRINTABILITY REQUIREMENTS
+- This must read as a real printable token, not a mockup.
+- Use a bright clean background suitable for printing.
+- Keep all art fully contained inside the token boundary.
+- Use crisp outlines and high-contrast iconography.
+- Avoid muddy shadows, fog, overpainting, or low-contrast effects that would reduce print legibility.
+- Do not place hands, table surfaces, props, dice, cards, rulers, or environmental scene dressing around the token.
+- Do not render the token as a photographed object, angled coin, curled sticker, or 3D mockup.
+- No dramatic cast shadows outside the token artwork.
+- No heavy paper texture that interferes with readability.
+
+STYLE DIRECTION
+- Match the project's premium fantasy board game visual language and use the attached hero card as broad styling context for general design and theme.
+- Borrow overall product-family qualities such as polished component design, restrained ornament, elegant gold-edged detailing, controlled fantasy palette, material finish, and icon rendering quality.
+- The token should feel like a premium manufactured game-flow marker, not like character art.
+- Use a bold, readable round aegis silhouette with a clear central icon system.
+- The token should be readable at arm's length on a real tabletop.
+
+TOKEN FRAME SYSTEM
+- Use a round aegis shape as the primary token boundary — a large circular medallion with an ornamental border.
+- The border should feature a restrained crest-like frame with subtle notches, scallops, or heraldic edge detailing that gives it an aegis or ceremonial shield identity.
+- Inside the border, a clean central medallion containing the icon and text.
+- The field outside the medallion should use a restrained dark or faction-neutral tone.
+- Gold or bronze metallic accent on the border to match the product family's premium trim language.
+
+VISUAL RULES
+- Central icon: a directional or "first" motif — a bold forward-pointing chevron, leading arrow, numeral I, or radiant burst symbol that reads as first or start.
+- Text: "FIRST PLAYER" or "START" in a compact, highly readable fantasy or game-UI font, placed inside the central medallion below or beside the icon.
+- The icon and text together must be legible at arm's length.
+- Palette: premium gold, ivory, deep navy or charcoal, restrained warm accent — matches the product family's existing gold-trim component language.
+- No hero-specific symbols, no faction logos, no decorative clutter.
+
+ICONOGRAPHY RULES
+- Use a bold central symbol with a clean silhouette.
+- Favor icon clarity over painterly detail.
+- Use subtle magical embellishment, not noisy illustrative clutter.
+- Keep token identity understandable even when seen across the table.
+- The token should not depend on tiny text to be recognized — the icon should do the work.
+
+ANTI-DRIFT / NEGATIVE CONSTRAINTS
+- Do not redesign the round-aegis wireframe shape or proportions.
+- Do not turn the token into a coin, heavy 3D sculpted medallion, photographed object, or angled mockup.
+- Do not use a star shape — must be a round aegis.
+- Do not include character portraits, full hero art, ability icons, or hero-specific symbols.
+- Do not directly copy spell symbols, card layouts, or hero-specific illustrated elements from the attached reference card.
+- Do not use copyrighted Dota 2 UI symbols or official Valve art.
+- Do not make the token muddy, hyper-rendered, or overloaded with effects.
+- Do not place the token on a tabletop surface, in a hand, or inside a game scene.
+- Do not add extra badges, miniature dice, or decorative clutter.
+
+FINAL OUTPUT TARGET
+The final image should look like a production-quality printable round aegis token for a premium fantasy board game: clean, aligned, readable, stylistically cohesive with the rest of the product line, and immediately usable as a print reference for the round-start marker — a standalone punchboard or acrylic component.
+```

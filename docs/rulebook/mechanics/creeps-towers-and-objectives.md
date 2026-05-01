@@ -70,6 +70,7 @@ Structures must be destroyed in the following order per lane:
 - Once the Tier 3 Tower in a lane falls, heroes gain access to the **base interior** for that lane. Both the **Barracks** for that lane and the **Tier 4 Towers** may then be sieged.
 - Destroying a tower awards gold to every allied hero: **Tier 1 — 30g, Tier 2 — 50g, Tier 3 — 75g, Tier 4 — 100g**.
 - Towers use the **Hits** system: each successful Attack removes 1 Hit. **Tier 1 = 10 Hits, Tier 2 = 15 Hits, Tier 3 = 18 Hits, Tier 4 = 20 Hits**.
+- Towers deal damage per hit scaled by tier: **Tier 1 = 5 damage, Tier 2 = 10 damage, Tier 3 = 15 damage, Tier 4 = 15 damage**.
 - The **Ancient** cannot be attacked until both Tier 4 Towers are destroyed. The Ancient has **30 Hits**.
 
 ### Barracks
@@ -86,13 +87,13 @@ Each team has three Barracks buildings, one per lane, located in the base interi
 A Tower may only be attacked if the **enemy creep wave in that lane has been exhausted** for the current round. Creeps must be cleared before heroes can deal damage to a tower.
 
 ### Tower Retaliation Damage
-When a hero attacks a tower, the tower deals **5 damage** to the attacker (reduced by the number of allied lane creeps present in the area — creep bodies absorb tower aggro).
+When a hero attacks a tower, the tower deals damage to the attacker based on its tier (reduced by the number of allied lane creeps present in the area — creep bodies absorb tower aggro). **Tier 1 = 5, Tier 2 = 10, Tier 3 = 15, Tier 4 = 15**.
 
 ### Tower Aggro (Diving)
 The tower protects its lane by punishing enemy heroes who enter its range while allied creeps are alive. If no allied creeps remain, the tower only fires to defend allied heroes under attack.
 
-- **Trigger — allied creeps alive:** Whenever an enemy hero enters within **3 hexes** of a tower while any allied lane creeps are alive in that lane, the tower immediately deals **5 damage** to that hero. Damage triggers once per entry — crossing the boundary a second time on the same activation does not re-trigger.
-- **No allied creeps — hero protection only:** If all allied lane creeps are dead in that lane, proximity alone does not trigger aggro. However, if an enemy hero attacks an allied hero within 3 hexes of the tower, the tower immediately deals **5 damage** to the attacker. This protects allied heroes even when the creep wave is gone.
+- **Trigger — allied creeps alive:** Whenever an enemy hero enters within **3 hexes** of a tower while any allied lane creeps are alive in that lane, the tower immediately deals damage to that hero based on its tier (see Tower Tier Progression). Damage triggers once per entry — crossing the boundary a second time on the same activation does not re-trigger.
+- **No allied creeps — hero protection only:** If all allied lane creeps are dead in that lane, proximity alone does not trigger aggro. However, if an enemy hero attacks an allied hero within 3 hexes of the tower, the tower immediately deals tier-based damage to the attacker. This protects allied heroes even when the creep wave is gone.
 - **Persistent threat:** If the hero remains within 3 hexes at the start of their next activation with conditions still met (allied creeps alive, or they attacked an allied hero), the tower fires again.
 - **Stacking:** Tower aggro is independent of Retaliation Damage. Both can apply in the same activation.
 
@@ -102,11 +103,11 @@ The tower protects its lane by punishing enemy heroes who enter its range while 
 
 Roshan occupies **Roshan's Pit**, a fixed area on the board.
 
-- Any hero or team may attack Roshan. He is treated as a very powerful neutral camp — he deals significant Health damage to attackers.
+- Any hero or team may attack Roshan. He is treated as a very powerful neutral camp — he deals 10 damage to each attacker per Attack action.
 - Upon death, Roshan drops the **Aegis of the Immortal** and awards **50 gold** and **10 XP** to every allied hero.
 - If heroes from **both teams** are present when Roshan dies, a **die roll** determines which team claims the rewards.
-- Roshan **respawns** after a fixed number of rounds.
-- Roshan HP is tracked on the printed Roshan track, not with a separate Roshan HP token.
+- Roshan **respawns** after **5 rounds**.
+- Roshan has 600 HP (tracked on the Board Tracker).
 
 ### Aegis of the Immortal
 - The holding hero **revives in place** upon death with full Health and Mana, consuming the Aegis.

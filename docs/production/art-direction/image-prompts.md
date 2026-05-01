@@ -1203,8 +1203,372 @@ Negative constraints:
 - Do not use a large full-card portrait in place of rules text space
 - Do not drift away from the attached Hero Card's visual language for spell motifs, icon treatment, palette behavior, or ornamental detailing
 - Do not copy official game splash art or spell icons
-- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters beyond the clearly printed Invoker slot and token guidance
+- Do not add current cooldown markers, current mana trackers, AP trackers, or board-state counters
 - Do not invent extra mechanics, extra scaling tiers, or extra decorative clutter
+```
+
+---
+
+## Example Image Prompt — Lane Towers Reference Card
+
+Use the following prompt when generating a single landscape reference card that explains tower rules for all tiers:
+
+```text
+Create a polished fantasy board game reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+This is a game-systems reference card, not a hero card or abilities card. The card should prioritize gameplay clarity, quick lookup of tier values, and concise rules explanation. Use the same manufactured product-family visual language as the existing hero and ability cards — same border treatment, ornament restraint, typography hierarchy, icon rendering quality, and material finish — while functioning as a standalone rules reference for how towers work.
+
+ATTACHMENTS PROVIDED
+- Attachment 1: approved hero card from this game for product-family style reference only
+
+Use the attached card only as general design-context reference for frame language, palette discipline, material finish, icon quality, and overall premium tabletop cohesion. Do not copy character art, symbols, or card layout from the reference.
+
+PRIMARY GOAL
+Generate a clean, print-ready rules reference card for the tower system. A player should be able to look at this card and understand tower progression, tower stats per tier, and the conditions under which a tower deals damage.
+
+OVERALL STYLE
+- premium fantasy board game component
+- readable at 15 × 10 cm print size
+- data-forward layout with clear section hierarchy
+- elegant manufactured card frame matching the product family
+- high-contrast text panels
+- original art only
+- designed for quick tabletop reference during play
+
+LOCKED LAYOUT REQUIREMENTS
+- Use a landscape card layout with a top header panel, a central data strip or structured panel showing tier values, and a lower rules text panel.
+- Use the same typography system, divider thickness, corner treatment, panel spacing logic, and straight-on flat component view as the established ability cards in this product family.
+- The header area should display the card title.
+- The central data area should show tower tier names with their corresponding Hits and Gold values separated by vertical divider lines or pipe symbols in one compact row or structured section.
+- The lower panel should contain short rule paragraphs or clearly separated rule blocks.
+- Include a small illustration or icon motif of a tower off to the side or behind the text — keep it restrained and readable.
+- Do not redesign the product-family frame language.
+- Do not add decorative badges, extra UI systems, or board-state trackers.
+- Present as a straight-on flat card render on a neutral background.
+
+CARD STRUCTURE
+- Header banner with the title: LANE TOWERS
+- Subtitle or tagline: Siege requirements and tower behavior
+- Central data panel displaying tower progression and tier values:
+  - Progression: Tier 1 → Tier 2 → Tier 3 → Tier 4
+  - Hits — per tier: 10 | 15 | 18 | 20
+  - Damage — per tier: 5 | 10 | 15 | 15
+  - Gold reward (per hero) — per tier: 30g | 50g | 75g | 100g
+- Rules panel containing these rule blocks in compact readable text:
+
+  Siege Requirement:
+  A tower can only be attacked if the enemy creep wave in that lane is exhausted for the round.
+
+  Retaliation:
+  Attacking a tower deals 5 damage to the attacker, reduced by allied creeps present.
+
+  Aggro — Allied Creeps Alive:
+  Entering within 3 hexes of a tower while allied creeps are alive in that lane triggers 5 damage immediately. Triggers once per entry; repeats each activation conditions hold.
+
+  Aggro — Hero Protection:
+  If no allied creeps remain, proximity alone does not trigger aggro. But attacking an allied hero within 3 hexes of the tower draws 5 damage from the tower.
+
+- Small illustration: a restrained fantasy tower iconography — stone, metal, glowing runes or crest — placed as a secondary visual element, not dominating the card
+
+GRAPHIC DIRECTION
+- The card should feel like a technical tabletop reference first, fantasy component second
+- Use strong horizontal sections with clean panel separation
+- Keep the text area bright and readable with minimal texture behind it
+- The central data strip should make tier values scannable at a glance — use clear vertical dividers or pipe-separated columns
+- Include subtle stone or ancient-architecture motifs, fortification iconography, and restrained protective magic ornament
+- Ensure the border finish, panel styling, and typography rhythm match the existing ability cards in the product family
+- Present as a straight-on flat card render on a neutral background
+
+TYPOGRAPHY DIRECTION
+- Large, bold fantasy title for the card name
+- Clear section headers for each rule block
+- Compact, highly legible game UI font for rules text and numbers
+- Tier values and numerical data should be instantly scannable
+
+NEGATIVE CONSTRAINTS
+- Do not redesign the product-family frame language
+- Do not use a large illustration that reduces text space
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not copy official Dota 2 tower art, icons, or logos
+- Do not include hero portraits, hero abilities, or hero-specific data
+- Do not add current cooldown markers, hit-point trackers, or board-state counters
+- Do not use muddy low-contrast effects that reduce print legibility
+- Do not place the card in an environment or tabletop scene
+- Do not invent extra tower mechanics, extra tiers, or decorative clutter
+
+FINAL OUTPUT TARGET
+The final image should look like a production-quality printable rules reference card for a premium fantasy board game: clean, aligned, readable, designed for quick tabletop lookup of tower stats and behavior, and visually cohesive with the rest of the product line.
+```
+
+---
+
+## Example Image Prompt — Ancient Reference Card
+
+Use the following prompt when generating a single landscape reference card that explains the Ancient — the win-condition structure:
+
+```text
+Create a polished fantasy board game reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+This is a game-systems reference card, not a hero card or abilities card. The card should prioritize gameplay clarity, quick lookup of structure stats, and concise rules explanation. Use the same manufactured product-family visual language as the existing hero and ability cards — same border treatment, ornament restraint, typography hierarchy, icon rendering quality, and material finish — while functioning as a standalone rules reference for the Ancient.
+
+ATTACHMENTS PROVIDED
+- Attachment 1: approved hero card from this game for product-family style reference only
+
+Use the attached card only as general design-context reference for frame language, palette discipline, material finish, icon quality, and overall premium tabletop cohesion. Do not copy character art, symbols, or card layout from the reference.
+
+PRIMARY GOAL
+Generate a clean, print-ready rules reference card for the Ancient. A player should be able to look at this card and understand how to access it, its stats, and that destroying it wins the game.
+
+OVERALL STYLE
+- premium fantasy board game component
+- readable at 15 × 10 cm print size
+- data-forward layout with clear section hierarchy
+- elegant manufactured card frame matching the product family
+- high-contrast text panels
+- original art only
+- designed for quick tabletop reference during play
+
+LOCKED LAYOUT REQUIREMENTS
+- Use a landscape card layout with a top header panel, a central data panel showing the Ancient's stats, and a lower rules text panel.
+- Use the same typography system, divider thickness, corner treatment, panel spacing logic, and straight-on flat component view as the established ability cards and tower reference card in this product family.
+- The header area should display the card title.
+- The central data area should show the Ancient's Hits and Damage values.
+- The lower panel should contain short rule paragraphs or clearly separated rule blocks.
+- Include a small illustration or icon motif of a glowing crystalline or ancient structure off to the side or behind the text — keep it restrained and readable.
+- Do not redesign the product-family frame language.
+- Do not add decorative badges, extra UI systems, or board-state trackers.
+- Present as a straight-on flat card render on a neutral background.
+
+CARD STRUCTURE
+- Header banner with the title: ANCIENT
+- Subtitle or tagline: Win condition structure
+- Central data panel:
+  - Hits: 30
+- Rules panel containing these rule blocks in compact readable text:
+
+  Access:
+  The Ancient cannot be attacked until both Tier 4 towers in a lane are destroyed. Once both Tier 4 towers fall, the Ancient becomes vulnerable.
+
+  Siege Requirement:
+  Same as towers — the enemy creep wave in that lane must be exhausted before heroes can attack the Ancient.
+
+  No Retaliation:
+  The Ancient does not deal damage to attackers. It is a defenseless structure — the two Tier 4 towers are its only protection.
+
+  Victory:
+  The first team to destroy the enemy Ancient wins the game immediately.
+
+- Small illustration: a glowing crystalline or ancient monumental structure — floating shards, radiant or dire energy core, restrained magical architecture — placed as a secondary visual element, not dominating the card
+
+GRAPHIC DIRECTION
+- The card should feel like a technical tabletop reference first, fantasy component second
+- Use strong horizontal sections with clean panel separation
+- Keep the text area bright and readable with minimal texture behind it
+- The central data panel should make the Ancient's high Hits value immediately clear
+- Include subtle crystalline or monumental architecture motifs, ancient-energy iconography, and restrained victory-orb ornament
+- Ensure the border finish, panel styling, and typography rhythm match the existing tower reference card and ability cards in the product family
+- Present as a straight-on flat card render on a neutral background
+
+TYPOGRAPHY DIRECTION
+- Large, bold fantasy title for the card name
+- Clear section headers for each rule block
+- Compact, highly legible game UI font for rules text and numbers
+- The 30 Hits value should be the most prominent number on the card
+
+NEGATIVE CONSTRAINTS
+- Do not redesign the product-family frame language
+- Do not use a large illustration that reduces text space
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not copy official Dota 2 Ancient art, icons, or logos
+- Do not include hero portraits, hero abilities, or hero-specific data
+- Do not add current cooldown markers, hit-point trackers, or board-state counters
+- Do not use muddy low-contrast effects that reduce print legibility
+- Do not place the card in an environment or tabletop scene
+- Do not invent extra Ancient mechanics, extra tiers, or decorative clutter
+
+FINAL OUTPUT TARGET
+The final image should look like a production-quality printable rules reference card for a premium fantasy board game: clean, aligned, readable, designed for quick tabletop lookup of the Ancient's stats and victory condition, and visually cohesive with the rest of the product line.
+```
+
+---
+
+## Example Image Prompt — Barracks Reference Card
+
+Use the following prompt when generating a single landscape reference card that explains Barracks:
+
+```text
+Create a polished fantasy board game reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+This is a game-systems reference card, not a hero card or abilities card. The card should prioritize gameplay clarity, quick lookup of structure stats, and concise rules explanation. Use the same manufactured product-family visual language as the existing hero and ability cards — same border treatment, ornament restraint, typography hierarchy, icon rendering quality, and material finish — while functioning as a standalone rules reference for Barracks.
+
+ATTACHMENTS PROVIDED
+- Attachment 1: approved hero card from this game for product-family style reference only
+
+Use the attached card only as general design-context reference for frame language, palette discipline, material finish, icon quality, and overall premium tabletop cohesion. Do not copy character art, symbols, or card layout from the reference.
+
+PRIMARY GOAL
+Generate a clean, print-ready rules reference card for Barracks. A player should be able to look at this card and understand how to access Barracks, their stats, and the consequences of destroying them.
+
+OVERALL STYLE
+- premium fantasy board game component
+- readable at 15 × 10 cm print size
+- data-forward layout with clear section hierarchy
+- elegant manufactured card frame matching the product family
+- high-contrast text panels
+- original art only
+- designed for quick tabletop reference during play
+
+LOCKED LAYOUT REQUIREMENTS
+- Use a landscape card layout with a top header panel, a central data panel showing Barracks stats, and a lower rules text panel.
+- Use the same typography system, divider thickness, corner treatment, panel spacing logic, and straight-on flat component view as the established ability cards and tower reference card in this product family.
+- The header area should display the card title.
+- The central data area should show the Barracks' Hits, Gold reward, and key consequence.
+- The lower panel should contain short rule paragraphs or clearly separated rule blocks.
+- Include a small illustration or icon motif of a fortified structure or banner off to the side or behind the text — keep it restrained and readable.
+- Do not redesign the product-family frame language.
+- Do not add decorative badges, extra UI systems, or board-state trackers.
+- Present as a straight-on flat card render on a neutral background.
+
+CARD STRUCTURE
+- Header banner with the title: BARRACKS
+- Subtitle or tagline: Lane objective — creep upgrade trigger
+- Central data panel:
+  - Hits: 15
+  - Damage: None (Barracks do not attack)
+  - Gold reward (per hero): 50g
+- Rules panel containing these rule blocks in compact readable text:
+
+  Access:
+  Barracks are located in the base interior behind the Tier 3 tower. They cannot be attacked until the Tier 3 tower in that lane is destroyed.
+
+  Siege Requirement:
+  Same as towers — the enemy creep wave in that lane must be exhausted before heroes can attack Barracks.
+
+  No Retaliation:
+  Barracks do not deal damage to attackers.
+
+  Super Creeps:
+  When a Barracks is destroyed, the opposing team's creeps in that lane immediately become Super Creeps (2 Hits per creep instead of 1). Each Super Creep kill awards 3 gold and 1 XP.
+
+  Mega Creeps:
+  If all 3 enemy Barracks are destroyed, the opposing team's creeps become Mega Creeps in all lanes. Mega Creeps also deal 5 retaliation damage to any hero who attacks them with a basic Attack action.
+
+- Small illustration: a fortified banner, standard, or siege-architecture motif — restrained, not competing with the text
+
+GRAPHIC DIRECTION
+- The card should feel like a technical tabletop reference first, fantasy component second
+- Use strong horizontal sections with clean panel separation
+- Keep the text area bright and readable with minimal texture behind it
+- The central data panel should make the 15 Hits and 50g values immediately clear
+- Include subtle banner or fortified-structure motifs, siege iconography, and restrained war-flag ornament
+- Ensure the border finish, panel styling, and typography rhythm match the existing tower reference card and ability cards in the product family
+- Present as a straight-on flat card render on a neutral background
+
+TYPOGRAPHY DIRECTION
+- Large, bold fantasy title for the card name
+- Clear section headers for each rule block
+- Compact, highly legible game UI font for rules text and numbers
+- The 15 Hits and 50g values should be the most prominent numbers on the card
+
+NEGATIVE CONSTRAINTS
+- Do not redesign the product-family frame language
+- Do not use a large illustration that reduces text space
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not copy official Dota 2 Barracks art, icons, or logos
+- Do not include hero portraits, hero abilities, or hero-specific data
+- Do not add current cooldown markers, hit-point trackers, or board-state counters
+- Do not use muddy low-contrast effects that reduce print legibility
+- Do not place the card in an environment or tabletop scene
+- Do not invent extra Barracks mechanics or decorative clutter
+
+FINAL OUTPUT TARGET
+The final image should look like a production-quality printable rules reference card for a premium fantasy board game: clean, aligned, readable, designed for quick tabletop lookup of Barracks stats and lane-upgrade consequences, and visually cohesive with the rest of the product line.
+```
+
+---
+
+## Example Image Prompt — Roshan Reference Card
+
+Use the following prompt when generating a single landscape reference card that explains Roshan and the Aegis of the Immortal:
+
+```text
+Create a polished fantasy board game reference card in landscape orientation, designed for a 15 × 10 cm printed card. This is a Dota-inspired board game component, but the artwork must be original and should not copy official Valve or Dota 2 art.
+
+This is a game-systems reference card, not a hero card or abilities card. The card should prioritize gameplay clarity, quick lookup of Roshan's rules, and concise explanation of the Aegis. Use the same manufactured product-family visual language as the existing hero and ability cards — same border treatment, ornament restraint, typography hierarchy, icon rendering quality, and material finish — while functioning as a standalone rules reference for the Roshan objective.
+
+ATTACHMENTS PROVIDED
+- Attachment 1: approved hero card from this game for product-family style reference only
+
+Use the attached card only as general design-context reference for frame language, palette discipline, material finish, icon quality, and overall premium tabletop cohesion. Do not copy character art, symbols, or card layout from the reference.
+
+PRIMARY GOAL
+Generate a clean, print-ready rules reference card for Roshan. A player should be able to look at this card and understand where Roshan is, how he is attacked, what he awards, and how the Aegis works.
+
+OVERALL STYLE
+- premium fantasy board game component
+- readable at 15 × 10 cm print size
+- data-forward layout with clear section hierarchy
+- elegant manufactured card frame matching the product family
+- high-contrast text panels
+- original art only
+- designed for quick tabletop reference during play
+
+LOCKED LAYOUT REQUIREMENTS
+- Use a landscape card layout with a top header panel, a central data panel showing Roshan's rewards and rules summary, and a lower rules text panel for the Aegis.
+- Use the same typography system, divider thickness, corner treatment, panel spacing logic, and straight-on flat component view as the established ability cards and objective reference cards in this product family.
+- The header area should display the card title.
+- The central data area should show Roshan's gold and XP reward values.
+- The lower panel should contain the Aegis rules in a clearly separated block.
+- Include a small illustration or icon motif of a monster or pit off to the side or behind the text — keep it restrained and readable.
+- Do not redesign the product-family frame language.
+- Do not add decorative badges, extra UI systems, or board-state trackers.
+- Present as a straight-on flat card render on a neutral background.
+
+CARD STRUCTURE
+- Header banner with the title: ROSHAN
+- Subtitle or tagline: Ancient jungle objective
+- Central data panel:
+  - Location: Roshan's Pit (fixed area on the board)
+  - HP: 600 (tracked on the Board Tracker)
+  - Damage per attack: 10 damage to each attacker
+  - Death reward: 50 gold and 10 XP to every allied hero
+  - Contested claim: If heroes from both teams are present when Roshan dies, a die roll determines which team claims the rewards.
+  - Respawn: Roshan respawns after 5 rounds.
+- Rules panel — Aegis of the Immortal:
+
+  Aegis of the Immortal:
+  When Roshan dies, he drops the Aegis of the Immortal. The holding hero revives in place upon death with full Health and Mana, consuming the Aegis. Aegis revival bypasses the normal respawn timer and Buyback cost.
+
+- Small illustration: a restrained monster or pit iconography — ancient cave, scaled beast silhouette, glowing trophy motif — placed as a secondary visual element, not dominating the card
+
+GRAPHIC DIRECTION
+- The card should feel like a technical tabletop reference first, fantasy component second
+- Use strong horizontal sections with clean panel separation
+- Keep the text area bright and readable with minimal texture behind it
+- The central data panel should make the reward values immediately clear
+- Include subtle cave or pit motifs, monster-iconography, and restrained ancient-boss ornament
+- Ensure the border finish, panel styling, and typography rhythm match the existing objective reference cards and ability cards in the product family
+- Present as a straight-on flat card render on a neutral background
+
+TYPOGRAPHY DIRECTION
+- Large, bold fantasy title for the card name
+- Clear section headers for each rule block
+- Compact, highly legible game UI font for rules text and numbers
+- The 600 HP, 10 damage, 50 gold, and 10 XP reward values should be the most prominent numbers on the card
+
+NEGATIVE CONSTRAINTS
+- Do not redesign the product-family frame language
+- Do not use a large illustration that reduces text space
+- Do not turn the card into a poster, splash art, mobile UI, TCG variant, 3D mockup, or photographed object
+- Do not copy official Dota 2 Roshan art, icons, or logos
+- Do not include hero portraits, hero abilities, or hero-specific data
+- Do not add current hit-point trackers, round counters, or board-state counters
+- Do not use muddy low-contrast effects that reduce print legibility
+- Do not place the card in an environment or tabletop scene
+- Do not invent extra Roshan mechanics or decorative clutter
+
+FINAL OUTPUT TARGET
+The final image should look like a production-quality printable rules reference card for a premium fantasy board game: clean, aligned, readable, designed for quick tabletop lookup of Roshan rules and Aegis behavior, and visually cohesive with the rest of the product line.
 ```
 
 ---
